@@ -1,13 +1,21 @@
 {
-  "name": "reactnativestylo",
+  "name": "react-native-stylo",
+  "description": "React native decoupled themes & styling",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/es/index.js",
+  "types": "./lib/es/index.d.ts",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "clean": "rimraf ./lib",
+    "compile-ts": "npm run clean && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json",
+    "build": "npm run clean && npm run compile-ts",
+    "prepublish": "npm run clean && npm run build"
   },
   "dependencies": {},
   "devDependencies": {
