@@ -1,0 +1,1 @@
+{"version":3,"file":"use-view-styles.js","sourceRoot":"","sources":["../../../stylo/stylers/use-view-styles.ts"],"names":[],"mappings":"AACA,OAAO,SAAS,MAAM,cAAc,CAAC;AAErC,SAAS,aAAa,CACpB,UAA2B,EAC3B,cAAuB;IAEvB,OAAO,SAAS,CAAe;QAC7B,cAAc,EAAE,cAAc,aAAd,cAAc,cAAd,cAAc,GAAI,YAAY;QAC9C,UAAU,YAAA;KACX,CAAC,CAAC;AACL,CAAC;AAED,eAAe,aAAa,CAAC"}
