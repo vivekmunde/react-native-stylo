@@ -1,7 +1,7 @@
 import React from 'react';
 import { StatusBar, StyleSheet } from 'react-native';
 
-import * as Skinned from '../styled/stylish';
+import Stylish from '../styled/stylish';
 import { styles, variables } from '../styled/themes/default';
 import { ThemeProvider } from '../stylo';
 
@@ -13,12 +13,12 @@ const homeStyles = StyleSheet.create({
 const Home = () => {
   return (
     <ThemeProvider variables={variables} styles={styles}>
-      <Skinned.View styleNames={['Screen']}>
-        <Skinned.ScrollView style={homeStyles.scrollView}>
-          <Skinned.SafeAreaView>
+      <Stylish.View styleNames={['Screen']}>
+        <Stylish.ScrollView style={homeStyles.scrollView}>
+          <Stylish.SafeAreaView>
             <StatusBar barStyle="dark-content" />
-          </Skinned.SafeAreaView>
-          <Skinned.View
+          </Stylish.SafeAreaView>
+          <Stylish.View
             styleNames={[
               'Screen.Header',
               'Flex.Column',
@@ -26,24 +26,24 @@ const Home = () => {
               'Flex.JustifyContent.Center',
               'Padding',
             ]}>
-            <Skinned.Text
+            <Stylish.Text
               styleNames={['H1', 'Align.Center']}
               style={homeStyles.headerTitle}>
               React Native Skeleton
-            </Skinned.Text>
-            <Skinned.Text styleNames={['Align.Center']}>
+            </Stylish.Text>
+            <Stylish.Text styleNames={['Align.Center']}>
               {'Highly composable & scalable themes'}
-            </Skinned.Text>
-          </Skinned.View>
-          <Skinned.View styleNames={['Screen.Body']}>
-            <Skinned.View styleNames={['Padding', 'Flex.Column']}>
-              <Skinned.Text>• Loosely coupled style definitions</Skinned.Text>
-              <Skinned.Text>• Compose your own theme</Skinned.Text>
-              <Skinned.Text>• Compose your own components</Skinned.Text>
-            </Skinned.View>
-          </Skinned.View>
-        </Skinned.ScrollView>
-        <Skinned.View
+            </Stylish.Text>
+          </Stylish.View>
+          <Stylish.View styleNames={['Screen.Body']}>
+            <Stylish.View styleNames={['Padding', 'Flex.Column']}>
+              <Stylish.Text>• Loosely coupled style definitions</Stylish.Text>
+              <Stylish.Text>• Compose your own theme</Stylish.Text>
+              <Stylish.Text>• Compose your own components</Stylish.Text>
+            </Stylish.View>
+          </Stylish.View>
+        </Stylish.ScrollView>
+        <Stylish.View
           styleNames={[
             'Screen.Footer',
             'Padding',
@@ -52,9 +52,9 @@ const Home = () => {
             'Flex.JustifyContent.SpaceAround',
           ]}>
           {/*  */}
-        </Skinned.View>
-      </Skinned.View>
-      <Skinned.SafeAreaView />
+        </Stylish.View>
+      </Stylish.View>
+      <Stylish.SafeAreaView />
     </ThemeProvider>
   );
 };
