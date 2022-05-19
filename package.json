@@ -3,7 +3,7 @@
   "description": "React native decoupled themes & styling",
   "version": "0.1.0",
   "private": false,
-  "main": "./lib/cjs/index.js",
+  "main": "./lib/es/index.js",
   "module": "./lib/es/index.js",
   "types": "./lib/es/index.d.ts",
   "scripts": {
