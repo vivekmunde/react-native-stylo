@@ -1,12 +1,13 @@
 import React from 'react';
+
 import {
-  KeyboardAvoidingView as RNSKeyboardAvoidingView,
+  KeyboardAvoidingView as StyloKeyboardAvoidingView,
   TKeyboardAvoidingViewProps,
 } from '../../../stylo';
-import { TKeyboardAvoidingViewStyle } from '../themes/types';
+import { TKeyboardAvoidingViewStyle, TStyleNamespace } from '../themes/types';
 
 const KeyboardAvoidingView: React.FC<
-  TKeyboardAvoidingViewProps<TKeyboardAvoidingViewStyle>
-> = props => <RNSKeyboardAvoidingView {...props} />;
+  TKeyboardAvoidingViewProps<TKeyboardAvoidingViewStyle, TStyleNamespace>
+> = props => <StyloKeyboardAvoidingView {...props} />;
 
 export default KeyboardAvoidingView;

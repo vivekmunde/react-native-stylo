@@ -2,28 +2,35 @@ import React from 'react';
 import {
   Pressable as RNPressable,
   PressableProps,
+  PressableStateCallbackType,
+  StyleProp,
   TouchableHighlight as RNTouchableHighlight,
   TouchableHighlightProps,
   TouchableOpacity as RNTouchableOpacity,
   TouchableOpacityProps,
-  StyleProp,
-  PressableStateCallbackType,
   ViewStyle,
 } from 'react-native';
-import { TStylesProps, useTouchableStyles } from '../stylers';
 
-export type TPressableProps<T extends string> = PressableProps &
-  TStylesProps<T>;
+import { useTouchableStyles } from '../stylers';
+import { TStylesProps } from './types';
 
-export const Pressable = <T extends string>({
+export type TPressableProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = PressableProps & TStylesProps<TStyleName, TStyleNamespace>;
+
+export const Pressable = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TPressableProps<T>) => {
-  const viewStyle = useTouchableStyles<T>(
-    styleNames,
-    styleNamespace ?? 'TouchableStyles',
+}: TPressableProps<TStyleName, TStyleNamespace>) => {
+  const viewStyle = useTouchableStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? ('TouchableStyles' as TStyleNamespace),
   );
 
   const pressableFunctionStyle =
@@ -44,34 +51,44 @@ export const Pressable = <T extends string>({
   );
 };
 
-export type TTouchableHighlightProps<T extends string> =
-  TouchableHighlightProps & TStylesProps<T>;
+export type TTouchableHighlightProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = TouchableHighlightProps & TStylesProps<TStyleName, TStyleNamespace>;
 
-export const TouchableHighlight = <T extends string>({
+export const TouchableHighlight = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TTouchableHighlightProps<T>) => {
-  const viewStyle = useTouchableStyles<T>(
-    styleNames,
-    styleNamespace ?? 'TouchableStyles',
+}: TTouchableHighlightProps<TStyleName, TStyleNamespace>) => {
+  const viewStyle = useTouchableStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? ('TouchableStyles' as TStyleNamespace),
   );
   return <RNTouchableHighlight {...props} style={[viewStyle, style]} />;
 };
 
-export type TTouchableOpacityProps<T extends string> = TouchableOpacityProps &
-  TStylesProps<T>;
+export type TTouchableOpacityProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = TouchableOpacityProps & TStylesProps<TStyleName, TStyleNamespace>;
 
-export const TouchableOpacity = <T extends string>({
+export const TouchableOpacity = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TTouchableOpacityProps<T>) => {
-  const viewStyle = useTouchableStyles<T>(
-    styleNames,
-    styleNamespace ?? 'TouchableStyles',
+}: TTouchableOpacityProps<TStyleName, TStyleNamespace>) => {
+  const viewStyle = useTouchableStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? ('TouchableStyles' as TStyleNamespace),
   );
   return <RNTouchableOpacity {...props} style={[viewStyle, style]} />;
 };

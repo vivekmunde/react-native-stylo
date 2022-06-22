@@ -1,18 +1,23 @@
 import React from 'react';
 import { Text, TextProps } from 'react-native';
-import { TStylesProps, useTextStyles } from '../stylers';
 
-export type TTextProps<T extends string> = TextProps & TStylesProps<T>;
+import { useTextStyles } from '../stylers';
+import { TStylesProps } from './types';
 
-const RNSText = <T extends string>({
+export type TTextProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = TextProps & TStylesProps<TStyleName, TStyleNamespace>;
+
+const RNSText = <TStyleName extends string, TStyleNamespace extends string>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TTextProps<T>) => {
-  const textStyle = useTextStyles<T>(
-    styleNames,
-    styleNamespace ?? 'TextStyles',
+}: TTextProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useTextStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? ('TextStyles' as TStyleNamespace),
   );
   return <Text {...props} style={[textStyle, style]} />;
 };

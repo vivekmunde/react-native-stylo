@@ -1,13 +1,16 @@
 import { ImageStyle, StyleProp } from 'react-native';
 import useStyles from './use-styles';
 
-function useImageStyles<T extends string>(
-  styleNames: T[] | undefined,
-  styleNamespace?: string,
+function useImageStyles<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>(
+  styleNames: TStyleName[],
+  styleNamespace?: TStyleNamespace,
 ): StyleProp<ImageStyle> {
-  return useStyles<ImageStyle, T>({
-    styleNamespace: styleNamespace ?? 'ImageStyles',
-    styleNames,
+  return useStyles<ImageStyle, TStyleName, TStyleNamespace>({
+    styleNamespace: styleNamespace ?? ('ImageStyles' as TStyleNamespace),
+    styleNames: styleNames ?? [],
   });
 }
 

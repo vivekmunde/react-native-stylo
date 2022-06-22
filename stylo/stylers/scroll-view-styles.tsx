@@ -5,35 +5,50 @@ import {
   useScrollViewContentContainerStyles,
 } from './use-scroll-view-styles';
 
-type TProps<T extends string> = {
-  styleNamespace?: string;
-  styleNames?: T[];
+type TProps<TStyleName extends string, TStyleNamespace extends string> = {
+  styleNamespace?: TStyleNamespace;
+  styleNames: TStyleName[];
   children: (style: StyleProp<ViewStyle>) => React.ReactElement | null;
 };
 
-export const ScrollViewStyles = <T extends string>({
+export const ScrollViewStyles = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   children,
-}: TProps<T>): React.ReactElement | null => {
-  const style = useScrollViewStyles<T>(styleNames, styleNamespace);
-  return children(style);
-};
-
-type TContentContainerProps<T extends string> = {
-  styleNamespace?: string;
-  styleNames?: T[];
-  children: (style: StyleProp<ViewStyle>) => React.ReactElement | null;
-};
-
-export const ScrollViewContentContainerStyles = <T extends string>({
-  styleNamespace,
-  styleNames,
-  children,
-}: TContentContainerProps<T>): React.ReactElement | null => {
-  const style = useScrollViewContentContainerStyles<T>(
+}: TProps<TStyleName, TStyleNamespace>): React.ReactElement | null => {
+  const style = useScrollViewStyles<TStyleName, TStyleNamespace>(
     styleNames,
     styleNamespace,
   );
+  return children(style);
+};
+
+type TContentContainerProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = {
+  styleNamespace?: TStyleNamespace;
+  styleNames: TStyleName[];
+  children: (style: StyleProp<ViewStyle>) => React.ReactElement | null;
+};
+
+export const ScrollViewContentContainerStyles = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
+  styleNamespace,
+  styleNames,
+  children,
+}: TContentContainerProps<
+  TStyleName,
+  TStyleNamespace
+>): React.ReactElement | null => {
+  const style = useScrollViewContentContainerStyles<
+    TStyleName,
+    TStyleNamespace
+  >(styleNames, styleNamespace);
   return children(style);
 };

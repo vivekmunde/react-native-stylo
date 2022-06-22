@@ -2,18 +2,24 @@ import React from 'react';
 import { StyleProp, ImageStyle } from 'react-native';
 import useImageStyles from './use-image-styles';
 
-type TProps<T extends string> = {
-  styleNamespace?: string;
-  styleNames?: T[];
+type TProps<TStyleName extends string, TStyleNamespace extends string> = {
+  styleNamespace?: TStyleNamespace;
+  styleNames: TStyleName[];
   children: (style: StyleProp<ImageStyle>) => React.ReactElement | null;
 };
 
-const ImageStyles = <T extends string>({
+const ImageStyles = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   children,
-}: TProps<T>): React.ReactElement | null => {
-  const style = useImageStyles<T>(styleNames, styleNamespace);
+}: TProps<TStyleName, TStyleNamespace>): React.ReactElement | null => {
+  const style = useImageStyles<TStyleName, TStyleNamespace>(
+    styleNames,
+    styleNamespace,
+  );
   return children(style);
 };
 

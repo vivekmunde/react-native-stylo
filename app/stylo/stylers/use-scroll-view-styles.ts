@@ -1,22 +1,27 @@
 import {
-  useScrollViewStyles as rnsUseScrollViewStyles,
-  useScrollViewContentContainerStyles as rnsUseScrollViewContentContainerStyles,
+  useScrollViewStyles as useStyloScrollViewStyles,
+  useScrollViewContentContainerStyles as useStyloScrollViewContentContainerStyles,
 } from '../../../stylo';
 import {
   TScrollViewStyle,
   TScrollViewContentContainerStyle,
+  TStyleNamespace,
 } from '../themes/types';
 
 export const useScrollViewStyles = (
-  styleNames: TScrollViewStyle[] | undefined,
-  styleNamespace?: string,
-) => rnsUseScrollViewStyles<TScrollViewStyle>(styleNames, styleNamespace);
-
-export const useScrollViewContentContainerStyles = (
-  styleNames: TScrollViewContentContainerStyle[] | undefined,
-  styleNamespace?: string,
+  styleNames: TScrollViewStyle[],
+  styleNamespace?: TStyleNamespace,
 ) =>
-  rnsUseScrollViewContentContainerStyles<TScrollViewContentContainerStyle>(
+  useStyloScrollViewStyles<TScrollViewStyle, TStyleNamespace>(
     styleNames,
     styleNamespace,
   );
+
+export const useScrollViewContentContainerStyles = (
+  styleNames: TScrollViewContentContainerStyle[],
+  styleNamespace?: TStyleNamespace,
+) =>
+  useStyloScrollViewContentContainerStyles<
+    TScrollViewContentContainerStyle,
+    TStyleNamespace
+  >(styleNames, styleNamespace);

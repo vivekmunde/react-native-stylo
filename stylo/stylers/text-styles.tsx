@@ -2,18 +2,21 @@ import React from 'react';
 import { StyleProp, TextStyle } from 'react-native';
 import useTextStyles from './use-text-styles';
 
-type TProps<T extends string> = {
-  styleNamespace?: string;
-  styleNames?: T[];
+type TProps<TStyleName extends string, TStyleNamespace extends string> = {
+  styleNamespace?: TStyleNamespace;
+  styleNames: TStyleName[];
   children: (style: StyleProp<TextStyle>) => React.ReactElement | null;
 };
 
-const TextStyles = <T extends string>({
+const TextStyles = <TStyleName extends string, TStyleNamespace extends string>({
   styleNamespace,
   styleNames,
   children,
-}: TProps<T>): React.ReactElement | null => {
-  const style = useTextStyles<T>(styleNames, styleNamespace);
+}: TProps<TStyleName, TStyleNamespace>): React.ReactElement | null => {
+  const style = useTextStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace,
+  );
   return children(style);
 };
 

@@ -1,12 +1,15 @@
 import { TextStyle, StyleProp } from 'react-native';
 import useStyles from './use-styles';
 
-function useTextStyles<T extends string>(
-  styleNames: T[] | undefined,
-  styleNamespace?: string,
+function useTextStyles<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>(
+  styleNames: TStyleName[],
+  styleNamespace?: TStyleNamespace,
 ): StyleProp<TextStyle> {
-  return useStyles<TextStyle, T>({
-    styleNamespace: styleNamespace ?? 'TextStyles',
+  return useStyles<TextStyle, TStyleName, TStyleNamespace>({
+    styleNamespace: styleNamespace ?? ('TextStyles' as TStyleNamespace),
     styleNames,
   });
 }

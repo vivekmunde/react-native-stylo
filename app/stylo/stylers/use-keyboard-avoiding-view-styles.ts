@@ -1,13 +1,13 @@
-import { useKeyboardAvoidingViewStyles as rnsUseKeyboardAvoidingViewStyles } from '../../../stylo';
-import { TKeyboardAvoidingViewStyle } from '../themes/types';
+import { useKeyboardAvoidingViewStyles as useStyloKeyboardAvoidingViewStyles } from '../../../stylo';
+import { TKeyboardAvoidingViewStyle, TStyleNamespace } from '../themes/types';
 
 const useKeyboardAvoidingViewStyles = (
-  styleNames: TKeyboardAvoidingViewStyle[] | undefined,
-  styleNamespace?: string,
+  styleNames: TKeyboardAvoidingViewStyle[],
+  styleNamespace?: TStyleNamespace,
 ) =>
-  rnsUseKeyboardAvoidingViewStyles<TKeyboardAvoidingViewStyle>(
-    styleNames,
-    styleNamespace,
-  );
+  useStyloKeyboardAvoidingViewStyles<
+    TKeyboardAvoidingViewStyle,
+    TStyleNamespace
+  >(styleNames, styleNamespace);
 
 export default useKeyboardAvoidingViewStyles;

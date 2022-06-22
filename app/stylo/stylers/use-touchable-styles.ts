@@ -1,9 +1,13 @@
-import { useTouchableStyles as rnsUseTouchableStyles } from '../../../stylo';
-import { TViewStyle } from '../themes/types';
+import { useTouchableStyles as useStyloTouchableStyles } from '../../../stylo';
+import { TViewStyle, TStyleNamespace } from '../themes/types';
 
 const useViewStyles = (
-  styleNames: TViewStyle[] | undefined,
-  styleNamespace?: string,
-) => rnsUseTouchableStyles<TViewStyle>(styleNames, styleNamespace);
+  styleNames: TViewStyle[],
+  styleNamespace?: TStyleNamespace,
+) =>
+  useStyloTouchableStyles<TViewStyle, TStyleNamespace>(
+    styleNames,
+    styleNamespace,
+  );
 
 export default useViewStyles;

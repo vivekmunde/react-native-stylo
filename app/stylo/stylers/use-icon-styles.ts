@@ -1,9 +1,10 @@
-import { useIconStyles as rnsUseIconStyles } from '../../../stylo';
-import { TIconStyle } from '../themes/types';
+import { useIconStyles as useStyloIconStyles } from '../../../stylo';
+import { TIconStyle, TStyleNamespace } from '../themes/types';
 
 const useIconStyles = (
-  styleNames: TIconStyle[] | undefined,
-  styleNamespace?: string,
-) => rnsUseIconStyles<TIconStyle>(styleNames, styleNamespace);
+  styleNames: TIconStyle[],
+  styleNamespace?: TStyleNamespace,
+) =>
+  useStyloIconStyles<TIconStyle, TStyleNamespace>(styleNames, styleNamespace);
 
 export default useIconStyles;

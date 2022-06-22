@@ -3,9 +3,9 @@ import { StyleProp } from 'react-native';
 import ThemeContext from './theme-context';
 
 function useStyle<
-  TStyleNamespace extends string,
-  TStyleName extends string,
   TStyleProp,
+  TStyleName extends string,
+  TStyleNamespace extends string,
 >(
   styleNamespace: TStyleNamespace,
   styleName: TStyleName,

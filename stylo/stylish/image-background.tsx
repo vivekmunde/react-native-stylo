@@ -1,19 +1,29 @@
 import React from 'react';
 import { ImageBackground, ImageBackgroundProps } from 'react-native';
-import { TStylesProps, useImageBackgroundStyles } from '../stylers';
 
-export type TImageBackgroundProps<T extends string> = ImageBackgroundProps &
-  TStylesProps<T>;
+import { useImageBackgroundStyles } from '../stylers';
+import { TStylesProps } from './types';
 
-const RNSImageBackground = <T extends string>({
+export type TImageBackgroundProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = ImageBackgroundProps & TStylesProps<TStyleName, TStyleNamespace>;
+
+const RNSImageBackground = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TImageBackgroundProps<T>) => {
-  const imageBackgroundStyle = useImageBackgroundStyles<T>(
-    styleNames,
-    styleNamespace ?? 'ImageBackgroundStyles',
+}: TImageBackgroundProps<TStyleName, TStyleNamespace>) => {
+  const imageBackgroundStyle = useImageBackgroundStyles<
+    TStyleName,
+    TStyleNamespace
+  >(
+    styleNames ?? [],
+    styleNamespace ?? ('ImageBackgroundStyles' as TStyleNamespace),
   );
   return <ImageBackground {...props} style={[imageBackgroundStyle, style]} />;
 };

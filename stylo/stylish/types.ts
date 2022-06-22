@@ -3,5 +3,5 @@ export type TStylesProps<
   TStyleNamespace extends string,
 > = {
   styleNamespace?: TStyleNamespace;
-  styleNames: TStyleName[];
+  styleNames?: TStyleName[];
 };

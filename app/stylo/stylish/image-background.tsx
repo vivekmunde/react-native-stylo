@@ -1,11 +1,13 @@
 import React from 'react';
+
 import {
-  ImageBackground as RNSImageBackground,
+  ImageBackground as StyloImageBackground,
   TImageBackgroundProps,
 } from '../../../stylo';
-import { TImageBackgroundStyle } from '../themes/types';
+import { TImageBackgroundStyle, TStyleNamespace } from '../themes/types';
 
-const ImageBackground: React.FC<TImageBackgroundProps<TImageBackgroundStyle>> =
-  props => <RNSImageBackground {...props} />;
+const ImageBackground: React.FC<
+  TImageBackgroundProps<TImageBackgroundStyle, TStyleNamespace>
+> = props => <StyloImageBackground {...props} />;
 
 export default ImageBackground;

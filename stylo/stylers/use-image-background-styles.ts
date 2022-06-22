@@ -1,13 +1,17 @@
 import { ViewStyle, StyleProp } from 'react-native';
 import useStyles from './use-styles';
 
-function useImageBackgroundStyles<T extends string>(
-  styleNames: T[] | undefined,
-  styleNamespace?: string,
+function useImageBackgroundStyles<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>(
+  styleNames: TStyleName[],
+  styleNamespace?: TStyleNamespace,
 ): StyleProp<ViewStyle> {
-  return useStyles<ViewStyle, T>({
-    styleNamespace: styleNamespace ?? 'ImageBackgroundStyles',
-    styleNames,
+  return useStyles<ViewStyle, TStyleName, TStyleNamespace>({
+    styleNamespace:
+      styleNamespace ?? ('ImageBackgroundStyles' as TStyleNamespace),
+    styleNames: styleNames ?? [],
   });
 }
 

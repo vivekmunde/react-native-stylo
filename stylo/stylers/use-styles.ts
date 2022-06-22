@@ -2,12 +2,16 @@ import { useContext, useMemo } from 'react';
 import { StyleProp } from 'react-native';
 import ThemeContext from './theme-context';
 
-function useStyles<TStyleProp, TStyleName extends string>({
+function useStyles<
+  TStyleProp,
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
 }: {
-  styleNamespace?: string;
-  styleNames?: TStyleName[];
+  styleNamespace: TStyleNamespace;
+  styleNames: TStyleName[];
 }): StyleProp<TStyleProp> {
   const themeContext = useContext(ThemeContext);
   const styleNamesJoined = styleNames?.join('');

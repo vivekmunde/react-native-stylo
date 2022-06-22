@@ -1,9 +1,10 @@
-import { useTextStyles as rnsUseTextStyles } from '../../../stylo';
-import { TTextStyle } from '../themes/types';
+import { useTextStyles as useStyloTextStyles } from '../../../stylo';
+import { TTextStyle, TStyleNamespace } from '../themes/types';
 
 const useTextStyles = (
-  styleNames: TTextStyle[] | undefined,
-  styleNamespace?: string,
-) => rnsUseTextStyles<TTextStyle>(styleNames, styleNamespace);
+  styleNames: TTextStyle[],
+  styleNamespace?: TStyleNamespace,
+) =>
+  useStyloTextStyles<TTextStyle, TStyleNamespace>(styleNames, styleNamespace);
 
 export default useTextStyles;

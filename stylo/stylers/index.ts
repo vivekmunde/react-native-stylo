@@ -13,7 +13,6 @@ import TextStyles from './text-styles';
 import ThemeContext from './theme-context';
 import ThemeProvider from './theme-provider';
 import TouchableStyles from './touchable-styles';
-import { TStylesProps as _TStylesProps } from './types';
 import useIconStyles from './use-icon-styles';
 import useImageBackgroundStyles from './use-image-background-styles';
 import useImageStyles from './use-image-styles';
@@ -31,8 +30,6 @@ import useTouchableStyles from './use-touchable-styles';
 import useVariables from './use-variables';
 import useViewStyles from './use-view-styles';
 import ViewStyles from './view-styles';
-
-export type TStylesProps<T extends string> = _TStylesProps<T>;
 
 export {
   IconStyles,

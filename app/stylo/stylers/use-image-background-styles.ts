@@ -1,11 +1,11 @@
-import { useImageBackgroundStyles as rnsUseImageBackgroundStyles } from '../../../stylo';
-import { TImageBackgroundStyle } from '../themes/types';
+import { useImageBackgroundStyles as useStyloImageBackgroundStyles } from '../../../stylo';
+import { TImageBackgroundStyle, TStyleNamespace } from '../themes/types';
 
 const useImageBackgroundStyles = (
-  styleNames: TImageBackgroundStyle[] | undefined,
-  styleNamespace?: string,
+  styleNames: TImageBackgroundStyle[],
+  styleNamespace?: TStyleNamespace,
 ) =>
-  rnsUseImageBackgroundStyles<TImageBackgroundStyle>(
+  useStyloImageBackgroundStyles<TImageBackgroundStyle, TStyleNamespace>(
     styleNames,
     styleNamespace,
   );

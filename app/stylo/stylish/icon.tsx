@@ -1,49 +1,49 @@
 import React from 'react';
 
-import { Icon as RNSIcon, TIconProps } from '../../../stylo';
-import { TIconStyle } from '../themes/types';
+import { Icon as StyloIcon, TIconProps } from '../../../stylo';
+import { TIconStyle, TStyleNamespace } from '../themes/types';
 
-const AntDesign: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.AntDesign {...props} />
+const AntDesign: React.FC<TIconProps<TIconStyle, TStyleNamespace>> = props => (
+  <StyloIcon.AntDesign {...props} />
 );
-const Entypo: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.Entypo {...props} />
+const Entypo: React.FC<TIconProps<TIconStyle, TStyleNamespace>> = props => (
+  <StyloIcon.Entypo {...props} />
 );
-const EvilIcons: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.EvilIcons {...props} />
+const EvilIcons: React.FC<TIconProps<TIconStyle, TStyleNamespace>> = props => (
+  <StyloIcon.EvilIcons {...props} />
 );
-const FontAwesome: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.FontAwesome {...props} />
+const FontAwesome: React.FC<
+  TIconProps<TIconStyle, TStyleNamespace>
+> = props => <StyloIcon.FontAwesome {...props} />;
+const FontAwesome5: React.FC<
+  TIconProps<TIconStyle, TStyleNamespace>
+> = props => <StyloIcon.FontAwesome5 {...props} />;
+const FontAwesome5Pro: React.FC<
+  TIconProps<TIconStyle, TStyleNamespace>
+> = props => <StyloIcon.FontAwesome5Pro {...props} />;
+const Fontisto: React.FC<TIconProps<TIconStyle, TStyleNamespace>> = props => (
+  <StyloIcon.Fontisto {...props} />
 );
-const FontAwesome5: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.FontAwesome5 {...props} />
+const Foundation: React.FC<TIconProps<TIconStyle, TStyleNamespace>> = props => (
+  <StyloIcon.Foundation {...props} />
 );
-const FontAwesome5Pro: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.FontAwesome5Pro {...props} />
+const Ionicons: React.FC<TIconProps<TIconStyle, TStyleNamespace>> = props => (
+  <StyloIcon.Ionicons {...props} />
 );
-const Fontisto: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.Fontisto {...props} />
+const MaterialCommunityIcons: React.FC<
+  TIconProps<TIconStyle, TStyleNamespace>
+> = props => <StyloIcon.MaterialCommunityIcons {...props} />;
+const MaterialIcons: React.FC<
+  TIconProps<TIconStyle, TStyleNamespace>
+> = props => <StyloIcon.MaterialIcons {...props} />;
+const Octicons: React.FC<TIconProps<TIconStyle, TStyleNamespace>> = props => (
+  <StyloIcon.Octicons {...props} />
 );
-const Foundation: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.Foundation {...props} />
-);
-const Ionicons: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.Ionicons {...props} />
-);
-const MaterialCommunityIcons: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.MaterialCommunityIcons {...props} />
-);
-const MaterialIcons: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.MaterialIcons {...props} />
-);
-const Octicons: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.Octicons {...props} />
-);
-const SimpleLineIcons: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.SimpleLineIcons {...props} />
-);
-const Zocial: React.FC<TIconProps<TIconStyle>> = props => (
-  <RNSIcon.Zocial {...props} />
+const SimpleLineIcons: React.FC<
+  TIconProps<TIconStyle, TStyleNamespace>
+> = props => <StyloIcon.SimpleLineIcons {...props} />;
+const Zocial: React.FC<TIconProps<TIconStyle, TStyleNamespace>> = props => (
+  <StyloIcon.Zocial {...props} />
 );
 
 class Icon {

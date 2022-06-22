@@ -1,9 +1,13 @@
-import { useTextInputStyles as rnsUseTextInputStyles } from '../../../stylo';
-import { TTextInputStyle } from '../themes/types';
+import { useTextInputStyles as useStyloTextInputStyles } from '../../../stylo';
+import { TTextInputStyle, TStyleNamespace } from '../themes/types';
 
 const useTextInputStyles = (
-  styleNames: TTextInputStyle[] | undefined,
-  styleNamespace?: string,
-) => rnsUseTextInputStyles<TTextInputStyle>(styleNames, styleNamespace);
+  styleNames: TTextInputStyle[],
+  styleNamespace?: TStyleNamespace,
+) =>
+  useStyloTextInputStyles<TTextInputStyle, TStyleNamespace>(
+    styleNames,
+    styleNamespace,
+  );
 
 export default useTextInputStyles;

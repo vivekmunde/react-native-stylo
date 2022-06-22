@@ -1,9 +1,13 @@
-import { useSafeAreaViewStyles as rnsUseSafeAreaViewStyles } from '../../../stylo';
-import { TSafeAreaViewStyle } from '../themes/types';
+import { useSafeAreaViewStyles as useStyloSafeAreaViewStyles } from '../../../stylo';
+import { TSafeAreaViewStyle, TStyleNamespace } from '../themes/types';
 
 const useSafeAreaViewStyles = (
-  styleNames: TSafeAreaViewStyle[] | undefined,
-  styleNamespace?: string,
-) => rnsUseSafeAreaViewStyles<TSafeAreaViewStyle>(styleNames, styleNamespace);
+  styleNames: TSafeAreaViewStyle[],
+  styleNamespace?: TStyleNamespace,
+) =>
+  useStyloSafeAreaViewStyles<TSafeAreaViewStyle, TStyleNamespace>(
+    styleNames,
+    styleNamespace,
+  );
 
 export default useSafeAreaViewStyles;

@@ -1,9 +1,10 @@
-import { useImageStyles as rnsUseImageStyles } from '../../../stylo';
-import { TImageStyle } from '../themes/types';
+import { useImageStyles as useStyloImageStyles } from '../../../stylo';
+import { TImageStyle, TStyleNamespace } from '../themes/types';
 
 const useImageStyles = (
-  styleNames: TImageStyle[] | undefined,
-  styleNamespace?: string,
-) => rnsUseImageStyles<TImageStyle>(styleNames, styleNamespace);
+  styleNames: TImageStyle[],
+  styleNamespace?: TStyleNamespace,
+) =>
+  useStyloImageStyles<TImageStyle, TStyleNamespace>(styleNames, styleNamespace);
 
 export default useImageStyles;

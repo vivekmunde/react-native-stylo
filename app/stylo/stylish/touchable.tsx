@@ -1,22 +1,23 @@
 import React from 'react';
+
 import {
-  Pressable as RNSPressable,
-  TouchableHighlight as RNSTouchableHighlight,
-  TouchableOpacity as RNSTouchableOpacity,
+  Pressable as StyloPressable,
+  TouchableHighlight as StyloTouchableHighlight,
+  TouchableOpacity as StyloTouchableOpacity,
   TPressableProps,
   TTouchableHighlightProps,
   TTouchableOpacityProps,
 } from '../../../stylo';
-import { TTouchableStyle } from '../themes/types';
+import { TStyleNamespace, TTouchableStyle } from '../themes/types';
 
-export const Pressable: React.FC<TPressableProps<TTouchableStyle>> = props => (
-  <RNSPressable {...props} />
-);
+export const Pressable: React.FC<
+  TPressableProps<TTouchableStyle, TStyleNamespace>
+> = props => <StyloPressable {...props} />;
 
 export const TouchableHighlight: React.FC<
-  TTouchableHighlightProps<TTouchableStyle>
-> = props => <RNSTouchableHighlight {...props} />;
+  TTouchableHighlightProps<TTouchableStyle, TStyleNamespace>
+> = props => <StyloTouchableHighlight {...props} />;
 
 export const TouchableOpacity: React.FC<
-  TTouchableOpacityProps<TTouchableStyle>
-> = props => <RNSTouchableOpacity {...props} />;
+  TTouchableOpacityProps<TTouchableStyle, TStyleNamespace>
+> = props => <StyloTouchableOpacity {...props} />;
