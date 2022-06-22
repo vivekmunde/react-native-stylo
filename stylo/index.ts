@@ -165,3 +165,49 @@ export const TextInput = _TextInput;
 export const TouchableHighlight = _TouchableHighlight;
 export const TouchableOpacity = _TouchableOpacity;
 export const View = _View;
+
+const Stylo = {
+  IconStyles: _IconStyles,
+  ImageBackgroundStyles: _ImageBackgroundStyles,
+  ImageStyles: _ImageStyles,
+  KeyboardAvoidingViewStyles: _KeyboardAvoidingViewStyles,
+  SafeAreaViewStyles: _SafeAreaViewStyles,
+  ScrollViewStyles: _ScrollViewStyles,
+  ScrollViewContentContainerStyles: _ScrollViewContentContainerStyles,
+  Styles: _Styles,
+  TextStyles: _TextStyles,
+  TextInputStyles: _TextInputStyles,
+  ThemeContext: _ThemeContext,
+  ThemeProvider: _ThemeProvider,
+  TouchableStyles: _TouchableStyles,
+  useIconStyles: _useIconStyles,
+  useImageBackgroundStyles: _useImageBackgroundStyles,
+  useImageStyles: _useImageStyles,
+  useKeyboardAvoidingViewStyles: _useKeyboardAvoidingViewStyles,
+  useSafeAreaViewStyles: _useSafeAreaViewStyles,
+  useScrollViewStyles: _useScrollViewStyles,
+  useScrollViewContentContainerStyles: _useScrollViewContentContainerStyles,
+  useStyle: _useStyle,
+  useStyles: _useStyles,
+  useTextStyles: _useTextStyles,
+  useTextInputStyles: _useTextInputStyles,
+  useTouchableStyles: _useTouchableStyles,
+  useVariables: _useVariables,
+  useViewStyles: _useViewStyles,
+  ViewStyles: _ViewStyles,
+
+  Icon: _Icon,
+  Image: _Image,
+  ImageBackground: _ImageBackground,
+  Pressable: _Pressable,
+  KeyboardAvoidingView: _KeyboardAvoidingView,
+  SafeAreaView: _SafeAreaView,
+  ScrollView: _ScrollView,
+  Text: _Text,
+  TextInput: _TextInput,
+  TouchableHighlight: _TouchableHighlight,
+  TouchableOpacity: _TouchableOpacity,
+  View: _View,
+};
+
+export default Stylo;
