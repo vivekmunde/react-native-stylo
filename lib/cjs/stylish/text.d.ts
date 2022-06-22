@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import { TextProps } from 'react-native';
-import { TStylesProps } from '../stylers';
-export declare type TTextProps<T extends string> = TextProps & TStylesProps<T>;
-declare const RNSText: <T extends string>({ styleNamespace, styleNames, style, ...props }: TTextProps<T>) => JSX.Element;
+import { TStylesProps } from './types';
+export declare type TTextProps<TStyleName extends string, TStyleNamespace extends string> = TextProps & TStylesProps<TStyleName, TStyleNamespace>;
+declare const RNSText: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TTextProps<TStyleName, TStyleNamespace>) => JSX.Element;
 export default RNSText;

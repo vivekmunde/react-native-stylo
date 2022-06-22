@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import { ImageProps } from 'react-native';
-import { TStylesProps } from '../stylers';
-export declare type TImageProps<T extends string> = ImageProps & TStylesProps<T>;
-declare const RNSImage: <T extends string>({ styleNamespace, styleNames, style, ...props }: TImageProps<T>) => JSX.Element;
+import { TStylesProps } from './types';
+export declare type TImageProps<TStyleName extends string, TStyleNamespace extends string> = ImageProps & TStylesProps<TStyleName, TStyleNamespace>;
+declare const RNSImage: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TImageProps<TStyleName, TStyleNamespace>) => JSX.Element;
 export default RNSImage;

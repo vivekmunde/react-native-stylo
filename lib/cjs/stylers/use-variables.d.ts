@@ -1,2 +1,2 @@
-declare function useVariables<T extends string>(names: T[]): (string | number)[];
+declare function useVariables<TVariable extends string>(names: TVariable[]): (string | number)[];
 export default useVariables;

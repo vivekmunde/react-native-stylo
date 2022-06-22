@@ -1,26 +1,26 @@
 /// <reference types="react" />
 import { StyleProp, TextStyle } from 'react-native';
-import { TStylesProps } from '../stylers';
-export declare type TIconProps<T extends string> = TStylesProps<T> & {
+import { TStylesProps } from './types';
+export declare type TIconProps<TStyleName extends string, TStyleNamespace extends string> = TStylesProps<TStyleName, TStyleNamespace> & {
     name: string;
     size?: number | undefined;
     color?: string | undefined;
     style?: Omit<StyleProp<TextStyle>, 'color'>;
 };
-declare const AntDesign: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const Entypo: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const EvilIcons: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const FontAwesome: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const FontAwesome5: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const FontAwesome5Pro: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const Fontisto: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const Foundation: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const Ionicons: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const MaterialCommunityIcons: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const MaterialIcons: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const Octicons: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const SimpleLineIcons: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
-declare const Zocial: <T extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<T>) => JSX.Element;
+declare const AntDesign: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const Entypo: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const EvilIcons: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const FontAwesome: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const FontAwesome5: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const FontAwesome5Pro: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const Fontisto: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const Foundation: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const Ionicons: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const MaterialCommunityIcons: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const MaterialIcons: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const Octicons: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const SimpleLineIcons: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
+declare const Zocial: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TIconProps<TStyleName, TStyleNamespace>) => JSX.Element;
 declare class Icon {
     static AntDesign: typeof AntDesign;
     static Entypo: typeof Entypo;

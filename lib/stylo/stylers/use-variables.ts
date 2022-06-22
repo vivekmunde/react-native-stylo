@@ -1,7 +1,7 @@
-import { useVariables as rnsUseVariables } from 'react-native-stylo';
+import { useVariables as useStyloVariables } from 'react-native-stylo';
 import { TVariables } from '../themes/types/base/variables';
 
 const useVariables = (names: TVariables[]) =>
-  rnsUseVariables<TVariables>(names);
+  useStyloVariables<TVariables>(names);
 
 export default useVariables;

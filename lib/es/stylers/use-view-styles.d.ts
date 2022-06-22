@@ -1,3 +1,3 @@
 import { ViewStyle, StyleProp } from 'react-native';
-declare function useViewStyles<T extends string>(styleNames: T[] | undefined, styleNamespace?: string): StyleProp<ViewStyle>;
+declare function useViewStyles<TStyleName extends string, TStyleNamespace extends string>(styleNames: TStyleName[], styleNamespace?: TStyleNamespace): StyleProp<ViewStyle>;
 export default useViewStyles;
