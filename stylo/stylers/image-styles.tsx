@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleProp, ImageStyle } from 'react-native';
+import { ImageStyle, StyleProp } from 'react-native';
+
 import useImageStyles from './use-image-styles';
 
 type TProps<TStyleName extends string, TStyleNamespace extends string> = {

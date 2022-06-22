@@ -1,4 +1,5 @@
 import { ImageStyle, StyleProp } from 'react-native';
+
 import useStyles from './use-styles';
 
 function useImageStyles<

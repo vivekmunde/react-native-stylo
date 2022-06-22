@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleProp, TextStyle } from 'react-native';
+
 import useTextStyles from './use-text-styles';
 
 type TProps<TStyleName extends string, TStyleNamespace extends string> = {

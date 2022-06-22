@@ -1,4 +1,5 @@
-import { ViewStyle, StyleProp } from 'react-native';
+import { StyleProp, ViewStyle } from 'react-native';
+
 import useStyles from './use-styles';
 
 function useImageBackgroundStyles<

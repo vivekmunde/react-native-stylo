@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
+
 import {
-  useScrollViewStyles,
   useScrollViewContentContainerStyles,
+  useScrollViewStyles,
 } from './use-scroll-view-styles';
 
 type TProps<TStyleName extends string, TStyleNamespace extends string> = {

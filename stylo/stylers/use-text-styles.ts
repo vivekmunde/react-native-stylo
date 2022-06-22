@@ -1,4 +1,5 @@
-import { TextStyle, StyleProp } from 'react-native';
+import { StyleProp, TextStyle } from 'react-native';
+
 import useStyles from './use-styles';
 
 function useTextStyles<

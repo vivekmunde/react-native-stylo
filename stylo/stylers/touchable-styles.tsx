@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
+
 import useTouchableStyles from './use-touchable-styles';
 
 type TProps<TStyleName extends string, TStyleNamespace extends string> = {

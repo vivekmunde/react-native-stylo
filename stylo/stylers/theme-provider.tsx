@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import ThemeContext, { TContext } from './theme-context';
 
 type TProps = TContext;
