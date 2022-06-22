@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text as RNSText, TTextProps } from '../../stylo';
+import { Text as RNSText, TTextProps } from '../../../stylo';
 import { TTextStyle } from '../themes/types';
 
 class Text extends React.Component<TTextProps<TTextStyle>> {

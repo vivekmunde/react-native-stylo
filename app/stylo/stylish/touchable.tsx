@@ -6,7 +6,7 @@ import {
   TPressableProps,
   TTouchableHighlightProps,
   TTouchableOpacityProps,
-} from '../../stylo';
+} from '../../../stylo';
 import { TTouchableStyle } from '../themes/types';
 
 export const Pressable: React.FC<TPressableProps<TTouchableStyle>> = props => (

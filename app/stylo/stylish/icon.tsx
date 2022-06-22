@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Icon as RNSIcon, TIconProps } from '../../stylo';
+import { Icon as RNSIcon, TIconProps } from '../../../stylo';
 import { TIconStyle } from '../themes/types';
 
 const AntDesign: React.FC<TIconProps<TIconStyle>> = props => (

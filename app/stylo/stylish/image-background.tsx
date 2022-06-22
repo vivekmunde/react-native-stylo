@@ -2,7 +2,7 @@ import React from 'react';
 import {
   ImageBackground as RNSImageBackground,
   TImageBackgroundProps,
-} from '../../stylo';
+} from '../../../stylo';
 import { TImageBackgroundStyle } from '../themes/types';
 
 const ImageBackground: React.FC<TImageBackgroundProps<TImageBackgroundStyle>> =

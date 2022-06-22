@@ -1,4 +1,4 @@
-import { useIconStyles as rnsUseIconStyles } from '../../stylo';
+import { useIconStyles as rnsUseIconStyles } from '../../../stylo';
 import { TIconStyle } from '../themes/types';
 
 const useIconStyles = (

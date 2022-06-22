@@ -1,4 +1,4 @@
-import { useTouchableStyles as rnsUseTouchableStyles } from '../../stylo';
+import { useTouchableStyles as rnsUseTouchableStyles } from '../../../stylo';
 import { TViewStyle } from '../themes/types';
 
 const useViewStyles = (

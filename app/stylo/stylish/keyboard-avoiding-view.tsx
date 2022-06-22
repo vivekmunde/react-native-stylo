@@ -2,7 +2,7 @@ import React from 'react';
 import {
   KeyboardAvoidingView as RNSKeyboardAvoidingView,
   TKeyboardAvoidingViewProps,
-} from '../../stylo';
+} from '../../../stylo';
 import { TKeyboardAvoidingViewStyle } from '../themes/types';
 
 const KeyboardAvoidingView: React.FC<

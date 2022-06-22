@@ -1,7 +1,7 @@
 import {
   useScrollViewStyles as rnsUseScrollViewStyles,
   useScrollViewContentContainerStyles as rnsUseScrollViewContentContainerStyles,
-} from '../../stylo';
+} from '../../../stylo';
 import {
   TScrollViewStyle,
   TScrollViewContentContainerStyle,

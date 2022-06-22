@@ -2,7 +2,7 @@ import React from 'react';
 import {
   SafeAreaView as RNSSafeAreaView,
   TSafeAreaViewProps,
-} from '../../stylo';
+} from '../../../stylo';
 import { TSafeAreaViewStyle } from '../themes/types';
 
 const SafeAreaView: React.FC<TSafeAreaViewProps<TSafeAreaViewStyle>> =

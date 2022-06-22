@@ -3,7 +3,7 @@ import React from 'react';
 import {
   ScrollView as RNSScrollSView,
   TScrollViewProps,
-} from '../../stylo';
+} from '../../../stylo';
 import {
   TScrollViewContentContainerStyle,
   TScrollViewStyle,

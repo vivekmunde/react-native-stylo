@@ -1,9 +1,9 @@
 import React from 'react';
 import { StatusBar, StyleSheet } from 'react-native';
 
-import Stylish from '../styled/stylish';
-import { styles, variables } from '../styled/themes/default';
 import { ThemeProvider } from '../stylo';
+import Stylish from './stylo/stylish';
+import { styles, variables } from './stylo/themes/default';
 
 const homeStyles = StyleSheet.create({
   scrollView: { flex: 1 },

@@ -1,4 +1,4 @@
-import { useViewStyles as rnsUseViewStyles } from '../../stylo';
+import { useViewStyles as rnsUseViewStyles } from '../../../stylo';
 import { TViewStyle } from '../themes/types';
 
 const useViewStyles = (

@@ -1,4 +1,4 @@
-import { useKeyboardAvoidingViewStyles as rnsUseKeyboardAvoidingViewStyles } from '../../stylo';
+import { useKeyboardAvoidingViewStyles as rnsUseKeyboardAvoidingViewStyles } from '../../../stylo';
 import { TKeyboardAvoidingViewStyle } from '../themes/types';
 
 const useKeyboardAvoidingViewStyles = (

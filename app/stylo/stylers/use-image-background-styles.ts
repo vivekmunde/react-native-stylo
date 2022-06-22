@@ -1,4 +1,4 @@
-import { useImageBackgroundStyles as rnsUseImageBackgroundStyles } from '../../stylo';
+import { useImageBackgroundStyles as rnsUseImageBackgroundStyles } from '../../../stylo';
 import { TImageBackgroundStyle } from '../themes/types';
 
 const useImageBackgroundStyles = (

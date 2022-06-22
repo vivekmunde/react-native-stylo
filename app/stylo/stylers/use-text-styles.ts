@@ -1,4 +1,4 @@
-import { useTextStyles as rnsUseTextStyles } from '../../stylo';
+import { useTextStyles as rnsUseTextStyles } from '../../../stylo';
 import { TTextStyle } from '../themes/types';
 
 const useTextStyles = (
