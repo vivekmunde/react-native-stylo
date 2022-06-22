@@ -13,8 +13,9 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "clean": "rimraf ./lib",
+    "copy-t": "cp -R ./app/stylo ./lib",
     "compile-ts": "npm run clean && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json",
-    "build": "npm run clean && npm run compile-ts",
+    "build": "npm run clean && npm run compile-ts && npm run copy-t",
     "prepublish": "npm run clean && npm run build"
   },
   "dependencies": {},
