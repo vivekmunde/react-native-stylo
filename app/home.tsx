@@ -36,7 +36,7 @@ const Home = () => {
             </Stylish.Text>
           </Stylish.View>
           <Stylish.View styleNames={['Screen.Body']}>
-            <Stylish.View styleNames={['Padding', 'Flex.Column']}>
+            <Stylish.View styleNames={['Padding.Large', 'Flex.Column']}>
               <Stylish.Text>• Loosely coupled style definitions</Stylish.Text>
               <Stylish.Text>• Compose your own theme</Stylish.Text>
               <Stylish.Text>• Compose your own components</Stylish.Text>

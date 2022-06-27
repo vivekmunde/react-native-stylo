@@ -1,4 +1,4 @@
-export type TStyleNamespace =
+type TStyleNamespace =
   | 'IconStyles'
   | 'ImageBackgroundStyles'
   | 'ImageStyles'
@@ -7,3 +7,5 @@ export type TStyleNamespace =
   | 'TextStyles'
   | 'TouchableStyles'
   | 'ViewStyles';
+
+export default TStyleNamespace;

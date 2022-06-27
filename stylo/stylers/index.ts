@@ -4,14 +4,12 @@ import ImageStyles from './image-styles';
 import KeyboardAvoidingViewStyles from './keyboard-avoiding-view-styles';
 import SafeAreaViewStyles from './safe-area-view-styles';
 import {
-  ScrollViewStyles,
   ScrollViewContentContainerStyles,
+  ScrollViewStyles,
 } from './scroll-view-styles';
 import Styles from './styles';
 import TextInputStyles from './text-input-styles';
 import TextStyles from './text-styles';
-import ThemeContext from './theme-context';
-import ThemeProvider from './theme-provider';
 import TouchableStyles from './touchable-styles';
 import useIconStyles from './use-icon-styles';
 import useImageBackgroundStyles from './use-image-background-styles';
@@ -19,8 +17,8 @@ import useImageStyles from './use-image-styles';
 import useKeyboardAvoidingViewStyles from './use-keyboard-avoiding-view-styles';
 import useSafeAreaViewStyles from './use-safe-area-view-styles';
 import {
-  useScrollViewStyles,
   useScrollViewContentContainerStyles,
+  useScrollViewStyles,
 } from './use-scroll-view-styles';
 import useStyle from './use-style';
 import useStyles from './use-styles';
@@ -42,8 +40,6 @@ export {
   Styles,
   TextStyles,
   TextInputStyles,
-  ThemeContext,
-  ThemeProvider,
   TouchableStyles,
   useIconStyles,
   useImageBackgroundStyles,

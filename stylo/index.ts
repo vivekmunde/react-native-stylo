@@ -10,8 +10,6 @@ import {
 import _Styles from './stylers/styles';
 import _TextInputStyles from './stylers/text-input-styles';
 import _TextStyles from './stylers/text-styles';
-import _ThemeContext from './stylers/theme-context';
-import _ThemeProvider from './stylers/theme-provider';
 import _TouchableStyles from './stylers/touchable-styles';
 import _useIconStyles from './stylers/use-icon-styles';
 import _useImageBackgroundStyles from './stylers/use-image-background-styles';
@@ -57,6 +55,8 @@ import {
   TTouchableOpacityProps as _TouchableOpacityProps,
 } from './stylish/touchable';
 import _View, { TViewProps as _ViewProps } from './stylish/view';
+import _ThemeContext from './theme-context';
+import _ThemeProvider from './theme-provider';
 
 export type TPressableProps<
   TStyleName extends string,

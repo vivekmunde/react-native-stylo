@@ -1,7 +1,7 @@
 import { useVariables as useStyloVariables } from '../../../stylo';
-import { TVariables } from '../themes/types/base/variables';
+import { TVariable } from '../themes/types/variables';
 
-const useVariables = (names: TVariables[]) =>
-  useStyloVariables<TVariables>(names);
+const useVariables = (names: TVariable[]) =>
+  useStyloVariables<TVariable>(names);
 
 export default useVariables;

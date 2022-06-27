@@ -1,47 +1,19 @@
-import colors from './colors';
-import IconStyles from './icon';
-import ImageStyles from './image';
-import ImageBackgroundStyles from './image-background';
-import KeyboardAvoidingViewStyles from './keyboard-avoiding-view';
-import SafeAreaViewStyles from './safe-area-view';
+import IconStyles from './components/icon';
+import ImageStyles from './components/image';
+import ImageBackgroundStyles from './components/image-background';
+import KeyboardAvoidingViewStyles from './components/keyboard-avoiding-view';
+import SafeAreaViewStyles from './components/safe-area-view';
 import {
-  ScrollViewStyles,
   ScrollViewContentContainerStyles,
-} from './scroll-view';
-import TextInputStyles from './text-input';
-import TextStyles from './text';
-import TouchableStyles from './touchable';
-import {
-  borderRadius,
-  borderRadiusLarge,
-  borderRadiusSmall,
-  borderWidth,
-  margin,
-  marginLarge,
-  marginSmall,
-  marginXSmall,
-  padding,
-  paddingLarge,
-  paddingSmall,
-  paddingXSmall,
-} from './variables';
-import ViewStyles from './view';
+  ScrollViewStyles,
+} from './components/scroll-view';
+import TextStyles from './components/text';
+import TextInputStyles from './components/text-input';
+import TouchableStyles from './components/touchable';
+import ViewStyles from './components/view';
+import _variables from './variables';
 
-export const variables = {
-  ...colors,
-  'Border.Width': borderWidth,
-  'Border.Radius': borderRadius,
-  'Border.Radius.Small': borderRadiusSmall,
-  'Border.Radius.Large': borderRadiusLarge,
-  Margin: margin,
-  'Margin.XSmall': marginXSmall,
-  'Margin.Small': marginSmall,
-  'Margin.Large': marginLarge,
-  Padding: padding,
-  'Padding.XSmall': paddingXSmall,
-  'Padding.Small': paddingSmall,
-  'Padding.Large': paddingLarge,
-};
+export const variables = _variables;
 
 export const styles = {
   IconStyles,

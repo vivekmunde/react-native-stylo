@@ -1,6 +1,6 @@
-import RNSThemeProvider from '../stylers/theme-provider';
 import { TStylesProps as TRNSStylesProps } from '../stylers/types';
 import rnsUseStyle from '../stylers/use-style';
+import RNSThemeProvider from '../theme-provider';
 import RNSIcon, { TIconProps as TRNSIconProps } from './icon';
 import RNSImage, { TImageProps as TRNSImageProps } from './image';
 import RNSImageBackground, {

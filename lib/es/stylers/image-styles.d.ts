@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleProp, ImageStyle } from 'react-native';
+import { ImageStyle, StyleProp } from 'react-native';
 declare type TProps<TStyleName extends string, TStyleNamespace extends string> = {
     styleNamespace?: TStyleNamespace;
     styleNames: TStyleName[];

@@ -1,6 +1,6 @@
 import { useContext, useMemo } from 'react';
 
-import ThemeContext from './theme-context';
+import ThemeContext from '../theme-context';
 
 function useVariables<TVariable extends string>(
   names: TVariable[],
