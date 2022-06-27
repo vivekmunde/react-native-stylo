@@ -20,7 +20,7 @@ export declare const SafeAreaView: <TStyleName extends string, TStyleNamespace e
 export declare const ScrollView: <TScrollViewStyle extends string, TScrollViewStyleNamespace extends string, TScrollViewContentContainerStyle extends string, TScrollViewContentContainerStyleNamespace extends string>({ styleNamespace, styleNames, style, contentContainerStyleNamespace, contentContainerStyleNames, contentContainerStyle, ...props }: TRNSScrollViewProps<TScrollViewStyle, TScrollViewStyleNamespace, TScrollViewContentContainerStyle, TScrollViewContentContainerStyleNamespace>) => JSX.Element;
 export declare const Text: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TRNSTextProps<TStyleName, TStyleNamespace>) => JSX.Element;
 export declare const TextInput: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TRNSTextInputProps<TStyleName, TStyleNamespace>) => JSX.Element;
-export declare const ThemeProvider: import("react").FC<import("../stylers/theme-context").TContext>;
+export declare const ThemeProvider: import("react").FC<import("../theme-context").TContext>;
 export declare const TouchableHighlight: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TRNSTouchableHighlightProps<TStyleName, TStyleNamespace>) => JSX.Element;
 export declare const TouchableOpacity: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TRNSTouchableOpacityProps<TStyleName, TStyleNamespace>) => JSX.Element;
 export declare const useStyle: typeof rnsUseStyle;

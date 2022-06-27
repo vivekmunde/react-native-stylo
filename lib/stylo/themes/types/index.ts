@@ -4,15 +4,10 @@ import _TFormStyle from './assorted/form';
 import _THorizontalStyle from './assorted/horizontal';
 import _TListStyle from './assorted/list';
 import _TScreenStyle from './assorted/screen';
-import _TBorderStyle from './generic/border';
-import _TFlexStyle from './generic/flex';
-import _TMarginStyle from './generic/margin';
-import _TPaddingStyle from './generic/padding';
 import _TIconStyle from './components/icon';
 import _TImageStyle from './components/image';
 import _TImageBackgroundStyle from './components/image-background';
 import _TKeyboardAvoidingViewStyle from './components/keyboard-avoiding-view';
-import _TStyleNamespace from './namespaces';
 import _TSafeAreaViewStyle from './components/safe-area-view';
 import {
   TScrollViewContentContainerStyle as _TScrollViewContentContainerStyle,
@@ -22,6 +17,12 @@ import _TTextStyle from './components/text';
 import _TTextInputStyle from './components/text-input';
 import _TTouchableStyle from './components/touchable';
 import _TViewStyle from './components/view';
+import _TBorderStyle from './generic/border';
+import _TFlexStyle from './generic/flex';
+import _TMarginStyle from './generic/margin';
+import _TPaddingStyle from './generic/padding';
+import _TStyleNamespace from './namespaces';
+import _TVariable from './variables';
 
 export type TStyleNamespace = _TStyleNamespace;
 export type TBorderStyle = _TBorderStyle;
@@ -54,6 +55,8 @@ export type TListStyle = _TListStyle;
 export type TFormStyle = _TFormStyle;
 
 export type TScreenStyle = _TScreenStyle;
+
+export type TVariable = _TVariable;
 
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------
