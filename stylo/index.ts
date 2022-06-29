@@ -10,10 +10,7 @@ import {
 import _Styles from './stylers/styles';
 import _TextInputStyles from './stylers/text-input-styles';
 import _TextStyles from './stylers/text-styles';
-import _ThemeContext from './stylers/theme-context';
-import _ThemeProvider from './stylers/theme-provider';
 import _TouchableStyles from './stylers/touchable-styles';
-import { TStylesProps as _TStylesProps } from './stylers/types';
 import _useIconStyles from './stylers/use-icon-styles';
 import _useImageBackgroundStyles from './stylers/use-image-background-styles';
 import _useImageStyles from './stylers/use-image-styles';
@@ -58,35 +55,72 @@ import {
   TTouchableOpacityProps as _TouchableOpacityProps,
 } from './stylish/touchable';
 import _View, { TViewProps as _ViewProps } from './stylish/view';
+import _ThemeContext from './theme-context';
+import _ThemeProvider from './theme-provider';
 
-export type TStylesProps<T extends string> = _TStylesProps<T>;
+export type TPressableProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = _PressableProps<TStyleName, TStyleNamespace>;
+export type TTouchableHighlightProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = _TouchableHighlightProps<TStyleName, TStyleNamespace>;
+export type TTouchableOpacityProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = _TouchableOpacityProps<TStyleName, TStyleNamespace>;
 
-export type TPressableProps<T extends string> = _PressableProps<T>;
-export type TTouchableHighlightProps<T extends string> =
-  _TouchableHighlightProps<T>;
-export type TTouchableOpacityProps<T extends string> =
-  _TouchableOpacityProps<T>;
+export type TIconProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = _IconProps<TStyleName, TStyleNamespace>;
 
-export type TIconProps<T extends string> = _IconProps<T>;
+export type TImageProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = _ImageProps<TStyleName, TStyleNamespace>;
+export type TImageBackgroundProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = _ImageBackgroundProps<TStyleName, TStyleNamespace>;
 
-export type TImageProps<T extends string> = _ImageProps<T>;
-export type TImageBackgroundProps<T extends string> = _ImageBackgroundProps<T>;
+export type TKeyboardAvoidingViewProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = _KeyboardAvoidingViewProps<TStyleName, TStyleNamespace>;
 
-export type TKeyboardAvoidingViewProps<T extends string> =
-  _KeyboardAvoidingViewProps<T>;
-
-export type TSafeAreaViewProps<T extends string> = _SafeAreaViewProps<T>;
+export type TSafeAreaViewProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = _SafeAreaViewProps<TStyleName, TStyleNamespace>;
 
 export type TScrollViewProps<
   TScrollViewStyle extends string,
+  TScrollViewStyleNamespace extends string,
   TScrollViewContentContainerStyle extends string,
-> = _ScrollViewProps<TScrollViewStyle, TScrollViewContentContainerStyle>;
+  TScrollViewContentContainerStyleNamespace extends string,
+> = _ScrollViewProps<
+  TScrollViewStyle,
+  TScrollViewStyleNamespace,
+  TScrollViewContentContainerStyle,
+  TScrollViewContentContainerStyleNamespace
+>;
 
-export type TTextProps<T extends string> = _TextProps<T>;
+export type TTextProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = _TextProps<TStyleName, TStyleNamespace>;
 
-export type TTextInputProps<T extends string> = _TextInputProps<T>;
+export type TTextInputProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = _TextInputProps<TStyleName, TStyleNamespace>;
 
-export type TViewProps<T extends string> = _ViewProps<T>;
+export type TViewProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = _ViewProps<TStyleName, TStyleNamespace>;
 
 export const IconStyles = _IconStyles;
 export const ImageBackgroundStyles = _ImageBackgroundStyles;
@@ -131,3 +165,49 @@ export const TextInput = _TextInput;
 export const TouchableHighlight = _TouchableHighlight;
 export const TouchableOpacity = _TouchableOpacity;
 export const View = _View;
+
+const Stylo = {
+  IconStyles: _IconStyles,
+  ImageBackgroundStyles: _ImageBackgroundStyles,
+  ImageStyles: _ImageStyles,
+  KeyboardAvoidingViewStyles: _KeyboardAvoidingViewStyles,
+  SafeAreaViewStyles: _SafeAreaViewStyles,
+  ScrollViewStyles: _ScrollViewStyles,
+  ScrollViewContentContainerStyles: _ScrollViewContentContainerStyles,
+  Styles: _Styles,
+  TextStyles: _TextStyles,
+  TextInputStyles: _TextInputStyles,
+  ThemeContext: _ThemeContext,
+  ThemeProvider: _ThemeProvider,
+  TouchableStyles: _TouchableStyles,
+  useIconStyles: _useIconStyles,
+  useImageBackgroundStyles: _useImageBackgroundStyles,
+  useImageStyles: _useImageStyles,
+  useKeyboardAvoidingViewStyles: _useKeyboardAvoidingViewStyles,
+  useSafeAreaViewStyles: _useSafeAreaViewStyles,
+  useScrollViewStyles: _useScrollViewStyles,
+  useScrollViewContentContainerStyles: _useScrollViewContentContainerStyles,
+  useStyle: _useStyle,
+  useStyles: _useStyles,
+  useTextStyles: _useTextStyles,
+  useTextInputStyles: _useTextInputStyles,
+  useTouchableStyles: _useTouchableStyles,
+  useVariables: _useVariables,
+  useViewStyles: _useViewStyles,
+  ViewStyles: _ViewStyles,
+
+  Icon: _Icon,
+  Image: _Image,
+  ImageBackground: _ImageBackground,
+  Pressable: _Pressable,
+  KeyboardAvoidingView: _KeyboardAvoidingView,
+  SafeAreaView: _SafeAreaView,
+  ScrollView: _ScrollView,
+  Text: _Text,
+  TextInput: _TextInput,
+  TouchableHighlight: _TouchableHighlight,
+  TouchableOpacity: _TouchableOpacity,
+  View: _View,
+};
+
+export default Stylo;

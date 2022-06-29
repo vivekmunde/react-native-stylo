@@ -1,18 +1,23 @@
 import React from 'react';
 import { View, ViewProps } from 'react-native';
-import { TStylesProps, useViewStyles } from '../stylers';
 
-export type TViewProps<T extends string> = ViewProps & TStylesProps<T>;
+import { useViewStyles } from '../stylers';
+import { TStylesProps } from './types';
 
-const RNSView = <T extends string>({
+export type TViewProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = ViewProps & TStylesProps<TStyleName, TStyleNamespace>;
+
+const RNSView = <TStyleName extends string, TStyleNamespace extends string>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TViewProps<T>) => {
-  const viewStyle = useViewStyles<T>(
-    styleNames,
-    styleNamespace ?? 'ViewStyles',
+}: TViewProps<TStyleName, TStyleNamespace>) => {
+  const viewStyle = useViewStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? ('ViewStyles' as TStyleNamespace),
   );
   return <View {...props} style={[viewStyle, style]} />;
 };

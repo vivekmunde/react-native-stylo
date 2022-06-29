@@ -1,13 +1,17 @@
-import { TextStyle, StyleProp } from 'react-native';
+import { StyleProp, TextStyle } from 'react-native';
+
 import useStyles from './use-styles';
 
-function useImageStyles<T extends string>(
-  styleNames: T[] | undefined,
-  styleNamespace?: string,
+function useImageStyles<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>(
+  styleNames: TStyleName[],
+  styleNamespace?: TStyleNamespace,
 ): StyleProp<TextStyle> {
-  return useStyles<TextStyle, T>({
-    styleNamespace: styleNamespace ?? 'TextInputStyles',
-    styleNames,
+  return useStyles<TextStyle, TStyleName, TStyleNamespace>({
+    styleNamespace: styleNamespace ?? ('TextInputStyles' as TStyleNamespace),
+    styleNames: styleNames ?? [],
   });
 }
 

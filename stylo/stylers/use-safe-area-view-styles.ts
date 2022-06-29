@@ -1,13 +1,17 @@
-import { ViewStyle, StyleProp } from 'react-native';
+import { StyleProp, ViewStyle } from 'react-native';
+
 import useStyles from './use-styles';
 
-function useSafeAreaViewStyles<T extends string>(
-  styleNames: T[] | undefined,
-  styleNamespace?: string,
+function useSafeAreaViewStyles<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>(
+  styleNames: TStyleName[],
+  styleNamespace?: TStyleNamespace,
 ): StyleProp<ViewStyle> {
-  return useStyles<ViewStyle, T>({
-    styleNamespace: styleNamespace ?? 'SafeAreaViewStyles',
-    styleNames,
+  return useStyles<ViewStyle, TStyleName, TStyleNamespace>({
+    styleNamespace: styleNamespace ?? ('SafeAreaViewStyles' as TStyleNamespace),
+    styleNames: styleNames ?? [],
   });
 }
 

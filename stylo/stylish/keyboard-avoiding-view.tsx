@@ -1,19 +1,29 @@
 import React from 'react';
 import { KeyboardAvoidingView, KeyboardAvoidingViewProps } from 'react-native';
-import { TStylesProps, useKeyboardAvoidingViewStyles } from '../stylers';
 
-export type TKeyboardAvoidingViewProps<T extends string> =
-  KeyboardAvoidingViewProps & TStylesProps<T>;
+import { useKeyboardAvoidingViewStyles } from '../stylers';
+import { TStylesProps } from './types';
 
-const RNSKeyboardAvoidingView = <T extends string>({
+export type TKeyboardAvoidingViewProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = KeyboardAvoidingViewProps & TStylesProps<TStyleName, TStyleNamespace>;
+
+const RNSKeyboardAvoidingView = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TKeyboardAvoidingViewProps<T>) => {
-  const keyboardAvoidingViewStyle = useKeyboardAvoidingViewStyles<T>(
-    styleNames,
-    styleNamespace ?? 'KeyboardAvoidingViewStyles',
+}: TKeyboardAvoidingViewProps<TStyleName, TStyleNamespace>) => {
+  const keyboardAvoidingViewStyle = useKeyboardAvoidingViewStyles<
+    TStyleName,
+    TStyleNamespace
+  >(
+    styleNames ?? [],
+    styleNamespace ?? ('KeyboardAvoidingViewStyles' as TStyleNamespace),
   );
   return (
     <KeyboardAvoidingView

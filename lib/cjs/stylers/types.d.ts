@@ -1,4 +1,4 @@
-export declare type TStylesProps<T extends string> = {
-    styleNamespace?: string;
-    styleNames?: T[];
+export declare type TStylesProps<TStyleName extends string, TStyleNamespace extends string> = {
+    styleNamespace?: TStyleNamespace;
+    styleNames: TStyleName[];
 };

@@ -1,23 +1,28 @@
 import React from 'react';
 import { ScrollView, ScrollViewProps } from 'react-native';
+
 import {
-  TStylesProps,
-  useScrollViewStyles,
   useScrollViewContentContainerStyles,
+  useScrollViewStyles,
 } from '../stylers';
+import { TStylesProps } from './types';
 
 export type TScrollViewProps<
   TScrollViewStyle extends string,
+  TScrollViewStyleNamespace extends string,
   TScrollViewContentContainerStyle extends string,
+  TScrollViewContentContainerStyleNamespace extends string,
 > = ScrollViewProps &
-  TStylesProps<TScrollViewStyle> & {
-    contentContainerStyleNamespace?: string | undefined;
-    contentContainerStyleNames?: TScrollViewContentContainerStyle[] | undefined;
+  TStylesProps<TScrollViewStyle, TScrollViewStyleNamespace> & {
+    contentContainerStyleNamespace?: TScrollViewContentContainerStyleNamespace;
+    contentContainerStyleNames?: TScrollViewContentContainerStyle[];
   };
 
 const RNSScrollView = <
   TScrollViewStyle extends string,
+  TScrollViewStyleNamespace extends string,
   TScrollViewContentContainerStyle extends string,
+  TScrollViewContentContainerStyleNamespace extends string,
 >({
   styleNamespace,
   styleNames,
@@ -26,17 +31,28 @@ const RNSScrollView = <
   contentContainerStyleNames,
   contentContainerStyle,
   ...props
-}: TScrollViewProps<TScrollViewStyle, TScrollViewContentContainerStyle>) => {
-  const scrollViewStyle = useScrollViewStyles<TScrollViewStyle>(
-    styleNames,
-    styleNamespace ?? 'ScrollViewStyles',
+}: TScrollViewProps<
+  TScrollViewStyle,
+  TScrollViewStyleNamespace,
+  TScrollViewContentContainerStyle,
+  TScrollViewContentContainerStyleNamespace
+>) => {
+  const scrollViewStyle = useScrollViewStyles<
+    TScrollViewStyle,
+    TScrollViewStyleNamespace
+  >(
+    styleNames ?? [],
+    styleNamespace ?? ('ScrollViewStyles' as TScrollViewStyleNamespace),
   );
 
-  const scrollViewContentContainerStyle =
-    useScrollViewContentContainerStyles<TScrollViewContentContainerStyle>(
-      contentContainerStyleNames,
-      contentContainerStyleNamespace ?? 'ScrollViewContentContainerStyles',
-    );
+  const scrollViewContentContainerStyle = useScrollViewContentContainerStyles<
+    TScrollViewContentContainerStyle,
+    TScrollViewContentContainerStyleNamespace
+  >(
+    contentContainerStyleNames ?? [],
+    contentContainerStyleNamespace ??
+      ('ScrollViewContentContainerStyles' as TScrollViewContentContainerStyleNamespace),
+  );
 
   return (
     <ScrollView

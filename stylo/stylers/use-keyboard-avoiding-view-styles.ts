@@ -1,13 +1,18 @@
-import { ViewStyle, StyleProp } from 'react-native';
+import { StyleProp, ViewStyle } from 'react-native';
+
 import useStyles from './use-styles';
 
-function useKeyboardAvoidingViewStyles<T extends string>(
-  styleNames: T[] | undefined,
-  styleNamespace?: string,
+function useKeyboardAvoidingViewStyles<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>(
+  styleNames: TStyleName[],
+  styleNamespace?: TStyleNamespace,
 ): StyleProp<ViewStyle> {
-  return useStyles<ViewStyle, T>({
-    styleNamespace: styleNamespace ?? 'KeyboardAvoidingViewStyles',
-    styleNames,
+  return useStyles<ViewStyle, TStyleName, TStyleNamespace>({
+    styleNamespace:
+      styleNamespace ?? ('KeyboardAvoidingViewStyles' as TStyleNamespace),
+    styleNames: styleNames ?? [],
   });
 }
 

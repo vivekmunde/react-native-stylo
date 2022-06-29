@@ -1,22 +1,30 @@
-import { ViewStyle, StyleProp } from 'react-native';
+import { StyleProp, ViewStyle } from 'react-native';
+
 import useStyles from './use-styles';
 
-export function useScrollViewStyles<T extends string>(
-  styleNames: T[] | undefined,
-  styleNamespace?: string,
+export function useScrollViewStyles<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>(
+  styleNames: TStyleName[],
+  styleNamespace?: TStyleNamespace,
 ): StyleProp<ViewStyle> {
-  return useStyles<ViewStyle, T>({
-    styleNamespace: styleNamespace ?? 'ScrollViewStyles',
-    styleNames,
+  return useStyles<ViewStyle, TStyleName, TStyleNamespace>({
+    styleNamespace: styleNamespace ?? ('ScrollViewStyles' as TStyleNamespace),
+    styleNames: styleNames ?? [],
   });
 }
 
-export function useScrollViewContentContainerStyles<T extends string>(
-  styleNames: T[] | undefined,
-  styleNamespace?: string,
+export function useScrollViewContentContainerStyles<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>(
+  styleNames: TStyleName[],
+  styleNamespace?: TStyleNamespace,
 ): StyleProp<ViewStyle> {
-  return useStyles<ViewStyle, T>({
-    styleNamespace: styleNamespace ?? 'ScrollViewContentContainerStyles',
-    styleNames,
+  return useStyles<ViewStyle, TStyleName, TStyleNamespace>({
+    styleNamespace:
+      styleNamespace ?? ('ScrollViewContentContainerStyles' as TStyleNamespace),
+    styleNames: styleNames ?? [],
   });
 }

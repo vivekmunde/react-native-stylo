@@ -1,13 +1,17 @@
-import { ViewStyle, StyleProp } from 'react-native';
+import { StyleProp, ViewStyle } from 'react-native';
+
 import useStyles from './use-styles';
 
-function useTouchableStyles<T extends string>(
-  styleNames: T[] | undefined,
-  styleNamespace?: string,
+function useTouchableStyles<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>(
+  styleNames: TStyleName[],
+  styleNamespace?: TStyleNamespace,
 ): StyleProp<ViewStyle> {
-  return useStyles<ViewStyle, T>({
-    styleNamespace: styleNamespace ?? 'TouchableStyles',
-    styleNames,
+  return useStyles<ViewStyle, TStyleName, TStyleNamespace>({
+    styleNamespace: styleNamespace ?? ('TouchableStyles' as TStyleNamespace),
+    styleNames: styleNames ?? [],
   });
 }
 

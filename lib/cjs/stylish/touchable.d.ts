@@ -1,9 +1,9 @@
 /// <reference types="react" />
 import { PressableProps, TouchableHighlightProps, TouchableOpacityProps } from 'react-native';
-import { TStylesProps } from '../stylers';
-export declare type TPressableProps<T extends string> = PressableProps & TStylesProps<T>;
-export declare const Pressable: <T extends string>({ styleNamespace, styleNames, style, ...props }: TPressableProps<T>) => JSX.Element;
-export declare type TTouchableHighlightProps<T extends string> = TouchableHighlightProps & TStylesProps<T>;
-export declare const TouchableHighlight: <T extends string>({ styleNamespace, styleNames, style, ...props }: TTouchableHighlightProps<T>) => JSX.Element;
-export declare type TTouchableOpacityProps<T extends string> = TouchableOpacityProps & TStylesProps<T>;
-export declare const TouchableOpacity: <T extends string>({ styleNamespace, styleNames, style, ...props }: TTouchableOpacityProps<T>) => JSX.Element;
+import { TStylesProps } from './types';
+export declare type TPressableProps<TStyleName extends string, TStyleNamespace extends string> = PressableProps & TStylesProps<TStyleName, TStyleNamespace>;
+export declare const Pressable: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TPressableProps<TStyleName, TStyleNamespace>) => JSX.Element;
+export declare type TTouchableHighlightProps<TStyleName extends string, TStyleNamespace extends string> = TouchableHighlightProps & TStylesProps<TStyleName, TStyleNamespace>;
+export declare const TouchableHighlight: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TTouchableHighlightProps<TStyleName, TStyleNamespace>) => JSX.Element;
+export declare type TTouchableOpacityProps<TStyleName extends string, TStyleNamespace extends string> = TouchableOpacityProps & TStylesProps<TStyleName, TStyleNamespace>;
+export declare const TouchableOpacity: <TStyleName extends string, TStyleNamespace extends string>({ styleNamespace, styleNames, style, ...props }: TTouchableOpacityProps<TStyleName, TStyleNamespace>) => JSX.Element;

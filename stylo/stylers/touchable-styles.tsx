@@ -1,19 +1,26 @@
 import React from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
+
 import useTouchableStyles from './use-touchable-styles';
 
-type TProps<T extends string> = {
-  styleNamespace?: string;
-  styleNames?: T[];
+type TProps<TStyleName extends string, TStyleNamespace extends string> = {
+  styleNamespace?: TStyleNamespace;
+  styleNames: TStyleName[];
   children: (style: StyleProp<ViewStyle>) => React.ReactElement | null;
 };
 
-const TouchableStyles = <T extends string>({
+const TouchableStyles = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   children,
-}: TProps<T>): React.ReactElement | null => {
-  const style = useTouchableStyles<T>(styleNames, styleNamespace);
+}: TProps<TStyleName, TStyleNamespace>): React.ReactElement | null => {
+  const style = useTouchableStyles<TStyleName, TStyleNamespace>(
+    styleNames,
+    styleNamespace,
+  );
   return children(style);
 };
 

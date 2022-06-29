@@ -14,9 +14,14 @@ import RNVIconMaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import RNVIconOcticons from 'react-native-vector-icons/Octicons';
 import RNVIconSimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import RNVIconZocial from 'react-native-vector-icons/Zocial';
-import { TStylesProps, useIconStyles } from '../stylers';
 
-export type TIconProps<T extends string> = TStylesProps<T> & {
+import { useIconStyles } from '../stylers';
+import { TStylesProps } from './types';
+
+export type TIconProps<
+  TStyleName extends string,
+  TStyleNamespace extends string,
+> = TStylesProps<TStyleName, TStyleNamespace> & {
   name: string;
   size?: number | undefined;
   color?: string | undefined;
@@ -25,186 +30,204 @@ export type TIconProps<T extends string> = TStylesProps<T> & {
 
 const defaultStyleNamespace = 'IconStyles';
 
-const AntDesign = <T extends string>({
+const AntDesign = <TStyleName extends string, TStyleNamespace extends string>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconAntDesign {...props} style={[textStyle, style]} />;
 };
 
-const Entypo = <T extends string>({
+const Entypo = <TStyleName extends string, TStyleNamespace extends string>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconEntypo {...props} style={[textStyle, style]} />;
 };
 
-const EvilIcons = <T extends string>({
+const EvilIcons = <TStyleName extends string, TStyleNamespace extends string>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconEvilIcons {...props} style={[textStyle, style]} />;
 };
 
-const FontAwesome = <T extends string>({
+const FontAwesome = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconFontAwesome {...props} style={[textStyle, style]} />;
 };
 
-const FontAwesome5 = <T extends string>({
+const FontAwesome5 = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconFontAwesome5 {...props} style={[textStyle, style]} />;
 };
 
-const FontAwesome5Pro = <T extends string>({
+const FontAwesome5Pro = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconFontAwesome5Pro {...props} style={[textStyle, style]} />;
 };
 
-const Fontisto = <T extends string>({
+const Fontisto = <TStyleName extends string, TStyleNamespace extends string>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconFontisto {...props} style={[textStyle, style]} />;
 };
 
-const Foundation = <T extends string>({
+const Foundation = <TStyleName extends string, TStyleNamespace extends string>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconFoundation {...props} style={[textStyle, style]} />;
 };
 
-const Ionicons = <T extends string>({
+const Ionicons = <TStyleName extends string, TStyleNamespace extends string>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconIonicons {...props} style={[textStyle, style]} />;
 };
 
-const MaterialCommunityIcons = <T extends string>({
+const MaterialCommunityIcons = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return (
     <RNVIconMaterialCommunityIcons {...props} style={[textStyle, style]} />
   );
 };
 
-const MaterialIcons = <T extends string>({
+const MaterialIcons = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconMaterialIcons {...props} style={[textStyle, style]} />;
 };
 
-const Octicons = <T extends string>({
+const Octicons = <TStyleName extends string, TStyleNamespace extends string>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconOcticons {...props} style={[textStyle, style]} />;
 };
 
-const SimpleLineIcons = <T extends string>({
+const SimpleLineIcons = <
+  TStyleName extends string,
+  TStyleNamespace extends string,
+>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconSimpleLineIcons {...props} style={[textStyle, style]} />;
 };
 
-const Zocial = <T extends string>({
+const Zocial = <TStyleName extends string, TStyleNamespace extends string>({
   styleNamespace,
   styleNames,
   style,
   ...props
-}: TIconProps<T>) => {
-  const textStyle = useIconStyles<T>(
-    styleNames,
-    styleNamespace ?? defaultStyleNamespace,
+}: TIconProps<TStyleName, TStyleNamespace>) => {
+  const textStyle = useIconStyles<TStyleName, TStyleNamespace>(
+    styleNames ?? [],
+    styleNamespace ?? (defaultStyleNamespace as TStyleNamespace),
   );
   return <RNVIconZocial {...props} style={[textStyle, style]} />;
 };
