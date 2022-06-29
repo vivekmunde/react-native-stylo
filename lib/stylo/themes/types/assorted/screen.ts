@@ -1,10 +1,9 @@
-type TScreenStyle =
-  | 'Screen'
-  | 'Screen.Header'
-  | 'Screen.Header.Left'
-  | 'Screen.Header.Body'
-  | 'Screen.Header.Right'
-  | 'Screen.Body'
-  | 'Screen.Footer';
+/* ------------------------- */
+/*      Can be modified      */
+/* ------------------------- */
+
+import _TScreenStyle from '../__generated__/assorted/screen';
+
+type TScreenStyle = _TScreenStyle;
 
 export default TScreenStyle;

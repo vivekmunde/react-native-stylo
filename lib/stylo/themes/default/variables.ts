@@ -1,21 +1,9 @@
-import Colors from './colors';
+/* ------------------------- */
+/*      Can be modified      */
+/* ------------------------- */
 
-const Variables = {
-  ...Colors,
-  'Font.Color': Colors['Color.Font'],
-  'Border.Color': Colors['Color.Border'],
-  'Border.Width': 1,
-  'Border.Radius': 6,
-  'Border.Radius.Small': 4,
-  'Border.Radius.Large': 12,
-  Margin: 12,
-  'Margin.XSmall': 4,
-  'Margin.Small': 8,
-  'Margin.Large': 24,
-  Padding: 12,
-  'Padding.XSmall': 4,
-  'Padding.Small': 8,
-  'Padding.Large': 24,
-};
+import _Variables from './__generated__/variables';
+
+const Variables = _Variables;
 
 export default Variables;

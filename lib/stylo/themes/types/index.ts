@@ -1,3 +1,7 @@
+/* ------------------------- */
+/*      Can be modified      */
+/* ------------------------- */
+
 import { TBadgeStyle as _TBadgeStyle } from './assorted/badge';
 import { TButtonStyle as _TButtonStyle } from './assorted/button';
 import _TFormStyle from './assorted/form';
@@ -7,7 +11,6 @@ import _TScreenStyle from './assorted/screen';
 import _TIconStyle from './components/icon';
 import _TImageStyle from './components/image';
 import _TImageBackgroundStyle from './components/image-background';
-import _TKeyboardAvoidingViewStyle from './components/keyboard-avoiding-view';
 import _TSafeAreaViewStyle from './components/safe-area-view';
 import {
   TScrollViewContentContainerStyle as _TScrollViewContentContainerStyle,
@@ -21,8 +24,8 @@ import _TBorderStyle from './generic/border';
 import _TFlexStyle from './generic/flex';
 import _TMarginStyle from './generic/margin';
 import _TPaddingStyle from './generic/padding';
-import _TStyleNamespace from './namespaces';
-import _TVariable from './variables';
+import _TStyleNamespace from './namespace';
+import _TVariable from './variable';
 
 export type TStyleNamespace = _TStyleNamespace;
 export type TBorderStyle = _TBorderStyle;
@@ -48,8 +51,6 @@ export type TBadgeStyle = _TBadgeStyle;
 
 export type TButtonStyle = _TButtonStyle;
 
-export type TKeyboardAvoidingViewStyle = _TKeyboardAvoidingViewStyle;
-
 export type TListStyle = _TListStyle;
 
 export type TFormStyle = _TFormStyle;
@@ -57,17 +58,3 @@ export type TFormStyle = _TFormStyle;
 export type TScreenStyle = _TScreenStyle;
 
 export type TVariable = _TVariable;
-
-// ------------------------------------------------------------------------------------------------
-// ------------------------------------------------------------------------------------------------
-
-// Group: Horizontal & Vertical
-// Checkbox
-// Radio
-// Message/Alert
-// Card
-// Grid
-
-// How to?
-// Action sheet / Menu
-// Picker

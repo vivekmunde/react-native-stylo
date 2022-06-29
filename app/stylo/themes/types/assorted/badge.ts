@@ -1,6 +1,9 @@
-export type TBadgeStyle = 'Badge' | 'Badge.Small' | 'Badge.Large';
+/* ------------------------- */
+/*      Can be modified      */
+/* ------------------------- */
 
-export type TBadgeTextStyle =
-  | 'Badge.Text'
-  | 'Badge.Text.Small'
-  | 'Badge.Text.Large';
+import * as _ from '../__generated__/assorted/badge';
+
+export type TBadgeStyle = _.TBadgeStyle;
+
+export type TBadgeTextStyle = _.TBadgeTextStyle;

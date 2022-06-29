@@ -1,10 +1,13 @@
-export type TTagStyle = 'Tag' | 'Tag.Small' | 'Tag.Large';
+/* ------------------------- */
+/*      Can be modified      */
+/* ------------------------- */
 
-export type TTagTextStyle = 'Tag.Text';
+import * as _ from '../__generated__/assorted/tag';
 
-export type TTagIconStyle = 'Tag.Icon.Left' | 'Tag.Icon.Right';
+export type TTagStyle = _.TTagStyle;
 
-export type TTagAvatarImageStyle =
-  | 'Tag.Avatar'
-  | 'Tag.Avatar.Left'
-  | 'Tag.Avatar.Right';
+export type TTagTextStyle = _.TTagTextStyle;
+
+export type TTagIconStyle = _.TTagIconStyle;
+
+export type TTagAvatarImageStyle = _.TTagAvatarImageStyle;

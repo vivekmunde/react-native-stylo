@@ -35,8 +35,15 @@ const Home = () => {
               {'Highly composable & scalable themes'}
             </Stylish.Text>
           </Stylish.View>
-          <Stylish.View styleNames={['Screen.Body']}>
-            <Stylish.View styleNames={['Padding.Large', 'Flex.Column']}>
+          <Stylish.View styleNames={['Screen.Body', 'Padding']}>
+            <Stylish.View
+              styleNames={[
+                'Padding.Large',
+                'Flex.Column',
+                'Border',
+                'Border.Style.Dashed',
+                'Border.Radius.Large',
+              ]}>
               <Stylish.Text>• Loosely coupled style definitions</Stylish.Text>
               <Stylish.Text>• Compose your own theme</Stylish.Text>
               <Stylish.Text>• Compose your own components</Stylish.Text>
@@ -51,7 +58,12 @@ const Home = () => {
             'Flex.AlignItems.Center',
             'Flex.JustifyContent.SpaceAround',
           ]}>
-          {/*  */}
+          <Stylish.TouchableOpacity
+            styleNames={['Button', 'BackgroundColor.Primary']}>
+            <Stylish.Text styleNames={['Color.White', 'Button.Text']}>
+              Submit
+            </Stylish.Text>
+          </Stylish.TouchableOpacity>
         </Stylish.View>
       </Stylish.View>
       <Stylish.SafeAreaView />

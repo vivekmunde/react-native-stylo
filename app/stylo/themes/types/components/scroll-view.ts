@@ -1,3 +1,7 @@
+/* ------------------------- */
+/*      Can be modified      */
+/* ------------------------- */
+
 import TBackgroundColorStyle from '../generic/background-color';
 import TBorderStyle from '../generic/border';
 import TFlexStyle from '../generic/flex';

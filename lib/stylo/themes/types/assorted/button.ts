@@ -1,15 +1,11 @@
-export type TButtonStyle =
-  | 'Button'
-  | 'Button.Circle'
-  | 'Button.Small'
-  | 'Button.Large'
-  | 'Button.Round'
-  | 'Button.Transparent';
+/* ------------------------- */
+/*      Can be modified      */
+/* ------------------------- */
 
-export type TButtonTextStyle = 'Button.Text';
+import * as _ from '../__generated__/assorted/button';
 
-export type TButtonIconStyle =
-  | 'Button.Icon'
-  | 'Button.Circle.Icon'
-  | 'Button.Circle.Icon.Small'
-  | 'Button.Circle.Icon.Large';
+export type TButtonStyle = _.TButtonStyle;
+
+export type TButtonTextStyle = _.TButtonTextStyle;
+
+export type TButtonIconStyle = _.TButtonIconStyle;

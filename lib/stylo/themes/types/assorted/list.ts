@@ -1,8 +1,9 @@
-type TListStyle =
-  | 'List'
-  | 'List.Item'
-  | 'List.Item.Left'
-  | 'List.Item.Body'
-  | 'List.Item.Right';
+/* ------------------------- */
+/*      Can be modified      */
+/* ------------------------- */
+
+import _TListStyle from '../__generated__/assorted/list';
+
+type TListStyle = _TListStyle;
 
 export default TListStyle;

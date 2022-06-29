@@ -1,7 +1,9 @@
-type TAvatarImageStyle =
-  | 'Avatar'
-  | 'Avatar.Square'
-  | 'Avatar.Small'
-  | 'Avatar.Large';
+/* ------------------------- */
+/*      Can be modified      */
+/* ------------------------- */
 
-export default TAvatarImageStyle;
+import _TAvatarStyle from '../__generated__/assorted/avatar';
+
+type TAvatarStyle = _TAvatarStyle;
+
+export default TAvatarStyle;

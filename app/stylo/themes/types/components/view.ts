@@ -1,3 +1,7 @@
+/* ------------------------- */
+/*      Can be modified      */
+/* ------------------------- */
+
 import { TBadgeStyle } from '../assorted/badge';
 import TFormStyle from '../assorted/form';
 import THorizontalStyle from '../assorted/horizontal';
@@ -10,16 +14,13 @@ import TFlexStyle from '../generic/flex';
 import TMarginStyle from '../generic/margin';
 import TPaddingStyle from '../generic/padding';
 
-export type TViewCommonStyle =
+type TViewStyle =
   | TBackgroundColorStyle
   | TBorderStyle
   | TPaddingStyle
   | TMarginStyle
   | TFlexStyle
-  | THorizontalStyle;
-
-type TViewStyle =
-  | TViewCommonStyle
+  | THorizontalStyle
   | TBadgeStyle
   | TListStyle
   | TFormStyle
