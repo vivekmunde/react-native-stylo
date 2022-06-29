@@ -1,3 +1,12 @@
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/*                                  Version 0.3.0                                   */
+/* -------------------------------------------------------------------------------- */
+/*                                  DO NOT MODIFY                                   */
+/* -------------------------------------------------------------------------------- */
+
 import { TAvatarStyle } from '../assorted/avatar';
 import { TTagAvatarImageStyle } from '../assorted/tag';
 import TBorderStyle from '../generic/border';

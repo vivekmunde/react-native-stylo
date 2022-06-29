@@ -1,3 +1,10 @@
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/*                                  Version 0.3.0                                   */
+/* -------------------------------------------------------------------------------- */
+
 import { useSafeAreaViewStyles as useStyloSafeAreaViewStyles } from '../../../stylo';
 import { TSafeAreaViewStyle, TStyleNamespace } from '../themes/types';
 

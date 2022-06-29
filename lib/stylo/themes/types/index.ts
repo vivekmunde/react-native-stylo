@@ -1,6 +1,12 @@
-/* ------------------------- */
-/*      Can be modified      */
-/* ------------------------- */
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/* -------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------- */
+/*                           Customize as per your needs                            */
+/* -------------------------------------------------------------------------------- */
 
 import { TBadgeStyle as _TBadgeStyle } from './assorted/badge';
 import { TButtonStyle as _TButtonStyle } from './assorted/button';

@@ -1,3 +1,10 @@
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/*                                  Version 0.3.0                                   */
+/* -------------------------------------------------------------------------------- */
+
 import _useIconStyles from './use-icon-styles';
 import _useImageBackgroundStyles from './use-image-background-styles';
 import _useImageStyles from './use-image-styles';
