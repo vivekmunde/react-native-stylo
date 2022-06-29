@@ -1,7 +1,6 @@
 import _IconStyles from './stylers/icon-styles';
 import _ImageBackgroundStyles from './stylers/image-background-styles';
 import _ImageStyles from './stylers/image-styles';
-import _KeyboardAvoidingViewStyles from './stylers/keyboard-avoiding-view-styles';
 import _SafeAreaViewStyles from './stylers/safe-area-view-styles';
 import {
   ScrollViewContentContainerStyles as _ScrollViewContentContainerStyles,
@@ -14,7 +13,6 @@ import _TouchableStyles from './stylers/touchable-styles';
 import _useIconStyles from './stylers/use-icon-styles';
 import _useImageBackgroundStyles from './stylers/use-image-background-styles';
 import _useImageStyles from './stylers/use-image-styles';
-import _useKeyboardAvoidingViewStyles from './stylers/use-keyboard-avoiding-view-styles';
 import _useSafeAreaViewStyles from './stylers/use-safe-area-view-styles';
 import {
   useScrollViewContentContainerStyles as _useScrollViewContentContainerStyles,
@@ -33,9 +31,6 @@ import _Image, { TImageProps as _ImageProps } from './stylish/image';
 import _ImageBackground, {
   TImageBackgroundProps as _ImageBackgroundProps,
 } from './stylish/image-background';
-import _KeyboardAvoidingView, {
-  TKeyboardAvoidingViewProps as _KeyboardAvoidingViewProps,
-} from './stylish/keyboard-avoiding-view';
 import _SafeAreaView, {
   TSafeAreaViewProps as _SafeAreaViewProps,
 } from './stylish/safe-area-view';
@@ -85,11 +80,6 @@ export type TImageBackgroundProps<
   TStyleNamespace extends string,
 > = _ImageBackgroundProps<TStyleName, TStyleNamespace>;
 
-export type TKeyboardAvoidingViewProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = _KeyboardAvoidingViewProps<TStyleName, TStyleNamespace>;
-
 export type TSafeAreaViewProps<
   TStyleName extends string,
   TStyleNamespace extends string,
@@ -125,7 +115,6 @@ export type TViewProps<
 export const IconStyles = _IconStyles;
 export const ImageBackgroundStyles = _ImageBackgroundStyles;
 export const ImageStyles = _ImageStyles;
-export const KeyboardAvoidingViewStyles = _KeyboardAvoidingViewStyles;
 export const SafeAreaViewStyles = _SafeAreaViewStyles;
 export const ScrollViewStyles = _ScrollViewStyles;
 export const ScrollViewContentContainerStyles =
@@ -139,7 +128,6 @@ export const TouchableStyles = _TouchableStyles;
 export const useIconStyles = _useIconStyles;
 export const useImageBackgroundStyles = _useImageBackgroundStyles;
 export const useImageStyles = _useImageStyles;
-export const useKeyboardAvoidingViewStyles = _useKeyboardAvoidingViewStyles;
 export const useSafeAreaViewStyles = _useSafeAreaViewStyles;
 export const useScrollViewStyles = _useScrollViewStyles;
 export const useScrollViewContentContainerStyles =
@@ -157,7 +145,6 @@ export const Icon = _Icon;
 export const Image = _Image;
 export const ImageBackground = _ImageBackground;
 export const Pressable = _Pressable;
-export const KeyboardAvoidingView = _KeyboardAvoidingView;
 export const SafeAreaView = _SafeAreaView;
 export const ScrollView = _ScrollView;
 export const Text = _Text;
@@ -170,7 +157,6 @@ const Stylo = {
   IconStyles: _IconStyles,
   ImageBackgroundStyles: _ImageBackgroundStyles,
   ImageStyles: _ImageStyles,
-  KeyboardAvoidingViewStyles: _KeyboardAvoidingViewStyles,
   SafeAreaViewStyles: _SafeAreaViewStyles,
   ScrollViewStyles: _ScrollViewStyles,
   ScrollViewContentContainerStyles: _ScrollViewContentContainerStyles,
@@ -183,7 +169,6 @@ const Stylo = {
   useIconStyles: _useIconStyles,
   useImageBackgroundStyles: _useImageBackgroundStyles,
   useImageStyles: _useImageStyles,
-  useKeyboardAvoidingViewStyles: _useKeyboardAvoidingViewStyles,
   useSafeAreaViewStyles: _useSafeAreaViewStyles,
   useScrollViewStyles: _useScrollViewStyles,
   useScrollViewContentContainerStyles: _useScrollViewContentContainerStyles,
@@ -200,7 +185,6 @@ const Stylo = {
   Image: _Image,
   ImageBackground: _ImageBackground,
   Pressable: _Pressable,
-  KeyboardAvoidingView: _KeyboardAvoidingView,
   SafeAreaView: _SafeAreaView,
   ScrollView: _ScrollView,
   Text: _Text,

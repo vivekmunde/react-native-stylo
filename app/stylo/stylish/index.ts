@@ -1,7 +1,6 @@
 import _Icon from './icon';
 import _Image from './image';
 import _ImageBackground from './image-background';
-import _KeyboardAvoidingView from './keyboard-avoiding-view';
 import _SafeAreaView from './safe-area-view';
 import _ScrollView from './scroll-view';
 import _Text from './text';
@@ -12,7 +11,6 @@ import _View from './view';
 export const Icon = _Icon;
 export const Image = _Image;
 export const ImageBackground = _ImageBackground;
-export const KeyboardAvoidingView = _KeyboardAvoidingView;
 export const SafeAreaView = _SafeAreaView;
 export const ScrollView = _ScrollView;
 export const Text = _Text;
@@ -26,7 +24,6 @@ const Stylish = {
   Icon,
   Image,
   ImageBackground,
-  KeyboardAvoidingView,
   Pressable,
   SafeAreaView,
   ScrollView,
