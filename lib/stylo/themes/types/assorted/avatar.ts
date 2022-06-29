@@ -2,8 +2,11 @@
 /*      Can be modified      */
 /* ------------------------- */
 
-import _TAvatarStyle from '../__generated__/assorted/avatar';
+import {
+  TAvatarStyle as _TAvatarStyle,
+  TAvatarJacketStyle as _TAvatarJacketStyle,
+} from '../__generated__/assorted/avatar';
 
-type TAvatarStyle = _TAvatarStyle;
+export type TAvatarStyle = _TAvatarStyle;
 
-export default TAvatarStyle;
+export type TAvatarJacketStyle = _TAvatarJacketStyle;

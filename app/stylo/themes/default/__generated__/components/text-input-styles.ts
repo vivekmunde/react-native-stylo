@@ -8,6 +8,8 @@ const fontSize = Number(Variables['Font.Size'] ?? 16);
 const fontSizeSmall = Number(Variables['Font.Size.Small'] ?? 12);
 const fontSizeLarge = Number(Variables['Font.Size.Large'] ?? 24);
 const fontWeight = Variables['Font.Weight'];
+const fontWeightBold = Variables['Font.Weight.Bold'];
+
 const padding = Number(Variables.Padding ?? 12);
 const paddingSmall = Number(Variables['Padding.Small'] ?? 8);
 const paddingLarge = Number(Variables['Padding.Large'] ?? 16);
@@ -53,23 +55,23 @@ export const TextInputCStyles = StyleSheet.create({
   },
   Bold: {
     fontWeight:
-      fontWeight === '100'
+      fontWeightBold === '100'
         ? '100'
-        : fontWeight === '200'
+        : fontWeightBold === '200'
         ? '200'
-        : fontWeight === '300'
+        : fontWeightBold === '300'
         ? '300'
-        : fontWeight === '400'
+        : fontWeightBold === '400'
         ? '400'
-        : fontWeight === '500'
+        : fontWeightBold === '500'
         ? '500'
-        : fontWeight === '600'
+        : fontWeightBold === '600'
         ? '600'
-        : fontWeight === '700'
+        : fontWeightBold === '700'
         ? '700'
-        : fontWeight === '800'
+        : fontWeightBold === '800'
         ? '800'
-        : fontWeight === '900'
+        : fontWeightBold === '900'
         ? '900'
         : 'bold',
   },

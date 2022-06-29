@@ -2,8 +2,11 @@
 /*      Can be modified      */
 /* ------------------------- */
 
-import _AvatarStyles from '../__generated__/assorted/avatar-styles';
+import {
+  AvatarStyles as _AvatarStyles,
+  AvatarJacketStyles as _AvatarJacketStyles,
+} from '../__generated__/assorted/avatar-styles';
 
-const AvatarStyles = _AvatarStyles;
+export const AvatarStyles = _AvatarStyles;
 
-export default AvatarStyles;
+export const AvatarJacketStyles = _AvatarJacketStyles;

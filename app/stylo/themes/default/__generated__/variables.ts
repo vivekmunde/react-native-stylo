@@ -220,7 +220,7 @@ const Variables = {
   'Font.Size.Small': fontSizeSmall,
   'Font.Size.Large': fontSizeLarge,
   'Font.Weight': '400',
-  'Font.Weight.Bold': '600',
+  'Font.Weight.Bold': '700',
   'Border.Color': '#E8E8E8',
   'Border.Width': 1,
   'Border.Radius': borderRadius,
