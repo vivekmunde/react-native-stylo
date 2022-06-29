@@ -27,7 +27,7 @@ export const useTouchableStyles = _useTouchableStyles;
 export const useVariables = _useVariables;
 export const useViewStyles = _useViewStyles;
 
-const Stylish = {
+const Stylers = {
   useIconStyles,
   useImageBackgroundStyles,
   useImageStyles,
@@ -42,4 +42,4 @@ const Stylish = {
   useViewStyles,
 };
 
-export default Stylish;
+export default Stylers;
