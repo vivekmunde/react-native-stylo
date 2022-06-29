@@ -1,7 +1,6 @@
 import IconStyles from './icon-styles';
 import ImageBackgroundStyles from './image-background-styles';
 import ImageStyles from './image-styles';
-import KeyboardAvoidingViewStyles from './keyboard-avoiding-view-styles';
 import SafeAreaViewStyles from './safe-area-view-styles';
 import {
   ScrollViewContentContainerStyles,
@@ -14,7 +13,6 @@ import TouchableStyles from './touchable-styles';
 import useIconStyles from './use-icon-styles';
 import useImageBackgroundStyles from './use-image-background-styles';
 import useImageStyles from './use-image-styles';
-import useKeyboardAvoidingViewStyles from './use-keyboard-avoiding-view-styles';
 import useSafeAreaViewStyles from './use-safe-area-view-styles';
 import {
   useScrollViewContentContainerStyles,
@@ -33,7 +31,6 @@ export {
   IconStyles,
   ImageBackgroundStyles,
   ImageStyles,
-  KeyboardAvoidingViewStyles,
   SafeAreaViewStyles,
   ScrollViewStyles,
   ScrollViewContentContainerStyles,
@@ -44,7 +41,6 @@ export {
   useIconStyles,
   useImageBackgroundStyles,
   useImageStyles,
-  useKeyboardAvoidingViewStyles,
   useSafeAreaViewStyles,
   useScrollViewStyles,
   useScrollViewContentContainerStyles,

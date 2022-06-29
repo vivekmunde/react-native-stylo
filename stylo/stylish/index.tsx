@@ -6,9 +6,6 @@ import RNSImage, { TImageProps as TRNSImageProps } from './image';
 import RNSImageBackground, {
   TImageBackgroundProps as TRNSImageBackgroundProps,
 } from './image-background';
-import RNSKeyboardAvoidingView, {
-  TKeyboardAvoidingViewProps as TRNSKeyboardAvoidingViewProps,
-} from './keyboard-avoiding-view';
 import RNSSafeAreaView, {
   TSafeAreaViewProps as TRNSSafeAreaViewProps,
 } from './safe-area-view';
@@ -33,7 +30,6 @@ export const Icon = RNSIcon;
 export const Image = RNSImage;
 export const ImageBackground = RNSImageBackground;
 export const Pressable = RNSPressable;
-export const KeyboardAvoidingView = RNSKeyboardAvoidingView;
 export const SafeAreaView = RNSSafeAreaView;
 export const ScrollView = RNSScrollView;
 export const Text = RNSText;
@@ -75,11 +71,6 @@ export type TImageBackgroundProps<
   TStyleName extends string,
   TStyleNamespace extends string,
 > = TRNSImageBackgroundProps<TStyleName, TStyleNamespace>;
-
-export type TKeyboardAvoidingViewProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSKeyboardAvoidingViewProps<TStyleName, TStyleNamespace>;
 
 export type TSafeAreaViewProps<
   TStyleName extends string,
