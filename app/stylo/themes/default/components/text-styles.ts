@@ -15,9 +15,11 @@ import { BadgeTextStyles } from '../assorted/badge-styles';
 import { ButtonTextStyles } from '../assorted/button-styles';
 import { TagTextStyles } from '../assorted/tag-styles';
 import FontColorStyles from '../generic/font-color-styles';
+import MarginStyles from '../generic/margin-styles';
 
 const TextStyles = StyleSheet.create({
   ...FontColorStyles,
+  ...MarginStyles,
   ...BadgeTextStyles,
   ...ButtonTextStyles,
   ...TagTextStyles,

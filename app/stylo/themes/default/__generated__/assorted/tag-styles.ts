@@ -13,10 +13,10 @@ import Variables from '../../variables';
 
 export const TagStyles = StyleSheet.create({
   Tag: {
-    paddingLeft: Variables.Padding,
-    paddingRight: Variables.Padding,
-    paddingTop: Math.round(Variables.Padding * 0.75),
-    paddingBottom: Math.round(Variables.Padding * 0.75),
+    paddingLeft: Variables['Padding.Small'],
+    paddingRight: Variables['Padding.Small'],
+    paddingTop: Variables['Padding.Small'],
+    paddingBottom: Variables['Padding.Small'],
     flexDirection: 'row',
     alignItems: 'center',
     marginRight: Variables['Margin.Mini'],
@@ -24,23 +24,29 @@ export const TagStyles = StyleSheet.create({
     borderRadius: Math.round((Variables.Padding + Variables['Font.Size']) * 2),
   },
   'Tag.Small': {
-    paddingLeft: Variables['Padding.Small'],
-    paddingRight: Variables['Padding.Small'],
-    paddingTop: Math.round(Variables['Padding.Small'] * 0.75),
-    paddingBottom: Math.round(Variables['Padding.Small'] * 0.75),
+    paddingLeft: Variables['Padding.Mini'],
+    paddingRight: Variables['Padding.Mini'],
+    paddingTop: Variables['Padding.Mini'],
+    paddingBottom: Variables['Padding.Mini'],
   },
   'Tag.Large': {
-    paddingLeft: Variables['Padding.Large'],
-    paddingRight: Variables['Padding.Large'],
-    paddingTop: Math.round(Variables['Padding.Large'] * 0.75),
-    paddingBottom: Math.round(Variables['Padding.Large'] * 0.75),
+    paddingLeft: Variables.Padding,
+    paddingRight: Variables.Padding,
+    paddingTop: Variables.Padding,
+    paddingBottom: Variables.Padding,
   },
 });
 
 export const TagTextStyles = StyleSheet.create({
   'Tag.Text': {
-    marginRight: Variables['Margin.Mini'],
-    marginBottom: Variables['Margin.Mini'],
+    marginLeft: Variables['Margin.Small'],
+    marginRight: Variables['Margin.Small'],
+  },
+  'Tag.Text.Left': {
+    marginRight: Variables['Margin.Small'],
+  },
+  'Tag.Text.Right': {
+    marginLeft: Variables['Margin.Small'],
   },
 });
 

@@ -12,7 +12,7 @@ import { TTagIconStyle } from '../assorted/tag';
 import TFontColorStyle from '../generic/font-color';
 import TMarginStyle from '../generic/margin';
 
-export type TIconCStyle = 'Bold' | 'Small' | 'Large';
+export type TIconCStyle = 'Small' | 'Large';
 
 type TIconStyle =
   | TFontColorStyle

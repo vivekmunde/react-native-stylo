@@ -9,7 +9,7 @@
 
 export type TTagStyle = 'Tag' | 'Tag.Small' | 'Tag.Large';
 
-export type TTagTextStyle = 'Tag.Text';
+export type TTagTextStyle = 'Tag.Text' | 'Tag.Text.Left' | 'Tag.Text.Right';
 
 export type TTagIconStyle = 'Tag.Icon.Left' | 'Tag.Icon.Right';
 

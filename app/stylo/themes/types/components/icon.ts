@@ -13,9 +13,11 @@ import { TIconCStyle } from '../__generated__/components/icon';
 import { TButtonIconStyle } from '../assorted/button';
 import { TTagIconStyle } from '../assorted/tag';
 import TFontColorStyle from '../generic/font-color';
+import TMarginStyle from '../generic/margin';
 
 type TIconStyle =
   | TFontColorStyle
+  | TMarginStyle
   | TButtonIconStyle
   | TTagIconStyle
   | TIconCStyle;

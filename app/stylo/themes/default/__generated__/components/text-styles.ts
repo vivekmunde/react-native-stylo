@@ -14,6 +14,7 @@ import { BadgeTextStyles } from '../assorted/badge-styles';
 import { ButtonTextStyles } from '../assorted/button-styles';
 import { TagTextStyles } from '../assorted/tag-styles';
 import FontColorStyles from '../generic/font-color-styles';
+import MarginStyles from '../generic/margin-styles';
 
 const fontSize = Number(Variables['Font.Size'] ?? 16);
 const fontSizeSmall = Number(Variables['Font.Size.Small'] ?? 12);
@@ -128,76 +129,11 @@ export const TextCStyles = StyleSheet.create({
     marginBottom: Variables.Margin,
     width: '100%',
   },
-  Margin: {
-    margin: Variables.Margin,
-  },
-  'Margin.Top': {
-    marginTop: Variables.Margin,
-  },
-  'Margin.Right': {
-    marginRight: Variables.Margin,
-  },
-  'Margin.Bottom': {
-    marginBottom: Variables.Margin,
-  },
-  'Margin.Left': {
-    marginLeft: Variables.Margin,
-  },
-  'Margin.Mini': {
-    margin: Variables['Margin.Mini'],
-  },
-  'Margin.Small': {
-    margin: Variables['Margin.Small'],
-  },
-  'Margin.Large': {
-    margin: Variables['Margin.Large'],
-  },
-  'Margin.Top.Mini': {
-    marginTop: Variables['Margin.Mini'],
-  },
-  'Margin.Right.Mini': {
-    marginRight: Variables['Margin.Mini'],
-  },
-  'Margin.Bottom.Mini': {
-    marginBottom: Variables['Margin.Mini'],
-  },
-  'Margin.Left.Mini': {
-    marginLeft: Variables['Margin.Mini'],
-  },
-  'Margin.Top.Small': {
-    marginTop: Variables['Margin.Small'],
-  },
-  'Margin.Right.Small': {
-    marginRight: Variables['Margin.Small'],
-  },
-  'Margin.Bottom.Small': {
-    marginBottom: Variables['Margin.Small'],
-  },
-  'Margin.Left.Small': {
-    marginLeft: Variables['Margin.Small'],
-  },
-  'Margin.Top.Large': {
-    marginTop: Variables['Margin.Large'],
-  },
-  'Margin.Right.Large': {
-    marginRight: Variables['Margin.Large'],
-  },
-  'Margin.Bottom.Large': {
-    marginBottom: Variables['Margin.Large'],
-  },
-  'Margin.Left.Large': {
-    marginLeft: Variables['Margin.Large'],
-  },
-  'Align.Center': {
-    textAlign: 'center',
-  },
-  'Align.Right': {
-    textAlign: 'right',
-  },
 });
 
 const TextStyles = StyleSheet.create({
   ...FontColorStyles,
+  ...MarginStyles,
   ...BadgeTextStyles,
   ...ButtonTextStyles,
   ...TagTextStyles,
