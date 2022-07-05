@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.3.0                                   */
+/*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -83,6 +83,28 @@ export const TextInputCStyles = StyleSheet.create({
         : fontWeightBold === '900'
         ? '900'
         : 'bold',
+  },
+  'Bold.Semi': {
+    fontWeight:
+      fontWeightBold === '100'
+        ? '100'
+        : fontWeightBold === '200'
+        ? '100'
+        : fontWeightBold === '300'
+        ? '200'
+        : fontWeightBold === '400'
+        ? '300'
+        : fontWeightBold === '500'
+        ? '400'
+        : fontWeightBold === '600'
+        ? '500'
+        : fontWeightBold === '700'
+        ? '600'
+        : fontWeightBold === '800'
+        ? '700'
+        : fontWeightBold === '900'
+        ? '800'
+        : '600',
   },
   Small: {
     fontSize: fontSizeSmall,

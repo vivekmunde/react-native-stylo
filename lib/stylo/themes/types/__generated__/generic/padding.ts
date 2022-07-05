@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.3.0                                   */
+/*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -13,13 +13,13 @@ type TPaddingStyle =
   | 'Padding.Left'
   | 'Padding.Right'
   | 'Padding.Top'
-  | 'Padding.XSmall'
+  | 'Padding.Mini'
   | 'Padding.Small'
   | 'Padding.Large'
-  | 'Padding.Top.XSmall'
-  | 'Padding.Right.XSmall'
-  | 'Padding.Bottom.XSmall'
-  | 'Padding.Left.XSmall'
+  | 'Padding.Top.Mini'
+  | 'Padding.Right.Mini'
+  | 'Padding.Bottom.Mini'
+  | 'Padding.Left.Mini'
   | 'Padding.Top.Small'
   | 'Padding.Right.Small'
   | 'Padding.Bottom.Small'

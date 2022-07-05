@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.3.0                                   */
+/*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -24,11 +24,11 @@ type TVariable =
   | 'Border.Radius.Small'
   | 'Border.Radius.Large'
   | 'Margin'
-  | 'Margin.XSmall'
+  | 'Margin.Mini'
   | 'Margin.Small'
   | 'Margin.Large'
   | 'Padding'
-  | 'Padding.XSmall'
+  | 'Padding.Mini'
   | 'Padding.Small'
   | 'Padding.Large'
   | 'Avatar.Size'

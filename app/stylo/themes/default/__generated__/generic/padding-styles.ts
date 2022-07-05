@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.3.0                                   */
+/*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -27,8 +27,8 @@ const PaddingStyles = StyleSheet.create({
   'Padding.Left': {
     paddingLeft: Variables.Padding,
   },
-  'Padding.XSmall': {
-    padding: Variables['Padding.XSmall'],
+  'Padding.Mini': {
+    padding: Variables['Padding.Mini'],
   },
   'Padding.Small': {
     padding: Variables['Padding.Small'],
@@ -36,17 +36,17 @@ const PaddingStyles = StyleSheet.create({
   'Padding.Large': {
     padding: Variables['Padding.Large'],
   },
-  'Padding.Top.XSmall': {
-    paddingTop: Variables['Padding.XSmall'],
+  'Padding.Top.Mini': {
+    paddingTop: Variables['Padding.Mini'],
   },
-  'Padding.Right.XSmall': {
-    paddingRight: Variables['Padding.XSmall'],
+  'Padding.Right.Mini': {
+    paddingRight: Variables['Padding.Mini'],
   },
-  'Padding.Bottom.XSmall': {
-    paddingBottom: Variables['Padding.XSmall'],
+  'Padding.Bottom.Mini': {
+    paddingBottom: Variables['Padding.Mini'],
   },
-  'Padding.Left.XSmall': {
-    paddingLeft: Variables['Padding.XSmall'],
+  'Padding.Left.Mini': {
+    paddingLeft: Variables['Padding.Mini'],
   },
   'Padding.Top.Small': {
     paddingTop: Variables['Padding.Small'],

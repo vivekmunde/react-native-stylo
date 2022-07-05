@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.3.0                                   */
+/*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -79,8 +79,8 @@ export const IconCStyles = StyleSheet.create({
   Margin: {
     margin: Variables.Margin,
   },
-  'Margin.XSmall': {
-    margin: Variables['Margin.XSmall'],
+  'Margin.Mini': {
+    margin: Variables['Margin.Mini'],
   },
   'Margin.Small': {
     margin: Variables['Margin.Small'],
@@ -100,17 +100,17 @@ export const IconCStyles = StyleSheet.create({
   'Margin.Left': {
     marginLeft: Variables.Margin,
   },
-  'Margin.Top.XSmall': {
-    marginTop: Variables['Margin.XSmall'],
+  'Margin.Top.Mini': {
+    marginTop: Variables['Margin.Mini'],
   },
-  'Margin.Right.XSmall': {
-    marginRight: Variables['Margin.XSmall'],
+  'Margin.Right.Mini': {
+    marginRight: Variables['Margin.Mini'],
   },
-  'Margin.Bottom.XSmall': {
-    marginBottom: Variables['Margin.XSmall'],
+  'Margin.Bottom.Mini': {
+    marginBottom: Variables['Margin.Mini'],
   },
-  'Margin.Left.XSmall': {
-    marginLeft: Variables['Margin.XSmall'],
+  'Margin.Left.Mini': {
+    marginLeft: Variables['Margin.Mini'],
   },
   'Margin.Top.Small': {
     marginTop: Variables['Margin.Small'],

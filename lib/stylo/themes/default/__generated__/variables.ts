@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.3.0                                   */
+/*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -210,14 +210,14 @@ const Colors = {
 
 const fontSize = 16;
 const fontSizeSmall = Math.round(fontSize * 0.75);
-const fontSizeLarge = Math.round(fontSize * 1.5);
+const fontSizeLarge = Math.round(fontSize * 1.25);
 
 const borderRadius = 8;
 const borderRadiusSmall = Math.round(borderRadius / 2);
 const borderRadiusLarge = Math.round(borderRadius * 1.5);
 
 const spacing = 12;
-const spacingXSmall = Math.round(spacing * (1 / 3));
+const spacingMini = Math.round(spacing * (1 / 3));
 const spacingSmall = Math.round(spacing * (2 / 3));
 const spacingLarge = Math.round(spacing * 2);
 
@@ -236,11 +236,11 @@ const Variables = {
   'Border.Radius.Small': borderRadiusSmall,
   'Border.Radius.Large': borderRadiusLarge,
   Margin: spacing,
-  'Margin.XSmall': spacingXSmall,
+  'Margin.Mini': spacingMini,
   'Margin.Small': spacingSmall,
   'Margin.Large': spacingLarge,
   Padding: spacing,
-  'Padding.XSmall': spacingXSmall,
+  'Padding.Mini': spacingMini,
   'Padding.Small': spacingSmall,
   'Padding.Large': spacingLarge,
   'Avatar.Size': 40,

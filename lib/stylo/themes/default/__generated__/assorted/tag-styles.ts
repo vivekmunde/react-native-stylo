@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.3.0                                   */
+/*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -19,8 +19,8 @@ export const TagStyles = StyleSheet.create({
     paddingBottom: Math.round(Variables.Padding * 0.75),
     flexDirection: 'row',
     alignItems: 'center',
-    marginRight: Variables['Margin.XSmall'],
-    marginBottom: Variables['Margin.XSmall'],
+    marginRight: Variables['Margin.Mini'],
+    marginBottom: Variables['Margin.Mini'],
     borderRadius: Math.round((Variables.Padding + Variables['Font.Size']) * 2),
   },
   'Tag.Small': {
@@ -39,8 +39,8 @@ export const TagStyles = StyleSheet.create({
 
 export const TagTextStyles = StyleSheet.create({
   'Tag.Text': {
-    marginRight: Variables['Margin.XSmall'],
-    marginBottom: Variables['Margin.XSmall'],
+    marginRight: Variables['Margin.Mini'],
+    marginBottom: Variables['Margin.Mini'],
   },
 });
 
