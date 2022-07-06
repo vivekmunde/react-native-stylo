@@ -1,8 +1,8 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../components/showcase-screen-layout';
-import Stylish from '../stylo/stylish';
+import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import Stylish from '../../stylo/stylish';
 
-const FontColor = () => (
+const FontColorShowCase = () => (
   <ShowcaseScreenLayout
     onGoBack={() => null}
     renderTitle={() => 'FontColor'}
@@ -32,4 +32,4 @@ const FontColor = () => (
   />
 );
 
-export default FontColor;
+export default FontColorShowCase;

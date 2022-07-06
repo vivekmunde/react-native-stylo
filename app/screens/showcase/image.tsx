@@ -1,30 +1,30 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../components/showcase-screen-layout';
-import Stylish from '../stylo/stylish';
+import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import Stylish from '../../stylo/stylish';
 
-const Image = () => (
+const ImageShowCase = () => (
   <ShowcaseScreenLayout
     onGoBack={() => null}
     renderTitle={() => 'Image'}
     renderBody={() => (
       <React.Fragment>
         <Stylish.Image
-          source={require('../images/face-icon-1.png')}
+          source={require('../../images/face-icon-1.png')}
           styleNames={['Avatar', 'Margin.Bottom.Large']}
         />
 
         <Stylish.Image
-          source={require('../images/face-icon-3.png')}
+          source={require('../../images/face-icon-3.png')}
           styleNames={['Avatar', 'Avatar.Small', 'Margin.Bottom.Large']}
         />
 
         <Stylish.Image
-          source={require('../images/face-icon-2.png')}
+          source={require('../../images/face-icon-2.png')}
           styleNames={['Avatar', 'Avatar.Large', 'Margin.Bottom.Large']}
         />
 
         <Stylish.Image
-          source={require('../images/face-icon-2.png')}
+          source={require('../../images/face-icon-2.png')}
           styleNames={['Avatar', 'Avatar.Square', 'Margin.Bottom.Large']}
         />
 
@@ -36,7 +36,7 @@ const Image = () => (
             'Margin.Bottom.Large',
           ]}>
           <Stylish.Image
-            source={require('../images/face-icon-2.png')}
+            source={require('../../images/face-icon-2.png')}
             styleNames={['Avatar']}
           />
         </Stylish.View>
@@ -52,7 +52,7 @@ const Image = () => (
               'Margin.Bottom.Large',
             ]}>
             <Stylish.Image
-              source={require('../images/face-icon-2.png')}
+              source={require('../../images/face-icon-2.png')}
               styleNames={['Avatar', 'Avatar.Small']}
             />
             <Stylish.Text styleNames={['Color.Cyan6', 'Tag.Text']}>
@@ -65,4 +65,4 @@ const Image = () => (
   />
 );
 
-export default Image;
+export default ImageShowCase;

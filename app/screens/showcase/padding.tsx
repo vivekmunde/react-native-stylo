@@ -1,80 +1,82 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../components/showcase-screen-layout';
-import Stylish from '../stylo/stylish';
+import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import Stylish from '../../stylo/stylish';
 
-const Border = () => (
+const PaddingShowCase = () => (
   <ShowcaseScreenLayout
     onGoBack={() => null}
-    renderTitle={() => 'Border'}
+    renderTitle={() => 'Padding'}
     renderBody={() => (
       <React.Fragment>
         <Stylish.View
           styleNames={[
-            'Border',
-            'BackgroundColor.White',
             'Padding',
+            'Border',
+            'Border.Radius',
+            'Border.Color.Primary2',
+            'BackgroundColor.White',
             'Margin.Bottom',
           ]}>
-          <Stylish.Text>Border</Stylish.Text>
+          <Stylish.Text>Padding</Stylish.Text>
         </Stylish.View>
 
         <Stylish.View
           styleNames={[
+            'Padding.Small',
             'Border',
             'Border.Radius',
+            'Border.Color.Primary2',
             'BackgroundColor.White',
-            'Padding',
             'Margin.Bottom',
           ]}>
-          <Stylish.Text>Border.Radius</Stylish.Text>
+          <Stylish.Text>Padding.Small</Stylish.Text>
         </Stylish.View>
 
         <Stylish.View
           styleNames={[
+            'Padding.Large',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary',
+            'Border.Color.Primary2',
             'BackgroundColor.White',
-            'Padding',
             'Margin.Bottom',
           ]}>
-          <Stylish.Text styleNames={['Color.Primary']}>
-            Border.Color.Primary
-          </Stylish.Text>
+          <Stylish.Text>Padding.Large</Stylish.Text>
         </Stylish.View>
 
         <Stylish.View
           styleNames={[
+            'Padding.Left.Large',
+            'Padding.Top.Small',
+            'Padding.Right.Small',
+            'Padding.Bottom.Small',
             'Border',
             'Border.Radius',
-            'Border.Color.Warning6',
-            'Border.Style.Dashed',
+            'Border.Color.Primary2',
             'BackgroundColor.White',
-            'Padding',
             'Margin.Bottom',
           ]}>
-          <Stylish.Text styleNames={['Color.Warning6']}>
-            Border.Style.Dashed
-          </Stylish.Text>
+          <Stylish.Text>Padding.Left.Large</Stylish.Text>
         </Stylish.View>
 
         <Stylish.View
           styleNames={[
+            'Padding.Right.Large',
+            'Padding.Top.Small',
+            'Padding.Bottom.Small',
+            'Padding.Left.Small',
             'Border',
             'Border.Radius',
-            'Border.Color.Danger',
-            'Border.Style.Dotted',
+            'Border.Color.Primary2',
             'BackgroundColor.White',
-            'Padding',
             'Margin.Bottom',
+            'Flex.AlignItems.End',
           ]}>
-          <Stylish.Text styleNames={['Color.Danger']}>
-            Border.Style.Dotted
-          </Stylish.Text>
+          <Stylish.Text>Padding.Right.Large</Stylish.Text>
         </Stylish.View>
       </React.Fragment>
     )}
   />
 );
 
-export default Border;
+export default PaddingShowCase;

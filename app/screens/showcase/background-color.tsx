@@ -1,8 +1,8 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../components/showcase-screen-layout';
-import Stylish from '../stylo/stylish';
+import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import Stylish from '../../stylo/stylish';
 
-const BackgroundColor = () => (
+const BackgroundColorShowCase = () => (
   <ShowcaseScreenLayout
     onGoBack={() => null}
     renderTitle={() => 'BackgroundColor'}
@@ -60,4 +60,4 @@ const BackgroundColor = () => (
   />
 );
 
-export default BackgroundColor;
+export default BackgroundColorShowCase;

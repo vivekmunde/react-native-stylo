@@ -1,8 +1,8 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../components/showcase-screen-layout';
-import Stylish from '../stylo/stylish';
+import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import Stylish from '../../stylo/stylish';
 
-const Border = () => (
+const FlexShowCase = () => (
   <ShowcaseScreenLayout
     onGoBack={() => null}
     renderTitle={() => 'Flex'}
@@ -122,4 +122,4 @@ const Border = () => (
   />
 );
 
-export default Border;
+export default FlexShowCase;

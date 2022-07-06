@@ -11,7 +11,10 @@ import { StyleSheet } from 'react-native';
 
 import Variables from '../../variables';
 import BackgroundColorStyles from '../generic/background-color-styles';
+import BorderStyles from '../generic/border-styles';
 import FontColorStyles from '../generic/font-color-styles';
+import MarginStyles from '../generic/margin-styles';
+import PaddingStyles from '../generic/padding-styles';
 
 const fontSize = Number(Variables['Font.Size'] ?? 16);
 const fontSizeSmall = Number(Variables['Font.Size.Small'] ?? 12);
@@ -127,6 +130,9 @@ export const TextInputCStyles = StyleSheet.create({
 const TextInputStyles = StyleSheet.create({
   ...BackgroundColorStyles,
   ...FontColorStyles,
+  ...BorderStyles,
+  ...MarginStyles,
+  ...PaddingStyles,
   ...TextInputCStyles,
 });
 

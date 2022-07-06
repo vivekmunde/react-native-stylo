@@ -97,6 +97,12 @@ export const TextCStyles = StyleSheet.create({
         ? '800'
         : '600',
   },
+  'Align.Center': {
+    textAlign: 'center',
+  },
+  'Align.Right': {
+    textAlign: 'right',
+  },
   H1: {
     fontSize: h1FontSize,
     lineHeight: h1FontSize + 8,

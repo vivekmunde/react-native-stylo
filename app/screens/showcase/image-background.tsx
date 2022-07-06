@@ -1,16 +1,16 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import ShowcaseScreenLayout from '../components/showcase-screen-layout';
-import Stylish from '../stylo/stylish';
+import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import Stylish from '../../stylo/stylish';
 
 const styles = StyleSheet.create({
   imageBackground: { flex: 1 },
 });
 
-const ImageBackground = () => (
+const ImageBackgroundShowCase = () => (
   <Stylish.ImageBackground
     style={styles.imageBackground}
-    source={require('../images/screen-bg-1.png')}
+    source={require('../../images/screen-bg-1.png')}
     styleNames={['Padding.Large']}>
     <ShowcaseScreenLayout
       transparent
@@ -54,4 +54,4 @@ const ImageBackground = () => (
   </Stylish.ImageBackground>
 );
 
-export default ImageBackground;
+export default ImageBackgroundShowCase;

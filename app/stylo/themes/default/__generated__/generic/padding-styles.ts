@@ -13,7 +13,10 @@ import Variables from '../../variables';
 
 const PaddingStyles = StyleSheet.create({
   Padding: {
-    padding: Variables.Padding,
+    paddingTop: Variables.Padding,
+    paddingRight: Variables.Padding,
+    paddingBottom: Variables.Padding,
+    paddingLeft: Variables.Padding,
   },
   'Padding.Top': {
     paddingTop: Variables.Padding,
@@ -28,13 +31,22 @@ const PaddingStyles = StyleSheet.create({
     paddingLeft: Variables.Padding,
   },
   'Padding.Mini': {
-    padding: Variables['Padding.Mini'],
+    paddingTop: Variables['Padding.Mini'],
+    paddingRight: Variables['Padding.Mini'],
+    paddingBottom: Variables['Padding.Mini'],
+    paddingLeft: Variables['Padding.Mini'],
   },
   'Padding.Small': {
-    padding: Variables['Padding.Small'],
+    paddingTop: Variables['Padding.Small'],
+    paddingRight: Variables['Padding.Small'],
+    paddingBottom: Variables['Padding.Small'],
+    paddingLeft: Variables['Padding.Small'],
   },
   'Padding.Large': {
-    padding: Variables['Padding.Large'],
+    paddingTop: Variables['Padding.Large'],
+    paddingRight: Variables['Padding.Large'],
+    paddingBottom: Variables['Padding.Large'],
+    paddingLeft: Variables['Padding.Large'],
   },
   'Padding.Top.Mini': {
     paddingTop: Variables['Padding.Mini'],

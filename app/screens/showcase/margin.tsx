@@ -1,8 +1,8 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../components/showcase-screen-layout';
-import Stylish from '../stylo/stylish';
+import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import Stylish from '../../stylo/stylish';
 
-const Margin = () => (
+const MarginShowCase = () => (
   <ShowcaseScreenLayout
     onGoBack={() => null}
     renderTitle={() => 'Margin'}
@@ -70,4 +70,4 @@ const Margin = () => (
   />
 );
 
-export default Margin;
+export default MarginShowCase;

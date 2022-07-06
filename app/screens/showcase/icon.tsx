@@ -1,8 +1,8 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../components/showcase-screen-layout';
-import Stylish from '../stylo/stylish';
+import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import Stylish from '../../stylo/stylish';
 
-const Icon = () => (
+const IconShowCase = () => (
   <ShowcaseScreenLayout
     onGoBack={() => null}
     renderTitle={() => 'Icon'}
@@ -55,4 +55,4 @@ const Icon = () => (
   />
 );
 
-export default Icon;
+export default IconShowCase;
