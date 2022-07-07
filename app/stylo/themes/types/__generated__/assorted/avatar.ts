@@ -10,7 +10,6 @@
 import TBorderStyle from '../generic/border';
 
 export type TAvatarCStyle =
-  | Omit<TBorderStyle, 'Border.Style.Dashed' | 'Border.Style.Dotted'>
   | 'Avatar'
   | 'Avatar.Square'
   | 'Avatar.Small'

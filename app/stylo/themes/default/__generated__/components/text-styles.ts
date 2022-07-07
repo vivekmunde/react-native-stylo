@@ -97,6 +97,9 @@ export const TextCStyles = StyleSheet.create({
         ? '800'
         : '600',
   },
+  Italic: {
+    fontStyle: 'italic',
+  },
   'Align.Center': {
     textAlign: 'center',
   },
