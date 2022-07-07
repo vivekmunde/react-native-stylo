@@ -10,6 +10,7 @@
 import { TAvatarJacketStyle } from '../assorted/avatar';
 import { TBadgeStyle } from '../assorted/badge';
 import { TButtonStyle } from '../assorted/button';
+import TFormStyle from '../assorted/form';
 import THorizontalStyle from '../assorted/horizontal';
 import TListStyle from '../assorted/list';
 import TScreenStyle from '../assorted/screen';
@@ -29,6 +30,7 @@ type TTouchableStyle =
   | THorizontalStyle
   | TAvatarJacketStyle
   | TBadgeStyle
+  | TFormStyle
   | TListStyle
   | TScreenStyle
   | TTagStyle

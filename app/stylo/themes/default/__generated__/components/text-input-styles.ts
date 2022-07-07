@@ -55,8 +55,8 @@ export const TextInputCStyles = StyleSheet.create({
     minHeight: Math.round(fontSize * 2.5),
     paddingTop: padding,
     paddingBottom: padding,
-    paddingLeft: Math.round(padding * (3 / 4)),
-    paddingRight: Math.round(padding * (3 / 4)),
+    paddingLeft: padding,
+    paddingRight: padding,
     width: '100%',
   },
   'Align.Center': {
@@ -114,16 +114,16 @@ export const TextInputCStyles = StyleSheet.create({
     minHeight: fontSizeSmall * 2,
     paddingTop: paddingSmall,
     paddingBottom: paddingSmall,
-    paddingLeft: Math.round(paddingSmall * (3 / 4)),
-    paddingRight: Math.round(paddingSmall * (3 / 4)),
+    paddingLeft: paddingSmall,
+    paddingRight: paddingSmall,
   },
   Large: {
     fontSize: fontSizeLarge,
     minHeight: Math.round(fontSizeLarge * 2.5),
     paddingTop: paddingLarge,
     paddingBottom: paddingLarge,
-    paddingLeft: Math.round(paddingLarge * (3 / 4)),
-    paddingRight: Math.round(paddingLarge * (3 / 4)),
+    paddingLeft: paddingLarge,
+    paddingRight: paddingLarge,
   },
 });
 

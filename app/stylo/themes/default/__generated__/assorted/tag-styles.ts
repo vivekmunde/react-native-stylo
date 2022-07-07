@@ -13,27 +13,20 @@ import Variables from '../../variables';
 
 export const TagStyles = StyleSheet.create({
   Tag: {
-    paddingLeft: Variables['Padding.Small'],
-    paddingRight: Variables['Padding.Small'],
-    paddingTop: Variables['Padding.Small'],
-    paddingBottom: Variables['Padding.Small'],
+    padding: Variables['Padding.Small'] - 4,
     flexDirection: 'row',
     alignItems: 'center',
     marginRight: Variables['Margin.Mini'],
     marginBottom: Variables['Margin.Mini'],
-    borderRadius: Math.round((Variables.Padding + Variables['Font.Size']) * 2),
+    borderRadius: Math.round(
+      (Variables['Padding.Small'] + Variables['Font.Size']) * 2,
+    ),
   },
   'Tag.Small': {
-    paddingLeft: Variables['Padding.Mini'],
-    paddingRight: Variables['Padding.Mini'],
-    paddingTop: Variables['Padding.Mini'],
-    paddingBottom: Variables['Padding.Mini'],
+    padding: Math.max(Variables['Padding.Mini'] - 2, 4),
   },
   'Tag.Large': {
-    paddingLeft: Variables.Padding,
-    paddingRight: Variables.Padding,
-    paddingTop: Variables.Padding,
-    paddingBottom: Variables.Padding,
+    padding: Variables.Padding - 4,
   },
 });
 
@@ -51,24 +44,48 @@ export const TagTextStyles = StyleSheet.create({
 });
 
 export const TagIconStyles = StyleSheet.create({
+  'Tag.Icon': {
+    marginLeft: 4,
+    marginRight: 4,
+  },
   'Tag.Icon.Left': {
-    marginRight: Variables['Margin.Small'],
+    marginLeft: 4,
+    marginRight: 0,
   },
   'Tag.Icon.Right': {
-    marginLeft: Variables['Margin.Small'],
+    marginLeft: 0,
+    marginRight: 4,
   },
 });
 
 export const TagAvatarStyles = StyleSheet.create({
   'Tag.Avatar': {
-    height: Variables['Avatar.Size.Small'],
-    width: Variables['Avatar.Size.Small'],
-    borderRadius: Variables['Avatar.Size.Small'],
+    height: Variables['Font.Size'] + 8,
+    width: Variables['Font.Size'] + 8,
+    borderRadius: Variables['Font.Size'] + 8,
+    marginLeft: 2,
+    marginRight: 2,
+  },
+  'Tag.Avatar.Small': {
+    height: Variables['Font.Size.Small'] + 8,
+    width: Variables['Font.Size.Small'] + 8,
+    borderRadius: Variables['Font.Size.Small'] + 8,
+    marginLeft: 2,
+    marginRight: 2,
+  },
+  'Tag.Avatar.Large': {
+    height: Variables['Font.Size.Large'] + 8,
+    width: Variables['Font.Size.Large'] + 8,
+    borderRadius: Variables['Font.Size.Large'] + 8,
+    marginLeft: 2,
+    marginRight: 2,
   },
   'Tag.Avatar.Left': {
-    marginRight: Variables['Margin.Small'],
+    marginLeft: 2,
+    marginRight: 0,
   },
   'Tag.Avatar.Right': {
-    marginLeft: Variables['Margin.Small'],
+    marginLeft: 0,
+    marginRight: 2,
   },
 });

@@ -2,7 +2,7 @@ import React from 'react';
 import { StatusBar } from 'react-native';
 
 import { ThemeProvider } from '../stylo';
-import C from './screens/showcase/screen';
+import C from './screens/showcase/form';
 import { styles, variables } from './stylo/themes/default';
 
 const Root = () => {

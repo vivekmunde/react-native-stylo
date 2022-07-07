@@ -4,8 +4,8 @@ import Stylish from '../../stylo/stylish';
 
 const ScreenShowCase = () => (
   <Stylish.View styleNames={['Screen', 'BackgroundColor.Primary1']}>
-    <Stylish.SafeAreaView styleNames={['BackgroundColor.Primary1']} />
-    <Stylish.View styleNames={['Screen.Header', 'BackgroundColor.Primary1']}>
+    <Stylish.SafeAreaView />
+    <Stylish.View styleNames={['Screen.Header']}>
       <Stylish.View styleNames={['Screen.Header.Left', 'Padding']}>
         <Stylish.TouchableOpacity
           styleNames={['Button', 'Button.Circle', 'BackgroundColor.White']}>
@@ -26,21 +26,20 @@ const ScreenShowCase = () => (
         />
       </Stylish.TouchableOpacity>
     </Stylish.View>
-    <Stylish.View
-      styleNames={['Screen.Body', 'Padding', 'BackgroundColor.Primary1']}>
-      <Stylish.Text styleNames={['Paragraph']}>
+    <Stylish.View styleNames={['Screen.Body', 'Padding']}>
+      <Stylish.Text styleNames={['Paragraph', 'Color.Grey10']}>
         Theme is nothing but a collection of styles defined using the React
         Native's StyleSheet.create() API. The theme is used by the library and
         its hooks/components to apply styles to the React Native components.
         There is no restriction on the format of the style names, these can be
         defined as per the needs.
       </Stylish.Text>
-      <Stylish.Text styleNames={['Paragraph']}>
+      <Stylish.Text styleNames={['Paragraph', 'Color.Grey10']}>
         StyleName is the name of a standard style definition provided to the
         StyleSheet.create API. In the code snippet below 'Align.Center', H1,
         'Size.Small' are the style names.
       </Stylish.Text>
-      <Stylish.Text styleNames={['Paragraph']}>
+      <Stylish.Text styleNames={['Paragraph', 'Color.Grey10']}>
         StyleNamespaces are used to organize the style definitions by logically
         grouping them together. This prevents the style name/style collisions,
         like 'Size.Small' can have different style definitions for Text & View
