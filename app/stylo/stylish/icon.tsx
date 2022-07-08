@@ -2,12 +2,12 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.4.0                                   */
+/*                                  Version 0.4.1                                   */
 /* -------------------------------------------------------------------------------- */
 
 import React from 'react';
 
-import { Icon as StyloIcon, TIconProps } from 'react-native-stylo';
+import { Icon as StyloIcon, TIconProps } from '../../../stylo';
 import { TIconStyle, TStyleNamespace } from '../themes/types';
 
 const AntDesign: React.FC<TIconProps<TIconStyle, TStyleNamespace>> = props => (
