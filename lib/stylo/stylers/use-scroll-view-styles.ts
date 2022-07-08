@@ -2,13 +2,13 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.4.0                                   */
+/*                                  Version 0.4.1                                   */
 /* -------------------------------------------------------------------------------- */
 
 import {
   useScrollViewStyles as useStyloScrollViewStyles,
   useScrollViewContentContainerStyles as useStyloScrollViewContentContainerStyles,
-} from '../../../stylo';
+} from 'react-native-stylo';
 import {
   TScrollViewStyle,
   TScrollViewContentContainerStyle,
