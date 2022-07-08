@@ -2,10 +2,10 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.4.0                                   */
+/*                                  Version 0.4.1                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useImageBackgroundStyles as useStyloImageBackgroundStyles } from 'react-native-stylo';
+import { useImageBackgroundStyles as useStyloImageBackgroundStyles } from '../../../stylo';
 import { TImageBackgroundStyle, TStyleNamespace } from '../themes/types';
 
 const useImageBackgroundStyles = (

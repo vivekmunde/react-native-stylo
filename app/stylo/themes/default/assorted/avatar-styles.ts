@@ -11,14 +11,14 @@
 import { StyleSheet } from 'react-native';
 
 import {
-  AvatarCStyles as _AvatarStyles,
+  AvatarCStyles,
   AvatarJacketStyles as _AvatarJacketStyles,
 } from '../__generated__/assorted/avatar-styles';
 import BorderStyles from '../generic/border-styles';
 
 export const AvatarStyles = StyleSheet.create({
   ...BorderStyles,
-  ..._AvatarStyles,
+  ...AvatarCStyles,
 });
 
 export const AvatarJacketStyles = _AvatarJacketStyles;
