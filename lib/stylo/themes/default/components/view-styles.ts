@@ -1,10 +1,15 @@
-/* ------------------------- */
-/*      Can be modified      */
-/* ------------------------- */
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/* -------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------- */
+/*                           Customize as per your needs                            */
+/* -------------------------------------------------------------------------------- */
 
 import { StyleSheet } from 'react-native';
 
-import { AvatarJacketStyles } from '../assorted/avatar-styles';
 import { BadgeStyles } from '../assorted/badge-styles';
 import FormStyles from '../assorted/form-styles';
 import HorizontalStyles from '../assorted/horizontal-styles';
@@ -24,7 +29,6 @@ const ViewStyles = StyleSheet.create({
   ...MarginStyles,
   ...PaddingStyles,
   ...HorizontalStyles,
-  ...AvatarJacketStyles,
   ...BadgeStyles,
   ...TagStyles,
   ...FormStyles,

@@ -1,3 +1,12 @@
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/*                                  Version 0.4.0                                   */
+/* -------------------------------------------------------------------------------- */
+/*                                  DO NOT MODIFY                                   */
+/* -------------------------------------------------------------------------------- */
+
 import { StyleSheet } from 'react-native';
 
 import BackgroundColorStyles from '../generic/background-color-styles';

@@ -1,3 +1,12 @@
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/*                                  Version 0.4.0                                   */
+/* -------------------------------------------------------------------------------- */
+/*                                  DO NOT MODIFY                                   */
+/* -------------------------------------------------------------------------------- */
+
 type TColor =
   | 'Color.Alpha1'
   | 'Color.Alpha2'

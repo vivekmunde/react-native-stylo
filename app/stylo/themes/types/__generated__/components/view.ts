@@ -1,4 +1,12 @@
-import { TAvatarJacketStyle } from '../assorted/avatar';
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/*                                  Version 0.4.0                                   */
+/* -------------------------------------------------------------------------------- */
+/*                                  DO NOT MODIFY                                   */
+/* -------------------------------------------------------------------------------- */
+
 import { TBadgeStyle } from '../assorted/badge';
 import TFormStyle from '../assorted/form';
 import THorizontalStyle from '../assorted/horizontal';
@@ -18,7 +26,6 @@ type TViewStyle =
   | TMarginStyle
   | TFlexStyle
   | THorizontalStyle
-  | TAvatarJacketStyle
   | TBadgeStyle
   | TListStyle
   | TFormStyle

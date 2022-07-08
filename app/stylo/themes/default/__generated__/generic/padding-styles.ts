@@ -1,10 +1,22 @@
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/*                                  Version 0.4.0                                   */
+/* -------------------------------------------------------------------------------- */
+/*                                  DO NOT MODIFY                                   */
+/* -------------------------------------------------------------------------------- */
+
 import { StyleSheet } from 'react-native';
 
 import Variables from '../../variables';
 
 const PaddingStyles = StyleSheet.create({
   Padding: {
-    padding: Variables.Padding,
+    paddingTop: Variables.Padding,
+    paddingRight: Variables.Padding,
+    paddingBottom: Variables.Padding,
+    paddingLeft: Variables.Padding,
   },
   'Padding.Top': {
     paddingTop: Variables.Padding,
@@ -18,26 +30,35 @@ const PaddingStyles = StyleSheet.create({
   'Padding.Left': {
     paddingLeft: Variables.Padding,
   },
-  'Padding.XSmall': {
-    padding: Variables['Padding.XSmall'],
+  'Padding.Mini': {
+    paddingTop: Variables['Padding.Mini'],
+    paddingRight: Variables['Padding.Mini'],
+    paddingBottom: Variables['Padding.Mini'],
+    paddingLeft: Variables['Padding.Mini'],
   },
   'Padding.Small': {
-    padding: Variables['Padding.Small'],
+    paddingTop: Variables['Padding.Small'],
+    paddingRight: Variables['Padding.Small'],
+    paddingBottom: Variables['Padding.Small'],
+    paddingLeft: Variables['Padding.Small'],
   },
   'Padding.Large': {
-    padding: Variables['Padding.Large'],
+    paddingTop: Variables['Padding.Large'],
+    paddingRight: Variables['Padding.Large'],
+    paddingBottom: Variables['Padding.Large'],
+    paddingLeft: Variables['Padding.Large'],
   },
-  'Padding.Top.XSmall': {
-    paddingTop: Variables['Padding.XSmall'],
+  'Padding.Top.Mini': {
+    paddingTop: Variables['Padding.Mini'],
   },
-  'Padding.Right.XSmall': {
-    paddingRight: Variables['Padding.XSmall'],
+  'Padding.Right.Mini': {
+    paddingRight: Variables['Padding.Mini'],
   },
-  'Padding.Bottom.XSmall': {
-    paddingBottom: Variables['Padding.XSmall'],
+  'Padding.Bottom.Mini': {
+    paddingBottom: Variables['Padding.Mini'],
   },
-  'Padding.Left.XSmall': {
-    paddingLeft: Variables['Padding.XSmall'],
+  'Padding.Left.Mini': {
+    paddingLeft: Variables['Padding.Mini'],
   },
   'Padding.Top.Small': {
     paddingTop: Variables['Padding.Small'],

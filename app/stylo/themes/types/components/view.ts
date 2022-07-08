@@ -1,8 +1,13 @@
-/* ------------------------- */
-/*      Can be modified      */
-/* ------------------------- */
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/* -------------------------------------------------------------------------------- */
 
-import { TAvatarJacketStyle } from '../assorted/avatar';
+/* -------------------------------------------------------------------------------- */
+/*                           Customize as per your needs                            */
+/* -------------------------------------------------------------------------------- */
+
 import { TBadgeStyle } from '../assorted/badge';
 import TFormStyle from '../assorted/form';
 import THorizontalStyle from '../assorted/horizontal';
@@ -22,7 +27,6 @@ type TViewStyle =
   | TMarginStyle
   | TFlexStyle
   | THorizontalStyle
-  | TAvatarJacketStyle
   | TBadgeStyle
   | TListStyle
   | TFormStyle

@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import Home from './app/home';
+import Home from './app/root';
 
 const App = () => {
   return <Home />;

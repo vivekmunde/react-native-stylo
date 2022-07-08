@@ -1,10 +1,22 @@
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/*                                  Version 0.4.0                                   */
+/* -------------------------------------------------------------------------------- */
+/*                                  DO NOT MODIFY                                   */
+/* -------------------------------------------------------------------------------- */
+
 import { StyleSheet } from 'react-native';
 
 import Variables from '../../variables';
 
 export const MarginStyles = StyleSheet.create({
   Margin: {
-    margin: Variables.Margin,
+    marginTop: Variables.Margin,
+    marginRight: Variables.Margin,
+    marginBottom: Variables.Margin,
+    marginLeft: Variables.Margin,
   },
   'Margin.Top': {
     marginTop: Variables.Margin,
@@ -18,26 +30,35 @@ export const MarginStyles = StyleSheet.create({
   'Margin.Left': {
     marginLeft: Variables.Margin,
   },
-  'Margin.XSmall': {
-    margin: Variables['Margin.XSmall'],
+  'Margin.Mini': {
+    marginTop: Variables['Margin.Mini'],
+    marginRight: Variables['Margin.Mini'],
+    marginBottom: Variables['Margin.Mini'],
+    marginLeft: Variables['Margin.Mini'],
   },
   'Margin.Small': {
-    margin: Variables['Margin.Small'],
+    marginTop: Variables['Margin.Small'],
+    marginRight: Variables['Margin.Small'],
+    marginBottom: Variables['Margin.Small'],
+    marginLeft: Variables['Margin.Small'],
   },
   'Margin.Large': {
-    margin: Variables['Margin.Large'],
+    marginTop: Variables['Margin.Large'],
+    marginRight: Variables['Margin.Large'],
+    marginBottom: Variables['Margin.Large'],
+    marginLeft: Variables['Margin.Large'],
   },
-  'Margin.Top.XSmall': {
-    marginTop: Variables['Margin.XSmall'],
+  'Margin.Top.Mini': {
+    marginTop: Variables['Margin.Mini'],
   },
-  'Margin.Right.XSmall': {
-    marginRight: Variables['Margin.XSmall'],
+  'Margin.Right.Mini': {
+    marginRight: Variables['Margin.Mini'],
   },
-  'Margin.Bottom.XSmall': {
-    marginBottom: Variables['Margin.XSmall'],
+  'Margin.Bottom.Mini': {
+    marginBottom: Variables['Margin.Mini'],
   },
-  'Margin.Left.XSmall': {
-    marginLeft: Variables['Margin.XSmall'],
+  'Margin.Left.Mini': {
+    marginLeft: Variables['Margin.Mini'],
   },
   'Margin.Top.Small': {
     marginTop: Variables['Margin.Small'],

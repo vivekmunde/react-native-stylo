@@ -1,7 +1,13 @@
+/* -------------------------------------------------------------------------------- */
+/*                               react-native-stylo                                 */
+/*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
+/*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
+/*                                  Version 0.4.0                                   */
+/* -------------------------------------------------------------------------------- */
+
 import _useIconStyles from './use-icon-styles';
 import _useImageBackgroundStyles from './use-image-background-styles';
 import _useImageStyles from './use-image-styles';
-import _useKeyboardAvoidingViewStyles from './use-keyboard-avoiding-view-styles';
 import _useSafeAreaViewStyles from './use-safe-area-view-styles';
 import {
   useScrollViewContentContainerStyles as _useScrollViewContentContainerStyles,
@@ -16,7 +22,6 @@ import _useViewStyles from './use-view-styles';
 export const useIconStyles = _useIconStyles;
 export const useImageBackgroundStyles = _useImageBackgroundStyles;
 export const useImageStyles = _useImageStyles;
-export const useKeyboardAvoidingViewStyles = _useKeyboardAvoidingViewStyles;
 export const useSafeAreaViewStyles = _useSafeAreaViewStyles;
 export const useScrollViewStyles = _useScrollViewStyles;
 export const useScrollViewContentContainerStyles =
@@ -27,11 +32,10 @@ export const useTouchableStyles = _useTouchableStyles;
 export const useVariables = _useVariables;
 export const useViewStyles = _useViewStyles;
 
-const Stylish = {
+const Stylers = {
   useIconStyles,
   useImageBackgroundStyles,
   useImageStyles,
-  useKeyboardAvoidingViewStyles,
   useSafeAreaViewStyles,
   useScrollViewStyles,
   useScrollViewContentContainerStyles,
@@ -42,4 +46,4 @@ const Stylish = {
   useViewStyles,
 };
 
-export default Stylish;
+export default Stylers;
