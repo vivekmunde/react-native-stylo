@@ -5,7 +5,7 @@
 /*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useSafeAreaViewStyles as useStyloSafeAreaViewStyles } from 'react-native-stylo';
+import { useSafeAreaViewStyles as useStyloSafeAreaViewStyles } from '../../../stylo';
 import { TSafeAreaViewStyle, TStyleNamespace } from '../themes/types';
 
 const useSafeAreaViewStyles = (

@@ -12,11 +12,17 @@ import { StyleSheet } from 'react-native';
 
 import { TextInputCStyles } from '../__generated__/components/text-input-styles';
 import BackgroundColorStyles from '../generic/background-color-styles';
+import BorderStyles from '../generic/border-styles';
 import FontColorStyles from '../generic/font-color-styles';
+import MarginStyles from '../generic/margin-styles';
+import PaddingStyles from '../generic/padding-styles';
 
 const TextInputStyles = StyleSheet.create({
   ...BackgroundColorStyles,
   ...FontColorStyles,
+  ...BorderStyles,
+  ...MarginStyles,
+  ...PaddingStyles,
   ...TextInputCStyles,
 });
 

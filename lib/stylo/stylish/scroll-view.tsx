@@ -10,7 +10,7 @@ import React from 'react';
 import {
   ScrollView as StyloScrollSView,
   TScrollViewProps,
-} from 'react-native-stylo';
+} from '../../../stylo';
 import {
   TScrollViewContentContainerStyle,
   TScrollViewStyle,

@@ -5,7 +5,7 @@
 /*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useTouchableStyles as useStyloTouchableStyles } from '../../../stylo';
+import { useTouchableStyles as useStyloTouchableStyles } from 'react-native-stylo';
 import { TViewStyle, TStyleNamespace } from '../themes/types';
 
 const useViewStyles = (

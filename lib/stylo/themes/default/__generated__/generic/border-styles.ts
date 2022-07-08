@@ -14,7 +14,6 @@ import Variables from '../../variables';
 const BorderStyles = StyleSheet.create({
   Border: {
     borderColor: Variables['Border.Color'],
-    borderStyle: 'solid',
     borderWidth: Variables['Border.Width'],
   },
   'Border.Style.Solid': {
@@ -494,7 +493,7 @@ const BorderStyles = StyleSheet.create({
     borderColor: Variables['Color.Grey6'],
   },
   'Border.Color.Success': {
-    borderColor: Variables['Color.Grey6'],
+    borderColor: Variables['Color.Success'],
   },
   'Border.Color.Success1': {
     borderColor: Variables['Color.Success1'],

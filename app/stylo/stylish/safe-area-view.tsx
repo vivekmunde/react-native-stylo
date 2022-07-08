@@ -10,7 +10,7 @@ import React from 'react';
 import {
   SafeAreaView as StyloSafeAreaView,
   TSafeAreaViewProps,
-} from '../../../stylo';
+} from 'react-native-stylo';
 import { TSafeAreaViewStyle, TStyleNamespace } from '../themes/types';
 
 const SafeAreaView: React.FC<

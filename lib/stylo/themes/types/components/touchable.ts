@@ -31,8 +31,8 @@ type TTouchableStyle =
   | THorizontalStyle
   | TAvatarJacketStyle
   | TBadgeStyle
-  | TListStyle
   | TFormStyle
+  | TListStyle
   | TScreenStyle
   | TTagStyle
   | TButtonStyle;

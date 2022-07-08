@@ -5,7 +5,7 @@
 /*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useViewStyles as useStyloViewStyles } from '../../../stylo';
+import { useViewStyles as useStyloViewStyles } from 'react-native-stylo';
 import { TViewStyle, TStyleNamespace } from '../themes/types';
 
 const useViewStyles = (

@@ -7,7 +7,7 @@
 
 import React from 'react';
 
-import { TextInput as StyloTextInput, TTextInputProps } from 'react-native-stylo';
+import { TextInput as StyloTextInput, TTextInputProps } from '../../../stylo';
 import { TStyleNamespace, TTextInputStyle } from '../themes/types';
 
 const Text: React.FC<

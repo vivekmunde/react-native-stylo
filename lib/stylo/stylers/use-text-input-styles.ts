@@ -5,7 +5,7 @@
 /*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useTextInputStyles as useStyloTextInputStyles } from 'react-native-stylo';
+import { useTextInputStyles as useStyloTextInputStyles } from '../../../stylo';
 import { TTextInputStyle, TStyleNamespace } from '../themes/types';
 
 const useTextInputStyles = (

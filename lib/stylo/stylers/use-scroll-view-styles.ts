@@ -8,7 +8,7 @@
 import {
   useScrollViewStyles as useStyloScrollViewStyles,
   useScrollViewContentContainerStyles as useStyloScrollViewContentContainerStyles,
-} from 'react-native-stylo';
+} from '../../../stylo';
 import {
   TScrollViewStyle,
   TScrollViewContentContainerStyle,

@@ -8,7 +8,6 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { TAvatarJacketStyle } from '../assorted/avatar';
 import { TBadgeStyle } from '../assorted/badge';
 import TFormStyle from '../assorted/form';
 import THorizontalStyle from '../assorted/horizontal';
@@ -28,7 +27,6 @@ type TViewStyle =
   | TMarginStyle
   | TFlexStyle
   | THorizontalStyle
-  | TAvatarJacketStyle
   | TBadgeStyle
   | TListStyle
   | TFormStyle

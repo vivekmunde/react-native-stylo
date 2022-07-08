@@ -13,7 +13,10 @@ import Variables from '../../variables';
 
 export const MarginStyles = StyleSheet.create({
   Margin: {
-    margin: Variables.Margin,
+    marginTop: Variables.Margin,
+    marginRight: Variables.Margin,
+    marginBottom: Variables.Margin,
+    marginLeft: Variables.Margin,
   },
   'Margin.Top': {
     marginTop: Variables.Margin,
@@ -28,13 +31,22 @@ export const MarginStyles = StyleSheet.create({
     marginLeft: Variables.Margin,
   },
   'Margin.Mini': {
-    margin: Variables['Margin.Mini'],
+    marginTop: Variables['Margin.Mini'],
+    marginRight: Variables['Margin.Mini'],
+    marginBottom: Variables['Margin.Mini'],
+    marginLeft: Variables['Margin.Mini'],
   },
   'Margin.Small': {
-    margin: Variables['Margin.Small'],
+    marginTop: Variables['Margin.Small'],
+    marginRight: Variables['Margin.Small'],
+    marginBottom: Variables['Margin.Small'],
+    marginLeft: Variables['Margin.Small'],
   },
   'Margin.Large': {
-    margin: Variables['Margin.Large'],
+    marginTop: Variables['Margin.Large'],
+    marginRight: Variables['Margin.Large'],
+    marginBottom: Variables['Margin.Large'],
+    marginLeft: Variables['Margin.Large'],
   },
   'Margin.Top.Mini': {
     marginTop: Variables['Margin.Mini'],
