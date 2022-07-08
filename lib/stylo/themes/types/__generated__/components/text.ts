@@ -17,6 +17,7 @@ export type TTextCStyle =
   | 'Align.Center'
   | 'Align.Right'
   | 'Bold'
+  | 'Italic'
   | 'Bold.Semi'
   | 'H1'
   | 'H2'

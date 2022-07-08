@@ -18,6 +18,7 @@ const ListStyles = StyleSheet.create({
     paddingRight: Variables.Padding / 2,
     display: 'flex',
     flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   'List.Item.Left': {
     paddingLeft: Variables.Padding / 2,

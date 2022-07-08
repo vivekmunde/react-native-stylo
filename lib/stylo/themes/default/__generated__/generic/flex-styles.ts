@@ -69,6 +69,36 @@ const FlexStyles = StyleSheet.create({
   'Flex.JustifyContent.SpaceEvenly': {
     justifyContent: 'space-evenly',
   },
+  'Flex.1': {
+    flex: 1,
+  },
+  'Flex.2': {
+    flex: 2,
+  },
+  'Flex.3': {
+    flex: 3,
+  },
+  'Flex.4': {
+    flex: 4,
+  },
+  'Flex.5': {
+    flex: 5,
+  },
+  'Flex.6': {
+    flex: 6,
+  },
+  'Flex.7': {
+    flex: 7,
+  },
+  'Flex.8': {
+    flex: 8,
+  },
+  'Flex.9': {
+    flex: 9,
+  },
+  'Flex.10': {
+    flex: 10,
+  },
 });
 
 export default FlexStyles;

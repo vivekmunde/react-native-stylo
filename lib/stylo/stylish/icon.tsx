@@ -7,7 +7,7 @@
 
 import React from 'react';
 
-import { Icon as StyloIcon, TIconProps } from 'react-native-stylo';
+import { Icon as StyloIcon, TIconProps } from '../../../stylo';
 import { TIconStyle, TStyleNamespace } from '../themes/types';
 
 const AntDesign: React.FC<TIconProps<TIconStyle, TStyleNamespace>> = props => (

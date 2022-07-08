@@ -10,7 +10,7 @@ import React from 'react';
 import {
   ImageBackground as StyloImageBackground,
   TImageBackgroundProps,
-} from 'react-native-stylo';
+} from '../../../stylo';
 import { TImageBackgroundStyle, TStyleNamespace } from '../themes/types';
 
 const ImageBackground: React.FC<

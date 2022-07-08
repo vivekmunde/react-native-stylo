@@ -5,7 +5,7 @@
 /*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useTextStyles as useStyloTextStyles } from 'react-native-stylo';
+import { useTextStyles as useStyloTextStyles } from '../../../stylo';
 import { TTextStyle, TStyleNamespace } from '../themes/types';
 
 const useTextStyles = (

@@ -14,7 +14,7 @@ import {
   TPressableProps,
   TTouchableHighlightProps,
   TTouchableOpacityProps,
-} from '../../../stylo';
+} from 'react-native-stylo';
 import { TStyleNamespace, TTouchableStyle } from '../themes/types';
 
 export const Pressable: React.FC<

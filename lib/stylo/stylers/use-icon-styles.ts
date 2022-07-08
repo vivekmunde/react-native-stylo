@@ -5,7 +5,7 @@
 /*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useIconStyles as useStyloIconStyles } from 'react-native-stylo';
+import { useIconStyles as useStyloIconStyles } from '../../../stylo';
 import { TIconStyle, TStyleNamespace } from '../themes/types';
 
 const useIconStyles = (

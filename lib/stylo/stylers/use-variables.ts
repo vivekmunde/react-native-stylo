@@ -5,7 +5,7 @@
 /*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useVariables as useStyloVariables } from 'react-native-stylo';
+import { useVariables as useStyloVariables } from '../../../stylo';
 import { TVariable } from '../themes/types';
 
 const useVariables = (names: TVariable[]) =>

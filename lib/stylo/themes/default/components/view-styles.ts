@@ -10,7 +10,6 @@
 
 import { StyleSheet } from 'react-native';
 
-import { AvatarJacketStyles } from '../assorted/avatar-styles';
 import { BadgeStyles } from '../assorted/badge-styles';
 import FormStyles from '../assorted/form-styles';
 import HorizontalStyles from '../assorted/horizontal-styles';
@@ -30,7 +29,6 @@ const ViewStyles = StyleSheet.create({
   ...MarginStyles,
   ...PaddingStyles,
   ...HorizontalStyles,
-  ...AvatarJacketStyles,
   ...BadgeStyles,
   ...TagStyles,
   ...FormStyles,

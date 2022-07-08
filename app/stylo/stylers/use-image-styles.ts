@@ -5,7 +5,7 @@
 /*                                  Version 0.4.0                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useImageStyles as useStyloImageStyles } from '../../../stylo';
+import { useImageStyles as useStyloImageStyles } from 'react-native-stylo';
 import { TImageStyle, TStyleNamespace } from '../themes/types';
 
 const useImageStyles = (

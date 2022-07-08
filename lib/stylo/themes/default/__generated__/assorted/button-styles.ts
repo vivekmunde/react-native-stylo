@@ -53,10 +53,7 @@ export const ButtonTextStyles = StyleSheet.create({
 });
 
 export const ButtonIconStyles = StyleSheet.create({
-  'Button.Icon': {
-    marginLeft: 4,
-    marginRight: 4,
-  },
+  'Button.Icon': {},
   'Button.Icon.Left': {
     marginRight: 4,
   },
@@ -64,12 +61,21 @@ export const ButtonIconStyles = StyleSheet.create({
     marginLeft: 4,
   },
   'Button.Circle.Icon': {
+    fontSize: Variables['Font.Size'],
     lineHeight: Variables['Font.Size'],
+    marginLeft: 0,
+    marginRight: 0,
   },
   'Button.Circle.Icon.Small': {
+    fontSize: Variables['Font.Size.Small'],
     lineHeight: Variables['Font.Size.Small'],
+    marginLeft: 0,
+    marginRight: 0,
   },
   'Button.Circle.Icon.Large': {
+    fontSize: Variables['Font.Size.Large'],
     lineHeight: Variables['Font.Size.Large'],
+    marginLeft: 0,
+    marginRight: 0,
   },
 });

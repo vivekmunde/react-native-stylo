@@ -11,7 +11,10 @@ import { StyleSheet } from 'react-native';
 
 import Variables from '../../variables';
 import BackgroundColorStyles from '../generic/background-color-styles';
+import BorderStyles from '../generic/border-styles';
 import FontColorStyles from '../generic/font-color-styles';
+import MarginStyles from '../generic/margin-styles';
+import PaddingStyles from '../generic/padding-styles';
 
 const fontSize = Number(Variables['Font.Size'] ?? 16);
 const fontSizeSmall = Number(Variables['Font.Size.Small'] ?? 12);
@@ -52,8 +55,8 @@ export const TextInputCStyles = StyleSheet.create({
     minHeight: Math.round(fontSize * 2.5),
     paddingTop: padding,
     paddingBottom: padding,
-    paddingLeft: Math.round(padding * (3 / 4)),
-    paddingRight: Math.round(padding * (3 / 4)),
+    paddingLeft: padding,
+    paddingRight: padding,
     width: '100%',
   },
   'Align.Center': {
@@ -111,22 +114,25 @@ export const TextInputCStyles = StyleSheet.create({
     minHeight: fontSizeSmall * 2,
     paddingTop: paddingSmall,
     paddingBottom: paddingSmall,
-    paddingLeft: Math.round(paddingSmall * (3 / 4)),
-    paddingRight: Math.round(paddingSmall * (3 / 4)),
+    paddingLeft: paddingSmall,
+    paddingRight: paddingSmall,
   },
   Large: {
     fontSize: fontSizeLarge,
     minHeight: Math.round(fontSizeLarge * 2.5),
     paddingTop: paddingLarge,
     paddingBottom: paddingLarge,
-    paddingLeft: Math.round(paddingLarge * (3 / 4)),
-    paddingRight: Math.round(paddingLarge * (3 / 4)),
+    paddingLeft: paddingLarge,
+    paddingRight: paddingLarge,
   },
 });
 
 const TextInputStyles = StyleSheet.create({
   ...BackgroundColorStyles,
   ...FontColorStyles,
+  ...BorderStyles,
+  ...MarginStyles,
+  ...PaddingStyles,
   ...TextInputCStyles,
 });
 

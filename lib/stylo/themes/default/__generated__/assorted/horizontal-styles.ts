@@ -14,12 +14,11 @@ const HorizontalStyles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'space-between',
   },
   'Horizontal.Left': {},
   'Horizontal.Body': {
     flex: 1,
-    display: 'flex',
-    flexDirection: 'row',
   },
   'Horizontal.Right': {},
 });
