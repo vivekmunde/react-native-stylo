@@ -2,26 +2,22 @@ import React from 'react';
 import { SafeAreaView, Text, TextStyle, View, ViewStyle } from 'react-native';
 
 import { Styles } from '../../../stylo/index';
-import {
-  TStyleNamespace,
-  TTextStyle,
-  TViewStyle,
-} from '../../stylo/themes/types';
+import { TTextStyle, TViewStyle } from '../../stylo/themes/types';
 
 const StylesShowCase: React.FC = () => (
-  <Styles<ViewStyle, TViewStyle, TStyleNamespace>
+  <Styles<ViewStyle, TViewStyle>
     styleNamespace="ViewStyles"
     styleNames={['Screen', 'BackgroundColor.Primary1']}>
     {screenStyle => (
       <View style={screenStyle}>
         <SafeAreaView />
-        <Styles<ViewStyle, TViewStyle, TStyleNamespace>
+        <Styles<ViewStyle, TViewStyle>
           styleNamespace="ViewStyles"
           styleNames={['Screen.Header', 'Padding']}>
           {screenHeaderStyle => (
             <React.Fragment>
               <View style={screenHeaderStyle}>
-                <Styles<TextStyle, TTextStyle, TStyleNamespace>
+                <Styles<TextStyle, TTextStyle>
                   styleNamespace="TextStyles"
                   styleNames={[
                     'Color.Primary',
@@ -34,12 +30,12 @@ const StylesShowCase: React.FC = () => (
                   )}
                 </Styles>
               </View>
-              <Styles<ViewStyle, TViewStyle, TStyleNamespace>
+              <Styles<ViewStyle, TViewStyle>
                 styleNamespace="ViewStyles"
                 styleNames={['Screen.Body', 'Padding']}>
                 {screenBodyStyle => (
                   <View style={screenBodyStyle}>
-                    <Styles<ViewStyle, TViewStyle, TStyleNamespace>
+                    <Styles<ViewStyle, TViewStyle>
                       styleNamespace="ViewStyles"
                       styleNames={[
                         'BackgroundColor.White',
@@ -48,7 +44,7 @@ const StylesShowCase: React.FC = () => (
                       ]}>
                       {cardStyle => (
                         <View style={cardStyle}>
-                          <Styles<ViewStyle, TViewStyle, TStyleNamespace>
+                          <Styles<ViewStyle, TViewStyle>
                             styleNamespace="ViewStyles"
                             styleNames={[
                               'Padding.Top',
@@ -57,7 +53,7 @@ const StylesShowCase: React.FC = () => (
                             ]}>
                             {cardHeaderStyle => (
                               <View style={cardHeaderStyle}>
-                                <Styles<TextStyle, TTextStyle, TStyleNamespace>
+                                <Styles<TextStyle, TTextStyle>
                                   styleNamespace="TextStyles"
                                   styleNames={['Large', 'Bold']}>
                                   {cardTitleStyle => (
@@ -69,12 +65,12 @@ const StylesShowCase: React.FC = () => (
                               </View>
                             )}
                           </Styles>
-                          <Styles<ViewStyle, TViewStyle, TStyleNamespace>
+                          <Styles<ViewStyle, TViewStyle>
                             styleNamespace="ViewStyles"
                             styleNames={['Padding']}>
                             {cardBodyStyle => (
                               <View style={cardBodyStyle}>
-                                <Styles<TextStyle, TTextStyle, TStyleNamespace>
+                                <Styles<TextStyle, TTextStyle>
                                   styleNamespace="TextStyles"
                                   styleNames={['Color.Grey8', 'Bold.Semi']}>
                                   {codeStyle => (

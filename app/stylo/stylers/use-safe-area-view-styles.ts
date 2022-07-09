@@ -6,15 +6,9 @@
 /* -------------------------------------------------------------------------------- */
 
 import { useSafeAreaViewStyles as useStyloSafeAreaViewStyles } from '../../../stylo';
-import { TSafeAreaViewStyle, TStyleNamespace } from '../themes/types';
+import { TSafeAreaViewStyle } from '../themes/types';
 
-const useSafeAreaViewStyles = (
-  styleNames: TSafeAreaViewStyle[],
-  styleNamespace?: TStyleNamespace,
-) =>
-  useStyloSafeAreaViewStyles<TSafeAreaViewStyle, TStyleNamespace>(
-    styleNames,
-    styleNamespace,
-  );
+const useSafeAreaViewStyles = (styleNames: TSafeAreaViewStyle[]) =>
+  useStyloSafeAreaViewStyles<TSafeAreaViewStyle>(styleNames);
 
 export default useSafeAreaViewStyles;

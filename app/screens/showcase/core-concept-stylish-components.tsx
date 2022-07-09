@@ -4,7 +4,6 @@ import { Image, SafeAreaView, Text, View } from '../../../stylo';
 import {
   TImageStyle,
   TSafeAreaViewStyle,
-  TStyleNamespace,
   TTextStyle,
   TViewStyle,
 } from '../../stylo/themes/types';
@@ -28,17 +27,13 @@ const data = [
 ];
 
 const CoreConceptStylishComponentsShowCase = () => (
-  <View<TViewStyle, TStyleNamespace>
-    styleNames={['Screen', 'BackgroundColor.Primary1']}>
-    <SafeAreaView<TSafeAreaViewStyle, TStyleNamespace> />
-    <View<TViewStyle, TStyleNamespace>
-      styleNames={['Screen.Header', 'Padding']}>
-      <Text<TTextStyle, TStyleNamespace> styleNames={['H1']}>
-        Stylish Components
-      </Text>
+  <View<TViewStyle> styleNames={['Screen', 'BackgroundColor.Primary1']}>
+    <SafeAreaView<TSafeAreaViewStyle> />
+    <View<TViewStyle> styleNames={['Screen.Header', 'Padding']}>
+      <Text<TTextStyle> styleNames={['H1']}>Stylish Components</Text>
     </View>
-    <View<TViewStyle, TStyleNamespace> styleNames={['Screen.Body', 'Padding']}>
-      <View<TViewStyle, TStyleNamespace>
+    <View<TViewStyle> styleNames={['Screen.Body', 'Padding']}>
+      <View<TViewStyle>
         styleNames={[
           'List',
           'Border.Radius',
@@ -46,23 +41,20 @@ const CoreConceptStylishComponentsShowCase = () => (
           'Margin.Bottom.Large',
         ]}>
         {data.map((it, index) => (
-          <View<TViewStyle, TStyleNamespace>
+          <View<TViewStyle>
             key={index}
             styleNames={
               index > 0 ? ['List.Item', 'Border.Top'] : ['List.Item']
             }>
-            <View<TViewStyle, TStyleNamespace> styleNames={['List.Item.Left']}>
-              <Image<TImageStyle, TStyleNamespace>
+            <View<TViewStyle> styleNames={['List.Item.Left']}>
+              <Image<TImageStyle>
                 styleNames={['Avatar']}
                 source={it.profileUrl}
               />
             </View>
-            <View<TViewStyle, TStyleNamespace> styleNames={['List.Item.Body']}>
-              <Text<TTextStyle, TStyleNamespace> styleNames={['Bold.Semi']}>
-                {it.name}
-              </Text>
-              <Text<TTextStyle, TStyleNamespace>
-                styleNames={['Color.Secondary', 'Small']}>
+            <View<TViewStyle> styleNames={['List.Item.Body']}>
+              <Text<TTextStyle> styleNames={['Bold.Semi']}>{it.name}</Text>
+              <Text<TTextStyle> styleNames={['Color.Secondary', 'Small']}>
                 {it.role}
               </Text>
             </View>
@@ -70,10 +62,9 @@ const CoreConceptStylishComponentsShowCase = () => (
         ))}
       </View>
 
-      <View<TViewStyle, TStyleNamespace>
-        styleNames={['List', 'Margin.Top.Large']}>
+      <View<TViewStyle> styleNames={['List', 'Margin.Top.Large']}>
         {data.map((it, index) => (
-          <View<TViewStyle, TStyleNamespace>
+          <View<TViewStyle>
             key={index}
             styleNames={[
               'List.Item',
@@ -81,20 +72,18 @@ const CoreConceptStylishComponentsShowCase = () => (
               'BackgroundColor.White',
               'Margin.Bottom',
             ]}>
-            <View<TViewStyle, TStyleNamespace> styleNames={['List.Item.Left']}>
-              <Image<TImageStyle, TStyleNamespace>
+            <View<TViewStyle> styleNames={['List.Item.Left']}>
+              <Image<TImageStyle>
                 styleNames={['Avatar', 'Avatar.Large', 'Avatar.Square']}
                 source={it.profileUrl}
               />
             </View>
-            <View<TViewStyle, TStyleNamespace>
+            <View<TViewStyle>
               styleNames={['List.Item.Body', 'Flex.JustifyContent.Center']}>
-              <Text<TTextStyle, TStyleNamespace>
-                styleNames={['Large', 'Bold.Semi']}>
+              <Text<TTextStyle> styleNames={['Large', 'Bold.Semi']}>
                 {it.name}
               </Text>
-              <Text<TTextStyle, TStyleNamespace>
-                styleNames={['Color.Secondary']}>
+              <Text<TTextStyle> styleNames={['Color.Secondary']}>
                 {it.role}
               </Text>
             </View>

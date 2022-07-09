@@ -4,21 +4,15 @@ import { Image, ImageProps } from 'react-native';
 import { useImageStyles } from '../stylers';
 import { TStylesProps } from './types';
 
-export type TImageProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = ImageProps & TStylesProps<TStyleName, TStyleNamespace>;
+export type TImageProps<TStyleName extends string> = ImageProps &
+  TStylesProps<TStyleName>;
 
-const RNSImage = <TStyleName extends string, TStyleNamespace extends string>({
-  styleNamespace,
+const RNSImage = <TStyleName extends string>({
   styleNames,
   style,
   ...props
-}: TImageProps<TStyleName, TStyleNamespace>) => {
-  const imageStyle = useImageStyles<TStyleName, TStyleNamespace>(
-    styleNames ?? [],
-    styleNamespace ?? ('ImageStyles' as TStyleNamespace),
-  );
+}: TImageProps<TStyleName>) => {
+  const imageStyle = useImageStyles<TStyleName>(styleNames ?? []);
   return <Image {...props} style={[imageStyle, style]} />;
 };
 

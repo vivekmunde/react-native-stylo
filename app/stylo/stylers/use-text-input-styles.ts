@@ -6,15 +6,9 @@
 /* -------------------------------------------------------------------------------- */
 
 import { useTextInputStyles as useStyloTextInputStyles } from '../../../stylo';
-import { TTextInputStyle, TStyleNamespace } from '../themes/types';
+import { TTextInputStyle } from '../themes/types';
 
-const useTextInputStyles = (
-  styleNames: TTextInputStyle[],
-  styleNamespace?: TStyleNamespace,
-) =>
-  useStyloTextInputStyles<TTextInputStyle, TStyleNamespace>(
-    styleNames,
-    styleNamespace,
-  );
+const useTextInputStyles = (styleNames: TTextInputStyle[]) =>
+  useStyloTextInputStyles<TTextInputStyle>(styleNames);
 
 export default useTextInputStyles;

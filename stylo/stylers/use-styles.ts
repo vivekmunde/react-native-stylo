@@ -2,12 +2,9 @@ import { useContext, useMemo } from 'react';
 import { StyleProp } from 'react-native';
 
 import ThemeContext from '../theme-context';
+import { TStyleNamespace } from './types';
 
-function useStyles<
-  TStyleProp,
-  TStyleName extends string,
-  TStyleNamespace extends string,
->({
+function useStyles<TStyleProp, TStyleName extends string>({
   styleNamespace,
   styleNames,
 }: {

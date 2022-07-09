@@ -40,66 +40,33 @@ export const TouchableOpacity = RNSTouchableOpacity;
 export const useStyle = rnsUseStyle;
 export const View = RNSView;
 
-export type TStylesProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSStylesProps<TStyleName, TStyleNamespace>;
+export type TStylesProps<TStyleName extends string> =
+  TRNSStylesProps<TStyleName>;
 
-export type TPressableProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSPressableProps<TStyleName, TStyleNamespace>;
-export type TTouchableHighlightProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSTouchableHighlightProps<TStyleName, TStyleNamespace>;
-export type TTouchableOpacityProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSTouchableOpacityProps<TStyleName, TStyleNamespace>;
+export type TPressableProps<TStyleName extends string> =
+  TRNSPressableProps<TStyleName>;
+export type TTouchableHighlightProps<TStyleName extends string> =
+  TRNSTouchableHighlightProps<TStyleName>;
+export type TTouchableOpacityProps<TStyleName extends string> =
+  TRNSTouchableOpacityProps<TStyleName>;
 
-export type TIconProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSIconProps<TStyleName, TStyleNamespace>;
+export type TIconProps<TStyleName extends string> = TRNSIconProps<TStyleName>;
 
-export type TImageProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSImageProps<TStyleName, TStyleNamespace>;
-export type TImageBackgroundProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSImageBackgroundProps<TStyleName, TStyleNamespace>;
+export type TImageProps<TStyleName extends string> = TRNSImageProps<TStyleName>;
+export type TImageBackgroundProps<TStyleName extends string> =
+  TRNSImageBackgroundProps<TStyleName>;
 
-export type TSafeAreaViewProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSSafeAreaViewProps<TStyleName, TStyleNamespace>;
+export type TSafeAreaViewProps<TStyleName extends string> =
+  TRNSSafeAreaViewProps<TStyleName>;
 
 export type TScrollViewProps<
   TScrollViewStyle extends string,
-  TScrollViewStyleNamespace extends string,
   TScrollViewContentContainerStyle extends string,
-  TScrollViewContentContainerStyleNamespace extends string,
-> = TRNSScrollViewProps<
-  TScrollViewStyle,
-  TScrollViewStyleNamespace,
-  TScrollViewContentContainerStyle,
-  TScrollViewContentContainerStyleNamespace
->;
+> = TRNSScrollViewProps<TScrollViewStyle, TScrollViewContentContainerStyle>;
 
-export type TTextProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSTextProps<TStyleName, TStyleNamespace>;
+export type TTextProps<TStyleName extends string> = TRNSTextProps<TStyleName>;
 
-export type TTextInputProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSTextInputProps<TStyleName, TStyleNamespace>;
+export type TTextInputProps<TStyleName extends string> =
+  TRNSTextInputProps<TStyleName>;
 
-export type TViewProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = TRNSViewProps<TStyleName, TStyleNamespace>;
+export type TViewProps<TStyleName extends string> = TRNSViewProps<TStyleName>;

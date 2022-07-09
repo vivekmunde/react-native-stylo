@@ -12,23 +12,14 @@ import {
 import {
   TScrollViewStyle,
   TScrollViewContentContainerStyle,
-  TStyleNamespace,
 } from '../themes/types';
 
-export const useScrollViewStyles = (
-  styleNames: TScrollViewStyle[],
-  styleNamespace?: TStyleNamespace,
-) =>
-  useStyloScrollViewStyles<TScrollViewStyle, TStyleNamespace>(
-    styleNames,
-    styleNamespace,
-  );
+export const useScrollViewStyles = (styleNames: TScrollViewStyle[]) =>
+  useStyloScrollViewStyles<TScrollViewStyle>(styleNames);
 
 export const useScrollViewContentContainerStyles = (
   styleNames: TScrollViewContentContainerStyle[],
-  styleNamespace?: TStyleNamespace,
 ) =>
-  useStyloScrollViewContentContainerStyles<
-    TScrollViewContentContainerStyle,
-    TStyleNamespace
-  >(styleNames, styleNamespace);
+  useStyloScrollViewContentContainerStyles<TScrollViewContentContainerStyle>(
+    styleNames,
+  );

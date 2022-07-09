@@ -18,7 +18,6 @@ import {
   useScrollViewContentContainerStyles,
   useScrollViewStyles,
 } from './use-scroll-view-styles';
-import useStyle from './use-style';
 import useStyles from './use-styles';
 import useTextInputStyles from './use-text-input-styles';
 import useTextStyles from './use-text-styles';
@@ -44,7 +43,6 @@ export {
   useSafeAreaViewStyles,
   useScrollViewStyles,
   useScrollViewContentContainerStyles,
-  useStyle,
   useStyles,
   useTextStyles,
   useTextInputStyles,
