@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.4.1                                   */
+/*                                  Version 0.5.0                                   */
 /* -------------------------------------------------------------------------------- */
 
 import React from 'react';
@@ -14,7 +14,7 @@ import {
   TPressableProps,
   TTouchableHighlightProps,
   TTouchableOpacityProps,
-} from '../../../stylo';
+} from 'react-native-stylo';
 import { TTouchableStyle } from '../themes/types';
 
 export const Pressable: React.FC<TPressableProps<TTouchableStyle>> = props => (
