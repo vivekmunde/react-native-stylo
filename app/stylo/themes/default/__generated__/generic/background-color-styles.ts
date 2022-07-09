@@ -171,36 +171,6 @@ const BackgroundColorStyles = StyleSheet.create({
   'BackgroundColor.Danger10': {
     backgroundColor: Variables['Color.Danger10'],
   },
-  'BackgroundColor.Gold1': {
-    backgroundColor: Variables['Color.Gold1'],
-  },
-  'BackgroundColor.Gold2': {
-    backgroundColor: Variables['Color.Gold2'],
-  },
-  'BackgroundColor.Gold3': {
-    backgroundColor: Variables['Color.Gold3'],
-  },
-  'BackgroundColor.Gold4': {
-    backgroundColor: Variables['Color.Gold4'],
-  },
-  'BackgroundColor.Gold5': {
-    backgroundColor: Variables['Color.Gold5'],
-  },
-  'BackgroundColor.Gold6': {
-    backgroundColor: Variables['Color.Gold6'],
-  },
-  'BackgroundColor.Gold7': {
-    backgroundColor: Variables['Color.Gold7'],
-  },
-  'BackgroundColor.Gold8': {
-    backgroundColor: Variables['Color.Gold8'],
-  },
-  'BackgroundColor.Gold9': {
-    backgroundColor: Variables['Color.Gold9'],
-  },
-  'BackgroundColor.Gold10': {
-    backgroundColor: Variables['Color.Gold10'],
-  },
   'BackgroundColor.Green1': {
     backgroundColor: Variables['Color.Green1'],
   },
@@ -293,36 +263,6 @@ const BackgroundColorStyles = StyleSheet.create({
   },
   'BackgroundColor.Info10': {
     backgroundColor: Variables['Color.Info10'],
-  },
-  'BackgroundColor.Lime1': {
-    backgroundColor: Variables['Color.Lime1'],
-  },
-  'BackgroundColor.Lime2': {
-    backgroundColor: Variables['Color.Lime2'],
-  },
-  'BackgroundColor.Lime3': {
-    backgroundColor: Variables['Color.Lime3'],
-  },
-  'BackgroundColor.Lime4': {
-    backgroundColor: Variables['Color.Lime4'],
-  },
-  'BackgroundColor.Lime5': {
-    backgroundColor: Variables['Color.Lime5'],
-  },
-  'BackgroundColor.Lime6': {
-    backgroundColor: Variables['Color.Lime6'],
-  },
-  'BackgroundColor.Lime7': {
-    backgroundColor: Variables['Color.Lime7'],
-  },
-  'BackgroundColor.Lime8': {
-    backgroundColor: Variables['Color.Lime8'],
-  },
-  'BackgroundColor.Lime9': {
-    backgroundColor: Variables['Color.Lime9'],
-  },
-  'BackgroundColor.Lime10': {
-    backgroundColor: Variables['Color.Lime10'],
   },
   'BackgroundColor.Magenta1': {
     backgroundColor: Variables['Color.Magenta1'],
@@ -512,36 +452,6 @@ const BackgroundColorStyles = StyleSheet.create({
   },
   'BackgroundColor.Success10': {
     backgroundColor: Variables['Color.Success10'],
-  },
-  'BackgroundColor.Volcano1': {
-    backgroundColor: Variables['Color.Volcano1'],
-  },
-  'BackgroundColor.Volcano2': {
-    backgroundColor: Variables['Color.Volcano2'],
-  },
-  'BackgroundColor.Volcano3': {
-    backgroundColor: Variables['Color.Volcano3'],
-  },
-  'BackgroundColor.Volcano4': {
-    backgroundColor: Variables['Color.Volcano4'],
-  },
-  'BackgroundColor.Volcano5': {
-    backgroundColor: Variables['Color.Volcano5'],
-  },
-  'BackgroundColor.Volcano6': {
-    backgroundColor: Variables['Color.Volcano6'],
-  },
-  'BackgroundColor.Volcano7': {
-    backgroundColor: Variables['Color.Volcano7'],
-  },
-  'BackgroundColor.Volcano8': {
-    backgroundColor: Variables['Color.Volcano8'],
-  },
-  'BackgroundColor.Volcano9': {
-    backgroundColor: Variables['Color.Volcano9'],
-  },
-  'BackgroundColor.Volcano10': {
-    backgroundColor: Variables['Color.Volcano10'],
   },
   'BackgroundColor.Warning': {
     backgroundColor: Variables['Color.Warning'],

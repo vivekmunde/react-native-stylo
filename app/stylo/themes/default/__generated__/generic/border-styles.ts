@@ -183,36 +183,6 @@ const BorderStyles = StyleSheet.create({
   'Border.Color.Danger10': {
     borderColor: Variables['Color.Danger10'],
   },
-  'Border.Color.Gold1': {
-    borderColor: Variables['Color.Gold1'],
-  },
-  'Border.Color.Gold2': {
-    borderColor: Variables['Color.Gold2'],
-  },
-  'Border.Color.Gold3': {
-    borderColor: Variables['Color.Gold3'],
-  },
-  'Border.Color.Gold4': {
-    borderColor: Variables['Color.Gold4'],
-  },
-  'Border.Color.Gold5': {
-    borderColor: Variables['Color.Gold5'],
-  },
-  'Border.Color.Gold6': {
-    borderColor: Variables['Color.Gold6'],
-  },
-  'Border.Color.Gold7': {
-    borderColor: Variables['Color.Gold7'],
-  },
-  'Border.Color.Gold8': {
-    borderColor: Variables['Color.Gold8'],
-  },
-  'Border.Color.Gold9': {
-    borderColor: Variables['Color.Gold9'],
-  },
-  'Border.Color.Gold10': {
-    borderColor: Variables['Color.Gold10'],
-  },
   'Border.Color.Green1': {
     borderColor: Variables['Color.Green1'],
   },
@@ -305,36 +275,6 @@ const BorderStyles = StyleSheet.create({
   },
   'Border.Color.Info10': {
     borderColor: Variables['Color.Info10'],
-  },
-  'Border.Color.Lime1': {
-    borderColor: Variables['Color.Lime1'],
-  },
-  'Border.Color.Lime2': {
-    borderColor: Variables['Color.Lime2'],
-  },
-  'Border.Color.Lime3': {
-    borderColor: Variables['Color.Lime3'],
-  },
-  'Border.Color.Lime4': {
-    borderColor: Variables['Color.Lime4'],
-  },
-  'Border.Color.Lime5': {
-    borderColor: Variables['Color.Lime5'],
-  },
-  'Border.Color.Lime6': {
-    borderColor: Variables['Color.Lime6'],
-  },
-  'Border.Color.Lime7': {
-    borderColor: Variables['Color.Lime7'],
-  },
-  'Border.Color.Lime8': {
-    borderColor: Variables['Color.Lime8'],
-  },
-  'Border.Color.Lime9': {
-    borderColor: Variables['Color.Lime9'],
-  },
-  'Border.Color.Lime10': {
-    borderColor: Variables['Color.Lime10'],
   },
   'Border.Color.Magenta1': {
     borderColor: Variables['Color.Magenta1'],
@@ -524,36 +464,6 @@ const BorderStyles = StyleSheet.create({
   },
   'Border.Color.Success10': {
     borderColor: Variables['Color.Success10'],
-  },
-  'Border.Color.Volcano1': {
-    borderColor: Variables['Color.Volcano1'],
-  },
-  'Border.Color.Volcano2': {
-    borderColor: Variables['Color.Volcano2'],
-  },
-  'Border.Color.Volcano3': {
-    borderColor: Variables['Color.Volcano3'],
-  },
-  'Border.Color.Volcano4': {
-    borderColor: Variables['Color.Volcano4'],
-  },
-  'Border.Color.Volcano5': {
-    borderColor: Variables['Color.Volcano5'],
-  },
-  'Border.Color.Volcano6': {
-    borderColor: Variables['Color.Volcano6'],
-  },
-  'Border.Color.Volcano7': {
-    borderColor: Variables['Color.Volcano7'],
-  },
-  'Border.Color.Volcano8': {
-    borderColor: Variables['Color.Volcano8'],
-  },
-  'Border.Color.Volcano9': {
-    borderColor: Variables['Color.Volcano9'],
-  },
-  'Border.Color.Volcano10': {
-    borderColor: Variables['Color.Volcano10'],
   },
   'Border.Color.Warning': {
     borderColor: Variables['Color.Orange6'],
