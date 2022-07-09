@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.4.1                                   */
+/*                                  Version 0.5.0                                   */
 /* -------------------------------------------------------------------------------- */
 
 import React from 'react';
@@ -10,7 +10,7 @@ import React from 'react';
 import {
   ScrollView as StyloScrollSView,
   TScrollViewProps,
-} from '../../../stylo';
+} from 'react-native-stylo';
 import {
   TScrollViewContentContainerStyle,
   TScrollViewStyle,

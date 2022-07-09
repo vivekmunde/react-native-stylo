@@ -2,10 +2,10 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.4.1                                   */
+/*                                  Version 0.5.0                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useIconStyles as useStyloIconStyles } from '../../../stylo';
+import { useIconStyles as useStyloIconStyles } from 'react-native-stylo';
 import { TIconStyle } from '../themes/types';
 
 const useIconStyles = (styleNames: TIconStyle[]) =>
