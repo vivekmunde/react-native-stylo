@@ -1,5 +1,4 @@
-import { TStylesProps as TRNSStylesProps } from '../stylers/types';
-import rnsUseStyle from '../stylers/use-style';
+import { TStylesProps as TRNSStylesProps } from './types';
 import RNSThemeProvider from '../theme-provider';
 import RNSIcon, { TIconProps as TRNSIconProps } from './icon';
 import RNSImage, { TImageProps as TRNSImageProps } from './image';
@@ -37,7 +36,6 @@ export const TextInput = RNSTextInput;
 export const ThemeProvider = RNSThemeProvider;
 export const TouchableHighlight = RNSTouchableHighlight;
 export const TouchableOpacity = RNSTouchableOpacity;
-export const useStyle = rnsUseStyle;
 export const View = RNSView;
 
 export type TStylesProps<TStyleName extends string> =
