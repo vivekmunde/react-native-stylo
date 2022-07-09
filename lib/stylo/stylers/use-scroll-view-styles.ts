@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.4.1                                   */
+/*                                  Version 0.5.0                                   */
 /* -------------------------------------------------------------------------------- */
 
 import {
@@ -12,23 +12,14 @@ import {
 import {
   TScrollViewStyle,
   TScrollViewContentContainerStyle,
-  TStyleNamespace,
 } from '../themes/types';
 
-export const useScrollViewStyles = (
-  styleNames: TScrollViewStyle[],
-  styleNamespace?: TStyleNamespace,
-) =>
-  useStyloScrollViewStyles<TScrollViewStyle, TStyleNamespace>(
-    styleNames,
-    styleNamespace,
-  );
+export const useScrollViewStyles = (styleNames: TScrollViewStyle[]) =>
+  useStyloScrollViewStyles<TScrollViewStyle>(styleNames);
 
 export const useScrollViewContentContainerStyles = (
   styleNames: TScrollViewContentContainerStyle[],
-  styleNamespace?: TStyleNamespace,
 ) =>
-  useStyloScrollViewContentContainerStyles<
-    TScrollViewContentContainerStyle,
-    TStyleNamespace
-  >(styleNames, styleNamespace);
+  useStyloScrollViewContentContainerStyles<TScrollViewContentContainerStyle>(
+    styleNames,
+  );

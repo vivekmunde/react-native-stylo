@@ -3,21 +3,16 @@ import { StyleProp, TextStyle } from 'react-native';
 
 import useTextStyles from './use-text-styles';
 
-type TProps<TStyleName extends string, TStyleNamespace extends string> = {
-  styleNamespace?: TStyleNamespace;
+type TProps<TStyleName extends string> = {
   styleNames: TStyleName[];
   children: (style: StyleProp<TextStyle>) => React.ReactElement | null;
 };
 
-const TextStyles = <TStyleName extends string, TStyleNamespace extends string>({
-  styleNamespace,
+const TextStyles = <TStyleName extends string>({
   styleNames,
   children,
-}: TProps<TStyleName, TStyleNamespace>): React.ReactElement | null => {
-  const style = useTextStyles<TStyleName, TStyleNamespace>(
-    styleNames ?? [],
-    styleNamespace,
-  );
+}: TProps<TStyleName>): React.ReactElement | null => {
+  const style = useTextStyles<TStyleName>(styleNames ?? []);
   return children(style);
 };
 

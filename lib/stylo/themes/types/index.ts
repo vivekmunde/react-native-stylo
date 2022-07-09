@@ -30,10 +30,8 @@ import _TBorderStyle from './generic/border';
 import _TFlexStyle from './generic/flex';
 import _TMarginStyle from './generic/margin';
 import _TPaddingStyle from './generic/padding';
-import _TStyleNamespace from './namespace';
 import _TVariable from './variable';
 
-export type TStyleNamespace = _TStyleNamespace;
 export type TBorderStyle = _TBorderStyle;
 export type TPaddingStyle = _TPaddingStyle;
 export type TMarginStyle = _TMarginStyle;

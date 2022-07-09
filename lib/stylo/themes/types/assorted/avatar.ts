@@ -9,13 +9,10 @@
 /* -------------------------------------------------------------------------------- */
 
 import {
-  TAvatarCStyle,
   TAvatarJacketStyle as _TAvatarJacketStyle,
+  TAvatarStyle as _TAvatarStyle,
 } from '../__generated__/assorted/avatar';
-import TBorderStyle from '../generic/border';
 
-export type TAvatarStyle =
-  | Omit<TBorderStyle, 'Border.Style.Dashed' | 'Border.Style.Dotted'>
-  | TAvatarCStyle;
+export type TAvatarStyle = _TAvatarStyle;
 
 export type TAvatarJacketStyle = _TAvatarJacketStyle;

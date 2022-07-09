@@ -2,15 +2,11 @@ import { StyleProp, TextStyle } from 'react-native';
 
 import useStyles from './use-styles';
 
-function useIconStyles<
-  TStyleName extends string,
-  TStyleNamespace extends string,
->(
+function useIconStyles<TStyleName extends string>(
   styleNames: TStyleName[],
-  styleNamespace?: TStyleNamespace,
 ): StyleProp<TextStyle> {
-  return useStyles<TextStyle, TStyleName, TStyleNamespace>({
-    styleNamespace: styleNamespace ?? ('IconStyles' as TStyleNamespace),
+  return useStyles<TextStyle, TStyleName>({
+    styleNamespace: 'IconStyles',
     styleNames: styleNames ?? [],
   });
 }

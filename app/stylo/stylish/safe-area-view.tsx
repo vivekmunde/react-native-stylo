@@ -11,10 +11,10 @@ import {
   SafeAreaView as StyloSafeAreaView,
   TSafeAreaViewProps,
 } from '../../../stylo';
-import { TSafeAreaViewStyle, TStyleNamespace } from '../themes/types';
+import { TSafeAreaViewStyle } from '../themes/types';
 
 const SafeAreaView: React.FC<
-  TSafeAreaViewProps<TSafeAreaViewStyle, TStyleNamespace>
+  TSafeAreaViewProps<TSafeAreaViewStyle>
 > = props => <StyloSafeAreaView {...props} />;
 
 export default SafeAreaView;

@@ -1,3 +1,3 @@
 import { StyleProp, TextStyle } from 'react-native';
-declare function useImageStyles<TStyleName extends string, TStyleNamespace extends string>(styleNames: TStyleName[], styleNamespace?: TStyleNamespace): StyleProp<TextStyle>;
+declare function useImageStyles<TStyleName extends string>(styleNames: TStyleName[]): StyleProp<TextStyle>;
 export default useImageStyles;

@@ -2,19 +2,13 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.4.1                                   */
+/*                                  Version 0.5.0                                   */
 /* -------------------------------------------------------------------------------- */
 
 import { useTextInputStyles as useStyloTextInputStyles } from 'react-native-stylo';
-import { TTextInputStyle, TStyleNamespace } from '../themes/types';
+import { TTextInputStyle } from '../themes/types';
 
-const useTextInputStyles = (
-  styleNames: TTextInputStyle[],
-  styleNamespace?: TStyleNamespace,
-) =>
-  useStyloTextInputStyles<TTextInputStyle, TStyleNamespace>(
-    styleNames,
-    styleNamespace,
-  );
+const useTextInputStyles = (styleNames: TTextInputStyle[]) =>
+  useStyloTextInputStyles<TTextInputStyle>(styleNames);
 
 export default useTextInputStyles;

@@ -6,12 +6,9 @@
 /* -------------------------------------------------------------------------------- */
 
 import { useTextStyles as useStyloTextStyles } from '../../../stylo';
-import { TTextStyle, TStyleNamespace } from '../themes/types';
+import { TTextStyle } from '../themes/types';
 
-const useTextStyles = (
-  styleNames: TTextStyle[],
-  styleNamespace?: TStyleNamespace,
-) =>
-  useStyloTextStyles<TTextStyle, TStyleNamespace>(styleNames, styleNamespace);
+const useTextStyles = (styleNames: TTextStyle[]) =>
+  useStyloTextStyles<TTextStyle>(styleNames);
 
 export default useTextStyles;

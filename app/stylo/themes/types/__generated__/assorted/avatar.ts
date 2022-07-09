@@ -7,17 +7,11 @@
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
-import TBorderStyle from '../generic/border';
-
-export type TAvatarCStyle =
+export type TAvatarStyle =
   | 'Avatar'
   | 'Avatar.Square'
   | 'Avatar.Small'
   | 'Avatar.Large';
-
-export type TAvatarStyle =
-  | Omit<TBorderStyle, 'Border.Style.Dashed' | 'Border.Style.Dotted'>
-  | TAvatarCStyle;
 
 export type TAvatarJacketStyle =
   | 'Avatar.Jacket'

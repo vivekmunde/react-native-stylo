@@ -14,16 +14,10 @@ import {
 import {
   TScrollViewContentContainerStyle,
   TScrollViewStyle,
-  TStyleNamespace,
 } from '../themes/types';
 
 const ScrollView: React.FC<
-  TScrollViewProps<
-    TScrollViewStyle,
-    TStyleNamespace,
-    TScrollViewContentContainerStyle,
-    TStyleNamespace
-  >
+  TScrollViewProps<TScrollViewStyle, TScrollViewContentContainerStyle>
 > = props => <StyloScrollSView {...props} />;
 
 export default ScrollView;

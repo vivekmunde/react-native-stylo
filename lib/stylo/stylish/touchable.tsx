@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.4.1                                   */
+/*                                  Version 0.5.0                                   */
 /* -------------------------------------------------------------------------------- */
 
 import React from 'react';
@@ -15,16 +15,16 @@ import {
   TTouchableHighlightProps,
   TTouchableOpacityProps,
 } from 'react-native-stylo';
-import { TStyleNamespace, TTouchableStyle } from '../themes/types';
+import { TTouchableStyle } from '../themes/types';
 
-export const Pressable: React.FC<
-  TPressableProps<TTouchableStyle, TStyleNamespace>
-> = props => <StyloPressable {...props} />;
+export const Pressable: React.FC<TPressableProps<TTouchableStyle>> = props => (
+  <StyloPressable {...props} />
+);
 
 export const TouchableHighlight: React.FC<
-  TTouchableHighlightProps<TTouchableStyle, TStyleNamespace>
+  TTouchableHighlightProps<TTouchableStyle>
 > = props => <StyloTouchableHighlight {...props} />;
 
 export const TouchableOpacity: React.FC<
-  TTouchableOpacityProps<TTouchableStyle, TStyleNamespace>
+  TTouchableOpacityProps<TTouchableStyle>
 > = props => <StyloTouchableOpacity {...props} />;

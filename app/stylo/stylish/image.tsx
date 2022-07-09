@@ -8,9 +8,9 @@
 import React from 'react';
 
 import { Image as StyloImage, TImageProps } from '../../../stylo';
-import { TImageStyle, TStyleNamespace } from '../themes/types';
+import { TImageStyle } from '../themes/types';
 
-const Image: React.FC<TImageProps<TImageStyle, TStyleNamespace>> = props => (
+const Image: React.FC<TImageProps<TImageStyle>> = props => (
   <StyloImage {...props} />
 );
 

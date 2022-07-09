@@ -18,7 +18,6 @@ import {
   useScrollViewContentContainerStyles as _useScrollViewContentContainerStyles,
   useScrollViewStyles as _useScrollViewStyles,
 } from './stylers/use-scroll-view-styles';
-import _useStyle from './stylers/use-style';
 import _useStyles from './stylers/use-styles';
 import _useTextInputStyles from './stylers/use-text-input-styles';
 import _useTextStyles from './stylers/use-text-styles';
@@ -53,64 +52,33 @@ import _View, { TViewProps as _ViewProps } from './stylish/view';
 import _ThemeContext from './theme-context';
 import _ThemeProvider from './theme-provider';
 
-export type TPressableProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = _PressableProps<TStyleName, TStyleNamespace>;
-export type TTouchableHighlightProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = _TouchableHighlightProps<TStyleName, TStyleNamespace>;
-export type TTouchableOpacityProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = _TouchableOpacityProps<TStyleName, TStyleNamespace>;
+export type TPressableProps<TStyleName extends string> =
+  _PressableProps<TStyleName>;
+export type TTouchableHighlightProps<TStyleName extends string> =
+  _TouchableHighlightProps<TStyleName>;
+export type TTouchableOpacityProps<TStyleName extends string> =
+  _TouchableOpacityProps<TStyleName>;
 
-export type TIconProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = _IconProps<TStyleName, TStyleNamespace>;
+export type TIconProps<TStyleName extends string> = _IconProps<TStyleName>;
 
-export type TImageProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = _ImageProps<TStyleName, TStyleNamespace>;
-export type TImageBackgroundProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = _ImageBackgroundProps<TStyleName, TStyleNamespace>;
+export type TImageProps<TStyleName extends string> = _ImageProps<TStyleName>;
+export type TImageBackgroundProps<TStyleName extends string> =
+  _ImageBackgroundProps<TStyleName>;
 
-export type TSafeAreaViewProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = _SafeAreaViewProps<TStyleName, TStyleNamespace>;
+export type TSafeAreaViewProps<TStyleName extends string> =
+  _SafeAreaViewProps<TStyleName>;
 
 export type TScrollViewProps<
   TScrollViewStyle extends string,
-  TScrollViewStyleNamespace extends string,
   TScrollViewContentContainerStyle extends string,
-  TScrollViewContentContainerStyleNamespace extends string,
-> = _ScrollViewProps<
-  TScrollViewStyle,
-  TScrollViewStyleNamespace,
-  TScrollViewContentContainerStyle,
-  TScrollViewContentContainerStyleNamespace
->;
+> = _ScrollViewProps<TScrollViewStyle, TScrollViewContentContainerStyle>;
 
-export type TTextProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = _TextProps<TStyleName, TStyleNamespace>;
+export type TTextProps<TStyleName extends string> = _TextProps<TStyleName>;
 
-export type TTextInputProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = _TextInputProps<TStyleName, TStyleNamespace>;
+export type TTextInputProps<TStyleName extends string> =
+  _TextInputProps<TStyleName>;
 
-export type TViewProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = _ViewProps<TStyleName, TStyleNamespace>;
+export type TViewProps<TStyleName extends string> = _ViewProps<TStyleName>;
 
 export const IconStyles = _IconStyles;
 export const ImageBackgroundStyles = _ImageBackgroundStyles;
@@ -132,7 +100,6 @@ export const useSafeAreaViewStyles = _useSafeAreaViewStyles;
 export const useScrollViewStyles = _useScrollViewStyles;
 export const useScrollViewContentContainerStyles =
   _useScrollViewContentContainerStyles;
-export const useStyle = _useStyle;
 export const useStyles = _useStyles;
 export const useTextStyles = _useTextStyles;
 export const useTextInputStyles = _useTextInputStyles;
@@ -172,7 +139,6 @@ const Stylo = {
   useSafeAreaViewStyles: _useSafeAreaViewStyles,
   useScrollViewStyles: _useScrollViewStyles,
   useScrollViewContentContainerStyles: _useScrollViewContentContainerStyles,
-  useStyle: _useStyle,
   useStyles: _useStyles,
   useTextStyles: _useTextStyles,
   useTextInputStyles: _useTextInputStyles,

@@ -4,24 +4,15 @@ import { SafeAreaView, ViewProps } from 'react-native';
 import { useViewStyles } from '../stylers';
 import { TStylesProps } from './types';
 
-export type TSafeAreaViewProps<
-  TStyleName extends string,
-  TStyleNamespace extends string,
-> = ViewProps & TStylesProps<TStyleName, TStyleNamespace>;
+export type TSafeAreaViewProps<TStyleName extends string> = ViewProps &
+  TStylesProps<TStyleName>;
 
-const RNSSafeAreaView = <
-  TStyleName extends string,
-  TStyleNamespace extends string,
->({
-  styleNamespace,
+const RNSSafeAreaView = <TStyleName extends string>({
   styleNames,
   style,
   ...props
-}: TSafeAreaViewProps<TStyleName, TStyleNamespace>) => {
-  const viewStyle = useViewStyles<TStyleName, TStyleNamespace>(
-    styleNames ?? [],
-    styleNamespace ?? ('SafeAreaViewStyles' as TStyleNamespace),
-  );
+}: TSafeAreaViewProps<TStyleName>) => {
+  const viewStyle = useViewStyles<TStyleName>(styleNames ?? []);
   return <SafeAreaView {...props} style={[viewStyle, style]} />;
 };
 
