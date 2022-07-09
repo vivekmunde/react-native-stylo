@@ -5,13 +5,10 @@
 /*                                  Version 0.4.1                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useImageStyles as useStyloImageStyles } from 'react-native-stylo';
-import { TImageStyle, TStyleNamespace } from '../themes/types';
+import { useImageStyles as useStyloImageStyles } from '../../../stylo';
+import { TImageStyle } from '../themes/types';
 
-const useImageStyles = (
-  styleNames: TImageStyle[],
-  styleNamespace?: TStyleNamespace,
-) =>
-  useStyloImageStyles<TImageStyle, TStyleNamespace>(styleNames, styleNamespace);
+const useImageStyles = (styleNames: TImageStyle[]) =>
+  useStyloImageStyles<TImageStyle>(styleNames);
 
 export default useImageStyles;

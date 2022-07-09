@@ -5,13 +5,10 @@
 /*                                  Version 0.4.1                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useIconStyles as useStyloIconStyles } from 'react-native-stylo';
-import { TIconStyle, TStyleNamespace } from '../themes/types';
+import { useIconStyles as useStyloIconStyles } from '../../../stylo';
+import { TIconStyle } from '../themes/types';
 
-const useIconStyles = (
-  styleNames: TIconStyle[],
-  styleNamespace?: TStyleNamespace,
-) =>
-  useStyloIconStyles<TIconStyle, TStyleNamespace>(styleNames, styleNamespace);
+const useIconStyles = (styleNames: TIconStyle[]) =>
+  useStyloIconStyles<TIconStyle>(styleNames);
 
 export default useIconStyles;

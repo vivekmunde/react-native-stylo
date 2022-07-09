@@ -5,16 +5,10 @@
 /*                                  Version 0.4.1                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useImageBackgroundStyles as useStyloImageBackgroundStyles } from 'react-native-stylo';
-import { TImageBackgroundStyle, TStyleNamespace } from '../themes/types';
+import { useImageBackgroundStyles as useStyloImageBackgroundStyles } from '../../../stylo';
+import { TImageBackgroundStyle } from '../themes/types';
 
-const useImageBackgroundStyles = (
-  styleNames: TImageBackgroundStyle[],
-  styleNamespace?: TStyleNamespace,
-) =>
-  useStyloImageBackgroundStyles<TImageBackgroundStyle, TStyleNamespace>(
-    styleNames,
-    styleNamespace,
-  );
+const useImageBackgroundStyles = (styleNames: TImageBackgroundStyle[]) =>
+  useStyloImageBackgroundStyles<TImageBackgroundStyle>(styleNames);
 
 export default useImageBackgroundStyles;

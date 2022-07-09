@@ -5,16 +5,10 @@
 /*                                  Version 0.4.1                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useTouchableStyles as useStyloTouchableStyles } from 'react-native-stylo';
-import { TViewStyle, TStyleNamespace } from '../themes/types';
+import { useTouchableStyles as useStyloTouchableStyles } from '../../../stylo';
+import { TViewStyle } from '../themes/types';
 
-const useViewStyles = (
-  styleNames: TViewStyle[],
-  styleNamespace?: TStyleNamespace,
-) =>
-  useStyloTouchableStyles<TViewStyle, TStyleNamespace>(
-    styleNames,
-    styleNamespace,
-  );
+const useViewStyles = (styleNames: TViewStyle[]) =>
+  useStyloTouchableStyles<TViewStyle>(styleNames);
 
 export default useViewStyles;

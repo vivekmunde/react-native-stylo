@@ -5,13 +5,10 @@
 /*                                  Version 0.4.1                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { useViewStyles as useStyloViewStyles } from 'react-native-stylo';
-import { TViewStyle, TStyleNamespace } from '../themes/types';
+import { useViewStyles as useStyloViewStyles } from '../../../stylo';
+import { TViewStyle } from '../themes/types';
 
-const useViewStyles = (
-  styleNames: TViewStyle[],
-  styleNamespace?: TStyleNamespace,
-) =>
-  useStyloViewStyles<TViewStyle, TStyleNamespace>(styleNames, styleNamespace);
+const useViewStyles = (styleNames: TViewStyle[]) =>
+  useStyloViewStyles<TViewStyle>(styleNames);
 
 export default useViewStyles;
