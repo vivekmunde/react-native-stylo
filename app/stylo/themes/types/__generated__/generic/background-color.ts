@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.4.1                                   */
+/*                                  Version 1.0.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -61,16 +61,6 @@ type TBackgroundColorStyle =
   | 'BackgroundColor.Danger8'
   | 'BackgroundColor.Danger9'
   | 'BackgroundColor.Danger10'
-  | 'BackgroundColor.Gold1'
-  | 'BackgroundColor.Gold2'
-  | 'BackgroundColor.Gold3'
-  | 'BackgroundColor.Gold4'
-  | 'BackgroundColor.Gold5'
-  | 'BackgroundColor.Gold6'
-  | 'BackgroundColor.Gold7'
-  | 'BackgroundColor.Gold8'
-  | 'BackgroundColor.Gold9'
-  | 'BackgroundColor.Gold10'
   | 'BackgroundColor.Green1'
   | 'BackgroundColor.Green2'
   | 'BackgroundColor.Green3'
@@ -102,16 +92,6 @@ type TBackgroundColorStyle =
   | 'BackgroundColor.Info8'
   | 'BackgroundColor.Info9'
   | 'BackgroundColor.Info10'
-  | 'BackgroundColor.Lime1'
-  | 'BackgroundColor.Lime2'
-  | 'BackgroundColor.Lime3'
-  | 'BackgroundColor.Lime4'
-  | 'BackgroundColor.Lime5'
-  | 'BackgroundColor.Lime6'
-  | 'BackgroundColor.Lime7'
-  | 'BackgroundColor.Lime8'
-  | 'BackgroundColor.Lime9'
-  | 'BackgroundColor.Lime10'
   | 'BackgroundColor.Magenta1'
   | 'BackgroundColor.Magenta2'
   | 'BackgroundColor.Magenta3'
@@ -175,16 +155,6 @@ type TBackgroundColorStyle =
   | 'BackgroundColor.Success8'
   | 'BackgroundColor.Success9'
   | 'BackgroundColor.Success10'
-  | 'BackgroundColor.Volcano1'
-  | 'BackgroundColor.Volcano2'
-  | 'BackgroundColor.Volcano3'
-  | 'BackgroundColor.Volcano4'
-  | 'BackgroundColor.Volcano5'
-  | 'BackgroundColor.Volcano6'
-  | 'BackgroundColor.Volcano7'
-  | 'BackgroundColor.Volcano8'
-  | 'BackgroundColor.Volcano9'
-  | 'BackgroundColor.Volcano10'
   | 'BackgroundColor.Warning'
   | 'BackgroundColor.Warning1'
   | 'BackgroundColor.Warning2'

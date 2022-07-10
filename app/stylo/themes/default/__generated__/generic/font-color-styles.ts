@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.4.1                                   */
+/*                                  Version 1.0.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -104,36 +104,6 @@ const FontColorStyles = StyleSheet.create({
   },
   'Color.Danger10': {
     color: Variables['Color.Danger10'],
-  },
-  'Color.Gold1': {
-    color: Variables['Color.Gold1'],
-  },
-  'Color.Gold2': {
-    color: Variables['Color.Gold2'],
-  },
-  'Color.Gold3': {
-    color: Variables['Color.Gold3'],
-  },
-  'Color.Gold4': {
-    color: Variables['Color.Gold4'],
-  },
-  'Color.Gold5': {
-    color: Variables['Color.Gold5'],
-  },
-  'Color.Gold6': {
-    color: Variables['Color.Gold6'],
-  },
-  'Color.Gold7': {
-    color: Variables['Color.Gold7'],
-  },
-  'Color.Gold8': {
-    color: Variables['Color.Gold8'],
-  },
-  'Color.Gold9': {
-    color: Variables['Color.Gold9'],
-  },
-  'Color.Gold10': {
-    color: Variables['Color.Gold10'],
   },
   'Color.Green1': {
     color: Variables['Color.Green1'],
@@ -257,36 +227,6 @@ const FontColorStyles = StyleSheet.create({
   },
   'Color.Alpha10': {
     color: Variables['Color.Alpha10'],
-  },
-  'Color.Lime1': {
-    color: Variables['Color.Lime1'],
-  },
-  'Color.Lime2': {
-    color: Variables['Color.Lime2'],
-  },
-  'Color.Lime3': {
-    color: Variables['Color.Lime3'],
-  },
-  'Color.Lime4': {
-    color: Variables['Color.Lime4'],
-  },
-  'Color.Lime5': {
-    color: Variables['Color.Lime5'],
-  },
-  'Color.Lime6': {
-    color: Variables['Color.Lime6'],
-  },
-  'Color.Lime7': {
-    color: Variables['Color.Lime7'],
-  },
-  'Color.Lime8': {
-    color: Variables['Color.Lime8'],
-  },
-  'Color.Lime9': {
-    color: Variables['Color.Lime9'],
-  },
-  'Color.Lime10': {
-    color: Variables['Color.Lime10'],
   },
   'Color.Magenta1': {
     color: Variables['Color.Magenta1'],
@@ -476,36 +416,6 @@ const FontColorStyles = StyleSheet.create({
   },
   'Color.Success10': {
     color: Variables['Color.Success10'],
-  },
-  'Color.Volcano1': {
-    color: Variables['Color.Volcano1'],
-  },
-  'Color.Volcano2': {
-    color: Variables['Color.Volcano2'],
-  },
-  'Color.Volcano3': {
-    color: Variables['Color.Volcano3'],
-  },
-  'Color.Volcano4': {
-    color: Variables['Color.Volcano4'],
-  },
-  'Color.Volcano5': {
-    color: Variables['Color.Volcano5'],
-  },
-  'Color.Volcano6': {
-    color: Variables['Color.Volcano6'],
-  },
-  'Color.Volcano7': {
-    color: Variables['Color.Volcano7'],
-  },
-  'Color.Volcano8': {
-    color: Variables['Color.Volcano8'],
-  },
-  'Color.Volcano9': {
-    color: Variables['Color.Volcano9'],
-  },
-  'Color.Volcano10': {
-    color: Variables['Color.Volcano10'],
   },
   'Color.Warning': {
     color: Variables['Color.Warning'],

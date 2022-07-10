@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 0.5.0                                   */
+/*                                  Version 1.0.0                                   */
 /* -------------------------------------------------------------------------------- */
 
 import { useTextStyles as useStyloTextStyles } from 'react-native-stylo';

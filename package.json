@@ -1,7 +1,7 @@
 {
   "name": "react-native-stylo",
-  "description": "React native decoupled themes & styling",
-  "version": "0.5.0",
+  "description": "Infinitely scalable strongly typed themes, styling hooks & stylish components for React Native mobile applications",
+  "version": "1.0.0",
   "private": false,
   "main": "./lib/es/index.js",
   "module": "./lib/es/index.js",
@@ -15,9 +15,27 @@
     "clean": "rimraf ./lib",
     "copy-t": "cp -R ./app/stylo ./lib",
     "compile-ts": "npm run clean && tsc -p tsconfig-esm.json && tsc -p tsconfig-cjs.json",
-    "build": "npm run clean && npm run compile-ts && npm run copy-t",
-    "prepublish": "npm run clean && npm run build"
+    "build": "npm run clean && npm run compile-ts && npm run copy-t"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivekmunde/react-native-stylo.git"
+  },
+  "files": [
+    "lib",
+    "stylo"
+  ],
+  "keywords": [
+    "react native",
+    "react native themes",
+    "react native styling"
+  ],
+  "author": "Vivek Munde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vivekmunde/react-native-stylo/issues"
+  },
+  "homepage": "https://vivekmunde.github.io/react-native-stylo-documentation",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.9",
