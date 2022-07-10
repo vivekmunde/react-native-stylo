@@ -4,8 +4,7 @@ Infinitely scalable strongly typed themes, styling hooks & stylish components fo
 
 ## Installation
 
-**Peer dependency**
-Stylo uses [Vector Icons](https://www.npmjs.com/package/react-native-vector-icons), so it has a peer dependency of react-native-vector-icons@^9.1.0.
+**Peer dependency**: Stylo uses [Vector Icons](https://www.npmjs.com/package/react-native-vector-icons), so it has a peer dependency of react-native-vector-icons@^9.1.0.
 
 `npm install --save react-native-vector-icons@^9.1.0 react-native-stylo`
 
