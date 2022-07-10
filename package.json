@@ -1,7 +1,7 @@
 {
   "name": "react-native-stylo",
   "description": "Infinitely scalable strongly typed themes, styling hooks & stylish components for React Native mobile applications",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "private": false,
   "main": "./lib/es/index.js",
   "module": "./lib/es/index.js",
