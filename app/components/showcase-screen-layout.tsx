@@ -1,49 +1,74 @@
-import React from 'react';
+import { useNavigation } from '@react-navigation/native';
+import React, { useRef } from 'react';
 import { StyleSheet } from 'react-native';
-
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Stylish from '../stylo/stylish';
+import DelayedMount from './delayed-mount';
 
-const styles = StyleSheet.create({
-  scrollView: { flex: 1 },
-  headerTitle: { marginBottom: 0 },
-});
+export const Screen: React.FC<{ transparent?: boolean }> = ({ children, transparent }) => {
+  const safeAreaInsets = useSafeAreaInsets();
+  const styles = useRef(
+    StyleSheet.create({
+      safeAreaHeader: { height: safeAreaInsets.top },
+    })
+  ).current;
 
-const ShowcaseScreenLayout: React.FC<{
-  transparent?: boolean;
-  onGoBack: () => void;
-  renderTitle: () => string;
-  renderBody: () => React.ReactNode;
-}> = ({ transparent, renderTitle, renderBody }) => (
-  <Stylish.View
-    styleNames={
-      transparent ? ['Screen'] : ['Screen', 'BackgroundColor.Primary1']
-    }>
-    <Stylish.SafeAreaView />
-    <Stylish.View
-      styleNames={['Screen.Header', 'Padding.Top', 'Padding.Bottom']}>
-      {/* <Stylish.View styleNames={['Screen.Header.Left', 'Padding.Left']}>
+  return (
+    <Stylish.View styleNames={transparent ? ['Screen'] : ['Screen', 'BackgroundColor.Primary1']}>
+      <Stylish.View style={styles.safeAreaHeader} />
+      {children}
+    </Stylish.View>
+  );
+};
+
+export const ScreenHeader: React.FC<{
+  title: string;
+  onNavigateBack?: () => void;
+}> = ({ title, onNavigateBack }) => {
+  const navigation = useNavigation();
+
+  const navigateBack = () => {
+    if (onNavigateBack) {
+      onNavigateBack();
+    } else {
+      navigation.goBack();
+    }
+  }
+
+  return (
+    <Stylish.View styleNames={['Screen.Header']}>
+      <Stylish.View styleNames={['Screen.Header.Left', 'Padding']}>
         <Stylish.TouchableOpacity
           styleNames={['Button', 'Button.Circle', 'BackgroundColor.White']}
-          onPress={() => onGoBack()}>
-          <Stylish.Icon.AntDesign
-            name="left"
-            styleNames={['Button.Icon', 'Button.Circle.Icon']}
-          />
+          onPress={() => navigateBack()}>
+          <Stylish.Icon.AntDesign name="left" styleNames={['Button.Circle.Icon']} />
         </Stylish.TouchableOpacity>
-      </Stylish.View> */}
-      <Stylish.View
-        styleNames={['Screen.Header.Body', 'Padding.Left', 'Padding.Right']}>
-        <Stylish.Text styleNames={['H3']} style={styles.headerTitle}>
-          {renderTitle()}
+      </Stylish.View>
+      <Stylish.View styleNames={['Screen.Header.Body', 'Padding.Top', 'Padding.Bottom', 'Padding.Right']}>
+        <Stylish.Text styleNames={['Bold.Semi', 'Large']}>
+          {title}
         </Stylish.Text>
       </Stylish.View>
     </Stylish.View>
-    <Stylish.View styleNames={['Screen.Body']}>
-      <Stylish.ScrollView style={styles.scrollView}>
-        <Stylish.View styleNames={['Padding']}>{renderBody()}</Stylish.View>
-      </Stylish.ScrollView>
-    </Stylish.View>
-  </Stylish.View>
-);
+  );
+};
 
-export default ShowcaseScreenLayout;
+export const ScreenBody: React.FC = ({ children }) => {
+  const safeAreaInsets = useSafeAreaInsets();
+  const styles = useRef(
+    StyleSheet.create({
+      safeAreaFooter: { height: safeAreaInsets.bottom },
+    })
+  ).current;
+
+  return (
+    <DelayedMount>
+      <Stylish.ScrollView styleNames={['Flex.1']}>
+        <Stylish.View styleNames={['Screen.Body', 'Padding']}>
+          {children}
+        </Stylish.View>
+        <Stylish.View style={styles.safeAreaFooter} />
+      </Stylish.ScrollView>
+    </DelayedMount>
+  );
+};

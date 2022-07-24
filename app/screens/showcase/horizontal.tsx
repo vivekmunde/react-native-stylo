@@ -1,13 +1,12 @@
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const HorizontalShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Horizontal'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Horizontal" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.View styleNames={['Horizontal', 'Margin.Bottom.Large']}>
           <Stylish.View styleNames={['Horizontal.Left']}>
@@ -96,8 +95,8 @@ const HorizontalShowCase = () => (
           </Stylish.View>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default HorizontalShowCase;

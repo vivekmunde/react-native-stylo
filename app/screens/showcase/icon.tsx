@@ -1,12 +1,11 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const IconShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Icon'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Icon" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.Icon.AntDesign
           name="home"
@@ -51,8 +50,8 @@ const IconShowCase = () => (
           </Stylish.TouchableOpacity>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default IconShowCase;

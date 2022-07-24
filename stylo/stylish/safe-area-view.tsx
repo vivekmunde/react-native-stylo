@@ -13,7 +13,7 @@ const RNSSafeAreaView = <TStyleName extends string>({
   ...props
 }: TSafeAreaViewProps<TStyleName>) => {
   const viewStyle = useViewStyles<TStyleName>(styleNames ?? []);
-  return <SafeAreaView {...props} style={[viewStyle, style]} />;
+  return <SafeAreaView {...props} style={style ? [viewStyle, style] : viewStyle} />;
 };
 
 export default RNSSafeAreaView;

@@ -1,13 +1,11 @@
 import React from 'react';
-
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const ListShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'List'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="List" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.View
           styleNames={[
@@ -147,8 +145,8 @@ const ListShowCase = () => (
           </Stylish.View>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default ListShowCase;

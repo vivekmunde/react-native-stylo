@@ -1,12 +1,11 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const TextShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'TextInput'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="TextInput" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.TextInput
           styleNames={['Border', 'BackgroundColor.White', 'Margin.Bottom.Large']}
@@ -40,8 +39,8 @@ const TextShowCase = () => (
           styleNames={['Border', 'BackgroundColor.White', 'Padding.Large', 'Margin.Bottom.Large']}
           value="A relaxed input" />
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default TextShowCase;

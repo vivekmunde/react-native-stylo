@@ -1,12 +1,11 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const TouchableShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Touchable'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Touchable" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.View
           styleNames={[
@@ -194,8 +193,8 @@ const TouchableShowCase = () => (
           </Stylish.Text>
         </Stylish.TouchableOpacity>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default TouchableShowCase;

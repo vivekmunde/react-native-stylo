@@ -1,12 +1,11 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const BackgroundColorShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'BackgroundColor'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="BackgroundColor" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.View
           styleNames={[
@@ -56,8 +55,8 @@ const BackgroundColorShowCase = () => (
           </Stylish.Text>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default BackgroundColorShowCase;

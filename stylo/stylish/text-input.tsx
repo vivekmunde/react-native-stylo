@@ -13,7 +13,7 @@ const RNSTextInput = <TStyleName extends string>({
   ...props
 }: TTextInputProps<TStyleName>) => {
   const textInputStyle = useTextInputStyles<TStyleName>(styleNames ?? []);
-  return <TextInput {...props} style={[textInputStyle, style]} />;
+  return <TextInput {...props} style={style ? [textInputStyle, style] : textInputStyle} />;
 };
 
 export default RNSTextInput;

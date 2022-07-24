@@ -13,7 +13,7 @@ const RNSView = <TStyleName extends string>({
   ...props
 }: TViewProps<TStyleName>) => {
   const viewStyle = useViewStyles<TStyleName>(styleNames ?? []);
-  return <View {...props} style={[viewStyle, style]} />;
+  return <View {...props} style={style ? [viewStyle, style] : viewStyle} />;
 };
 
 export default RNSView;

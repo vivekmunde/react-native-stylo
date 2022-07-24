@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const styles = StyleSheet.create({
@@ -12,11 +12,9 @@ const ImageBackgroundShowCase = () => (
     style={styles.imageBackground}
     source={require('../../images/screen-bg-1.png')}
     styleNames={['Padding.Large']}>
-    <ShowcaseScreenLayout
-      transparent
-      onGoBack={() => null}
-      renderTitle={() => 'ImageBackground'}
-      renderBody={() => (
+    <Screen transparent>
+      <ScreenHeader title="ImageBackground" />
+      <ScreenBody>
         <React.Fragment>
           <Stylish.Text styleNames={['Paragraph']}>
             Stylo follows a philosophy called Styles only, with which it
@@ -49,8 +47,8 @@ const ImageBackgroundShowCase = () => (
             />
           </Stylish.TouchableOpacity>
         </React.Fragment>
-      )}
-    />
+      </ScreenBody>
+    </Screen>
   </Stylish.ImageBackground>
 );
 

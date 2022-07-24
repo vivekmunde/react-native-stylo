@@ -15,7 +15,7 @@ const RNSImageBackground = <TStyleName extends string>({
   const imageBackgroundStyle = useImageBackgroundStyles<TStyleName>(
     styleNames ?? [],
   );
-  return <ImageBackground {...props} style={[imageBackgroundStyle, style]} />;
+  return <ImageBackground {...props} style={style ? [imageBackgroundStyle, style] : imageBackgroundStyle} />;
 };
 
 export default RNSImageBackground;

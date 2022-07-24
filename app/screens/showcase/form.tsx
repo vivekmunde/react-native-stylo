@@ -1,5 +1,5 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylers from '../../stylo/stylers';
 import Stylish from '../../stylo/stylish';
 
@@ -619,10 +619,9 @@ const Form6 = () => (
 );
 
 const FormShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Form'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Form" />
+    <ScreenBody>
       <React.Fragment>
         <Form1 />
         <Form2 />
@@ -631,8 +630,8 @@ const FormShowCase = () => (
         <Form5 />
         <Form6 />
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default FormShowCase;

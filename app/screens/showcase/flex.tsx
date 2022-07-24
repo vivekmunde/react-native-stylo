@@ -1,12 +1,11 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const FlexShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Flex'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Flex" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.View
           styleNames={[
@@ -153,8 +152,8 @@ const FlexShowCase = () => (
           </Stylish.View>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default FlexShowCase;

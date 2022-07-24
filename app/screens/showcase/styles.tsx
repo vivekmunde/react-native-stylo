@@ -1,6 +1,5 @@
 import React from 'react';
 import { SafeAreaView, Text, TextStyle, View, ViewStyle } from 'react-native';
-
 import { Styles } from '../../../stylo/index';
 import { TTextStyle, TViewStyle } from '../../stylo/themes/types';
 
@@ -13,7 +12,7 @@ const StylesShowCase: React.FC = () => (
         <SafeAreaView />
         <Styles<ViewStyle, TViewStyle>
           styleNamespace="ViewStyles"
-          styleNames={['Screen.Header', 'Padding']}>
+          styleNames={['Screen.Header']}>
           {screenHeaderStyle => (
             <React.Fragment>
               <View style={screenHeaderStyle}>

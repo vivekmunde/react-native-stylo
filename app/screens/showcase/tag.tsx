@@ -1,13 +1,11 @@
 import React from 'react';
-
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const TagShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Tag'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Tag" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.View styleNames={['Flex.Row', 'Flex.Wrap', 'Flex.AlignItems.Center', 'Margin.Bottom.Large']}>
           <Stylish.View styleNames={['Tag', 'BackgroundColor.Primary']}>
@@ -129,8 +127,8 @@ const TagShowCase = () => (
           </Stylish.View>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default TagShowCase;

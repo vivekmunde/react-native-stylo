@@ -1,12 +1,11 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const ImageShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Image'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Image" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.Image
           source={require('../../images/face-icon-1.png')}
@@ -28,10 +27,9 @@ const ImageShowCase = () => (
           styleNames={['Avatar', 'Avatar.Square', 'Margin.Bottom.Large']}
         />
 
-        <Stylish.View
+        <Stylish.TouchableOpacity
           styleNames={[
             'Avatar.Jacket',
-            'Avatar.Jacket.Border',
             'Border.Color.Cyan7',
             'Margin.Bottom.Large',
           ]}>
@@ -39,7 +37,7 @@ const ImageShowCase = () => (
             source={require('../../images/face-icon-2.png')}
             styleNames={['Avatar']}
           />
-        </Stylish.View>
+        </Stylish.TouchableOpacity>
 
         <Stylish.View styleNames={['Flex.Row']}>
           <Stylish.View
@@ -61,8 +59,8 @@ const ImageShowCase = () => (
           </Stylish.View>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default ImageShowCase;

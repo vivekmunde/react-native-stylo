@@ -1,11 +1,10 @@
 import React from 'react';
-
 import { Image, SafeAreaView, Text, View } from '../../../stylo';
 import {
   TImageStyle,
   TSafeAreaViewStyle,
   TTextStyle,
-  TViewStyle,
+  TViewStyle
 } from '../../stylo/themes/types';
 
 const data = [

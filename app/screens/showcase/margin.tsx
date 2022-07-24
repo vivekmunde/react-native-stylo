@@ -1,12 +1,11 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const MarginShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Margin'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Margin" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.Text styleNames={['Margin']}>
           {`Margin (top, right, bottom & left) applied to a text component.`}
@@ -66,8 +65,8 @@ const MarginShowCase = () => (
           <Stylish.Text>{`Margin Top & Right`}</Stylish.Text>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default MarginShowCase;

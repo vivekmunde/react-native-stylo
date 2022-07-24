@@ -1,7 +1,6 @@
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
-
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylers from '../../stylo/stylers';
 import Stylish from '../../stylo/stylish';
 
@@ -12,10 +11,9 @@ const ButtonShowCase = () => {
   ]);
 
   return (
-    <ShowcaseScreenLayout
-      onGoBack={() => null}
-      renderTitle={() => 'Button'}
-      renderBody={() => (
+    <Screen>
+      <ScreenHeader title="Button" />
+      <ScreenBody>
         <React.Fragment>
           <Stylish.View styleNames={['Flex.Row', 'Flex.AlignItems.Center']}>
             <Stylish.TouchableOpacity
@@ -432,8 +430,8 @@ const ButtonShowCase = () => {
             <ActivityIndicator size="small" color={colorPrimary.toString()} />
           </Stylish.TouchableOpacity>
         </React.Fragment>
-      )}
-    />
+      </ScreenBody>
+    </Screen>
   );
 };
 

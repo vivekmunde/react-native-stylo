@@ -8,7 +8,7 @@ import {
   TouchableHighlightProps,
   TouchableOpacity as RNTouchableOpacity,
   TouchableOpacityProps,
-  ViewStyle,
+  ViewStyle
 } from 'react-native';
 
 import { useTouchableStyles } from '../stylers';
@@ -22,7 +22,7 @@ export const Pressable = <TStyleName extends string>({
   style,
   ...props
 }: TPressableProps<TStyleName>) => {
-  const viewStyle = useTouchableStyles<TStyleName>(styleNames ?? []);
+  const touchableStyle = useTouchableStyles<TStyleName>(styleNames ?? []);
 
   const pressableFunctionStyle =
     typeof style === 'function'
@@ -33,10 +33,10 @@ export const Pressable = <TStyleName extends string>({
     <RNPressable
       {...props}
       style={[
-        viewStyle,
+        touchableStyle,
         pressableFunctionStyle !== undefined
           ? (pressableFunctionStyle as StyleProp<ViewStyle>)
-          : (style as StyleProp<ViewStyle>),
+          : ((style ?? {}) as StyleProp<ViewStyle>),
       ]}
     />
   );
@@ -50,8 +50,8 @@ export const TouchableHighlight = <TStyleName extends string>({
   style,
   ...props
 }: TTouchableHighlightProps<TStyleName>) => {
-  const viewStyle = useTouchableStyles<TStyleName>(styleNames ?? []);
-  return <RNTouchableHighlight {...props} style={[viewStyle, style]} />;
+  const touchableStyle = useTouchableStyles<TStyleName>(styleNames ?? []);
+  return <RNTouchableHighlight {...props} style={style ? [touchableStyle, style] : touchableStyle} />;
 };
 
 export type TTouchableOpacityProps<TStyleName extends string> =
@@ -62,6 +62,6 @@ export const TouchableOpacity = <TStyleName extends string>({
   style,
   ...props
 }: TTouchableOpacityProps<TStyleName>) => {
-  const viewStyle = useTouchableStyles<TStyleName>(styleNames ?? []);
-  return <RNTouchableOpacity {...props} style={[viewStyle, style]} />;
+  const touchableStyle = useTouchableStyles<TStyleName>(styleNames ?? []);
+  return <RNTouchableOpacity {...props} style={style ? [touchableStyle, style] : touchableStyle} />;
 };

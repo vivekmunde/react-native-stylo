@@ -13,7 +13,7 @@ const RNSText = <TStyleName extends string>({
   ...props
 }: TTextProps<TStyleName>) => {
   const textStyle = useTextStyles<TStyleName>(styleNames ?? []);
-  return <Text {...props} style={[textStyle, style]} />;
+  return <Text {...props} style={style ? [textStyle, style] : textStyle} />;
 };
 
 export default RNSText;
