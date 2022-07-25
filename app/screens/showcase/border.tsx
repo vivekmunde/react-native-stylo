@@ -10,7 +10,7 @@ const BorderShowCase = () => (
         <Stylish.View
           styleNames={[
             'Border',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -21,7 +21,7 @@ const BorderShowCase = () => (
           styleNames={[
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -33,7 +33,7 @@ const BorderShowCase = () => (
             'Border',
             'Border.Radius',
             'Border.Color.Primary',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -48,7 +48,7 @@ const BorderShowCase = () => (
             'Border.Radius',
             'Border.Color.Warning6',
             'Border.Style.Dashed',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -63,7 +63,7 @@ const BorderShowCase = () => (
             'Border.Radius',
             'Border.Color.Danger',
             'Border.Style.Dotted',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>

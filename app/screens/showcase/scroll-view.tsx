@@ -17,7 +17,7 @@ const ScrollViewShowcase = () => (
             'Border',
             'Border.Radius',
             'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom.Large',
           ]}
           contentContainerStyleNames={['Padding.Mini']}>
@@ -127,13 +127,11 @@ const ScrollViewShowcase = () => (
               'List',
               'Border',
               'Border.Radius',
-              'Border.Color.Primary1',
             ]}>
             <Stylish.View
               styleNames={[
                 'List.Item',
                 'Border.Bottom',
-                'Border.Color.Primary1',
               ]}>
               <Stylish.View styleNames={['List.Item.Left']}>
                 <Stylish.Image
@@ -155,7 +153,6 @@ const ScrollViewShowcase = () => (
               styleNames={[
                 'List.Item',
                 'Border.Bottom',
-                'Border.Color.Primary1',
               ]}>
               <Stylish.View styleNames={['List.Item.Left']}>
                 <Stylish.Image
@@ -177,7 +174,6 @@ const ScrollViewShowcase = () => (
               styleNames={[
                 'List.Item',
                 'Border.Bottom',
-                'Border.Color.Primary1',
               ]}>
               <Stylish.View styleNames={['List.Item.Left']}>
                 <Stylish.Image

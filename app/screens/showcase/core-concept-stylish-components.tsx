@@ -26,7 +26,7 @@ const data = [
 ];
 
 const CoreConceptStylishComponentsShowCase = () => (
-  <View<TViewStyle> styleNames={['Screen', 'BackgroundColor.Primary1']}>
+  <View<TViewStyle> styleNames={['Screen', 'BackgroundColor.Body']}>
     <SafeAreaView<TSafeAreaViewStyle> />
     <View<TViewStyle> styleNames={['Screen.Header', 'Padding']}>
       <Text<TTextStyle> styleNames={['H1']}>Stylish Components</Text>
@@ -36,7 +36,7 @@ const CoreConceptStylishComponentsShowCase = () => (
         styleNames={[
           'List',
           'Border.Radius',
-          'BackgroundColor.White',
+          'BackgroundColor.Alpha10',
           'Margin.Bottom.Large',
         ]}>
         {data.map((it, index) => (
@@ -68,7 +68,7 @@ const CoreConceptStylishComponentsShowCase = () => (
             styleNames={[
               'List.Item',
               'Border.Radius',
-              'BackgroundColor.White',
+              'BackgroundColor.Alpha10',
               'Margin.Bottom',
             ]}>
             <View<TViewStyle> styleNames={['List.Item.Left']}>

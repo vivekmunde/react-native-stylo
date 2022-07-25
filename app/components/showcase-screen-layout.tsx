@@ -4,6 +4,7 @@ import { StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Stylish from '../stylo/stylish';
 import DelayedMount from './delayed-mount';
+import ThemeSwitch from './theme-switch';
 
 export const Screen: React.FC<{ transparent?: boolean }> = ({ children, transparent }) => {
   const safeAreaInsets = useSafeAreaInsets();
@@ -14,7 +15,7 @@ export const Screen: React.FC<{ transparent?: boolean }> = ({ children, transpar
   ).current;
 
   return (
-    <Stylish.View styleNames={transparent ? ['Screen'] : ['Screen', 'BackgroundColor.Primary1']}>
+    <Stylish.View styleNames={transparent ? ['Screen'] : ['Screen', 'BackgroundColor.Body']}>
       <Stylish.View style={styles.safeAreaHeader} />
       {children}
     </Stylish.View>
@@ -39,7 +40,7 @@ export const ScreenHeader: React.FC<{
     <Stylish.View styleNames={['Screen.Header']}>
       <Stylish.View styleNames={['Screen.Header.Left', 'Padding']}>
         <Stylish.TouchableOpacity
-          styleNames={['Button', 'Button.Circle', 'BackgroundColor.White']}
+          styleNames={['Button', 'Button.Circle', 'BackgroundColor.Alpha8']}
           onPress={() => navigateBack()}>
           <Stylish.Icon.AntDesign name="left" styleNames={['Button.Circle.Icon']} />
         </Stylish.TouchableOpacity>
@@ -48,6 +49,9 @@ export const ScreenHeader: React.FC<{
         <Stylish.Text styleNames={['Bold.Semi', 'Large']}>
           {title}
         </Stylish.Text>
+      </Stylish.View>
+      <Stylish.View styleNames={['Screen.Header.Right', 'Padding.Right']}>
+        <ThemeSwitch />
       </Stylish.View>
     </Stylish.View>
   );

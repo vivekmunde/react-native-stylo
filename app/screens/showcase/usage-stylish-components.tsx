@@ -21,7 +21,7 @@ const data = [
 ];
 
 const UsageStylishComponentsShowCase = () => (
-  <Stylish.View styleNames={['Screen', 'BackgroundColor.Primary1']}>
+  <Stylish.View styleNames={['Screen', 'BackgroundColor.Body']}>
     <Stylish.SafeAreaView />
     <Stylish.View styleNames={['Screen.Header', 'Padding']}>
       <Stylish.Text styleNames={['H1']}>Usage</Stylish.Text>
@@ -35,7 +35,7 @@ const UsageStylishComponentsShowCase = () => (
         styleNames={[
           'List',
           'Border.Radius',
-          'BackgroundColor.White',
+          'BackgroundColor.Alpha10',
           'Margin.Bottom.Large',
         ]}>
         {data.map((it, index) => (

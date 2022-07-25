@@ -2,6 +2,7 @@ import { NavigationProp, useNavigation } from '@react-navigation/native';
 import React, { useRef } from 'react';
 import { StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import ThemeSwitch from '../components/theme-switch';
 import { TAppStackParamList } from '../navigation';
 import Stylish from '../stylo/stylish';
 
@@ -54,7 +55,7 @@ const ShowcaseList: React.FC<{ list: TShowcaseRoute[] }> = ({ list }) => {
   const navigation = useNavigation<NavigationProp<TAppStackParamList>>();
 
   return (
-    <Stylish.View styleNames={['List', 'Border.Radius', 'BackgroundColor.Body', 'Margin.Bottom.Large']}>
+    <Stylish.View styleNames={['List', 'Border.Radius', 'BackgroundColor.Alpha10', 'Margin.Bottom.Large']}>
       {list.map((it, index) => (
         <Stylish.TouchableOpacity
           key={it.routeName}
@@ -84,7 +85,7 @@ const Home = () => {
   ).current;
 
   return (
-    <Stylish.View styleNames={['Screen', 'BackgroundColor.Primary1']}>
+    <Stylish.View styleNames={['Screen', 'BackgroundColor.Body']}>
       <Stylish.ScrollView styleNames={['Flex.1']}>
         <Stylish.View style={styles.safeAreaHeader} />
         <Stylish.View styleNames={['Screen.Header', 'Padding']}>
@@ -92,6 +93,9 @@ const Home = () => {
             <Stylish.Text styleNames={['H1']}>
               Showcase
             </Stylish.Text>
+          </Stylish.View>
+          <Stylish.View styleNames={['Screen.Header.Right']}>
+            <ThemeSwitch />
           </Stylish.View>
         </Stylish.View>
         <Stylish.View styleNames={['Screen.Body', 'Padding']}>

@@ -21,8 +21,7 @@ const MarginShowCase = () => (
             'Padding',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
           ]}>
           <Stylish.Text>Margin</Stylish.Text>
         </Stylish.View>
@@ -33,8 +32,7 @@ const MarginShowCase = () => (
             'Padding',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
           ]}>
           <Stylish.Text>Margin.Large</Stylish.Text>
         </Stylish.View>
@@ -46,8 +44,7 @@ const MarginShowCase = () => (
             'Padding',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
           ]}>
           <Stylish.Text>{`Margin Left & Bottom`}</Stylish.Text>
         </Stylish.View>
@@ -59,8 +56,7 @@ const MarginShowCase = () => (
             'Padding',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
           ]}>
           <Stylish.Text>{`Margin Top & Right`}</Stylish.Text>
         </Stylish.View>

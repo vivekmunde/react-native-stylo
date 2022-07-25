@@ -144,7 +144,7 @@ const ButtonShowCase = () => {
                 'Border',
                 'Border.Color.Danger',
                 'Flex.JustifyContent.SpaceBetween',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right.Mini',
                 'Margin.Bottom',
               ]}>
@@ -164,7 +164,7 @@ const ButtonShowCase = () => {
                 'Border',
                 'Border.Color.Warning',
                 'Flex.JustifyContent.SpaceBetween',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Left.Mini',
                 'Margin.Bottom',
               ]}>
@@ -240,7 +240,7 @@ const ButtonShowCase = () => {
                 'Button.Round',
                 'Border',
                 'Border.Color.Primary',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>
@@ -256,7 +256,7 @@ const ButtonShowCase = () => {
                 'Button.Small',
                 'Border',
                 'Border.Color.Info',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>
@@ -272,7 +272,7 @@ const ButtonShowCase = () => {
                 'Button.Large',
                 'Border',
                 'Border.Color.Warning',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>
@@ -348,7 +348,7 @@ const ButtonShowCase = () => {
                 'Button.Circle',
                 'Border',
                 'Border.Color.Primary',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>
@@ -369,7 +369,7 @@ const ButtonShowCase = () => {
                 'Button.Circle',
                 'Border',
                 'Border.Color.Info',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>
@@ -391,7 +391,7 @@ const ButtonShowCase = () => {
                 'Button.Circle',
                 'Border',
                 'Border.Color.Warning',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>

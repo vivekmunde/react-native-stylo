@@ -23,7 +23,7 @@ const data = [
 
 const UsageStylersShowCase = () => {
   const styles = useRef({
-    screen: Stylers.useViewStyles(['Screen', 'BackgroundColor.Primary1']),
+    screen: Stylers.useViewStyles(['Screen', 'BackgroundColor.Body']),
     screenHeader: Stylers.useViewStyles(['Screen.Header', 'Padding']),
     screenTitle: Stylers.useTextStyles(['H1']),
     screenBody: Stylers.useViewStyles(['Screen.Body', 'Padding']),
@@ -31,7 +31,7 @@ const UsageStylersShowCase = () => {
     list: Stylers.useViewStyles([
       'List',
       'Border.Radius',
-      'BackgroundColor.White',
+      'BackgroundColor.Alpha10',
       'Margin.Bottom.Large',
     ]),
     listItem: Stylers.useViewStyles(['List.Item', 'Border.Top']),

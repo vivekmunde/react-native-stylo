@@ -11,7 +11,7 @@ const ListShowCase = () => (
           styleNames={[
             'List',
             'Border.Radius',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom.Large',
           ]}>
           <Stylish.View styleNames={['List.Item', 'Border.Bottom']}>
@@ -101,7 +101,7 @@ const ListShowCase = () => (
         </Stylish.View>
 
         <Stylish.View
-          styleNames={['List', 'Border.Radius', 'BackgroundColor.White']}>
+          styleNames={['List', 'Border.Radius', 'BackgroundColor.Alpha10']}>
           <Stylish.View styleNames={['List.Item', 'Border.Bottom']}>
             <Stylish.View styleNames={['List.Item.Body']}>
               <Stylish.Text styleNames={['Color.Secondary']}>Name</Stylish.Text>

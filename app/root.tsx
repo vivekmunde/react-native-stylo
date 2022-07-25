@@ -1,17 +1,14 @@
 import 'react-native-gesture-handler';
 
 import React from 'react';
-import { StatusBar } from 'react-native';
-import { ThemeProvider } from '../stylo';
 import Navigation from './navigation';
-import { styles, variables } from './stylo/themes/default';
+import { ThemeSwitchProvider } from './theme-switch-provider';
 
 const Root = () => {
   return (
-    <ThemeProvider variables={variables} styles={styles}>
-      <StatusBar barStyle="dark-content" />
+    <ThemeSwitchProvider>
       <Navigation />
-    </ThemeProvider>
+    </ThemeSwitchProvider>
   );
 };
 

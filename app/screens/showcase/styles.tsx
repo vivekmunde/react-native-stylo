@@ -6,7 +6,7 @@ import { TTextStyle, TViewStyle } from '../../stylo/themes/types';
 const StylesShowCase: React.FC = () => (
   <Styles<ViewStyle, TViewStyle>
     styleNamespace="ViewStyles"
-    styleNames={['Screen', 'BackgroundColor.Primary1']}>
+    styleNames={['Screen', 'BackgroundColor.Body']}>
     {screenStyle => (
       <View style={screenStyle}>
         <SafeAreaView />
@@ -37,7 +37,7 @@ const StylesShowCase: React.FC = () => (
                     <Styles<ViewStyle, TViewStyle>
                       styleNamespace="ViewStyles"
                       styleNames={[
-                        'BackgroundColor.White',
+                        'BackgroundColor.Alpha10',
                         'Border.Radius',
                         'Margin.Bottom.Large',
                       ]}>

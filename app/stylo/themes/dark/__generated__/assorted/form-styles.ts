@@ -35,7 +35,7 @@ const FormStyles = StyleSheet.create({
   'Form.Item.Input': {
     display: 'flex',
     flexDirection: 'row',
-    backgroundColor: Variables['Body.Color'],
+    backgroundColor: 'rgba(0,0,0,1)',
     borderColor: Variables['Border.Color'],
     borderWidth: Variables['Border.Width'],
     borderStyle: 'solid',

@@ -7,13 +7,13 @@ const ScreenShowCase = () => {
   const navigatoin = useNavigation();
 
   return (
-    <Stylish.View styleNames={['Screen', 'BackgroundColor.Primary1']}>
+    <Stylish.View styleNames={['Screen', 'BackgroundColor.Body']}>
       <Stylish.SafeAreaView />
       <Stylish.View styleNames={['Screen.Header']}>
         <Stylish.View styleNames={['Screen.Header.Left', 'Padding']}>
           <Stylish.TouchableOpacity
             onPress={() => navigatoin.goBack()}
-            styleNames={['Button', 'Button.Circle', 'BackgroundColor.White']}>
+            styleNames={['Button', 'Button.Circle', 'BackgroundColor.Alpha10']}>
             <Stylish.Icon.AntDesign
               name="left"
               styleNames={['Button.Icon', 'Button.Circle.Icon']}
@@ -60,7 +60,7 @@ const ScreenShowCase = () => {
       <Stylish.View
         styleNames={[
           'Screen.Footer',
-          'BackgroundColor.White',
+          'BackgroundColor.Alpha10',
           'Flex.Row',
           'Flex.JustifyContent.SpaceAround',
           'Border.Radius.TopLeft.Large',
@@ -115,7 +115,7 @@ const ScreenShowCase = () => {
           <Stylish.Text styleNames={['Small']}>Settings</Stylish.Text>
         </Stylish.TouchableOpacity>
       </Stylish.View>
-      <Stylish.SafeAreaView styleNames={['BackgroundColor.White']} />
+      <Stylish.SafeAreaView styleNames={['BackgroundColor.Alpha10']} />
     </Stylish.View>
   );
 };

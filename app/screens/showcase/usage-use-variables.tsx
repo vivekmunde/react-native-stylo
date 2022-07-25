@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
 import Stylers from '../../stylo/stylers';
 
@@ -12,8 +12,8 @@ const UsageUseVariablesShowCase = () => {
     borderRadius,
     fontColor,
     fontSize,
-    colorPrimary1,
-    colorWhite,
+    bodyColor,
+    colorAlpha10,
   ] = Stylers.useVariables([
     'Padding',
     'Padding.Large',
@@ -22,15 +22,15 @@ const UsageUseVariablesShowCase = () => {
     'Border.Radius',
     'Font.Color',
     'Font.Size',
-    'Color.Primary1',
-    'Color.White',
+    'Body.Color',
+    'Color.Alpha10',
   ]);
 
   const styles = useRef(
     StyleSheet.create({
       screen: {
         flex: 1,
-        backgroundColor: colorPrimary1.toString(),
+        backgroundColor: bodyColor.toString(),
         padding: Number(paddingLarge),
       },
       screenHeader: {
@@ -59,7 +59,7 @@ const UsageUseVariablesShowCase = () => {
       card: {
         padding: Number(padding),
         borderRadius: Number(borderRadius),
-        backgroundColor: colorWhite.toString(),
+        backgroundColor: colorAlpha10.toString(),
       },
     }),
   ).current;

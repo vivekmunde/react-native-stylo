@@ -5,21 +5,21 @@ import {
   TextStyle,
   TouchableOpacity,
   View,
-  ViewStyle,
+  ViewStyle
 } from 'react-native';
 
 import { useStyles } from '../../../stylo/index';
 import {
   TTextStyle,
   TTouchableStyle,
-  TViewStyle,
+  TViewStyle
 } from '../../stylo/themes/types';
 
 const UseStylesShowCase: React.FC = () => {
   const styles = useRef({
     screen: useStyles<ViewStyle, TViewStyle>({
       styleNamespace: 'ViewStyles',
-      styleNames: ['Screen', 'BackgroundColor.Primary1'],
+      styleNames: ['Screen', 'BackgroundColor.Body'],
     }),
     screenHeader: useStyles<ViewStyle, TViewStyle>({
       styleNamespace: 'ViewStyles',
@@ -41,7 +41,7 @@ const UseStylesShowCase: React.FC = () => {
     card: useStyles<ViewStyle, TViewStyle>({
       styleNamespace: 'ViewStyles',
       styleNames: [
-        'BackgroundColor.White',
+        'BackgroundColor.Alpha10',
         'Border.Radius',
         'Margin.Bottom.Large',
       ],

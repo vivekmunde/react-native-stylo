@@ -67,7 +67,7 @@ const BadgeShowCase = () => (
               'Badge',
               'Border',
               'Border.Color.Primary',
-              'BackgroundColor.White',
+              'BackgroundColor.Alpha10',
               'Margin.Bottom.Large',
               'Margin.Right.Large',
             ]}>
@@ -82,7 +82,7 @@ const BadgeShowCase = () => (
               'Badge.Small',
               'Border',
               'Border.Color.Info',
-              'BackgroundColor.White',
+              'BackgroundColor.Alpha10',
               'Margin.Bottom.Large',
               'Margin.Right.Large',
             ]}>
@@ -98,7 +98,7 @@ const BadgeShowCase = () => (
               'Badge.Large',
               'Border',
               'Border.Color.Warning',
-              'BackgroundColor.White',
+              'BackgroundColor.Alpha10',
               'Margin.Bottom.Large',
               'Margin.Right.Large',
             ]}>

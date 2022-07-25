@@ -12,8 +12,7 @@ const FlexShowCase = () => (
             'Flex.Row',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -28,8 +27,7 @@ const FlexShowCase = () => (
             'Flex.JustifyContent.Center',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -44,8 +42,7 @@ const FlexShowCase = () => (
             'Flex.JustifyContent.End',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -60,8 +57,7 @@ const FlexShowCase = () => (
             'Flex.JustifyContent.SpaceBetween',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -75,8 +71,7 @@ const FlexShowCase = () => (
             'Flex.Column',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -91,8 +86,7 @@ const FlexShowCase = () => (
             'Flex.AlignItems.End',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -107,8 +101,7 @@ const FlexShowCase = () => (
             'Flex.AlignItems.Center',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -122,8 +115,7 @@ const FlexShowCase = () => (
             'Flex.Row',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom',
           ]}>
           <Stylish.View
@@ -132,7 +124,6 @@ const FlexShowCase = () => (
               'Flex.AlignItems.Center',
               'Padding',
               'Border.Right',
-              'Border.Color.Primary2',
             ]}>
             <Stylish.Text>Flex.1</Stylish.Text>
           </Stylish.View>
@@ -142,7 +133,6 @@ const FlexShowCase = () => (
               'Flex.AlignItems.Center',
               'Padding',
               'Border.Right',
-              'Border.Color.Primary2',
             ]}>
             <Stylish.Text>Flex.2</Stylish.Text>
           </Stylish.View>

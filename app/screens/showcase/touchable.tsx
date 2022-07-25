@@ -10,17 +10,15 @@ const TouchableShowCase = () => (
         <Stylish.View
           styleNames={[
             'List',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom.Large',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
           ]}>
           <Stylish.TouchableOpacity
             styleNames={[
               'List.Item',
               'Border.Bottom',
-              'Border.Color.Primary1',
             ]}>
             <Stylish.View styleNames={['List.Item.Left']}>
               <Stylish.Image
@@ -49,7 +47,6 @@ const TouchableShowCase = () => (
             styleNames={[
               'List.Item',
               'Border.Bottom',
-              'Border.Color.Primary1',
             ]}>
             <Stylish.View styleNames={['List.Item.Left']}>
               <Stylish.Image
@@ -104,8 +101,7 @@ const TouchableShowCase = () => (
           styleNames={[
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom.Large',
           ]}>

@@ -12,8 +12,7 @@ const PaddingShowCase = () => (
             'Padding',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom',
           ]}>
           <Stylish.Text>Padding</Stylish.Text>
@@ -24,8 +23,7 @@ const PaddingShowCase = () => (
             'Padding.Small',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom',
           ]}>
           <Stylish.Text>Padding.Small</Stylish.Text>
@@ -36,8 +34,7 @@ const PaddingShowCase = () => (
             'Padding.Large',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom',
           ]}>
           <Stylish.Text>Padding.Large</Stylish.Text>
@@ -51,8 +48,7 @@ const PaddingShowCase = () => (
             'Padding.Bottom.Small',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom',
           ]}>
           <Stylish.Text>Padding.Left.Large</Stylish.Text>
@@ -66,8 +62,7 @@ const PaddingShowCase = () => (
             'Padding.Left.Small',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom',
             'Flex.AlignItems.End',
           ]}>

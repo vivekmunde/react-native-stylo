@@ -193,7 +193,7 @@ const spacingLarge = Math.round(spacing * 2);
 
 const Variables = {
   ...Colors,
-  'Body.Color': '#FFFFFF',
+  'Body.Color': '#F5F5F5',
   'Font.Color': '#434343',
   'Font.Size': fontSize,
   'Font.Size.Small': fontSizeSmall,

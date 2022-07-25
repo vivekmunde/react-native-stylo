@@ -10,7 +10,7 @@ const HorizontalShowCase = () => (
       <React.Fragment>
         <Stylish.View styleNames={['Horizontal', 'Margin.Bottom.Large']}>
           <Stylish.View styleNames={['Horizontal.Left']}>
-            <Stylish.TouchableOpacity styleNames={['Button', 'Button.Circle', 'BackgroundColor.White']}>
+            <Stylish.TouchableOpacity styleNames={['Button', 'Button.Circle', 'BackgroundColor.Alpha10']}>
               <Stylish.Icon.AntDesign name="left" styleNames={['Button.Icon', 'Button.Circle.Icon']} />
             </Stylish.TouchableOpacity>
           </Stylish.View>
@@ -36,7 +36,7 @@ const HorizontalShowCase = () => (
           </Stylish.View>
         </Stylish.View>
 
-        <Stylish.View styleNames={['Border.Radius', 'BackgroundColor.White']}>
+        <Stylish.View styleNames={['Border.Radius', 'BackgroundColor.Alpha10']}>
           <Stylish.View styleNames={['Horizontal']}>
             <Stylish.View styleNames={['Horizontal.Left', 'Padding']}>
               <Stylish.Image source={require('../../images/face-icon-2.png')} styleNames={['Avatar', 'Avatar.Square']} />
