@@ -26,7 +26,7 @@ const data = [
 ];
 
 const CoreConceptStylishComponentsShowCase = () => (
-  <View<TViewStyle> styleNames={['Screen', 'BackgroundColor.Body']}>
+  <View<TViewStyle> styleNames={['Screen']}>
     <SafeAreaView<TSafeAreaViewStyle> />
     <View<TViewStyle> styleNames={['Screen.Header', 'Padding']}>
       <Text<TTextStyle> styleNames={['H1']}>Stylish Components</Text>

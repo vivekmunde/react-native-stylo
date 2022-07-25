@@ -8,6 +8,8 @@
 /* -------------------------------------------------------------------------------- */
 
 type TBackgroundColorStyle =
+  | 'BackgroundColor.Transparent'
+  | 'BackgroundColor.Screen'
   | 'BackgroundColor.Alpha1'
   | 'BackgroundColor.Alpha2'
   | 'BackgroundColor.Alpha3'
@@ -39,7 +41,6 @@ type TBackgroundColorStyle =
   | 'BackgroundColor.Blue8'
   | 'BackgroundColor.Blue9'
   | 'BackgroundColor.Blue10'
-  | 'BackgroundColor.Body'
   | 'BackgroundColor.Cyan1'
   | 'BackgroundColor.Cyan2'
   | 'BackgroundColor.Cyan3'

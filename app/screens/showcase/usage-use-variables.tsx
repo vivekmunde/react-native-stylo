@@ -12,7 +12,7 @@ const UsageUseVariablesShowCase = () => {
     borderRadius,
     fontColor,
     fontSize,
-    bodyColor,
+    screenColor,
     colorAlpha10,
   ] = Stylers.useVariables([
     'Padding',
@@ -22,7 +22,7 @@ const UsageUseVariablesShowCase = () => {
     'Border.Radius',
     'Font.Color',
     'Font.Size',
-    'Body.Color',
+    'Screen.BackgroundColor',
     'Color.Alpha10',
   ]);
 
@@ -30,7 +30,7 @@ const UsageUseVariablesShowCase = () => {
     StyleSheet.create({
       screen: {
         flex: 1,
-        backgroundColor: bodyColor.toString(),
+        backgroundColor: screenColor.toString(),
         padding: Number(paddingLarge),
       },
       screenHeader: {

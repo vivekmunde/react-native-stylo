@@ -85,7 +85,7 @@ const Home = () => {
   ).current;
 
   return (
-    <Stylish.View styleNames={['Screen', 'BackgroundColor.Body']}>
+    <Stylish.View styleNames={['Screen']}>
       <Stylish.ScrollView styleNames={['Flex.1']}>
         <Stylish.View style={styles.safeAreaHeader} />
         <Stylish.View styleNames={['Screen.Header', 'Padding']}>

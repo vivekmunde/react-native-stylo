@@ -193,7 +193,7 @@ const spacingLarge = Math.round(spacing * 2);
 
 const Variables = {
   ...Colors,
-  'Body.Color': '#141414',
+  'Screen.BackgroundColor': '#111111',
   'Font.Color': '#BBBBBB',
   'Font.Size': fontSize,
   'Font.Size.Small': fontSizeSmall,

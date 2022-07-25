@@ -23,7 +23,7 @@ const data = [
 
 const UsageStylersShowCase = () => {
   const styles = useRef({
-    screen: Stylers.useViewStyles(['Screen', 'BackgroundColor.Body']),
+    screen: Stylers.useViewStyles(['Screen']),
     screenHeader: Stylers.useViewStyles(['Screen.Header', 'Padding']),
     screenTitle: Stylers.useTextStyles(['H1']),
     screenBody: Stylers.useViewStyles(['Screen.Body', 'Padding']),

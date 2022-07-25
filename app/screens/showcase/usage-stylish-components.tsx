@@ -21,7 +21,7 @@ const data = [
 ];
 
 const UsageStylishComponentsShowCase = () => (
-  <Stylish.View styleNames={['Screen', 'BackgroundColor.Body']}>
+  <Stylish.View styleNames={['Screen']}>
     <Stylish.SafeAreaView />
     <Stylish.View styleNames={['Screen.Header', 'Padding']}>
       <Stylish.Text styleNames={['H1']}>Usage</Stylish.Text>

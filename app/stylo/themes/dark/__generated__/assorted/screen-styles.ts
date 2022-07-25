@@ -8,6 +8,7 @@
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet } from 'react-native';
+import Variables from '../variables';
 
 const ScreenStyles = StyleSheet.create({
   Screen: {
@@ -16,6 +17,7 @@ const ScreenStyles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     flexGrow: 1,
+    backgroundColor: Variables['Screen.BackgroundColor'],
   },
   'Screen.Header': {
     padding: 0,

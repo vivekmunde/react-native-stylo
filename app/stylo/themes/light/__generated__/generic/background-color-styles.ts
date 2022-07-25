@@ -12,6 +12,12 @@ import { StyleSheet } from 'react-native';
 import Variables from '../../variables';
 
 const BackgroundColorStyles = StyleSheet.create({
+  'BackgroundColor.Transparent': {
+    backgroundColor: 'transparent',
+  },
+  'BackgroundColor.Screen': {
+    backgroundColor: Variables['Screen.BackgroundColor'],
+  },
   'BackgroundColor.Alpha1': {
     backgroundColor: Variables['Color.Alpha1'],
   },
@@ -104,9 +110,6 @@ const BackgroundColorStyles = StyleSheet.create({
   },
   'BackgroundColor.Blue10': {
     backgroundColor: Variables['Color.Blue10'],
-  },
-  'BackgroundColor.Body': {
-    backgroundColor: Variables['Body.Color'],
   },
   'BackgroundColor.Cyan1': {
     backgroundColor: Variables['Color.Cyan1'],

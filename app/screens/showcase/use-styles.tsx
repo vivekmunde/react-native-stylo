@@ -19,7 +19,7 @@ const UseStylesShowCase: React.FC = () => {
   const styles = useRef({
     screen: useStyles<ViewStyle, TViewStyle>({
       styleNamespace: 'ViewStyles',
-      styleNames: ['Screen', 'BackgroundColor.Body'],
+      styleNames: ['Screen'],
     }),
     screenHeader: useStyles<ViewStyle, TViewStyle>({
       styleNamespace: 'ViewStyles',

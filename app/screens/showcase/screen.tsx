@@ -7,7 +7,7 @@ const ScreenShowCase = () => {
   const navigatoin = useNavigation();
 
   return (
-    <Stylish.View styleNames={['Screen', 'BackgroundColor.Body']}>
+    <Stylish.View styleNames={['Screen']}>
       <Stylish.SafeAreaView />
       <Stylish.View styleNames={['Screen.Header']}>
         <Stylish.View styleNames={['Screen.Header.Left', 'Padding']}>

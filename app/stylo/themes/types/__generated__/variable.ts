@@ -11,7 +11,7 @@ import TColor from './color';
 
 type TVariable =
   | TColor
-  | 'Body.Color'
+  | 'Screen.BackgroundColor'
   | 'Font.Color'
   | 'Font.Size'
   | 'Font.Size.Small'
