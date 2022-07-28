@@ -40,7 +40,7 @@ const getFormStyles = (variables: Record<TVariable, string | number>) => {
     'Form.Item.Input': {
       display: 'flex',
       flexDirection: 'row',
-      backgroundColor: 'rgba(255,255,255,1)',
+      backgroundColor: variables['Color.Alpha10'].toString(),
       borderColor,
       borderWidth,
       borderStyle: 'solid',
