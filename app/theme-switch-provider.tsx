@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StatusBar } from 'react-native';
 import { ThemeProvider } from '../stylo';
 import { styles, variables } from './stylo/themes/default';
-import { TStyles, TThemeFlavour, TVariables } from './stylo/themes/types';
+import { TThemeFlavour, TVariables } from './stylo/themes/types';
 
 export type TThemeSwitchContext = {
   onSwitchTheme: (theme: TThemeFlavour) => void;
@@ -28,7 +28,7 @@ export const ThemeSwitchProvider: React.FC = ({ children }) => {
       onSwitchTheme,
       onGetTheme,
     }}>
-      <ThemeProvider<TVariables, TStyles>
+      <ThemeProvider<TVariables>
         variables={theme === 'Dark' ? variables.dark : variables.light}
         styles={theme === 'Dark' ? styles.dark : styles.light}>
         <StatusBar barStyle={theme === 'Dark' ? 'light-content' : 'dark-content'} />

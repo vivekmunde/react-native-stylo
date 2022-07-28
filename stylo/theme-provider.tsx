@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ThemeContext, { TContext } from './theme-context';
 
-export type TProps<TVariables, TStyles> = TContext<TVariables, TStyles> & {
+export type TProps<TVariables> = TContext<TVariables> & {
   children: React.ReactNode;
 };
 
-const ThemeProvider = <TVariables, TStyles>({ variables, styles, children }: TProps<TVariables, TStyles>) => {
+const ThemeProvider = <TVariables,>({ variables, styles, children }: TProps<TVariables>) => {
   const hasMounted = useRef(false);
-  const [contextValue, setContextValue] = useState<TContext<TVariables, TStyles>>({ variables, styles });
+  const [contextValue, setContextValue] = useState<TContext<TVariables>>({ variables, styles });
 
   useEffect(() => {
     if (hasMounted.current) {
