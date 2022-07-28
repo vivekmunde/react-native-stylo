@@ -8,19 +8,9 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { TIconCStyle } from '../__generated__/components/icon';
+import TVariable from '../../types/variable';
+import _getMarginStyles from '../__generated__/generic/margin-styles';
 
-import { TButtonIconStyle } from '../assorted/button';
-import { TTagIconStyle } from '../assorted/tag';
-import TFontColorStyle from '../generic/font-color';
-import TMarginStyle from '../generic/margin';
+const getMarginStyles = (variables: Record<TVariable, string | number>) => _getMarginStyles(variables);
 
-type TIconStyle =
-  | 'Default'
-  | TFontColorStyle
-  | TMarginStyle
-  | TButtonIconStyle
-  | TTagIconStyle
-  | TIconCStyle;
-
-export default TIconStyle;
+export default getMarginStyles;

@@ -7,27 +7,14 @@
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
-import TBackgroundColorStyle from '../generic/background-color';
-import TBorderStyle from '../generic/border';
-import TFontColorStyle from '../generic/font-color';
-import TMarginStyle from '../generic/margin';
-import TPaddingStyle from '../generic/padding';
+import { StyleSheet, ViewStyle } from 'react-native';
+import { TSafeAreaViewStyle, TVariable } from '../../../types/__generated__';
+import getBackgroundColorStyles from '../generic/background-color-styles';
 
-export type TTextInputCStyle =
-  | 'Default'
-  | 'Align.Center'
-  | 'Align.Right'
-  | 'Bold'
-  | 'Bold.Semi'
-  | 'Small'
-  | 'Large';
+const getSafeAreaViewStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TSafeAreaViewStyle, ViewStyle>>({
+    ...getBackgroundColorStyles(variables)
+  })
+);
 
-type TTextInputStyle =
-  | TFontColorStyle
-  | TBackgroundColorStyle
-  | TBorderStyle
-  | TMarginStyle
-  | TPaddingStyle
-  | TTextInputCStyle;
-
-export default TTextInputStyle;
+export default getSafeAreaViewStyles;

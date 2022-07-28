@@ -8,19 +8,11 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { TIconCStyle } from '../__generated__/components/icon';
+import { TVariable } from '../../types';
+import {
+  getAvatarJacketStyles as _getAvatarJacketStyles, getAvatarStyles as _getAvatarStyles
+} from '../__generated__/assorted/avatar-styles';
 
-import { TButtonIconStyle } from '../assorted/button';
-import { TTagIconStyle } from '../assorted/tag';
-import TFontColorStyle from '../generic/font-color';
-import TMarginStyle from '../generic/margin';
+export const getAvatarStyles = (variables: Record<TVariable, string | number>) => _getAvatarStyles(variables);
 
-type TIconStyle =
-  | 'Default'
-  | TFontColorStyle
-  | TMarginStyle
-  | TButtonIconStyle
-  | TTagIconStyle
-  | TIconCStyle;
-
-export default TIconStyle;
+export const getAvatarJacketStyles = (variables: Record<TVariable, string | number>) => _getAvatarJacketStyles(variables);

@@ -8,19 +8,9 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { TIconCStyle } from '../__generated__/components/icon';
+import { TVariable } from '../../types';
+import * as _ from '../__generated__/assorted/badge-styles';
 
-import { TButtonIconStyle } from '../assorted/button';
-import { TTagIconStyle } from '../assorted/tag';
-import TFontColorStyle from '../generic/font-color';
-import TMarginStyle from '../generic/margin';
+export const getBadgeStyles = (variables: Record<TVariable, string | number>) => _.getBadgeStyles(variables);
 
-type TIconStyle =
-  | 'Default'
-  | TFontColorStyle
-  | TMarginStyle
-  | TButtonIconStyle
-  | TTagIconStyle
-  | TIconCStyle;
-
-export default TIconStyle;
+export const getBadgeTextStyles = (variables: Record<TVariable, string | number>) => _.getBadgeTextStyles(variables);

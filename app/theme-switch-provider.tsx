@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { StatusBar } from 'react-native';
 import { ThemeProvider } from '../stylo';
-import * as darkTheme from './stylo/themes/dark';
-import * as lightTheme from './stylo/themes/light';
+import { styles, variables } from './stylo/themes/default';
 
 export type TThemeSwitchContext = {
   onSwitchTheme: (theme: 'Light' | 'Dark') => void;
@@ -29,8 +28,8 @@ export const ThemeSwitchProvider: React.FC = ({ children }) => {
       onGetTheme,
     }}>
       <ThemeProvider
-        variables={theme === 'Dark' ? darkTheme.variables : lightTheme.variables}
-        styles={theme === 'Dark' ? darkTheme.styles : lightTheme.styles}>
+        variables={theme === 'Dark' ? variables.dark : variables.light}
+        styles={theme === 'Dark' ? styles.dark : styles.light}>
         <StatusBar barStyle={theme === 'Dark' ? 'light-content' : 'dark-content'} />
         {children}
       </ThemeProvider>

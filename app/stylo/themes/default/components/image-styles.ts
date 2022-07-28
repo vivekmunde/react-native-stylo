@@ -8,19 +8,20 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { TIconCStyle } from '../__generated__/components/icon';
+import { ImageStyle, StyleSheet } from 'react-native';
+import { TImageStyle, TVariable } from '../../types';
+import { getAvatarStyles } from '../assorted/avatar-styles';
+import { getTagAvatarStyles } from '../assorted/tag-styles';
+import getBorderStyles from '../generic/border-styles';
+import getMarginStyles from '../generic/margin-styles';
 
-import { TButtonIconStyle } from '../assorted/button';
-import { TTagIconStyle } from '../assorted/tag';
-import TFontColorStyle from '../generic/font-color';
-import TMarginStyle from '../generic/margin';
+const getImageStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TImageStyle, ImageStyle>>({
+    ...getMarginStyles(variables),
+    ...getBorderStyles(variables),
+    ...getAvatarStyles(variables),
+    ...getTagAvatarStyles(variables),
+  })
+);
 
-type TIconStyle =
-  | 'Default'
-  | TFontColorStyle
-  | TMarginStyle
-  | TButtonIconStyle
-  | TTagIconStyle
-  | TIconCStyle;
-
-export default TIconStyle;
+export default getImageStyles;

@@ -13,7 +13,7 @@ export type TTagTextStyle = 'Tag.Text' | 'Tag.Text.Left' | 'Tag.Text.Right';
 
 export type TTagIconStyle = 'Tag.Icon' | 'Tag.Icon.Left' | 'Tag.Icon.Right';
 
-export type TTagAvatarImageStyle =
+export type TTagAvatarStyle =
   | 'Tag.Avatar'
   | 'Tag.Avatar.Small'
   | 'Tag.Avatar.Large'

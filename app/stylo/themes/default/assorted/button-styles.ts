@@ -8,19 +8,11 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { TIconCStyle } from '../__generated__/components/icon';
+import { TVariable } from '../../types';
+import * as _ from '../__generated__/assorted/button-styles';
 
-import { TButtonIconStyle } from '../assorted/button';
-import { TTagIconStyle } from '../assorted/tag';
-import TFontColorStyle from '../generic/font-color';
-import TMarginStyle from '../generic/margin';
+export const getButtonStyles = (variables: Record<TVariable, string | number>) => _.getButtonStyles(variables);
 
-type TIconStyle =
-  | 'Default'
-  | TFontColorStyle
-  | TMarginStyle
-  | TButtonIconStyle
-  | TTagIconStyle
-  | TIconCStyle;
+export const getButtonTextStyles = (variables: Record<TVariable, string | number>) => _.getButtonTextStyles(variables);
 
-export default TIconStyle;
+export const getButtonIconStyles = (variables: Record<TVariable, string | number>) => _.getButtonIconStyles(variables);

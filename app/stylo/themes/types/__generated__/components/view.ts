@@ -20,6 +20,7 @@ import TMarginStyle from '../generic/margin';
 import TPaddingStyle from '../generic/padding';
 
 type TViewStyle =
+  | 'Default'
   | TBackgroundColorStyle
   | TBorderStyle
   | TPaddingStyle

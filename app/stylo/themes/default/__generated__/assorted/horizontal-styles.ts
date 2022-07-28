@@ -7,27 +7,23 @@
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
-import TBackgroundColorStyle from '../generic/background-color';
-import TBorderStyle from '../generic/border';
-import TFontColorStyle from '../generic/font-color';
-import TMarginStyle from '../generic/margin';
-import TPaddingStyle from '../generic/padding';
+import { StyleSheet, ViewStyle } from 'react-native';
+import THorizontalStyle from '../../../types/__generated__/assorted/horizontal';
 
-export type TTextInputCStyle =
-  | 'Default'
-  | 'Align.Center'
-  | 'Align.Right'
-  | 'Bold'
-  | 'Bold.Semi'
-  | 'Small'
-  | 'Large';
+const getHorizontalStyles = () => (
+  StyleSheet.create<Record<THorizontalStyle, ViewStyle>>({
+    Horizontal: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+    },
+    'Horizontal.Left': {},
+    'Horizontal.Body': {
+      flex: 1,
+    },
+    'Horizontal.Right': {},
+  })
+);
 
-type TTextInputStyle =
-  | TFontColorStyle
-  | TBackgroundColorStyle
-  | TBorderStyle
-  | TMarginStyle
-  | TPaddingStyle
-  | TTextInputCStyle;
-
-export default TTextInputStyle;
+export default getHorizontalStyles;

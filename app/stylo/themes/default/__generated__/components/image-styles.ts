@@ -7,27 +7,20 @@
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
-import TBackgroundColorStyle from '../generic/background-color';
-import TBorderStyle from '../generic/border';
-import TFontColorStyle from '../generic/font-color';
-import TMarginStyle from '../generic/margin';
-import TPaddingStyle from '../generic/padding';
+import { ImageStyle, StyleSheet } from 'react-native';
+import { TImageStyle, TVariable } from '../../../types/__generated__';
+import { getAvatarStyles } from '../assorted/avatar-styles';
+import { getTagAvatarStyles } from '../assorted/tag-styles';
+import getBorderStyles from '../generic/border-styles';
+import getMarginStyles from '../generic/margin-styles';
 
-export type TTextInputCStyle =
-  | 'Default'
-  | 'Align.Center'
-  | 'Align.Right'
-  | 'Bold'
-  | 'Bold.Semi'
-  | 'Small'
-  | 'Large';
+const getImageStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TImageStyle, ImageStyle>>({
+    ...getMarginStyles(variables),
+    ...getBorderStyles(variables),
+    ...getAvatarStyles(variables),
+    ...getTagAvatarStyles(variables),
+  })
+);
 
-type TTextInputStyle =
-  | TFontColorStyle
-  | TBackgroundColorStyle
-  | TBorderStyle
-  | TMarginStyle
-  | TPaddingStyle
-  | TTextInputCStyle;
-
-export default TTextInputStyle;
+export default getImageStyles;

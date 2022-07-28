@@ -14,6 +14,7 @@ import TFontColorStyle from '../generic/font-color';
 import TMarginStyle from '../generic/margin';
 
 export type TTextCStyle =
+  | 'Default'
   | 'Align.Center'
   | 'Align.Right'
   | 'Bold'
