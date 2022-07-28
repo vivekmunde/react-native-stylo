@@ -14,6 +14,7 @@ type TVariable =
   | 'Screen.BackgroundColor'
   | 'Screen.BackdropColor'
   | 'Font.Color'
+  | 'Font.Color.Secondary'
   | 'Font.Size'
   | 'Font.Size.Small'
   | 'Font.Size.Large'

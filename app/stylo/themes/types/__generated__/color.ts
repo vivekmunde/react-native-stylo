@@ -141,7 +141,6 @@ type TColor =
   | 'Color.Red8'
   | 'Color.Red9'
   | 'Color.Red10'
-  | 'Color.Secondary'
   | 'Color.Success'
   | 'Color.Success1'
   | 'Color.Success2'

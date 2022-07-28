@@ -421,9 +421,6 @@ const getBackgroundColorStyles = (variables: Record<TVariable, string | number>)
     'BackgroundColor.Red10': {
       backgroundColor: variables['Color.Red10'].toString(),
     },
-    'BackgroundColor.Secondary': {
-      backgroundColor: variables['Color.Secondary'].toString(),
-    },
     'BackgroundColor.Success': {
       backgroundColor: variables['Color.Success'].toString(),
     },

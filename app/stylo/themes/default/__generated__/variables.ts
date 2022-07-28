@@ -143,7 +143,6 @@ const LightColors = {
   'Color.Red8': '#A8071A',
   'Color.Red9': '#820014',
   'Color.Red10': '#5C0011',
-  'Color.Secondary': '#8C8C8C',
   'Color.Success': '#73D13D',
   'Color.Success1': '#F6FFED',
   'Color.Success2': '#D9F7BE',
@@ -196,7 +195,8 @@ const LightVariables: Record<TVariable, string | number> = {
   ...LightColors,
   'Screen.BackgroundColor': '#F5F5F5',
   'Screen.BackdropColor': 'rgba(0,0,0,0.3)',
-  'Font.Color': '#434343',
+  'Font.Color': '#333333',
+  'Font.Color.Secondary': '#888888',
   'Font.Size': fontSize,
   'Font.Size.Small': fontSizeSmall,
   'Font.Size.Large': fontSizeLarge,
@@ -364,7 +364,6 @@ const DarkColors = {
   'Color.Red3': '#A8071A',
   'Color.Red2': '#820014',
   'Color.Red1': '#5C0011',
-  'Color.Secondary': '#8C8C8C',
   'Color.Success': '#389E0D',
   'Color.Success10': '#F6FFED',
   'Color.Success9': '#D9F7BE',
@@ -400,11 +399,12 @@ const DarkColors = {
   'Color.Yellow1': '#614700',
 };
 
-const DarkVariables = {
+const DarkVariables: Record<TVariable, string | number> = {
   ...DarkColors,
   'Screen.BackgroundColor': '#111111',
   'Screen.BackdropColor': 'rgba(255,255,255,0.3)',
   'Font.Color': '#BBBBBB',
+  'Font.Color.Secondary': '#8C8C8C',
   'Font.Size': fontSize,
   'Font.Size.Small': fontSizeSmall,
   'Font.Size.Large': fontSizeLarge,

@@ -383,7 +383,7 @@ const getFontColorStyles = (variables: Record<TVariable, string | number>) => (
       color: variables['Color.Red10'].toString(),
     },
     'Color.Secondary': {
-      color: variables['Color.Grey7'].toString(),
+      color: variables['Font.Color.Secondary'].toString(),
     },
     'Color.Success': {
       color: variables['Color.Success'].toString(),

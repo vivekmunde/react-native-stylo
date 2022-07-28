@@ -144,7 +144,6 @@ type TBackgroundColorStyle =
   | 'BackgroundColor.Red8'
   | 'BackgroundColor.Red9'
   | 'BackgroundColor.Red10'
-  | 'BackgroundColor.Secondary'
   | 'BackgroundColor.Success'
   | 'BackgroundColor.Success1'
   | 'BackgroundColor.Success2'
