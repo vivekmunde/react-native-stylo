@@ -35,6 +35,7 @@ export type TTouchableStyle = _TTouchableStyle;
 export type TViewStyle = _TViewStyle;
 
 export type TVariable = _TVariable;
+export type TVariables = Record<_TVariable, string | number>;
 
 export type TStyles = {
   IconStyles: Record<TIconStyle, TextStyle>;
@@ -48,6 +49,8 @@ export type TStyles = {
   TouchableStyles: Record<TTouchableStyle, ViewStyle>,
   ViewStyles: Record<TViewStyle, ViewStyle>,
 };
+
+export type TThemeFlavour = 'Light' | 'Dark';
 
 // ------------------------------------------------------------------------------------------------
 // TBD

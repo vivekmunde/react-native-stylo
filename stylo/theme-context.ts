@@ -1,17 +1,11 @@
 import React from 'react';
 
-export type TContext = {
-  variables?: {
-    [name: string]: string | number;
-  };
-  styles: {
-    [name: string]: {
-      [name: string]: object;
-    };
-  };
+export type TContext<TVariables, TStyles> = {
+  variables?: TVariables;
+  styles: TStyles;
 };
 
-export default React.createContext<TContext>({
+export default React.createContext<TContext<Object, Object>>({
   variables: {},
   styles: {},
 });

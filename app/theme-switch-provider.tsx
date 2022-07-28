@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { StatusBar } from 'react-native';
 import { ThemeProvider } from '../stylo';
 import { styles, variables } from './stylo/themes/default';
+import { TStyles, TThemeFlavour, TVariables } from './stylo/themes/types';
 
 export type TThemeSwitchContext = {
-  onSwitchTheme: (theme: 'Light' | 'Dark') => void;
-  onGetTheme: () => 'Light' | 'Dark';
+  onSwitchTheme: (theme: TThemeFlavour) => void;
+  onGetTheme: () => TThemeFlavour;
 };
 
 export const ThemeSwitchContext = React.createContext<TThemeSwitchContext>({
@@ -14,9 +15,9 @@ export const ThemeSwitchContext = React.createContext<TThemeSwitchContext>({
 });
 
 export const ThemeSwitchProvider: React.FC = ({ children }) => {
-  const [theme, setTheme] = useState<'Light' | 'Dark'>('Light');
+  const [theme, setTheme] = useState<TThemeFlavour>('Light');
 
-  const onSwitchTheme = (changedTheme: 'Light' | 'Dark') => {
+  const onSwitchTheme = (changedTheme: TThemeFlavour) => {
     setTheme(changedTheme);
   };
 
@@ -27,7 +28,7 @@ export const ThemeSwitchProvider: React.FC = ({ children }) => {
       onSwitchTheme,
       onGetTheme,
     }}>
-      <ThemeProvider
+      <ThemeProvider<TVariables, TStyles>
         variables={theme === 'Dark' ? variables.dark : variables.light}
         styles={theme === 'Dark' ? styles.dark : styles.light}>
         <StatusBar barStyle={theme === 'Dark' ? 'light-content' : 'dark-content'} />
