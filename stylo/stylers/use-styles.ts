@@ -15,9 +15,7 @@ function useStyles<TStyleProp, TStyleName extends string>({
   const styleNamesJoined = styleNames?.join('');
 
   const style = useMemo(() => {
-    const styles = styleNamespace
-      ? themeContext.styles[styleNamespace]
-      : themeContext.styles;
+    const styles = themeContext.styles[styleNamespace];
 
     return (styleNames ?? []).reduce(
       (acc, styleName) => ({

@@ -14,12 +14,12 @@ export type TStyles = {
   ViewStyles: Record<string, ViewStyle>,
 };
 
-export type TContext<TVariables> = {
-  variables?: TVariables;
+export type TContext = {
+  variables: Record<string, string|number>;
   styles: TStyles;
 };
 
-export default React.createContext<TContext<Object>>({
+export default React.createContext<TContext>({
   variables: {},
   styles: {
     IconStyles: {},
