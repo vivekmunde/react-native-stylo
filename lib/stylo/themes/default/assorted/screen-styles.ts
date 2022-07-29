@@ -8,8 +8,9 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _ScreenStyles from '../__generated__/assorted/screen-styles';
+import { TVariable } from '../../types';
+import _getScreenStyles from '../__generated__/assorted/screen-styles';
 
-const ScreenStyles = _ScreenStyles;
+const getScreenStyles = (variables: Record<TVariable, string | number>) => _getScreenStyles(variables);
 
-export default ScreenStyles;
+export default getScreenStyles;

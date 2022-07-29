@@ -8,8 +8,9 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _BorderStyles from '../__generated__/generic/border-styles';
+import TVariable from '../../types/variable';
+import _getBorderStyles from '../__generated__/generic/border-styles';
 
-const BorderStyles = _BorderStyles;
+const getBorderStyles = (variables: Record<TVariable, string | number>) =>_getBorderStyles(variables);
 
-export default BorderStyles;
+export default getBorderStyles;

@@ -8,8 +8,8 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _HorizontalStyles from '../__generated__/assorted/horizontal-styles';
+import _getHorizontalStyles from '../__generated__/assorted/horizontal-styles';
 
-const HorizontalStyles = _HorizontalStyles;
+const getHorizontalStyles = () => _getHorizontalStyles();
 
-export default HorizontalStyles;
+export default getHorizontalStyles;

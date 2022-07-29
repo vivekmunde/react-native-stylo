@@ -8,22 +8,24 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TextStyle } from 'react-native';
+import { TTextInputStyle, TVariable } from '../../types';
+import getBackgroundColorStyles from '../generic/background-color-styles';
+import getBorderStyles from '../generic/border-styles';
+import getFontColorStyles from '../generic/font-color-styles';
+import getMarginStyles from '../generic/margin-styles';
+import getPaddingStyles from '../generic/padding-styles';
+import { getTextInputCStyles } from '../__generated__/components/text-input-styles';
 
-import { TextInputCStyles } from '../__generated__/components/text-input-styles';
-import BackgroundColorStyles from '../generic/background-color-styles';
-import BorderStyles from '../generic/border-styles';
-import FontColorStyles from '../generic/font-color-styles';
-import MarginStyles from '../generic/margin-styles';
-import PaddingStyles from '../generic/padding-styles';
+const getTextInputStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TTextInputStyle, TextStyle>>({
+    ...getBackgroundColorStyles(variables),
+    ...getFontColorStyles(variables),
+    ...getBorderStyles(variables),
+    ...getMarginStyles(variables),
+    ...getPaddingStyles(variables),
+    ...getTextInputCStyles(variables),
+  })
+);
 
-const TextInputStyles = StyleSheet.create({
-  ...BackgroundColorStyles,
-  ...FontColorStyles,
-  ...BorderStyles,
-  ...MarginStyles,
-  ...PaddingStyles,
-  ...TextInputCStyles,
-});
-
-export default TextInputStyles;
+export default getTextInputStyles;

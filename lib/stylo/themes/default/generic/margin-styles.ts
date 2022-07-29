@@ -8,8 +8,9 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _MarginStyles from '../__generated__/generic/margin-styles';
+import TVariable from '../../types/variable';
+import _getMarginStyles from '../__generated__/generic/margin-styles';
 
-const MarginStyles = _MarginStyles;
+const getMarginStyles = (variables: Record<TVariable, string | number>) => _getMarginStyles(variables);
 
-export default MarginStyles;
+export default getMarginStyles;

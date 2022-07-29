@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -18,6 +18,16 @@ type TColor =
   | 'Color.Alpha8'
   | 'Color.Alpha9'
   | 'Color.Alpha10'
+  | 'Color.AlphaInverted1'
+  | 'Color.AlphaInverted2'
+  | 'Color.AlphaInverted3'
+  | 'Color.AlphaInverted4'
+  | 'Color.AlphaInverted5'
+  | 'Color.AlphaInverted6'
+  | 'Color.AlphaInverted7'
+  | 'Color.AlphaInverted8'
+  | 'Color.AlphaInverted9'
+  | 'Color.AlphaInverted10'
   | 'Color.Blue1'
   | 'Color.Blue2'
   | 'Color.Blue3'
@@ -131,7 +141,6 @@ type TColor =
   | 'Color.Red8'
   | 'Color.Red9'
   | 'Color.Red10'
-  | 'Color.Secondary'
   | 'Color.Success'
   | 'Color.Success1'
   | 'Color.Success2'

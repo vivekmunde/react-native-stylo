@@ -8,8 +8,9 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _PaddingStyles from '../__generated__/generic/padding-styles';
+import TVariable from '../../types/variable';
+import _getPaddingStyles from '../__generated__/generic/padding-styles';
 
-const PaddingStyles = _PaddingStyles;
+const getPaddingStyles = (variables: Record<TVariable, string | number>) =>_getPaddingStyles(variables);
 
-export default PaddingStyles;
+export default getPaddingStyles;

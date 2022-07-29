@@ -8,8 +8,9 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import BackgroundColorStyles from '../generic/background-color-styles';
+import { TVariable } from '../../types';
+import _getBackgroundColorStyles from '../generic/background-color-styles';
 
-const SafeAreaViewStyles = BackgroundColorStyles;
+const getSafeAreaViewStyles = (variables: Record<TVariable, string | number>) => _getBackgroundColorStyles(variables);
 
-export default SafeAreaViewStyles;
+export default getSafeAreaViewStyles;

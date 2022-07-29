@@ -8,8 +8,9 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _BackgroundColorStyles from '../__generated__/generic/background-color-styles';
+import { TVariable } from '../../types';
+import _getBackgroundColorStyles from '../__generated__/generic/background-color-styles';
 
-const BackgroundColorStyles = _BackgroundColorStyles;
+const getBackgroundColorStyles = (variables: Record<TVariable, string | number>) => _getBackgroundColorStyles(variables);
 
-export default BackgroundColorStyles;
+export default getBackgroundColorStyles;

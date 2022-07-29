@@ -2,50 +2,54 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ViewStyle } from 'react-native';
+import { TVariable } from '../../../types/__generated__';
+import TListStyle from '../../../types/__generated__/assorted/list';
 
-import Variables from '../../variables';
+const getListStyles = (variables: Record<TVariable, string | number>) => {
+  const padding = Number(variables.Padding);
 
-const ListStyles = StyleSheet.create({
-  List: {},
-  'List.Item': {
-    paddingLeft: Variables.Padding / 2,
-    paddingRight: Variables.Padding / 2,
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  'List.Item.Left': {
-    paddingLeft: Variables.Padding / 2,
-    paddingRight: Variables.Padding / 2,
-    paddingTop: Variables.Padding,
-    paddingBottom: Variables.Padding,
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  'List.Item.Body': {
-    paddingLeft: Variables.Padding / 2,
-    paddingRight: Variables.Padding / 2,
-    paddingTop: Variables.Padding,
-    paddingBottom: Variables.Padding,
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  'List.Item.Right': {
-    paddingLeft: Variables.Padding / 2,
-    paddingRight: Variables.Padding / 2,
-    paddingTop: Variables.Padding,
-    paddingBottom: Variables.Padding,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-end',
-  },
-});
+  return StyleSheet.create<Record<TListStyle, ViewStyle>>({
+    List: {},
+    'List.Item': {
+      paddingLeft: padding / 2,
+      paddingRight: padding / 2,
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    },
+    'List.Item.Left': {
+      paddingLeft: padding / 2,
+      paddingRight: padding / 2,
+      paddingTop: padding,
+      paddingBottom: padding,
+      display: 'flex',
+      flexDirection: 'column',
+    },
+    'List.Item.Body': {
+      paddingLeft: padding / 2,
+      paddingRight: padding / 2,
+      paddingTop: padding,
+      paddingBottom: padding,
+      flex: 1,
+      display: 'flex',
+      flexDirection: 'column',
+    },
+    'List.Item.Right': {
+      paddingLeft: padding / 2,
+      paddingRight: padding / 2,
+      paddingTop: padding,
+      paddingBottom: padding,
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-end',
+    },
+  });
+};
 
-export default ListStyles;
+export default getListStyles;

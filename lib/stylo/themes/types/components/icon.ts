@@ -16,6 +16,7 @@ import TFontColorStyle from '../generic/font-color';
 import TMarginStyle from '../generic/margin';
 
 type TIconStyle =
+  | 'Default'
   | TFontColorStyle
   | TMarginStyle
   | TButtonIconStyle

@@ -8,8 +8,9 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _FontColorStyles from '../__generated__/generic/font-color-styles';
+import TVariable from '../../types/variable';
+import _getFontColorStyles from '../__generated__/generic/font-color-styles';
 
-const FontColorStyles = _FontColorStyles;
+const getFontColorStyles = (variables: Record<TVariable, string | number>) => _getFontColorStyles(variables);
 
-export default FontColorStyles;
+export default getFontColorStyles;

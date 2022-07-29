@@ -8,8 +8,9 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
+import { TVariable } from '../../types';
 import * as _ from '../__generated__/assorted/badge-styles';
 
-export const BadgeStyles = _.BadgeStyles;
+export const getBadgeStyles = (variables: Record<TVariable, string | number>) => _.getBadgeStyles(variables);
 
-export const BadgeTextStyles = _.BadgeTextStyles;
+export const getBadgeTextStyles = (variables: Record<TVariable, string | number>) => _.getBadgeTextStyles(variables);

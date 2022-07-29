@@ -2,12 +2,14 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
 type TBackgroundColorStyle =
+  | 'BackgroundColor.Transparent'
+  | 'BackgroundColor.Screen'
   | 'BackgroundColor.Alpha1'
   | 'BackgroundColor.Alpha2'
   | 'BackgroundColor.Alpha3'
@@ -39,7 +41,6 @@ type TBackgroundColorStyle =
   | 'BackgroundColor.Blue8'
   | 'BackgroundColor.Blue9'
   | 'BackgroundColor.Blue10'
-  | 'BackgroundColor.Body'
   | 'BackgroundColor.Cyan1'
   | 'BackgroundColor.Cyan2'
   | 'BackgroundColor.Cyan3'
@@ -143,7 +144,6 @@ type TBackgroundColorStyle =
   | 'BackgroundColor.Red8'
   | 'BackgroundColor.Red9'
   | 'BackgroundColor.Red10'
-  | 'BackgroundColor.Secondary'
   | 'BackgroundColor.Success'
   | 'BackgroundColor.Success1'
   | 'BackgroundColor.Success2'

@@ -8,12 +8,13 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
+import { TVariable } from '../../types';
 import * as _ from '../__generated__/assorted/tag-styles';
 
-export const TagStyles = _.TagStyles;
+export const getTagStyles = (variables: Record<TVariable, string | number>) => _.getTagStyles(variables);
 
-export const TagTextStyles = _.TagTextStyles;
+export const getTagTextStyles = (variables: Record<TVariable, string | number>) => _.getTagTextStyles(variables);
 
-export const TagIconStyles = _.TagIconStyles;
+export const getTagIconStyles = () => _.getTagIconStyles();
 
-export const TagAvatarStyles = _.TagAvatarStyles;
+export const getTagAvatarStyles = (variables: Record<TVariable, string | number>) => _.getTagAvatarStyles(variables);

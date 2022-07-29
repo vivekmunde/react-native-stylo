@@ -8,8 +8,9 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _ListStyles from '../__generated__/assorted/list-styles';
+import { TVariable } from '../../types';
+import _getListStyles from '../__generated__/assorted/list-styles';
 
-const ListStyles = _ListStyles;
+const getListStyles = (variables: Record<TVariable, string | number>) => _getListStyles(variables);
 
-export default ListStyles;
+export default getListStyles;

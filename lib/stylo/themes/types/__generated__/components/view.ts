@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -20,6 +20,7 @@ import TMarginStyle from '../generic/margin';
 import TPaddingStyle from '../generic/padding';
 
 type TViewStyle =
+  | 'Default'
   | TBackgroundColorStyle
   | TBorderStyle
   | TPaddingStyle

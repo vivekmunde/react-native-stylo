@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -14,6 +14,7 @@ import TFontColorStyle from '../generic/font-color';
 import TMarginStyle from '../generic/margin';
 
 export type TTextCStyle =
+  | 'Default'
   | 'Align.Center'
   | 'Align.Right'
   | 'Bold'

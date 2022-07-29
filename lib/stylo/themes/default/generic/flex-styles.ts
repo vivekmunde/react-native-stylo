@@ -8,8 +8,8 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _FlexStyles from '../__generated__/generic/flex-styles';
+import _getFlexStyles from '../__generated__/generic/flex-styles';
 
-const FlexStyles = _FlexStyles;
+const getFlexStyles = () => _getFlexStyles();
 
-export default FlexStyles;
+export default getFlexStyles;

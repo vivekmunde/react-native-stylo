@@ -2,487 +2,489 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TextStyle } from 'react-native';
+import { TVariable } from '../../../types/__generated__';
+import TFontColorStyle from '../../../types/__generated__/generic/font-color';
 
-import Variables from '../../variables';
+const getFontColorStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TFontColorStyle, TextStyle>>({
+    'Color.Blue1': {
+      color: variables['Color.Blue1'].toString(),
+    },
+    'Color.Blue2': {
+      color: variables['Color.Blue2'].toString(),
+    },
+    'Color.Blue3': {
+      color: variables['Color.Blue3'].toString(),
+    },
+    'Color.Blue4': {
+      color: variables['Color.Blue4'].toString(),
+    },
+    'Color.Blue5': {
+      color: variables['Color.Blue5'].toString(),
+    },
+    'Color.Blue6': {
+      color: variables['Color.Blue6'].toString(),
+    },
+    'Color.Blue7': {
+      color: variables['Color.Blue7'].toString(),
+    },
+    'Color.Blue8': {
+      color: variables['Color.Blue8'].toString(),
+    },
+    'Color.Blue9': {
+      color: variables['Color.Blue9'].toString(),
+    },
+    'Color.Blue10': {
+      color: variables['Color.Blue10'].toString(),
+    },
+    'Color.Cyan1': {
+      color: variables['Color.Cyan1'].toString(),
+    },
+    'Color.Cyan2': {
+      color: variables['Color.Cyan2'].toString(),
+    },
+    'Color.Cyan3': {
+      color: variables['Color.Cyan3'].toString(),
+    },
+    'Color.Cyan4': {
+      color: variables['Color.Cyan4'].toString(),
+    },
+    'Color.Cyan5': {
+      color: variables['Color.Cyan5'].toString(),
+    },
+    'Color.Cyan6': {
+      color: variables['Color.Cyan6'].toString(),
+    },
+    'Color.Cyan7': {
+      color: variables['Color.Cyan7'].toString(),
+    },
+    'Color.Cyan8': {
+      color: variables['Color.Cyan8'].toString(),
+    },
+    'Color.Cyan9': {
+      color: variables['Color.Cyan9'].toString(),
+    },
+    'Color.Cyan10': {
+      color: variables['Color.Cyan10'].toString(),
+    },
+    'Color.Danger': {
+      color: variables['Color.Danger'].toString(),
+    },
+    'Color.Danger1': {
+      color: variables['Color.Danger1'].toString(),
+    },
+    'Color.Danger2': {
+      color: variables['Color.Danger2'].toString(),
+    },
+    'Color.Danger3': {
+      color: variables['Color.Danger3'].toString(),
+    },
+    'Color.Danger4': {
+      color: variables['Color.Danger4'].toString(),
+    },
+    'Color.Danger5': {
+      color: variables['Color.Danger5'].toString(),
+    },
+    'Color.Danger6': {
+      color: variables['Color.Danger6'].toString(),
+    },
+    'Color.Danger7': {
+      color: variables['Color.Danger7'].toString(),
+    },
+    'Color.Danger8': {
+      color: variables['Color.Danger8'].toString(),
+    },
+    'Color.Danger9': {
+      color: variables['Color.Danger9'].toString(),
+    },
+    'Color.Danger10': {
+      color: variables['Color.Danger10'].toString(),
+    },
+    'Color.Green1': {
+      color: variables['Color.Green1'].toString(),
+    },
+    'Color.Green2': {
+      color: variables['Color.Green2'].toString(),
+    },
+    'Color.Green3': {
+      color: variables['Color.Green3'].toString(),
+    },
+    'Color.Green4': {
+      color: variables['Color.Green4'].toString(),
+    },
+    'Color.Green5': {
+      color: variables['Color.Green5'].toString(),
+    },
+    'Color.Green6': {
+      color: variables['Color.Green6'].toString(),
+    },
+    'Color.Green7': {
+      color: variables['Color.Green7'].toString(),
+    },
+    'Color.Green8': {
+      color: variables['Color.Green8'].toString(),
+    },
+    'Color.Green9': {
+      color: variables['Color.Green9'].toString(),
+    },
+    'Color.Green10': {
+      color: variables['Color.Green10'].toString(),
+    },
+    'Color.Grey1': {
+      color: variables['Color.Grey1'].toString(),
+    },
+    'Color.Grey2': {
+      color: variables['Color.Grey2'].toString(),
+    },
+    'Color.Grey3': {
+      color: variables['Color.Grey3'].toString(),
+    },
+    'Color.Grey4': {
+      color: variables['Color.Grey4'].toString(),
+    },
+    'Color.Grey5': {
+      color: variables['Color.Grey5'].toString(),
+    },
+    'Color.Grey6': {
+      color: variables['Color.Grey6'].toString(),
+    },
+    'Color.Grey7': {
+      color: variables['Color.Grey7'].toString(),
+    },
+    'Color.Grey8': {
+      color: variables['Color.Grey8'].toString(),
+    },
+    'Color.Grey9': {
+      color: variables['Color.Grey9'].toString(),
+    },
+    'Color.Grey10': {
+      color: variables['Color.Grey10'].toString(),
+    },
+    'Color.Info': {
+      color: variables['Color.Info'].toString(),
+    },
+    'Color.Info1': {
+      color: variables['Color.Info1'].toString(),
+    },
+    'Color.Info2': {
+      color: variables['Color.Info2'].toString(),
+    },
+    'Color.Info3': {
+      color: variables['Color.Info3'].toString(),
+    },
+    'Color.Info4': {
+      color: variables['Color.Info4'].toString(),
+    },
+    'Color.Info5': {
+      color: variables['Color.Info5'].toString(),
+    },
+    'Color.Info6': {
+      color: variables['Color.Info6'].toString(),
+    },
+    'Color.Info7': {
+      color: variables['Color.Info7'].toString(),
+    },
+    'Color.Info8': {
+      color: variables['Color.Info8'].toString(),
+    },
+    'Color.Info9': {
+      color: variables['Color.Info9'].toString(),
+    },
+    'Color.Info10': {
+      color: variables['Color.Info10'].toString(),
+    },
+    'Color.Alpha1': {
+      color: variables['Color.Alpha1'].toString(),
+    },
+    'Color.Alpha2': {
+      color: variables['Color.Alpha2'].toString(),
+    },
+    'Color.Alpha3': {
+      color: variables['Color.Alpha3'].toString(),
+    },
+    'Color.Alpha4': {
+      color: variables['Color.Alpha4'].toString(),
+    },
+    'Color.Alpha5': {
+      color: variables['Color.Alpha5'].toString(),
+    },
+    'Color.Alpha6': {
+      color: variables['Color.Alpha6'].toString(),
+    },
+    'Color.Alpha7': {
+      color: variables['Color.Alpha7'].toString(),
+    },
+    'Color.Alpha8': {
+      color: variables['Color.Alpha8'].toString(),
+    },
+    'Color.Alpha9': {
+      color: variables['Color.Alpha9'].toString(),
+    },
+    'Color.Alpha10': {
+      color: variables['Color.Alpha10'].toString(),
+    },
+    'Color.Magenta1': {
+      color: variables['Color.Magenta1'].toString(),
+    },
+    'Color.Magenta2': {
+      color: variables['Color.Magenta2'].toString(),
+    },
+    'Color.Magenta3': {
+      color: variables['Color.Magenta3'].toString(),
+    },
+    'Color.Magenta4': {
+      color: variables['Color.Magenta4'].toString(),
+    },
+    'Color.Magenta5': {
+      color: variables['Color.Magenta5'].toString(),
+    },
+    'Color.Magenta6': {
+      color: variables['Color.Magenta6'].toString(),
+    },
+    'Color.Magenta7': {
+      color: variables['Color.Magenta7'].toString(),
+    },
+    'Color.Magenta8': {
+      color: variables['Color.Magenta8'].toString(),
+    },
+    'Color.Magenta9': {
+      color: variables['Color.Magenta9'].toString(),
+    },
+    'Color.Magenta10': {
+      color: variables['Color.Magenta10'].toString(),
+    },
+    'Color.Orange1': {
+      color: variables['Color.Orange1'].toString(),
+    },
+    'Color.Orange2': {
+      color: variables['Color.Orange2'].toString(),
+    },
+    'Color.Orange3': {
+      color: variables['Color.Orange3'].toString(),
+    },
+    'Color.Orange4': {
+      color: variables['Color.Orange4'].toString(),
+    },
+    'Color.Orange5': {
+      color: variables['Color.Orange5'].toString(),
+    },
+    'Color.Orange6': {
+      color: variables['Color.Orange6'].toString(),
+    },
+    'Color.Orange7': {
+      color: variables['Color.Orange7'].toString(),
+    },
+    'Color.Orange8': {
+      color: variables['Color.Orange8'].toString(),
+    },
+    'Color.Orange9': {
+      color: variables['Color.Orange9'].toString(),
+    },
+    'Color.Orange10': {
+      color: variables['Color.Orange10'].toString(),
+    },
+    'Color.Primary': {
+      color: variables['Color.Primary'].toString(),
+    },
+    'Color.Primary1': {
+      color: variables['Color.Primary1'].toString(),
+    },
+    'Color.Primary2': {
+      color: variables['Color.Primary2'].toString(),
+    },
+    'Color.Primary3': {
+      color: variables['Color.Primary3'].toString(),
+    },
+    'Color.Primary4': {
+      color: variables['Color.Primary4'].toString(),
+    },
+    'Color.Primary5': {
+      color: variables['Color.Primary5'].toString(),
+    },
+    'Color.Primary6': {
+      color: variables['Color.Primary6'].toString(),
+    },
+    'Color.Primary7': {
+      color: variables['Color.Primary7'].toString(),
+    },
+    'Color.Primary8': {
+      color: variables['Color.Primary8'].toString(),
+    },
+    'Color.Primary9': {
+      color: variables['Color.Primary9'].toString(),
+    },
+    'Color.Primary10': {
+      color: variables['Color.Primary10'].toString(),
+    },
+    'Color.Purple1': {
+      color: variables['Color.Purple1'].toString(),
+    },
+    'Color.Purple2': {
+      color: variables['Color.Purple2'].toString(),
+    },
+    'Color.Purple3': {
+      color: variables['Color.Purple3'].toString(),
+    },
+    'Color.Purple4': {
+      color: variables['Color.Purple4'].toString(),
+    },
+    'Color.Purple5': {
+      color: variables['Color.Purple5'].toString(),
+    },
+    'Color.Purple6': {
+      color: variables['Color.Purple6'].toString(),
+    },
+    'Color.Purple7': {
+      color: variables['Color.Purple7'].toString(),
+    },
+    'Color.Purple8': {
+      color: variables['Color.Purple8'].toString(),
+    },
+    'Color.Purple9': {
+      color: variables['Color.Purple9'].toString(),
+    },
+    'Color.Purple10': {
+      color: variables['Color.Purple10'].toString(),
+    },
+    'Color.Red1': {
+      color: variables['Color.Red1'].toString(),
+    },
+    'Color.Red2': {
+      color: variables['Color.Red2'].toString(),
+    },
+    'Color.Red3': {
+      color: variables['Color.Red3'].toString(),
+    },
+    'Color.Red4': {
+      color: variables['Color.Red4'].toString(),
+    },
+    'Color.Red5': {
+      color: variables['Color.Red5'].toString(),
+    },
+    'Color.Red6': {
+      color: variables['Color.Red6'].toString(),
+    },
+    'Color.Red7': {
+      color: variables['Color.Red7'].toString(),
+    },
+    'Color.Red8': {
+      color: variables['Color.Red8'].toString(),
+    },
+    'Color.Red9': {
+      color: variables['Color.Red9'].toString(),
+    },
+    'Color.Red10': {
+      color: variables['Color.Red10'].toString(),
+    },
+    'Color.Secondary': {
+      color: variables['Font.Color.Secondary'].toString(),
+    },
+    'Color.Success': {
+      color: variables['Color.Success'].toString(),
+    },
+    'Color.Success1': {
+      color: variables['Color.Success1'].toString(),
+    },
+    'Color.Success2': {
+      color: variables['Color.Success2'].toString(),
+    },
+    'Color.Success3': {
+      color: variables['Color.Success3'].toString(),
+    },
+    'Color.Success4': {
+      color: variables['Color.Success4'].toString(),
+    },
+    'Color.Success5': {
+      color: variables['Color.Success5'].toString(),
+    },
+    'Color.Success6': {
+      color: variables['Color.Success6'].toString(),
+    },
+    'Color.Success7': {
+      color: variables['Color.Success7'].toString(),
+    },
+    'Color.Success8': {
+      color: variables['Color.Success8'].toString(),
+    },
+    'Color.Success9': {
+      color: variables['Color.Success9'].toString(),
+    },
+    'Color.Success10': {
+      color: variables['Color.Success10'].toString(),
+    },
+    'Color.Warning': {
+      color: variables['Color.Warning'].toString(),
+    },
+    'Color.Warning1': {
+      color: variables['Color.Warning1'].toString(),
+    },
+    'Color.Warning2': {
+      color: variables['Color.Warning2'].toString(),
+    },
+    'Color.Warning3': {
+      color: variables['Color.Warning3'].toString(),
+    },
+    'Color.Warning4': {
+      color: variables['Color.Warning4'].toString(),
+    },
+    'Color.Warning5': {
+      color: variables['Color.Warning5'].toString(),
+    },
+    'Color.Warning6': {
+      color: variables['Color.Warning6'].toString(),
+    },
+    'Color.Warning7': {
+      color: variables['Color.Warning7'].toString(),
+    },
+    'Color.Warning8': {
+      color: variables['Color.Warning8'].toString(),
+    },
+    'Color.Warning9': {
+      color: variables['Color.Warning9'].toString(),
+    },
+    'Color.Warning10': {
+      color: variables['Color.Warning10'].toString(),
+    },
+    'Color.White': {
+      color: variables['Color.White'].toString(),
+    },
+    'Color.Yellow1': {
+      color: variables['Color.Yellow1'].toString(),
+    },
+    'Color.Yellow2': {
+      color: variables['Color.Yellow2'].toString(),
+    },
+    'Color.Yellow3': {
+      color: variables['Color.Yellow3'].toString(),
+    },
+    'Color.Yellow4': {
+      color: variables['Color.Yellow4'].toString(),
+    },
+    'Color.Yellow5': {
+      color: variables['Color.Yellow5'].toString(),
+    },
+    'Color.Yellow6': {
+      color: variables['Color.Yellow6'].toString(),
+    },
+    'Color.Yellow7': {
+      color: variables['Color.Yellow7'].toString(),
+    },
+    'Color.Yellow8': {
+      color: variables['Color.Yellow8'].toString(),
+    },
+    'Color.Yellow9': {
+      color: variables['Color.Yellow9'].toString(),
+    },
+    'Color.Yellow10': {
+      color: variables['Color.Yellow10'].toString(),
+    },
+  })
+);
 
-const FontColorStyles = StyleSheet.create({
-  'Color.Blue1': {
-    color: Variables['Color.Blue1'],
-  },
-  'Color.Blue2': {
-    color: Variables['Color.Blue2'],
-  },
-  'Color.Blue3': {
-    color: Variables['Color.Blue3'],
-  },
-  'Color.Blue4': {
-    color: Variables['Color.Blue4'],
-  },
-  'Color.Blue5': {
-    color: Variables['Color.Blue5'],
-  },
-  'Color.Blue6': {
-    color: Variables['Color.Blue6'],
-  },
-  'Color.Blue7': {
-    color: Variables['Color.Blue7'],
-  },
-  'Color.Blue8': {
-    color: Variables['Color.Blue8'],
-  },
-  'Color.Blue9': {
-    color: Variables['Color.Blue9'],
-  },
-  'Color.Blue10': {
-    color: Variables['Color.Blue10'],
-  },
-  'Color.Cyan1': {
-    color: Variables['Color.Cyan1'],
-  },
-  'Color.Cyan2': {
-    color: Variables['Color.Cyan2'],
-  },
-  'Color.Cyan3': {
-    color: Variables['Color.Cyan3'],
-  },
-  'Color.Cyan4': {
-    color: Variables['Color.Cyan4'],
-  },
-  'Color.Cyan5': {
-    color: Variables['Color.Cyan5'],
-  },
-  'Color.Cyan6': {
-    color: Variables['Color.Cyan6'],
-  },
-  'Color.Cyan7': {
-    color: Variables['Color.Cyan7'],
-  },
-  'Color.Cyan8': {
-    color: Variables['Color.Cyan8'],
-  },
-  'Color.Cyan9': {
-    color: Variables['Color.Cyan9'],
-  },
-  'Color.Cyan10': {
-    color: Variables['Color.Cyan10'],
-  },
-  'Color.Danger': {
-    color: Variables['Color.Danger'],
-  },
-  'Color.Danger1': {
-    color: Variables['Color.Danger1'],
-  },
-  'Color.Danger2': {
-    color: Variables['Color.Danger2'],
-  },
-  'Color.Danger3': {
-    color: Variables['Color.Danger3'],
-  },
-  'Color.Danger4': {
-    color: Variables['Color.Danger4'],
-  },
-  'Color.Danger5': {
-    color: Variables['Color.Danger5'],
-  },
-  'Color.Danger6': {
-    color: Variables['Color.Danger6'],
-  },
-  'Color.Danger7': {
-    color: Variables['Color.Danger7'],
-  },
-  'Color.Danger8': {
-    color: Variables['Color.Danger8'],
-  },
-  'Color.Danger9': {
-    color: Variables['Color.Danger9'],
-  },
-  'Color.Danger10': {
-    color: Variables['Color.Danger10'],
-  },
-  'Color.Green1': {
-    color: Variables['Color.Green1'],
-  },
-  'Color.Green2': {
-    color: Variables['Color.Green2'],
-  },
-  'Color.Green3': {
-    color: Variables['Color.Green3'],
-  },
-  'Color.Green4': {
-    color: Variables['Color.Green4'],
-  },
-  'Color.Green5': {
-    color: Variables['Color.Green5'],
-  },
-  'Color.Green6': {
-    color: Variables['Color.Green6'],
-  },
-  'Color.Green7': {
-    color: Variables['Color.Green7'],
-  },
-  'Color.Green8': {
-    color: Variables['Color.Green8'],
-  },
-  'Color.Green9': {
-    color: Variables['Color.Green9'],
-  },
-  'Color.Green10': {
-    color: Variables['Color.Green10'],
-  },
-  'Color.Grey1': {
-    color: Variables['Color.Grey1'],
-  },
-  'Color.Grey2': {
-    color: Variables['Color.Grey2'],
-  },
-  'Color.Grey3': {
-    color: Variables['Color.Grey3'],
-  },
-  'Color.Grey4': {
-    color: Variables['Color.Grey4'],
-  },
-  'Color.Grey5': {
-    color: Variables['Color.Grey5'],
-  },
-  'Color.Grey6': {
-    color: Variables['Color.Grey6'],
-  },
-  'Color.Grey7': {
-    color: Variables['Color.Grey7'],
-  },
-  'Color.Grey8': {
-    color: Variables['Color.Grey8'],
-  },
-  'Color.Grey9': {
-    color: Variables['Color.Grey9'],
-  },
-  'Color.Grey10': {
-    color: Variables['Color.Grey10'],
-  },
-  'Color.Info': {
-    color: Variables['Color.Info'],
-  },
-  'Color.Info1': {
-    color: Variables['Color.Info1'],
-  },
-  'Color.Info2': {
-    color: Variables['Color.Info2'],
-  },
-  'Color.Info3': {
-    color: Variables['Color.Info3'],
-  },
-  'Color.Info4': {
-    color: Variables['Color.Info4'],
-  },
-  'Color.Info5': {
-    color: Variables['Color.Info5'],
-  },
-  'Color.Info6': {
-    color: Variables['Color.Info6'],
-  },
-  'Color.Info7': {
-    color: Variables['Color.Info7'],
-  },
-  'Color.Info8': {
-    color: Variables['Color.Info8'],
-  },
-  'Color.Info9': {
-    color: Variables['Color.Info9'],
-  },
-  'Color.Info10': {
-    color: Variables['Color.Info10'],
-  },
-  'Color.Alpha1': {
-    color: Variables['Color.Alpha1'],
-  },
-  'Color.Alpha2': {
-    color: Variables['Color.Alpha2'],
-  },
-  'Color.Alpha3': {
-    color: Variables['Color.Alpha3'],
-  },
-  'Color.Alpha4': {
-    color: Variables['Color.Alpha4'],
-  },
-  'Color.Alpha5': {
-    color: Variables['Color.Alpha5'],
-  },
-  'Color.Alpha6': {
-    color: Variables['Color.Alpha6'],
-  },
-  'Color.Alpha7': {
-    color: Variables['Color.Alpha7'],
-  },
-  'Color.Alpha8': {
-    color: Variables['Color.Alpha8'],
-  },
-  'Color.Alpha9': {
-    color: Variables['Color.Alpha9'],
-  },
-  'Color.Alpha10': {
-    color: Variables['Color.Alpha10'],
-  },
-  'Color.Magenta1': {
-    color: Variables['Color.Magenta1'],
-  },
-  'Color.Magenta2': {
-    color: Variables['Color.Magenta2'],
-  },
-  'Color.Magenta3': {
-    color: Variables['Color.Magenta3'],
-  },
-  'Color.Magenta4': {
-    color: Variables['Color.Magenta4'],
-  },
-  'Color.Magenta5': {
-    color: Variables['Color.Magenta5'],
-  },
-  'Color.Magenta6': {
-    color: Variables['Color.Magenta6'],
-  },
-  'Color.Magenta7': {
-    color: Variables['Color.Magenta7'],
-  },
-  'Color.Magenta8': {
-    color: Variables['Color.Magenta8'],
-  },
-  'Color.Magenta9': {
-    color: Variables['Color.Magenta9'],
-  },
-  'Color.Magenta10': {
-    color: Variables['Color.Magenta10'],
-  },
-  'Color.Orange1': {
-    color: Variables['Color.Orange1'],
-  },
-  'Color.Orange2': {
-    color: Variables['Color.Orange2'],
-  },
-  'Color.Orange3': {
-    color: Variables['Color.Orange3'],
-  },
-  'Color.Orange4': {
-    color: Variables['Color.Orange4'],
-  },
-  'Color.Orange5': {
-    color: Variables['Color.Orange5'],
-  },
-  'Color.Orange6': {
-    color: Variables['Color.Orange6'],
-  },
-  'Color.Orange7': {
-    color: Variables['Color.Orange7'],
-  },
-  'Color.Orange8': {
-    color: Variables['Color.Orange8'],
-  },
-  'Color.Orange9': {
-    color: Variables['Color.Orange9'],
-  },
-  'Color.Orange10': {
-    color: Variables['Color.Orange10'],
-  },
-  'Color.Primary': {
-    color: Variables['Color.Primary'],
-  },
-  'Color.Primary1': {
-    color: Variables['Color.Primary1'],
-  },
-  'Color.Primary2': {
-    color: Variables['Color.Primary2'],
-  },
-  'Color.Primary3': {
-    color: Variables['Color.Primary3'],
-  },
-  'Color.Primary4': {
-    color: Variables['Color.Primary4'],
-  },
-  'Color.Primary5': {
-    color: Variables['Color.Primary5'],
-  },
-  'Color.Primary6': {
-    color: Variables['Color.Primary6'],
-  },
-  'Color.Primary7': {
-    color: Variables['Color.Primary7'],
-  },
-  'Color.Primary8': {
-    color: Variables['Color.Primary8'],
-  },
-  'Color.Primary9': {
-    color: Variables['Color.Primary9'],
-  },
-  'Color.Primary10': {
-    color: Variables['Color.Primary10'],
-  },
-  'Color.Purple1': {
-    color: Variables['Color.Purple1'],
-  },
-  'Color.Purple2': {
-    color: Variables['Color.Purple2'],
-  },
-  'Color.Purple3': {
-    color: Variables['Color.Purple3'],
-  },
-  'Color.Purple4': {
-    color: Variables['Color.Purple4'],
-  },
-  'Color.Purple5': {
-    color: Variables['Color.Purple5'],
-  },
-  'Color.Purple6': {
-    color: Variables['Color.Purple6'],
-  },
-  'Color.Purple7': {
-    color: Variables['Color.Purple7'],
-  },
-  'Color.Purple8': {
-    color: Variables['Color.Purple8'],
-  },
-  'Color.Purple9': {
-    color: Variables['Color.Purple9'],
-  },
-  'Color.Purple10': {
-    color: Variables['Color.Purple10'],
-  },
-  'Color.Red1': {
-    color: Variables['Color.Red1'],
-  },
-  'Color.Red2': {
-    color: Variables['Color.Red2'],
-  },
-  'Color.Red3': {
-    color: Variables['Color.Red3'],
-  },
-  'Color.Red4': {
-    color: Variables['Color.Red4'],
-  },
-  'Color.Red5': {
-    color: Variables['Color.Red5'],
-  },
-  'Color.Red6': {
-    color: Variables['Color.Red6'],
-  },
-  'Color.Red7': {
-    color: Variables['Color.Red7'],
-  },
-  'Color.Red8': {
-    color: Variables['Color.Red8'],
-  },
-  'Color.Red9': {
-    color: Variables['Color.Red9'],
-  },
-  'Color.Red10': {
-    color: Variables['Color.Red10'],
-  },
-  'Color.Secondary': {
-    color: Variables['Color.Grey7'],
-  },
-  'Color.Success': {
-    color: Variables['Color.Success'],
-  },
-  'Color.Success1': {
-    color: Variables['Color.Success1'],
-  },
-  'Color.Success2': {
-    color: Variables['Color.Success2'],
-  },
-  'Color.Success3': {
-    color: Variables['Color.Success3'],
-  },
-  'Color.Success4': {
-    color: Variables['Color.Success4'],
-  },
-  'Color.Success5': {
-    color: Variables['Color.Success5'],
-  },
-  'Color.Success6': {
-    color: Variables['Color.Success6'],
-  },
-  'Color.Success7': {
-    color: Variables['Color.Success7'],
-  },
-  'Color.Success8': {
-    color: Variables['Color.Success8'],
-  },
-  'Color.Success9': {
-    color: Variables['Color.Success9'],
-  },
-  'Color.Success10': {
-    color: Variables['Color.Success10'],
-  },
-  'Color.Warning': {
-    color: Variables['Color.Warning'],
-  },
-  'Color.Warning1': {
-    color: Variables['Color.Warning1'],
-  },
-  'Color.Warning2': {
-    color: Variables['Color.Warning2'],
-  },
-  'Color.Warning3': {
-    color: Variables['Color.Warning3'],
-  },
-  'Color.Warning4': {
-    color: Variables['Color.Warning4'],
-  },
-  'Color.Warning5': {
-    color: Variables['Color.Warning5'],
-  },
-  'Color.Warning6': {
-    color: Variables['Color.Warning6'],
-  },
-  'Color.Warning7': {
-    color: Variables['Color.Warning7'],
-  },
-  'Color.Warning8': {
-    color: Variables['Color.Warning8'],
-  },
-  'Color.Warning9': {
-    color: Variables['Color.Warning9'],
-  },
-  'Color.Warning10': {
-    color: Variables['Color.Warning10'],
-  },
-  'Color.White': {
-    color: Variables['Color.White'],
-  },
-  'Color.Yellow1': {
-    color: Variables['Color.Yellow1'],
-  },
-  'Color.Yellow2': {
-    color: Variables['Color.Yellow2'],
-  },
-  'Color.Yellow3': {
-    color: Variables['Color.Yellow3'],
-  },
-  'Color.Yellow4': {
-    color: Variables['Color.Yellow4'],
-  },
-  'Color.Yellow5': {
-    color: Variables['Color.Yellow5'],
-  },
-  'Color.Yellow6': {
-    color: Variables['Color.Yellow6'],
-  },
-  'Color.Yellow7': {
-    color: Variables['Color.Yellow7'],
-  },
-  'Color.Yellow8': {
-    color: Variables['Color.Yellow8'],
-  },
-  'Color.Yellow9': {
-    color: Variables['Color.Yellow9'],
-  },
-  'Color.Yellow10': {
-    color: Variables['Color.Yellow10'],
-  },
-});
-
-export default FontColorStyles;
+export default getFontColorStyles;
