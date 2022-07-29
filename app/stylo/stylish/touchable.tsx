@@ -2,18 +2,18 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 
 import React from 'react';
 
 import {
-  Pressable as StyloPressable,
-  TouchableHighlight as StyloTouchableHighlight,
-  TouchableOpacity as StyloTouchableOpacity,
-  TPressableProps,
-  TTouchableHighlightProps,
-  TTouchableOpacityProps,
+    Pressable as StyloPressable,
+    TouchableHighlight as StyloTouchableHighlight,
+    TouchableOpacity as StyloTouchableOpacity,
+    TPressableProps,
+    TTouchableHighlightProps,
+    TTouchableOpacityProps
 } from '../../../stylo';
 import { TTouchableStyle } from '../themes/types';
 
