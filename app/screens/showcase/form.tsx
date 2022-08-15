@@ -10,6 +10,7 @@ const Form1 = () => {
       styleNames={[
         'Form',
         'Padding',
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
@@ -156,6 +157,7 @@ const Form2 = () => {
       styleNames={[
         'Form',
         'Padding',
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
@@ -243,6 +245,7 @@ const Form3 = () => {
       styleNames={[
         'Form',
         'Padding',
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
@@ -333,6 +336,7 @@ const Form4 = () => {
       styleNames={[
         'Form',
         'Padding',
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
@@ -418,6 +422,7 @@ const Form5 = () => {
       styleNames={[
         'Form',
         'Padding',
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
@@ -475,6 +480,7 @@ const Form6 = () => {
   return (
     <Stylish.View
       styleNames={[
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',

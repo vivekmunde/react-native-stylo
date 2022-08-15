@@ -41,6 +41,7 @@ const styloThemeAssortedStylesRoutes: TShowcaseRoute[] = [
   { title: 'Horizontal', routeName: 'StyloThemeHorizontal' },
   { title: 'List', routeName: 'StyloThemeList' },
   { title: 'Screen', routeName: 'StyloThemeScreen' },
+  { title: 'Tag', routeName: 'StyloThemeTag' },
 ];
 
 const otherShowcaseRoutes: TShowcaseRoute[] = [
@@ -49,13 +50,14 @@ const otherShowcaseRoutes: TShowcaseRoute[] = [
   { title: 'Usage: Stylish', routeName: 'UsageStylish' },
   { title: 'Usage: useVariables()', routeName: 'UsageUseVariables' },
   { title: 'useStyles()', routeName: 'UseStyles' },
+  { title: '<Styles />', routeName: 'Styles' },
 ];
 
 const ShowcaseList: React.FC<{ list: TShowcaseRoute[] }> = ({ list }) => {
   const navigation = useNavigation<NavigationProp<TAppStackParamList>>();
 
   return (
-    <Stylish.View styleNames={['List', 'Border.Radius', 'BackgroundColor.Alpha10', 'Margin.Bottom.Large']}>
+    <Stylish.View styleNames={['List', 'Border', 'Border.Radius', 'BackgroundColor.Alpha10', 'Margin.Bottom.Large']}>
       {list.map((it, index) => (
         <Stylish.TouchableOpacity
           key={it.routeName}

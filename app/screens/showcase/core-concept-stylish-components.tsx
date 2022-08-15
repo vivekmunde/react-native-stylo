@@ -35,6 +35,7 @@ const CoreConceptStylishComponentsShowCase = () => (
       <View<TViewStyle>
         styleNames={[
           'List',
+          'Border',
           'Border.Radius',
           'BackgroundColor.Alpha10',
           'Margin.Bottom.Large',
@@ -67,6 +68,7 @@ const CoreConceptStylishComponentsShowCase = () => (
             key={index}
             styleNames={[
               'List.Item',
+              'Border',
               'Border.Radius',
               'BackgroundColor.Alpha10',
               'Margin.Bottom',

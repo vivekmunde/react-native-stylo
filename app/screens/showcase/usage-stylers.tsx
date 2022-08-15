@@ -30,6 +30,7 @@ const UsageStylersShowCase = () => {
     listTitle: Stylers.useTextStyles(['H3', 'Margin.Bottom.Large']),
     list: Stylers.useViewStyles([
       'List',
+      'Border',
       'Border.Radius',
       'BackgroundColor.Alpha10',
       'Margin.Bottom.Large',

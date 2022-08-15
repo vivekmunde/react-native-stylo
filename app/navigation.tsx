@@ -20,6 +20,8 @@ import StyloThemeMarginScreen from './screens/showcase/margin';
 import StyloThemePaddingScreen from './screens/showcase/padding';
 import StyloThemeScreenScreen from './screens/showcase/screen';
 import StyloThemeScrollViewScreen from './screens/showcase/scroll-view';
+import StylesScreen from './screens/showcase/styles';
+import StyloThemeTagScreen from './screens/showcase/tag';
 import StyloThemeTextScreen from './screens/showcase/text';
 import StyloThemeTextInputScreen from './screens/showcase/text-input';
 import StyloThemeTouchableScreen from './screens/showcase/touchable';
@@ -57,12 +59,14 @@ export type TAppStackParamList = {
   StyloThemeHorizontal: undefined;
   StyloThemeList: undefined;
   StyloThemeScreen: undefined;
+  StyloThemeTag: undefined;
 
   CoreConceptStylishComponents: undefined;
   UsageStylers: undefined;
   UsageStylish: undefined;
   UsageUseVariables: undefined;
   UseStyles: undefined;
+  Styles: undefined;
 };
 
 const Stack = createNativeStackNavigator();
@@ -97,12 +101,14 @@ const Navigation = () => (
       <Stack.Screen name="StyloThemeHorizontal" component={StyloThemeHorizontalScreen} />
       <Stack.Screen name="StyloThemeList" component={StyloThemeListScreen} />
       <Stack.Screen name="StyloThemeScreen" component={StyloThemeScreenScreen} />
+      <Stack.Screen name="StyloThemeTag" component={StyloThemeTagScreen} />
 
       <Stack.Screen name="CoreConceptStylishComponents" component={CoreConceptStylishComponentsScreen} />
       <Stack.Screen name="UsageStylers" component={UsageStylersScreen} />
       <Stack.Screen name="UsageUseVariables" component={UsageUseVariablesScreen} />
       <Stack.Screen name="UsageStylish" component={UsageStylishScreen} />
       <Stack.Screen name="UseStyles" component={UseStylesScreen} />
+      <Stack.Screen name="Styles" component={StylesScreen} />
     </Stack.Navigator>
   </NavigationContainer>
 );

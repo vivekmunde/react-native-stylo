@@ -15,6 +15,10 @@ const FontColorShowCase = () => (
           Color.Primary
         </Stylish.Text>
 
+        <Stylish.Text styleNames={['Color.Success', 'Margin.Bottom']}>
+          Color.Success
+        </Stylish.Text>
+
         <Stylish.Text styleNames={['Color.Info', 'Margin.Bottom']}>
           Color.Info
         </Stylish.Text>
