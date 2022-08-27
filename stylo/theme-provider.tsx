@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ThemeContext, { TContext } from './theme-context';
 
-export type TProps = TContext;
+export type TProps = TContext & { children: React.ReactNode };
 
 const ThemeProvider: React.FC<TProps> = ({ variables, styles, children }) => {
   const hasMounted = useRef(false);
