@@ -8,8 +8,7 @@
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, TextStyle, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import { TBadgeStyle, TBadgeTextStyle } from '../../../types/__generated__/assorted/badge';
+import { TBadgeStyle, TBadgeTextStyle, TVariable } from '../../../types/__generated__';
 
 export const getBadgeStyles = (variables: Record<TVariable, string | number>) => {
   const fontSize = Number(variables['Font.Size']);

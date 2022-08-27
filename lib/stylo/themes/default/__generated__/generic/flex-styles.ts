@@ -8,7 +8,7 @@
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, ViewStyle } from 'react-native';
-import TFlexStyle from '../../../types/__generated__/generic/flex';
+import { TFlexStyle } from '../../../types/__generated__';
 
 const getFlexStyles = () => (
   StyleSheet.create<Record<TFlexStyle, ViewStyle>>({

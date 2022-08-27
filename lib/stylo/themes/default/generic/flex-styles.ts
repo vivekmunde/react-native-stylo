@@ -8,8 +8,14 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
+import { StyleSheet, ViewStyle } from 'react-native';
+import { TFlexStyle } from '../../types';
 import _getFlexStyles from '../__generated__/generic/flex-styles';
 
-const getFlexStyles = () => _getFlexStyles();
+const getFlexStyles = () => (
+  StyleSheet.create<Record<TFlexStyle, ViewStyle>>({
+    ..._getFlexStyles(),
+  })
+);
 
 export default getFlexStyles;

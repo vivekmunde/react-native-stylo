@@ -8,8 +8,7 @@
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, TextStyle, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import { TButtonIconStyle, TButtonStyle, TButtonTextStyle } from '../../../types/__generated__/assorted/button';
+import { TButtonIconStyle, TButtonStyle, TButtonTextStyle, TVariable } from '../../../types/__generated__';
 
 export const getButtonStyles = (variables: Record<TVariable, string | number>) => {
   const padding = Number(variables.Padding);

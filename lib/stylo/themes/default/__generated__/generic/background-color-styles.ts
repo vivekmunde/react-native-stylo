@@ -8,8 +8,7 @@
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import TBackgroundColorStyle from '../../../types/__generated__/generic/background-color';
+import { TBackgroundColorStyle, TVariable } from '../../../types/__generated__';
 
 const getBackgroundColorStyles = (variables: Record<TVariable, string | number>) => (
   StyleSheet.create<Record<TBackgroundColorStyle, ViewStyle>>({

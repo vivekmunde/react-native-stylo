@@ -8,8 +8,7 @@
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import TFormStyle from '../../../types/__generated__/assorted/form';
+import { TFormStyle, TVariable } from '../../../types/__generated__';
 
 const getFormStyles = (variables: Record<TVariable, string | number>) => {
   const borderRadius = Number(variables['Border.Radius']);

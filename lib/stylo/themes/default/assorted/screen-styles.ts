@@ -8,9 +8,14 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { TVariable } from '../../types';
+import { StyleSheet, ViewStyle } from 'react-native';
+import { TScreenStyle, TVariable } from '../../types';
 import _getScreenStyles from '../__generated__/assorted/screen-styles';
 
-const getScreenStyles = (variables: Record<TVariable, string | number>) => _getScreenStyles(variables);
+const getScreenStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TScreenStyle, ViewStyle>>({
+    ..._getScreenStyles(variables),
+  })
+);
 
 export default getScreenStyles;
