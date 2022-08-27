@@ -8,8 +8,7 @@
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, TextStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import TFontColorStyle from '../../../types/__generated__/generic/font-color';
+import { TFontColorStyle, TVariable } from '../../../types/__generated__';
 
 const getFontColorStyles = (variables: Record<TVariable, string | number>) => (
   StyleSheet.create<Record<TFontColorStyle, TextStyle>>({

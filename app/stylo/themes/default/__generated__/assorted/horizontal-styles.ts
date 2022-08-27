@@ -8,7 +8,7 @@
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, ViewStyle } from 'react-native';
-import THorizontalStyle from '../../../types/__generated__/assorted/horizontal';
+import { THorizontalStyle } from '../../../types/__generated__';
 
 const getHorizontalStyles = () => (
   StyleSheet.create<Record<THorizontalStyle, ViewStyle>>({

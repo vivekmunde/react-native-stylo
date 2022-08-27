@@ -8,8 +8,7 @@
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, TextStyle, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import TPaddingStyle from '../../../types/__generated__/generic/padding';
+import { TPaddingStyle, TVariable } from '../../../types/__generated__';
 
 const getPaddingStyles = (variables: Record<TVariable, string | number>) => (
   StyleSheet.create<Record<TPaddingStyle, ViewStyle | TextStyle>>({

@@ -8,8 +8,7 @@
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import TListStyle from '../../../types/__generated__/assorted/list';
+import { TListStyle, TVariable } from '../../../types/__generated__';
 
 const getListStyles = (variables: Record<TVariable, string | number>) => {
   const padding = Number(variables.Padding);

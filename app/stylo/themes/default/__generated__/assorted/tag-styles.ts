@@ -7,9 +7,8 @@
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { StyleSheet, TextStyle, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import { TTagAvatarStyle, TTagIconStyle, TTagStyle, TTagTextStyle } from '../../../types/__generated__/assorted/tag';
+import { ImageStyle, StyleSheet, TextStyle, ViewStyle } from 'react-native';
+import { TTagAvatarStyle, TTagIconStyle, TTagStyle, TTagTextStyle, TVariable } from '../../../types/__generated__';
 
 export const getTagStyles = (variables: Record<TVariable, string | number>) => {
   const fontSize = Number(variables['Font.Size']);
@@ -74,7 +73,7 @@ export const getTagAvatarStyles = (variables: Record<TVariable, string | number>
   const fontSizeSmall = Number(variables['Font.Size.Small']);
   const fontSizeLarge = Number(variables['Font.Size.Large']);
 
-  return StyleSheet.create<Record<TTagAvatarStyle, ViewStyle>>({
+  return StyleSheet.create<Record<TTagAvatarStyle, ImageStyle>>({
     'Tag.Avatar': {
       height: fontSize + 8,
       width: fontSize + 8,

@@ -8,8 +8,7 @@
 /* -------------------------------------------------------------------------------- */
 
 import { ImageStyle, StyleSheet, TextStyle, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import TMarginStyle from '../../../types/__generated__/generic/margin';
+import { TMarginStyle, TVariable } from '../../../types/__generated__';
 
 const getMarginStyles = (variables: Record<TVariable, string | number>) => (
   StyleSheet.create<Record<TMarginStyle, ViewStyle | TextStyle | ImageStyle>>({
