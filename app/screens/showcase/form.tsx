@@ -623,12 +623,12 @@ const Form6 = () => {
           'Flex.Row',
           'Flex.AlignItems.Center',
           'Flex.JustifyContent.Center',
-          'BackgroundColor.Primary2',
+          'BackgroundColor.Primary',
           'Border.Radius.BottomLeft',
           'Border.Radius.BottomRight',
         ]}
         style={{ margin: 1 }}>
-        <Stylish.Text styleNames={['Color.Primary', 'Button.Text']}>
+        <Stylish.Text styleNames={['Color.White', 'Button.Text']}>
           Add
         </Stylish.Text>
       </Stylish.TouchableOpacity>
