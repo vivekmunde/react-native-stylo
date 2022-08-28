@@ -2,59 +2,66 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
-import { StyleSheet } from 'react-native';
+import { ImageStyle, StyleSheet, ViewStyle } from 'react-native';
+import { TAvatarJacketStyle, TAvatarStyle, TVariable } from '../../../types/__generated__';
 
-import Variables from '../../variables';
-import BorderStyles from '../generic/border-styles';
+export const getAvatarStyles = (variables: Record<TVariable, string | number>) => {
+  const borderRadius = Number(variables['Border.Radius']);
+  const avatarSize = Number(variables['Avatar.Size']);
+  const avatarSizeSmall = Number(variables['Avatar.Size.Small']);
+  const avatarSizeLarge = Number(variables['Avatar.Size.Large']);
 
-export const AvatarCStyles = StyleSheet.create({
-  Avatar: {
-    height: Variables['Avatar.Size'],
-    width: Variables['Avatar.Size'],
-    borderRadius: Variables['Avatar.Size'],
-  },
-  'Avatar.Small': {
-    height: Variables['Avatar.Size.Small'],
-    width: Variables['Avatar.Size.Small'],
-    borderRadius: Variables['Avatar.Size.Small'],
-  },
-  'Avatar.Large': {
-    height: Variables['Avatar.Size.Large'],
-    width: Variables['Avatar.Size.Large'],
-    borderRadius: Variables['Avatar.Size.Large'],
-  },
-  'Avatar.Square': {
-    borderRadius: Variables['Border.Radius'],
-  },
-});
+  return StyleSheet.create<Record<TAvatarStyle, ImageStyle>>({
+    Avatar: {
+      height: avatarSize,
+      width: avatarSize,
+      borderRadius: avatarSize,
+    },
+    'Avatar.Small': {
+      height: avatarSizeSmall,
+      width: avatarSizeSmall,
+      borderRadius: avatarSizeSmall,
+    },
+    'Avatar.Large': {
+      height: avatarSizeLarge,
+      width: avatarSizeLarge,
+      borderRadius: avatarSizeLarge,
+    },
+    'Avatar.Square': {
+      borderRadius,
+    },
+  });
+};
 
-export const AvatarStyles = StyleSheet.create({
-  ...BorderStyles,
-  ...AvatarCStyles,
-});
+export const getAvatarJacketStyles = (variables: Record<TVariable, string | number>) => {
+  const borderRadius = Number(variables['Border.Radius']);
+  const avatarSize = Number(variables['Avatar.Size']);
+  const avatarSizeSmall = Number(variables['Avatar.Size.Small']);
+  const avatarSizeLarge = Number(variables['Avatar.Size.Large']);
 
-export const AvatarJacketStyles = StyleSheet.create({
-  'Avatar.Jacket': {
-    height: Variables['Avatar.Size'],
-    width: Variables['Avatar.Size'],
-    borderRadius: Variables['Avatar.Size'],
-  },
-  'Avatar.Jacket.Small': {
-    height: Variables['Avatar.Size.Small'],
-    width: Variables['Avatar.Size.Small'],
-    borderRadius: Variables['Avatar.Size.Small'],
-  },
-  'Avatar.Jacket.Large': {
-    height: Variables['Avatar.Size.Large'],
-    width: Variables['Avatar.Size.Large'],
-    borderRadius: Variables['Avatar.Size.Large'],
-  },
-  'Avatar.Jacket.Square': {
-    borderRadius: Variables['Border.Radius'],
-  },
-});
+  return StyleSheet.create<Record<TAvatarJacketStyle, ViewStyle>>({
+    'Avatar.Jacket': {
+      height: avatarSize,
+      width: avatarSize,
+      borderRadius: avatarSize,
+    },
+    'Avatar.Jacket.Small': {
+      height: avatarSizeSmall,
+      width: avatarSizeSmall,
+      borderRadius: avatarSizeSmall,
+    },
+    'Avatar.Jacket.Large': {
+      height: avatarSizeLarge,
+      width: avatarSizeLarge,
+      borderRadius: avatarSizeLarge,
+    },
+    'Avatar.Jacket.Square': {
+      borderRadius,
+    },
+  });
+};

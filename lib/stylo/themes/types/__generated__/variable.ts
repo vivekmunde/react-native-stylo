@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
@@ -11,8 +11,10 @@ import TColor from './color';
 
 type TVariable =
   | TColor
-  | 'Body.Color'
+  | 'Screen.BackgroundColor'
+  | 'Screen.BackdropColor'
   | 'Font.Color'
+  | 'Font.Color.Secondary'
   | 'Font.Size'
   | 'Font.Size.Small'
   | 'Font.Size.Large'

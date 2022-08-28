@@ -2,14 +2,13 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, TextStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import TFontColorStyle from '../../../types/__generated__/generic/font-color';
+import { TFontColorStyle, TVariable } from '../../../types/__generated__';
 
 const getFontColorStyles = (variables: Record<TVariable, string | number>) => (
   StyleSheet.create<Record<TFontColorStyle, TextStyle>>({

@@ -2,14 +2,13 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
 import { ImageStyle, StyleSheet, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import TBorderStyle from '../../../types/__generated__/generic/border';
+import { TBorderStyle, TVariable } from '../../../types/__generated__';
 
 const getBorderStyles = (variables: Record<TVariable, string | number>) => (
   StyleSheet.create<Record<TBorderStyle, ViewStyle | ImageStyle>>({

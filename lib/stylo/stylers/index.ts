@@ -2,7 +2,7 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 
 import _useIconStyles from './use-icon-styles';
@@ -10,8 +10,8 @@ import _useImageBackgroundStyles from './use-image-background-styles';
 import _useImageStyles from './use-image-styles';
 import _useSafeAreaViewStyles from './use-safe-area-view-styles';
 import {
-  useScrollViewContentContainerStyles as _useScrollViewContentContainerStyles,
-  useScrollViewStyles as _useScrollViewStyles,
+    useScrollViewContentContainerStyles as _useScrollViewContentContainerStyles,
+    useScrollViewStyles as _useScrollViewStyles
 } from './use-scroll-view-styles';
 import _useTextInputStyles from './use-text-input-styles';
 import _useTextStyles from './use-text-styles';

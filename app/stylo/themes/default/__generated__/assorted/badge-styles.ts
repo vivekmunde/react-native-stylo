@@ -2,14 +2,13 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, TextStyle, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import { TBadgeStyle, TBadgeTextStyle } from '../../../types/__generated__/assorted/badge';
+import { TBadgeStyle, TBadgeTextStyle, TVariable } from '../../../types/__generated__';
 
 export const getBadgeStyles = (variables: Record<TVariable, string | number>) => {
   const fontSize = Number(variables['Font.Size']);

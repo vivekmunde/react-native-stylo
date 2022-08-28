@@ -8,10 +8,24 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
+import { StyleSheet, TextStyle, ViewStyle } from 'react-native';
+import { TButtonIconStyle, TButtonStyle, TButtonTextStyle, TVariable } from '../../types';
 import * as _ from '../__generated__/assorted/button-styles';
 
-export const ButtonStyles = _.ButtonStyles;
+export const getButtonStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TButtonStyle, ViewStyle>>({
+    ..._.getButtonStyles(variables),
+  })
+);
 
-export const ButtonTextStyles = _.ButtonTextStyles;
+export const getButtonTextStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TButtonTextStyle, TextStyle>>({
+    ..._.getButtonTextStyles(variables),
+  })
+);
 
-export const ButtonIconStyles = _.ButtonIconStyles;
+export const getButtonIconStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TButtonIconStyle, TextStyle>>({
+    ..._.getButtonIconStyles(variables),
+  })
+);  

@@ -8,13 +8,30 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { TVariable } from '../../types';
+import { ImageStyle, StyleSheet, TextStyle, ViewStyle } from 'react-native';
+import { TTagAvatarStyle, TTagIconStyle, TTagStyle, TTagTextStyle, TVariable } from '../../types';
 import * as _ from '../__generated__/assorted/tag-styles';
 
-export const getTagStyles = (variables: Record<TVariable, string | number>) => _.getTagStyles(variables);
+export const getTagStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TTagStyle, ViewStyle>>({
+    ..._.getTagStyles(variables),
+  })
+);
 
-export const getTagTextStyles = (variables: Record<TVariable, string | number>) => _.getTagTextStyles(variables);
+export const getTagTextStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TTagTextStyle, TextStyle>>({
+    ..._.getTagTextStyles(variables),
+  })
+);
 
-export const getTagIconStyles = () => _.getTagIconStyles();
+export const getTagIconStyles = () => (
+  StyleSheet.create<Record<TTagIconStyle, TextStyle>>({
+    ..._.getTagIconStyles(),
+  })
+);
 
-export const getTagAvatarStyles = (variables: Record<TVariable, string | number>) => _.getTagAvatarStyles(variables);
+export const getTagAvatarStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TTagAvatarStyle, ImageStyle>>({
+    ..._.getTagAvatarStyles(variables),
+  })
+);  

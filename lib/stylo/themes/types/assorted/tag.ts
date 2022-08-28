@@ -16,4 +16,4 @@ export type TTagTextStyle = _.TTagTextStyle;
 
 export type TTagIconStyle = _.TTagIconStyle;
 
-export type TTagAvatarImageStyle = _.TTagAvatarImageStyle;
+export type TTagAvatarStyle = _.TTagAvatarStyle;

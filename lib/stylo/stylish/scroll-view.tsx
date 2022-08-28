@@ -2,18 +2,18 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 
 import React from 'react';
 
 import {
-  ScrollView as StyloScrollSView,
-  TScrollViewProps,
+    ScrollView as StyloScrollSView,
+    TScrollViewProps
 } from 'react-native-stylo';
 import {
-  TScrollViewContentContainerStyle,
-  TScrollViewStyle,
+    TScrollViewContentContainerStyle,
+    TScrollViewStyle
 } from '../themes/types';
 
 const ScrollView: React.FC<

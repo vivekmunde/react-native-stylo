@@ -8,36 +8,38 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ViewStyle } from 'react-native';
+import { TTouchableStyle, TVariable } from '../../types';
+import { getAvatarJacketStyles } from '../assorted/avatar-styles';
+import { getBadgeStyles } from '../assorted/badge-styles';
+import { getButtonStyles } from '../assorted/button-styles';
+import getFormStyles from '../assorted/form-styles';
+import getHorizontalStyles from '../assorted/horizontal-styles';
+import getListStyles from '../assorted/list-styles';
+import getScreenStyles from '../assorted/screen-styles';
+import { getTagStyles } from '../assorted/tag-styles';
+import getBackgroundColorStyles from '../generic/background-color-styles';
+import getBorderStyles from '../generic/border-styles';
+import getFlexStyles from '../generic/flex-styles';
+import getMarginStyles from '../generic/margin-styles';
+import getPaddingStyles from '../generic/padding-styles';
 
-import { AvatarJacketStyles } from '../assorted/avatar-styles';
-import { BadgeStyles } from '../assorted/badge-styles';
-import { ButtonStyles } from '../assorted/button-styles';
-import FormStyles from '../assorted/form-styles';
-import HorizontalStyles from '../assorted/horizontal-styles';
-import ListStyles from '../assorted/list-styles';
-import ScreenStyles from '../assorted/screen-styles';
-import { TagStyles } from '../assorted/tag-styles';
-import BackgroundColorStyles from '../generic/background-color-styles';
-import BorderStyles from '../generic/border-styles';
-import FlexStyles from '../generic/flex-styles';
-import MarginStyles from '../generic/margin-styles';
-import PaddingStyles from '../generic/padding-styles';
+const getTouchableStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TTouchableStyle, ViewStyle>>({
+    ...getBackgroundColorStyles(variables),
+    ...getBorderStyles(variables),
+    ...getFlexStyles(),
+    ...getMarginStyles(variables),
+    ...getPaddingStyles(variables),
+    ...getHorizontalStyles(),
+    ...getAvatarJacketStyles(variables),
+    ...getBadgeStyles(variables),
+    ...getFormStyles(variables),
+    ...getTagStyles(variables),
+    ...getListStyles(variables),
+    ...getScreenStyles(variables),
+    ...getButtonStyles(variables),
+  })
+);
 
-const TouchableStyles = StyleSheet.create({
-  ...BackgroundColorStyles,
-  ...BorderStyles,
-  ...FlexStyles,
-  ...MarginStyles,
-  ...PaddingStyles,
-  ...HorizontalStyles,
-  ...AvatarJacketStyles,
-  ...BadgeStyles,
-  ...FormStyles,
-  ...TagStyles,
-  ...ListStyles,
-  ...ScreenStyles,
-  ...ButtonStyles,
-});
-
-export default TouchableStyles;
+export default getTouchableStyles;

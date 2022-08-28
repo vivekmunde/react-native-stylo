@@ -8,8 +8,14 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _FormStyles from '../__generated__/assorted/form-styles';
+import { StyleSheet, ViewStyle } from 'react-native';
+import { TFormStyle, TVariable } from '../../types';
+import _getFormStyles from '../__generated__/assorted/form-styles';
 
-const FormStyles = _FormStyles;
+const getFormStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TFormStyle, ViewStyle>>({
+    ..._getFormStyles(variables),
+  })
+);
 
-export default FormStyles;
+export default getFormStyles;

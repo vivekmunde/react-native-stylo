@@ -2,14 +2,13 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import TBackgroundColorStyle from '../../../types/__generated__/generic/background-color';
+import { TBackgroundColorStyle, TVariable } from '../../../types/__generated__';
 
 const getBackgroundColorStyles = (variables: Record<TVariable, string | number>) => (
   StyleSheet.create<Record<TBackgroundColorStyle, ViewStyle>>({

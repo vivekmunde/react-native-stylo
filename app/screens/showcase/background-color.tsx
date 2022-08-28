@@ -21,6 +21,18 @@ const BackgroundColorShowCase = () => (
 
         <Stylish.View
           styleNames={[
+            'BackgroundColor.Success',
+            'Padding',
+            'Border.Radius',
+            'Margin.Bottom',
+          ]}>
+          <Stylish.Text styleNames={['Color.White']}>
+            BackgroundColor.Success
+          </Stylish.Text>
+        </Stylish.View>
+
+        <Stylish.View
+          styleNames={[
             'BackgroundColor.Info',
             'Padding',
             'Border.Radius',

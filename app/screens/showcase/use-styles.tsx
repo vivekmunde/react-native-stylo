@@ -28,7 +28,6 @@ const UseStylesShowCase: React.FC = () => {
     screenTitle: useStyles<TextStyle, TTextStyle>({
       styleNamespace: 'TextStyles',
       styleNames: [
-        'Color.Primary',
         'H1',
         'Margin.Top.Small',
         'Margin.Bottom.Small',
@@ -41,8 +40,9 @@ const UseStylesShowCase: React.FC = () => {
     card: useStyles<ViewStyle, TViewStyle>({
       styleNamespace: 'ViewStyles',
       styleNames: [
-        'BackgroundColor.Alpha10',
+        'Border',
         'Border.Radius',
+        'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
       ],
     }),
@@ -56,7 +56,7 @@ const UseStylesShowCase: React.FC = () => {
     }),
     cardFooter: useStyles<ViewStyle, TViewStyle>({
       styleNamespace: 'ViewStyles',
-      styleNames: ['Padding', 'Border.Top', 'Border.Color.Primary1'],
+      styleNames: ['Padding', 'Border.Top'],
     }),
     cardTitle: useStyles<TextStyle, TTextStyle>({
       styleNamespace: 'TextStyles',

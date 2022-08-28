@@ -12,14 +12,13 @@ const StylesShowCase: React.FC = () => (
         <SafeAreaView />
         <Styles<ViewStyle, TViewStyle>
           styleNamespace="ViewStyles"
-          styleNames={['Screen.Header']}>
+          styleNames={['Screen.Header', 'Padding']}>
           {screenHeaderStyle => (
             <React.Fragment>
               <View style={screenHeaderStyle}>
                 <Styles<TextStyle, TTextStyle>
                   styleNamespace="TextStyles"
                   styleNames={[
-                    'Color.Primary',
                     'H1',
                     'Margin.Top.Small',
                     'Margin.Bottom.Small',
@@ -37,8 +36,9 @@ const StylesShowCase: React.FC = () => (
                     <Styles<ViewStyle, TViewStyle>
                       styleNamespace="ViewStyles"
                       styleNames={[
-                        'BackgroundColor.Alpha10',
+                        'Border',
                         'Border.Radius',
+                        'BackgroundColor.Alpha10',
                         'Margin.Bottom.Large',
                       ]}>
                       {cardStyle => (

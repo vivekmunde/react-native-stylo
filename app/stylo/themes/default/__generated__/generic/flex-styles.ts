@@ -2,13 +2,13 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, ViewStyle } from 'react-native';
-import TFlexStyle from '../../../types/__generated__/generic/flex';
+import { TFlexStyle } from '../../../types/__generated__';
 
 const getFlexStyles = () => (
   StyleSheet.create<Record<TFlexStyle, ViewStyle>>({

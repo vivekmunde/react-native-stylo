@@ -15,7 +15,7 @@ export const Screen: React.FC<{ transparent?: boolean }> = ({ children, transpar
   ).current;
 
   return (
-    <Stylish.View styleNames={transparent ? ['Screen'] : ['Screen', 'BackgroundColor.Body']}>
+    <Stylish.View styleNames={['Screen']} style={transparent ? { backgroundColor: 'transparent' } : {}}>
       <Stylish.View style={styles.safeAreaHeader} />
       {children}
     </Stylish.View>

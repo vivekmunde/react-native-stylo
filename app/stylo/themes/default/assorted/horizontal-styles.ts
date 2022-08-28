@@ -8,8 +8,14 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
+import { StyleSheet, ViewStyle } from 'react-native';
+import { THorizontalStyle } from '../../types';
 import _getHorizontalStyles from '../__generated__/assorted/horizontal-styles';
 
-const getHorizontalStyles = () => _getHorizontalStyles();
+const getHorizontalStyles = () => (
+  StyleSheet.create<Record<THorizontalStyle, ViewStyle>>({
+    ..._getHorizontalStyles(),
+  })
+);
 
 export default getHorizontalStyles;

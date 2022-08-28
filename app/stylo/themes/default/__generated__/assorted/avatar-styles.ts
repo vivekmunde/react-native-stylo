@@ -2,14 +2,13 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
 import { ImageStyle, StyleSheet, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import { TAvatarJacketStyle, TAvatarStyle } from '../../../types/__generated__/assorted/avatar';
+import { TAvatarJacketStyle, TAvatarStyle, TVariable } from '../../../types/__generated__';
 
 export const getAvatarStyles = (variables: Record<TVariable, string | number>) => {
   const borderRadius = Number(variables['Border.Radius']);

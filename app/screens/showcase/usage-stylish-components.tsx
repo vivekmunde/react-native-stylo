@@ -34,6 +34,7 @@ const UsageStylishComponentsShowCase = () => (
       <Stylish.View
         styleNames={[
           'List',
+          'Border',
           'Border.Radius',
           'BackgroundColor.Alpha10',
           'Margin.Bottom.Large',

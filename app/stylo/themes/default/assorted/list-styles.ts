@@ -8,9 +8,14 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { TVariable } from '../../types';
+import { StyleSheet, ViewStyle } from 'react-native';
+import { TListStyle, TVariable } from '../../types';
 import _getListStyles from '../__generated__/assorted/list-styles';
 
-const getListStyles = (variables: Record<TVariable, string | number>) => _getListStyles(variables);
+const getListStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TListStyle, ViewStyle>>({
+    ..._getListStyles(variables),
+  })
+);
 
 export default getListStyles;

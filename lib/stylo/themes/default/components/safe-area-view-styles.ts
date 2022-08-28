@@ -8,8 +8,14 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import BackgroundColorStyles from '../generic/background-color-styles';
+import { StyleSheet, ViewStyle } from 'react-native';
+import { TSafeAreaViewStyle, TVariable } from '../../types';
+import _getBackgroundColorStyles from '../generic/background-color-styles';
 
-const SafeAreaViewStyles = BackgroundColorStyles;
+const getSafeAreaViewStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TSafeAreaViewStyle, ViewStyle>>({
+    ..._getBackgroundColorStyles(variables),
+  })
+);
 
-export default SafeAreaViewStyles;
+export default getSafeAreaViewStyles;

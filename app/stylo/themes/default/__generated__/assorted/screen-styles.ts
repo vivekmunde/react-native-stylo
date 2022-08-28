@@ -2,14 +2,13 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import TScreenStyle from '../../../types/__generated__/assorted/screen';
+import { TScreenStyle, TVariable } from '../../../types/__generated__';
 
 const getScreenStyles = (variables: Record<TVariable, string | number>) => (
   StyleSheet.create<Record<TScreenStyle, ViewStyle>>({

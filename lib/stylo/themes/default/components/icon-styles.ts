@@ -8,20 +8,22 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TextStyle } from 'react-native';
+import { TIconStyle, TVariable } from '../../types';
+import { getButtonIconStyles } from '../assorted/button-styles';
+import { getTagIconStyles } from '../assorted/tag-styles';
+import getFontColorStyles from '../generic/font-color-styles';
+import getMarginStyles from '../generic/margin-styles';
+import { getIconCStyles } from '../__generated__/components/icon-styles';
 
-import { IconCStyles } from '../__generated__/components/icon-styles';
-import { ButtonIconStyles } from '../assorted/button-styles';
-import { TagIconStyles } from '../assorted/tag-styles';
-import FontColorStyles from '../generic/font-color-styles';
-import MarginStyles from '../generic/margin-styles';
+const getIconStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TIconStyle, TextStyle>>({
+    ...getFontColorStyles(variables),
+    ...getMarginStyles(variables),
+    ...getButtonIconStyles(variables),
+    ...getTagIconStyles(),
+    ...getIconCStyles(variables),
+  })
+);
 
-const IconStyles = StyleSheet.create({
-  ...FontColorStyles,
-  ...MarginStyles,
-  ...ButtonIconStyles,
-  ...TagIconStyles,
-  ...IconCStyles,
-});
-
-export default IconStyles;
+export default getIconStyles;

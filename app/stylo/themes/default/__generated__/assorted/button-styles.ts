@@ -2,14 +2,13 @@
 /*                               react-native-stylo                                 */
 /*           GitHub: https://github.com/vivekmunde/react-native-stylo               */
 /*      Docs: https://vivekmunde.github.io/react-native-stylo-documentation/        */
-/*                                  Version 1.0.0                                   */
+/*                                  Version 1.1.0                                   */
 /* -------------------------------------------------------------------------------- */
 /*                                  DO NOT MODIFY                                   */
 /* -------------------------------------------------------------------------------- */
 
 import { StyleSheet, TextStyle, ViewStyle } from 'react-native';
-import { TVariable } from '../../../types/__generated__';
-import { TButtonIconStyle, TButtonStyle, TButtonTextStyle } from '../../../types/__generated__/assorted/button';
+import { TButtonIconStyle, TButtonStyle, TButtonTextStyle, TVariable } from '../../../types/__generated__';
 
 export const getButtonStyles = (variables: Record<TVariable, string | number>) => {
   const padding = Number(variables.Padding);

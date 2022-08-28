@@ -8,8 +8,14 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _MarginStyles from '../__generated__/generic/margin-styles';
+import { ImageStyle, StyleSheet, TextStyle, ViewStyle } from 'react-native';
+import { TMarginStyle, TVariable } from '../../types';
+import _getMarginStyles from '../__generated__/generic/margin-styles';
 
-const MarginStyles = _MarginStyles;
+const getMarginStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TMarginStyle, ViewStyle | TextStyle | ImageStyle>>({
+    ..._getMarginStyles(variables),
+  })
+);
 
-export default MarginStyles;
+export default getMarginStyles;

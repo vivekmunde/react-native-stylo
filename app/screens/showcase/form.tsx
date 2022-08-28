@@ -10,6 +10,7 @@ const Form1 = () => {
       styleNames={[
         'Form',
         'Padding',
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
@@ -156,6 +157,7 @@ const Form2 = () => {
       styleNames={[
         'Form',
         'Padding',
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
@@ -243,6 +245,7 @@ const Form3 = () => {
       styleNames={[
         'Form',
         'Padding',
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
@@ -333,6 +336,7 @@ const Form4 = () => {
       styleNames={[
         'Form',
         'Padding',
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
@@ -418,6 +422,7 @@ const Form5 = () => {
       styleNames={[
         'Form',
         'Padding',
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
@@ -428,7 +433,7 @@ const Form5 = () => {
             styleNames={[
               'Form.Item.Input.Left',
               'Padding',
-              'BackgroundColor.Grey2',
+              'BackgroundColor.Grey1',
             ]}>
             <Stylish.Icon.AntDesign
               name="user"
@@ -446,7 +451,7 @@ const Form5 = () => {
             styleNames={[
               'Form.Item.Input.Left',
               'Padding',
-              'BackgroundColor.Grey2',
+              'BackgroundColor.Grey1',
             ]}>
             <Stylish.Icon.AntDesign
               name="lock"
@@ -475,6 +480,7 @@ const Form6 = () => {
   return (
     <Stylish.View
       styleNames={[
+        'Border',
         'Border.Radius',
         'BackgroundColor.Alpha10',
         'Margin.Bottom.Large',
@@ -514,7 +520,7 @@ const Form6 = () => {
               <Stylish.TextInput placeholderTextColor={placeholderTextColor.toString()} placeholder="12.05" />
             </Stylish.View>
             <Stylish.View
-              styleNames={['Form.Item.Input.Right', 'BackgroundColor.Grey2']}>
+              styleNames={['Form.Item.Input.Right', 'BackgroundColor.Grey1']}>
               <Stylish.Text> </Stylish.Text>
               <Stylish.Icon.FontAwesome
                 name="dollar"
@@ -545,7 +551,7 @@ const Form6 = () => {
             <Stylish.View
               styleNames={[
                 'Form.Item.Input.Left',
-                'BackgroundColor.Grey2',
+                'BackgroundColor.Grey1',
                 'Flex.1',
               ]}>
               <Stylish.Text styleNames={['Color.Secondary']}>GEN</Stylish.Text>
@@ -554,7 +560,7 @@ const Form6 = () => {
               <Stylish.TextInput placeholderTextColor={placeholderTextColor.toString()} placeholder="0.45" />
             </Stylish.View>
             <Stylish.View
-              styleNames={['Form.Item.Input.Right', 'BackgroundColor.Grey2']}>
+              styleNames={['Form.Item.Input.Right', 'BackgroundColor.Grey1']}>
               <Stylish.Text styleNames={['Color.Secondary']}>%</Stylish.Text>
             </Stylish.View>
           </Stylish.View>
@@ -562,7 +568,7 @@ const Form6 = () => {
             <Stylish.View
               styleNames={[
                 'Form.Item.Input.Left',
-                'BackgroundColor.Grey2',
+                'BackgroundColor.Grey1',
                 'Flex.1',
               ]}>
               <Stylish.Text styleNames={['Color.Secondary']}>VAT</Stylish.Text>
@@ -571,7 +577,7 @@ const Form6 = () => {
               <Stylish.TextInput placeholderTextColor={placeholderTextColor.toString()} placeholder="1.08" />
             </Stylish.View>
             <Stylish.View
-              styleNames={['Form.Item.Input.Right', 'BackgroundColor.Grey2']}>
+              styleNames={['Form.Item.Input.Right', 'BackgroundColor.Grey1']}>
               <Stylish.Text styleNames={['Color.Secondary']}>%</Stylish.Text>
             </Stylish.View>
           </Stylish.View>
@@ -579,7 +585,7 @@ const Form6 = () => {
             <Stylish.View
               styleNames={[
                 'Form.Item.Input.Left',
-                'BackgroundColor.Grey2',
+                'BackgroundColor.Grey1',
                 'Flex.1',
               ]}>
               <Stylish.Text styleNames={['Color.Secondary']}>LLT</Stylish.Text>
@@ -588,7 +594,7 @@ const Form6 = () => {
               <Stylish.TextInput placeholderTextColor={placeholderTextColor.toString()} placeholder="0.71" />
             </Stylish.View>
             <Stylish.View
-              styleNames={['Form.Item.Input.Right', 'BackgroundColor.Grey2']}>
+              styleNames={['Form.Item.Input.Right', 'BackgroundColor.Grey1']}>
               <Stylish.Text styleNames={['Color.Secondary']}>%</Stylish.Text>
             </Stylish.View>
           </Stylish.View>
@@ -617,12 +623,12 @@ const Form6 = () => {
           'Flex.Row',
           'Flex.AlignItems.Center',
           'Flex.JustifyContent.Center',
-          'BackgroundColor.Primary2',
+          'BackgroundColor.Primary',
           'Border.Radius.BottomLeft',
           'Border.Radius.BottomRight',
         ]}
         style={{ margin: 1 }}>
-        <Stylish.Text styleNames={['Color.Primary', 'Button.Text']}>
+        <Stylish.Text styleNames={['Color.White', 'Button.Text']}>
           Add
         </Stylish.Text>
       </Stylish.TouchableOpacity>
