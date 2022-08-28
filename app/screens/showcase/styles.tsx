@@ -1,13 +1,12 @@
 import React from 'react';
 import { SafeAreaView, Text, TextStyle, View, ViewStyle } from 'react-native';
-
 import { Styles } from '../../../stylo/index';
 import { TTextStyle, TViewStyle } from '../../stylo/themes/types';
 
 const StylesShowCase: React.FC = () => (
   <Styles<ViewStyle, TViewStyle>
     styleNamespace="ViewStyles"
-    styleNames={['Screen', 'BackgroundColor.Primary1']}>
+    styleNames={['Screen']}>
     {screenStyle => (
       <View style={screenStyle}>
         <SafeAreaView />
@@ -20,7 +19,6 @@ const StylesShowCase: React.FC = () => (
                 <Styles<TextStyle, TTextStyle>
                   styleNamespace="TextStyles"
                   styleNames={[
-                    'Color.Primary',
                     'H1',
                     'Margin.Top.Small',
                     'Margin.Bottom.Small',
@@ -38,8 +36,9 @@ const StylesShowCase: React.FC = () => (
                     <Styles<ViewStyle, TViewStyle>
                       styleNamespace="ViewStyles"
                       styleNames={[
-                        'BackgroundColor.White',
+                        'Border',
                         'Border.Radius',
+                        'BackgroundColor.Alpha10',
                         'Margin.Bottom.Large',
                       ]}>
                       {cardStyle => (

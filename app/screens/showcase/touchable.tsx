@@ -1,27 +1,24 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const TouchableShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Touchable'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Touchable" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.View
           styleNames={[
             'List',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom.Large',
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
           ]}>
           <Stylish.TouchableOpacity
             styleNames={[
               'List.Item',
               'Border.Bottom',
-              'Border.Color.Primary1',
             ]}>
             <Stylish.View styleNames={['List.Item.Left']}>
               <Stylish.Image
@@ -50,7 +47,6 @@ const TouchableShowCase = () => (
             styleNames={[
               'List.Item',
               'Border.Bottom',
-              'Border.Color.Primary1',
             ]}>
             <Stylish.View styleNames={['List.Item.Left']}>
               <Stylish.Image
@@ -105,8 +101,7 @@ const TouchableShowCase = () => (
           styleNames={[
             'Border',
             'Border.Radius',
-            'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom.Large',
           ]}>
@@ -194,8 +189,8 @@ const TouchableShowCase = () => (
           </Stylish.Text>
         </Stylish.TouchableOpacity>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default TouchableShowCase;

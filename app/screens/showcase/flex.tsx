@@ -1,20 +1,18 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const FlexShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Flex'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Flex" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.View
           styleNames={[
             'Flex.Row',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -29,8 +27,7 @@ const FlexShowCase = () => (
             'Flex.JustifyContent.Center',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -45,8 +42,7 @@ const FlexShowCase = () => (
             'Flex.JustifyContent.End',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -61,8 +57,7 @@ const FlexShowCase = () => (
             'Flex.JustifyContent.SpaceBetween',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -76,8 +71,7 @@ const FlexShowCase = () => (
             'Flex.Column',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -92,8 +86,7 @@ const FlexShowCase = () => (
             'Flex.AlignItems.End',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -108,8 +101,7 @@ const FlexShowCase = () => (
             'Flex.AlignItems.Center',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Padding',
             'Margin.Bottom',
           ]}>
@@ -123,8 +115,7 @@ const FlexShowCase = () => (
             'Flex.Row',
             'Border',
             'Border.Radius',
-            'BackgroundColor.White',
-            'Border.Color.Primary2',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom',
           ]}>
           <Stylish.View
@@ -133,7 +124,6 @@ const FlexShowCase = () => (
               'Flex.AlignItems.Center',
               'Padding',
               'Border.Right',
-              'Border.Color.Primary2',
             ]}>
             <Stylish.Text>Flex.1</Stylish.Text>
           </Stylish.View>
@@ -143,7 +133,6 @@ const FlexShowCase = () => (
               'Flex.AlignItems.Center',
               'Padding',
               'Border.Right',
-              'Border.Color.Primary2',
             ]}>
             <Stylish.Text>Flex.2</Stylish.Text>
           </Stylish.View>
@@ -153,8 +142,8 @@ const FlexShowCase = () => (
           </Stylish.View>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default FlexShowCase;

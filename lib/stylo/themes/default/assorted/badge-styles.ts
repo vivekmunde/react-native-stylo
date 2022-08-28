@@ -8,8 +8,18 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
+import { StyleSheet, TextStyle, ViewStyle } from 'react-native';
+import { TBadgeStyle, TBadgeTextStyle, TVariable } from '../../types';
 import * as _ from '../__generated__/assorted/badge-styles';
 
-export const BadgeStyles = _.BadgeStyles;
+export const getBadgeStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TBadgeStyle, ViewStyle>>({
+    ..._.getBadgeStyles(variables),
+  })
+);
 
-export const BadgeTextStyles = _.BadgeTextStyles;
+export const getBadgeTextStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TBadgeTextStyle, TextStyle>>({
+    ..._.getBadgeTextStyles(variables),
+  })
+);

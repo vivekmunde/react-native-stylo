@@ -8,8 +8,14 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import _PaddingStyles from '../__generated__/generic/padding-styles';
+import { StyleSheet, TextStyle, ViewStyle } from 'react-native';
+import { TPaddingStyle, TVariable } from '../../types';
+import _getPaddingStyles from '../__generated__/generic/padding-styles';
 
-const PaddingStyles = _PaddingStyles;
+const getPaddingStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TPaddingStyle, ViewStyle | TextStyle>>({
+    ..._getPaddingStyles(variables),
+  })
+);
 
-export default PaddingStyles;
+export default getPaddingStyles;

@@ -8,17 +8,20 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { StyleSheet } from 'react-native';
-
+import { ImageStyle, StyleSheet, ViewStyle } from 'react-native';
+import { TAvatarJacketStyle, TAvatarStyle, TVariable } from '../../types';
 import {
-  AvatarCStyles,
-  AvatarJacketStyles as _AvatarJacketStyles,
+  getAvatarJacketStyles as _getAvatarJacketStyles, getAvatarStyles as _getAvatarStyles
 } from '../__generated__/assorted/avatar-styles';
-import BorderStyles from '../generic/border-styles';
 
-export const AvatarStyles = StyleSheet.create({
-  ...BorderStyles,
-  ...AvatarCStyles,
-});
+export const getAvatarStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TAvatarStyle, ImageStyle>>({
+    ..._getAvatarStyles(variables),
+  })
+);
 
-export const AvatarJacketStyles = _AvatarJacketStyles;
+export const getAvatarJacketStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TAvatarJacketStyle, ViewStyle>>({
+    ..._getAvatarJacketStyles(variables),
+  })
+);

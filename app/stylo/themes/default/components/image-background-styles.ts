@@ -8,20 +8,22 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ViewStyle } from 'react-native';
+import { TImageBackgroundStyle, TVariable } from '../../types';
+import getBackgroundColorStyles from '../generic/background-color-styles';
+import getBorderStyles from '../generic/border-styles';
+import getFlexStyles from '../generic/flex-styles';
+import getMarginStyles from '../generic/margin-styles';
+import getPaddingStyles from '../generic/padding-styles';
 
-import BackgroundColorStyles from '../generic/background-color-styles';
-import BorderStyles from '../generic/border-styles';
-import FlexStyles from '../generic/flex-styles';
-import MarginStyles from '../generic/margin-styles';
-import PaddingStyles from '../generic/padding-styles';
+const getImageBackgroundStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TImageBackgroundStyle, ViewStyle>>({
+    ...getBackgroundColorStyles(variables),
+    ...getBorderStyles(variables),
+    ...getFlexStyles(),
+    ...getMarginStyles(variables),
+    ...getPaddingStyles(variables),
+  })
+);
 
-const ImageBackgroundStyles = StyleSheet.create({
-  ...BackgroundColorStyles,
-  ...BorderStyles,
-  ...FlexStyles,
-  ...MarginStyles,
-  ...PaddingStyles,
-});
-
-export default ImageBackgroundStyles;
+export default getImageBackgroundStyles;

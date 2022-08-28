@@ -1,12 +1,11 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const FontColorShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'FontColor'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="FontColor" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.Text styleNames={['Margin.Bottom']}>
           Default Color
@@ -14,6 +13,10 @@ const FontColorShowCase = () => (
 
         <Stylish.Text styleNames={['Color.Primary', 'Margin.Bottom']}>
           Color.Primary
+        </Stylish.Text>
+
+        <Stylish.Text styleNames={['Color.Success', 'Margin.Bottom']}>
+          Color.Success
         </Stylish.Text>
 
         <Stylish.Text styleNames={['Color.Info', 'Margin.Bottom']}>
@@ -28,8 +31,8 @@ const FontColorShowCase = () => (
           Color.Danger
         </Stylish.Text>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default FontColorShowCase;

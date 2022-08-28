@@ -1,13 +1,11 @@
 import React from 'react';
-
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const TagShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Tag'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Tag" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.View styleNames={['Flex.Row', 'Flex.Wrap', 'Flex.AlignItems.Center', 'Margin.Bottom.Large']}>
           <Stylish.View styleNames={['Tag', 'BackgroundColor.Primary']}>
@@ -67,19 +65,19 @@ const TagShowCase = () => (
         </Stylish.View>
 
         <Stylish.View styleNames={['Flex.Row', 'Flex.Wrap', 'Flex.AlignItems.Center', 'Margin.Bottom.Large']}>
-          <Stylish.View styleNames={['Tag', 'Border', 'Border.Color.Primary', 'BackgroundColor.White']}>
+          <Stylish.View styleNames={['Tag', 'Border', 'Border.Color.Primary', 'BackgroundColor.Alpha10']}>
             <Stylish.Icon.AntDesign name="checkcircle" styleNames={['Tag.Icon', 'Tag.Icon.Left', 'Color.Primary']} />
             <Stylish.Text styleNames={['Tag.Text', 'Color.Primary']}>
               Colour
             </Stylish.Text>
           </Stylish.View>
-          <Stylish.View styleNames={['Tag', 'Tag.Small', 'Border', 'Border.Color.Info', 'BackgroundColor.White']}>
+          <Stylish.View styleNames={['Tag', 'Tag.Small', 'Border', 'Border.Color.Info', 'BackgroundColor.Alpha10']}>
             <Stylish.Icon.AntDesign name="checkcircle" styleNames={['Tag.Icon', 'Tag.Icon.Left', 'Small', 'Color.Info']} />
             <Stylish.Text styleNames={['Tag.Text', 'Small', 'Color.Info']}>
               Size
             </Stylish.Text>
           </Stylish.View>
-          <Stylish.View styleNames={['Tag', 'Tag.Large', 'Border', 'Border.Color.Warning', 'BackgroundColor.White']}>
+          <Stylish.View styleNames={['Tag', 'Tag.Large', 'Border', 'Border.Color.Warning', 'BackgroundColor.Alpha10']}>
             <Stylish.Icon.AntDesign name="checkcircle" styleNames={['Tag.Icon', 'Tag.Icon.Left', 'Large', 'Color.Warning']} />
             <Stylish.Text styleNames={['Tag.Text', 'Large', 'Color.Warning']}>
               Shape
@@ -109,19 +107,19 @@ const TagShowCase = () => (
         </Stylish.View>
 
         <Stylish.View styleNames={['Flex.Row', 'Flex.Wrap', 'Flex.AlignItems.Center', 'Margin.Bottom.Large']}>
-          <Stylish.View styleNames={['Tag', 'Border', 'Border.Color.Primary', 'BackgroundColor.White']}>
+          <Stylish.View styleNames={['Tag', 'Border', 'Border.Color.Primary', 'BackgroundColor.Alpha10']}>
             <Stylish.Image source={require('../../images/face-icon-1.png')} styleNames={['Tag.Avatar', 'Tag.Avatar.Left']} />
             <Stylish.Text styleNames={['Tag.Text', 'Color.Primary']}>
               Sajan
             </Stylish.Text>
           </Stylish.View>
-          <Stylish.View styleNames={['Tag', 'Tag.Small', 'Border', 'Border.Color.Info', 'BackgroundColor.White']}>
+          <Stylish.View styleNames={['Tag', 'Tag.Small', 'Border', 'Border.Color.Info', 'BackgroundColor.Alpha10']}>
             <Stylish.Image source={require('../../images/face-icon-2.png')} styleNames={['Tag.Avatar', 'Tag.Avatar.Small', 'Tag.Avatar.Left']} />
             <Stylish.Text styleNames={['Tag.Text', 'Small', 'Color.Info']}>
               Alma
             </Stylish.Text>
           </Stylish.View>
-          <Stylish.View styleNames={['Tag', 'Tag.Large', 'Border', 'Border.Color.Warning', 'BackgroundColor.White']}>
+          <Stylish.View styleNames={['Tag', 'Tag.Large', 'Border', 'Border.Color.Warning', 'BackgroundColor.Alpha10']}>
             <Stylish.Image source={require('../../images/face-icon-3.png')} styleNames={['Tag.Avatar', 'Tag.Avatar.Large', 'Tag.Avatar.Left']} />
             <Stylish.Text styleNames={['Tag.Text', 'Large', 'Color.Warning']}>
               Nalini
@@ -129,8 +127,8 @@ const TagShowCase = () => (
           </Stylish.View>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default TagShowCase;

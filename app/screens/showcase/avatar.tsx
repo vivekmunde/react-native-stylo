@@ -1,12 +1,11 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const AvatarShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Avatar'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Avatar" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.View
           styleNames={[
@@ -252,8 +251,8 @@ const AvatarShowCase = () => (
           </Stylish.TouchableOpacity>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default AvatarShowCase;

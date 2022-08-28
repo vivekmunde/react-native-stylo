@@ -30,8 +30,8 @@ const AntDesign = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconAntDesign {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconAntDesign {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const Entypo = <TStyleName extends string>({
@@ -39,8 +39,8 @@ const Entypo = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconEntypo {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconEntypo {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const EvilIcons = <TStyleName extends string>({
@@ -48,8 +48,8 @@ const EvilIcons = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconEvilIcons {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconEvilIcons {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const FontAwesome = <TStyleName extends string>({
@@ -57,8 +57,8 @@ const FontAwesome = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconFontAwesome {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconFontAwesome {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const FontAwesome5 = <TStyleName extends string>({
@@ -66,8 +66,8 @@ const FontAwesome5 = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconFontAwesome5 {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconFontAwesome5 {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const FontAwesome5Pro = <TStyleName extends string>({
@@ -75,8 +75,8 @@ const FontAwesome5Pro = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconFontAwesome5Pro {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconFontAwesome5Pro {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const Fontisto = <TStyleName extends string>({
@@ -84,8 +84,8 @@ const Fontisto = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconFontisto {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconFontisto {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const Foundation = <TStyleName extends string>({
@@ -93,8 +93,8 @@ const Foundation = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconFoundation {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconFoundation {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const Ionicons = <TStyleName extends string>({
@@ -102,8 +102,8 @@ const Ionicons = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconIonicons {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconIonicons {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const MaterialCommunityIcons = <TStyleName extends string>({
@@ -111,9 +111,9 @@ const MaterialCommunityIcons = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
   return (
-    <RNVIconMaterialCommunityIcons {...props} style={[textStyle, style]} />
+    <RNVIconMaterialCommunityIcons {...props} style={style ? [iconStyle, style] : iconStyle} />
   );
 };
 
@@ -122,8 +122,8 @@ const MaterialIcons = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconMaterialIcons {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconMaterialIcons {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const Octicons = <TStyleName extends string>({
@@ -131,8 +131,8 @@ const Octicons = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconOcticons {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconOcticons {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const SimpleLineIcons = <TStyleName extends string>({
@@ -140,8 +140,8 @@ const SimpleLineIcons = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconSimpleLineIcons {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconSimpleLineIcons {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 const Zocial = <TStyleName extends string>({
@@ -149,8 +149,8 @@ const Zocial = <TStyleName extends string>({
   style,
   ...props
 }: TIconProps<TStyleName>) => {
-  const textStyle = useIconStyles<TStyleName>(styleNames ?? []);
-  return <RNVIconZocial {...props} style={[textStyle, style]} />;
+  const iconStyle = useIconStyles<TStyleName>(styleNames ?? []);
+  return <RNVIconZocial {...props} style={style ? [iconStyle, style] : iconStyle} />;
 };
 
 class Icon {

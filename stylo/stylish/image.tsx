@@ -13,7 +13,7 @@ const RNSImage = <TStyleName extends string>({
   ...props
 }: TImageProps<TStyleName>) => {
   const imageStyle = useImageStyles<TStyleName>(styleNames ?? []);
-  return <Image {...props} style={[imageStyle, style]} />;
+  return <Image {...props} style={style ? [imageStyle, style] : imageStyle} />;
 };
 
 export default RNSImage;

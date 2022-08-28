@@ -1,7 +1,6 @@
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
-
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylers from '../../stylo/stylers';
 import Stylish from '../../stylo/stylish';
 
@@ -12,10 +11,9 @@ const ButtonShowCase = () => {
   ]);
 
   return (
-    <ShowcaseScreenLayout
-      onGoBack={() => null}
-      renderTitle={() => 'Button'}
-      renderBody={() => (
+    <Screen>
+      <ScreenHeader title="Button" />
+      <ScreenBody>
         <React.Fragment>
           <Stylish.View styleNames={['Flex.Row', 'Flex.AlignItems.Center']}>
             <Stylish.TouchableOpacity
@@ -146,7 +144,7 @@ const ButtonShowCase = () => {
                 'Border',
                 'Border.Color.Danger',
                 'Flex.JustifyContent.SpaceBetween',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right.Mini',
                 'Margin.Bottom',
               ]}>
@@ -166,7 +164,7 @@ const ButtonShowCase = () => {
                 'Border',
                 'Border.Color.Warning',
                 'Flex.JustifyContent.SpaceBetween',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Left.Mini',
                 'Margin.Bottom',
               ]}>
@@ -242,7 +240,7 @@ const ButtonShowCase = () => {
                 'Button.Round',
                 'Border',
                 'Border.Color.Primary',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>
@@ -258,7 +256,7 @@ const ButtonShowCase = () => {
                 'Button.Small',
                 'Border',
                 'Border.Color.Info',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>
@@ -274,7 +272,7 @@ const ButtonShowCase = () => {
                 'Button.Large',
                 'Border',
                 'Border.Color.Warning',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>
@@ -350,7 +348,7 @@ const ButtonShowCase = () => {
                 'Button.Circle',
                 'Border',
                 'Border.Color.Primary',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>
@@ -371,7 +369,7 @@ const ButtonShowCase = () => {
                 'Button.Circle',
                 'Border',
                 'Border.Color.Info',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>
@@ -393,7 +391,7 @@ const ButtonShowCase = () => {
                 'Button.Circle',
                 'Border',
                 'Border.Color.Warning',
-                'BackgroundColor.White',
+                'BackgroundColor.Alpha10',
                 'Margin.Right',
                 'Margin.Bottom',
               ]}>
@@ -432,8 +430,8 @@ const ButtonShowCase = () => {
             <ActivityIndicator size="small" color={colorPrimary.toString()} />
           </Stylish.TouchableOpacity>
         </React.Fragment>
-      )}
-    />
+      </ScreenBody>
+    </Screen>
   );
 };
 

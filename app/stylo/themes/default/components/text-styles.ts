@@ -8,22 +8,24 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TextStyle } from 'react-native';
+import { TTextStyle, TVariable } from '../../types';
+import { getBadgeTextStyles } from '../assorted/badge-styles';
+import { getButtonTextStyles } from '../assorted/button-styles';
+import { getTagTextStyles } from '../assorted/tag-styles';
+import getFontColorStyles from '../generic/font-color-styles';
+import getMarginStyles from '../generic/margin-styles';
+import { getTextCStyles } from '../__generated__/components/text-styles';
 
-import { TextCStyles } from '../__generated__/components/text-styles';
-import { BadgeTextStyles } from '../assorted/badge-styles';
-import { ButtonTextStyles } from '../assorted/button-styles';
-import { TagTextStyles } from '../assorted/tag-styles';
-import FontColorStyles from '../generic/font-color-styles';
-import MarginStyles from '../generic/margin-styles';
+const getTextStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TTextStyle, TextStyle>>({
+    ...getFontColorStyles(variables),
+    ...getMarginStyles(variables),
+    ...getBadgeTextStyles(variables),
+    ...getButtonTextStyles(variables),
+    ...getTagTextStyles(variables),
+    ...getTextCStyles(variables),
+  })
+);
 
-const TextStyles = StyleSheet.create({
-  ...FontColorStyles,
-  ...MarginStyles,
-  ...BadgeTextStyles,
-  ...ButtonTextStyles,
-  ...TagTextStyles,
-  ...TextCStyles,
-});
-
-export default TextStyles;
+export default getTextStyles;

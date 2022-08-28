@@ -1,19 +1,18 @@
 import React from 'react';
-
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const ListShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'List'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="List" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.View
           styleNames={[
             'List',
+            'Border',
             'Border.Radius',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom.Large',
           ]}>
           <Stylish.View styleNames={['List.Item', 'Border.Bottom']}>
@@ -103,7 +102,7 @@ const ListShowCase = () => (
         </Stylish.View>
 
         <Stylish.View
-          styleNames={['List', 'Border.Radius', 'BackgroundColor.White']}>
+          styleNames={['List', 'Border', 'Border.Radius', 'BackgroundColor.Alpha10']}>
           <Stylish.View styleNames={['List.Item', 'Border.Bottom']}>
             <Stylish.View styleNames={['List.Item.Body']}>
               <Stylish.Text styleNames={['Color.Secondary']}>Name</Stylish.Text>
@@ -147,8 +146,8 @@ const ListShowCase = () => (
           </Stylish.View>
         </Stylish.View>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default ListShowCase;

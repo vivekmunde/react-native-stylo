@@ -3,14 +3,14 @@ import { ScrollView, ScrollViewProps } from 'react-native';
 
 import {
   useScrollViewContentContainerStyles,
-  useScrollViewStyles,
+  useScrollViewStyles
 } from '../stylers';
 import { TStylesProps } from './types';
 
 export type TScrollViewProps<
   TScrollViewStyle extends string,
   TScrollViewContentContainerStyle extends string,
-> = ScrollViewProps &
+  > = ScrollViewProps &
   TStylesProps<TScrollViewStyle> & {
     contentContainerStyleNames?: TScrollViewContentContainerStyle[];
   };
@@ -18,13 +18,13 @@ export type TScrollViewProps<
 const RNSScrollView = <
   TScrollViewStyle extends string,
   TScrollViewContentContainerStyle extends string,
->({
-  styleNames,
-  style,
-  contentContainerStyleNames,
-  contentContainerStyle,
-  ...props
-}: TScrollViewProps<TScrollViewStyle, TScrollViewContentContainerStyle>) => {
+  >({
+    styleNames,
+    style,
+    contentContainerStyleNames,
+    contentContainerStyle,
+    ...props
+  }: TScrollViewProps<TScrollViewStyle, TScrollViewContentContainerStyle>) => {
   const scrollViewStyle = useScrollViewStyles<TScrollViewStyle>(
     styleNames ?? [],
   );
@@ -37,11 +37,13 @@ const RNSScrollView = <
   return (
     <ScrollView
       {...props}
-      style={[scrollViewStyle, style]}
-      contentContainerStyle={[
-        scrollViewContentContainerStyle,
-        contentContainerStyle,
-      ]}
+      style={style ? [scrollViewStyle, style] : scrollViewStyle}
+      contentContainerStyle={contentContainerStyle
+        ? [
+          scrollViewContentContainerStyle,
+          contentContainerStyle,
+        ]
+        : scrollViewContentContainerStyle}
     />
   );
 };

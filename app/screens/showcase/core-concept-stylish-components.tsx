@@ -1,11 +1,10 @@
 import React from 'react';
-
 import { Image, SafeAreaView, Text, View } from '../../../stylo';
 import {
   TImageStyle,
   TSafeAreaViewStyle,
   TTextStyle,
-  TViewStyle,
+  TViewStyle
 } from '../../stylo/themes/types';
 
 const data = [
@@ -27,7 +26,7 @@ const data = [
 ];
 
 const CoreConceptStylishComponentsShowCase = () => (
-  <View<TViewStyle> styleNames={['Screen', 'BackgroundColor.Primary1']}>
+  <View<TViewStyle> styleNames={['Screen']}>
     <SafeAreaView<TSafeAreaViewStyle> />
     <View<TViewStyle> styleNames={['Screen.Header', 'Padding']}>
       <Text<TTextStyle> styleNames={['H1']}>Stylish Components</Text>
@@ -36,8 +35,9 @@ const CoreConceptStylishComponentsShowCase = () => (
       <View<TViewStyle>
         styleNames={[
           'List',
+          'Border',
           'Border.Radius',
-          'BackgroundColor.White',
+          'BackgroundColor.Alpha10',
           'Margin.Bottom.Large',
         ]}>
         {data.map((it, index) => (
@@ -68,8 +68,9 @@ const CoreConceptStylishComponentsShowCase = () => (
             key={index}
             styleNames={[
               'List.Item',
+              'Border',
               'Border.Radius',
-              'BackgroundColor.White',
+              'BackgroundColor.Alpha10',
               'Margin.Bottom',
             ]}>
             <View<TViewStyle> styleNames={['List.Item.Left']}>

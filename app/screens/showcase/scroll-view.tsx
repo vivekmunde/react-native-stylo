@@ -1,12 +1,11 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const ScrollViewShowcase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'ScrollView'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="ScrollView" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.Text styleNames={['Bold', 'Margin.Bottom.Mini']}>
           Recent Invoices
@@ -18,7 +17,7 @@ const ScrollViewShowcase = () => (
             'Border',
             'Border.Radius',
             'Border.Color.Primary2',
-            'BackgroundColor.White',
+            'BackgroundColor.Alpha10',
             'Margin.Bottom.Large',
           ]}
           contentContainerStyleNames={['Padding.Mini']}>
@@ -119,21 +118,20 @@ const ScrollViewShowcase = () => (
           Select a user
         </Stylish.Text>
         <Stylish.ScrollView
-          styleNames={['Border.Radius', 'BackgroundColor.Primary2']}
-          style={{ height: 248 }}
-          contentContainerStyle={{ padding: 1 }}>
+          styleNames={['Border.Radius', 'BackgroundColor.Alpha10']}
+          contentContainerStyleNames={['Padding.Mini']}
+          showsVerticalScrollIndicator={false}
+          style={{ height: 248 }}>
           <Stylish.View
             styleNames={[
               'List',
               'Border',
               'Border.Radius',
-              'Border.Color.Primary1',
             ]}>
             <Stylish.View
               styleNames={[
                 'List.Item',
                 'Border.Bottom',
-                'Border.Color.Primary1',
               ]}>
               <Stylish.View styleNames={['List.Item.Left']}>
                 <Stylish.Image
@@ -155,7 +153,6 @@ const ScrollViewShowcase = () => (
               styleNames={[
                 'List.Item',
                 'Border.Bottom',
-                'Border.Color.Primary1',
               ]}>
               <Stylish.View styleNames={['List.Item.Left']}>
                 <Stylish.Image
@@ -177,7 +174,6 @@ const ScrollViewShowcase = () => (
               styleNames={[
                 'List.Item',
                 'Border.Bottom',
-                'Border.Color.Primary1',
               ]}>
               <Stylish.View styleNames={['List.Item.Left']}>
                 <Stylish.Image
@@ -214,8 +210,8 @@ const ScrollViewShowcase = () => (
           </Stylish.View>
         </Stylish.ScrollView>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default ScrollViewShowcase;

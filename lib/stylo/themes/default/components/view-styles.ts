@@ -8,32 +8,36 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ViewStyle } from 'react-native';
+import { TVariable, TViewStyle } from '../../types';
+import { getBadgeStyles } from '../assorted/badge-styles';
+import getFormStyles from '../assorted/form-styles';
+import getHorizontalStyles from '../assorted/horizontal-styles';
+import getListStyles from '../assorted/list-styles';
+import getScreenStyles from '../assorted/screen-styles';
+import { getTagStyles } from '../assorted/tag-styles';
+import getBackgroundColorStyles from '../generic/background-color-styles';
+import getBorderStyles from '../generic/border-styles';
+import getFlexStyles from '../generic/flex-styles';
+import getMarginStyles from '../generic/margin-styles';
+import getPaddingStyles from '../generic/padding-styles';
 
-import { BadgeStyles } from '../assorted/badge-styles';
-import FormStyles from '../assorted/form-styles';
-import HorizontalStyles from '../assorted/horizontal-styles';
-import ListStyles from '../assorted/list-styles';
-import ScreenStyles from '../assorted/screen-styles';
-import { TagStyles } from '../assorted/tag-styles';
-import BackgroundColorStyles from '../generic/background-color-styles';
-import BorderStyles from '../generic/border-styles';
-import FlexStyles from '../generic/flex-styles';
-import MarginStyles from '../generic/margin-styles';
-import PaddingStyles from '../generic/padding-styles';
+const getViewStyles = (variables: Record<TVariable, string | number>) => (
+  StyleSheet.create<Record<TViewStyle, ViewStyle>>({
+    ...getBackgroundColorStyles(variables),
+    ...getBorderStyles(variables),
+    ...getPaddingStyles(variables),
+    ...getMarginStyles(variables),
+    ...getFlexStyles(),
+    ...getHorizontalStyles(),
+    ...getBadgeStyles(variables),
+    ...getListStyles(variables),
+    ...getFormStyles(variables),
+    ...getScreenStyles(variables),
+    ...getTagStyles(variables),
+    Default: {},
+  })
+);
 
-const ViewStyles = StyleSheet.create({
-  ...BackgroundColorStyles,
-  ...BorderStyles,
-  ...FlexStyles,
-  ...MarginStyles,
-  ...PaddingStyles,
-  ...HorizontalStyles,
-  ...BadgeStyles,
-  ...TagStyles,
-  ...FormStyles,
-  ...ListStyles,
-  ...ScreenStyles,
-});
+export default getViewStyles;
 
-export default ViewStyles;

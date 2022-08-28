@@ -68,7 +68,7 @@ export declare const TextInputStyles: <TStyleName extends string>({ styleNames, 
     children: (style: import("react-native").StyleProp<import("react-native").TextStyle>) => import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>> | null;
 }) => import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>> | null;
 export declare const ThemeContext: import("react").Context<import("./theme-context").TContext>;
-export declare const ThemeProvider: import("react").FC<import("./theme-context").TContext>;
+export declare const ThemeProvider: import("react").FC<import("./theme-provider").TProps>;
 export declare const TouchableStyles: <TStyleName extends string>({ styleNames, children, }: {
     styleNames: TStyleName[];
     children: (style: import("react-native").StyleProp<import("react-native").ViewStyle>) => import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>> | null;
@@ -139,7 +139,7 @@ declare const Stylo: {
         children: (style: import("react-native").StyleProp<import("react-native").TextStyle>) => import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>> | null;
     }) => import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>> | null;
     ThemeContext: import("react").Context<import("./theme-context").TContext>;
-    ThemeProvider: import("react").FC<import("./theme-context").TContext>;
+    ThemeProvider: import("react").FC<import("./theme-provider").TProps>;
     TouchableStyles: <TStyleName_9 extends string>({ styleNames, children, }: {
         styleNames: TStyleName_9[];
         children: (style: import("react-native").StyleProp<import("react-native").ViewStyle>) => import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>> | null;

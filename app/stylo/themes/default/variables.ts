@@ -8,8 +8,18 @@
 /*                           Customize as per your needs                            */
 /* -------------------------------------------------------------------------------- */
 
+import { TVariable } from '../types';
 import _Variables from './__generated__/variables';
 
-const Variables = _Variables;
+export type TVariables = Record<'light' | 'dark', Record<TVariable, string | number>>;
+
+const Variables: TVariables = {
+  light: {
+    ..._Variables.light,
+  },
+  dark: {
+    ..._Variables.dark,
+  },
+};
 
 export default Variables;

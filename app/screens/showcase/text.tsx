@@ -1,12 +1,11 @@
 import React from 'react';
-import ShowcaseScreenLayout from '../../components/showcase-screen-layout';
+import { Screen, ScreenBody, ScreenHeader } from '../../components/showcase-screen-layout';
 import Stylish from '../../stylo/stylish';
 
 const TextShowCase = () => (
-  <ShowcaseScreenLayout
-    onGoBack={() => null}
-    renderTitle={() => 'Text'}
-    renderBody={() => (
+  <Screen>
+    <ScreenHeader title="Text" />
+    <ScreenBody>
       <React.Fragment>
         <Stylish.Text styleNames={['Margin.Bottom']}>Default</Stylish.Text>
         <Stylish.Text styleNames={['Bold', 'Margin.Bottom']}>
@@ -32,8 +31,8 @@ const TextShowCase = () => (
           components, right from simple Text to complicated Pickers & Forms.
         </Stylish.Text>
       </React.Fragment>
-    )}
-  />
+    </ScreenBody>
+  </Screen>
 );
 
 export default TextShowCase;
